@@ -40,6 +40,8 @@ Oct 21, 2015  | Final chapters sent to Morgan Kaufman
 
 ## Instructions to Authors
 
+The chapter title should be a _mantra_; i.e. some slogan reflecting best practice for data science for SE.
+
 Chapters should use  diagrams in gray scale (or no diagrams at all).
 
 Chapters should minimize the use of references (less than half a dozen).
