@@ -1,5 +1,7 @@
 # Perspectives on Data Science for Software Engineering		
-		
+
+![logo](https://avatars2.githubusercontent.com/u/11729498?v=3&s=200)
+
 This repo holds chapters, under development for a forthcoming Morgan Kaufmann book.		
 		
 _Keywords:_ software engineering; data science; analytics; data mining; visualization; decision making		
