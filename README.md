@@ -3,6 +3,11 @@
 This repo holds chapters, under development for a forthcoming Morgan Kaufmann book.		
 		
 _Keywords:_ software engineering; data science; analytics; data mining; visualization; decision making		
+_Editors:_
+
++ Tim Menzies <tim.menzies@gmail.com>, NCState, USA
++ Laurie Williams <laurie.williams@gmail.com>, NCState, USA
++ Thomas Zimmmermann <tzimmer@microsoft.com>, Microsoft, USA
 		
 ## Origins		
 		
@@ -25,9 +30,30 @@ This book is targeted at industrial data science workers. Each chapter will be a
 When          | What		
 ------------- | -------------------------------		
  Apr 30, 2015 |         Invitations issued (and accepted) to write each chapter to 40+ authors		
-June 30, 2015 |     Chapters submitted. Commence peer review of chapters (by other chapter authors)		
+June 30, 2015 |     Chapters submitted. Commence peer review of chapters (by other chapter authors)	
 July 31, 2015 |     First round reviews completed and sent back to authors		
 Sept 15, 2015 |        Revised chapters received, optional second peer review		
 Sept 30, 2015 |   Second round reviews completed and sent back to author		
 Oct 21, 2015  | Final chapters sent to Morgan Kaufman		
+
+## Instructions to Authors
+
+Chapters to be written in Markdown and committed to this repo
+     + To begin that task, send your Githib repo id to any of the above editors. They will add you to the "colloberators" of this repo.
+     + If you do not want to hassle with Github, then write in Markdown using on the [free Markdown editors](http://mashable.com/2013/06/24/markdown-tools/) and send to the editors.
+     
+Chapters should be short. For example, our [sample chapter](sample.md) has 
+      +   240 lines
+      +   1400 words
+      +   9000 characters
+
+Chapters should use  diagrams in gray scale;
+
+Chapters should use than half a dozen references;
+
+Chapters should be _approachable_ and have a _take away message_. For example, our  [sample chapter](sample.md) has certain features which you can (optionally) copy:
+
++ Some light hearted story to start the chapter;
++ Some list of specific recommendations to end the chapter.
++ 
 
