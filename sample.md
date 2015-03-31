@@ -4,7 +4,7 @@
 
 Legend has it that Archimedes once solved a problem sitting in
 his bathtub.
-Crying  _Eureka!_ (I have it!), legend says he leapt out
+Crying  _Eureka!_ ("I have it!"), legend says he leapt out
 of the bath and ran to tell the king about the solution.
 Legend does not say if he stopped to get dressed first.
 
