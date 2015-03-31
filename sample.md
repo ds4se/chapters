@@ -178,13 +178,11 @@ By asking open-ended
 data miners can find
 unexpected novel patterns that are actually true and
 useful-- even if those patterns fly in the face of
-accepted wisdom. For example, researchers at Cornell
-University working on the [Eureqa machine](http://www.nutonian.com/products/eureqa/) can learn
+accepted wisdom. For example, Schmidt and Lipson's  Eureqa machine can learn
 models that make no sense (with respect to current
 theories of biology) yet can make accurate
-predictions on complex phenomena (in their case,
-[ion exchanges between living cells](http://www.radiolab.org/story/91712-limits-of-science/)).
-
+predictions on complex phenomena (e.g.  
+ion exchanges between living cells).
 
 
 But, while
@@ -230,6 +228,7 @@ came from some one letter typo in your scripts).
   Conference on Software Engineering (ICSE
   '13). IEEE Press, Piscataway, NJ, USA, 882-890.
 + Peter Norving, Warning Signs in Experimental Design and Interpretation, http://goo.gl/x0rI2
++ Schmidt M., Lipson H. (2009) Distilling Free-Form Natural Laws from Experimental Data, Science, Vol. 324, no. 5923, pp. 81 - 85.  
 + Forrest Shull, Manoel G. Mendoncaa, Victor Basili,
   Jeffrey Carver, Jose; C. Maldonado, Sandra Fabbri,
   Guilherme Horta Travassos, and Maria Cristina
