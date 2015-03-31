@@ -86,7 +86,7 @@ The problem with that
 conclusion was that, while certainly true, it missed
 an important factor. It turns out that that
 particular sub-system was the one deemed least
-critical by NASA. Hence, it standard policy to let
+critical by NASA. Hence, it was standard policy to let
 newcomers work on that sub-system in order to learn
 the domain.  Since such beginners make more
 mistakes, then it is hardly surprising that this
