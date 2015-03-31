@@ -38,20 +38,21 @@ Oct 21, 2015  | Final chapters sent to Morgan Kaufman
 
 ## Instructions to Authors
 
+Chapters should use  diagrams in gray scale (or no diagrams at all).
+
+Chapters should minimize the use of references (less than half a dozen).
+
 Chapters to be written in Markdown and committed to this repo:
 
-     + To begin that task, send your Githib repo id to any of the above editors. They will add you to the "colloberators" of this repo.
-     + If you do not want to hassle with Github, then write in Markdown using on the [free Markdown editors](http://mashable.com/2013/06/24/markdown-tools/) and send to the editors.
++ To begin that task, send your Githib repo id to any of the above editors. They will add you to the "colloberators" of this repo.
++ If you do not want to hassle with Github, then write in Markdown using on the [free Markdown editors](http://mashable.com/2013/06/24/markdown-tools/) and send to the editors.
      
-Chapters should be short. For example, our [sample chapter](sample.md) has 
+Chapters should be short. For example, our [sample chapter](sample.md) has:
 
-      +   240 lines
-      +   1400 words
-      +   9000 characters
++   250 lines
++   1500 words
++   9000 characters
 
-Chapters should use  diagrams in gray scale;
-
-Chapters should use than half a dozen references;
 
 Chapters should be _approachable_ and have a _take away message_. For example, our  [sample chapter](sample.md) has certain features which you can (optionally) copy:
 
