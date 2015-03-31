@@ -38,11 +38,13 @@ Oct 21, 2015  | Final chapters sent to Morgan Kaufman
 
 ## Instructions to Authors
 
-Chapters to be written in Markdown and committed to this repo
+Chapters to be written in Markdown and committed to this repo:
+
      + To begin that task, send your Githib repo id to any of the above editors. They will add you to the "colloberators" of this repo.
      + If you do not want to hassle with Github, then write in Markdown using on the [free Markdown editors](http://mashable.com/2013/06/24/markdown-tools/) and send to the editors.
      
 Chapters should be short. For example, our [sample chapter](sample.md) has 
+
       +   240 lines
       +   1400 words
       +   9000 characters
@@ -54,6 +56,5 @@ Chapters should use than half a dozen references;
 Chapters should be _approachable_ and have a _take away message_. For example, our  [sample chapter](sample.md) has certain features which you can (optionally) copy:
 
 + Some light hearted story to start the chapter;
-+ Some list of specific recommendations to end the chapter.
-+ 
++ Some list of specific recommendations to end the chapter (see the heading _In Summary_ at the end of the file).
 
