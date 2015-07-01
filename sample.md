@@ -1,3 +1,5 @@
+_Note to authors: please add in your contribution to the repo using the convention lastname_title.md (or, send the text to use and we will do it_)
+
 # Correlation is not Causation (or, when  not to scream  "Eureka!")
 
 ## What not to do
