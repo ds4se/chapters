@@ -1,4 +1,4 @@
-_Note to authors: please add in your contribution to the repo using the convention lastname_title.md (or, send the text to use and we will do it_)
+_Note to authors: please add in your contribution to the repo into a directory called yourGitHibId. If you have multiple chapters or images to include, please add them to that directory._
 
 # Correlation is not Causation (or, when  not to scream  "Eureka!")
 
