@@ -160,8 +160,10 @@ early as possible.
 To cut the long story short: make your research open from the beginning!
 
 ## References
+* G.Gousios and D. Spinellis, [Conducting quantitative software engineering studies with Alitheia Core.](http://www.gousios.gr/bibliography/GS14.html), Empirical Software Engineering, vol. 19, no. 4, pp. 885–925, 2014.
 
-G. Gousios. [The GHTorrent project](http://ghtorrent.org)
 
-Vasilescu, B., Filkov, V., and Serebrenik, A. Stack Overflow and GitHub: Associations between software development and crowdsourced knowledge.
+* G.Gousios, [The GHTorrent dataset and tool suite](http://ghtorrent.org), in Proceedings of the 10th Working Conference on Mining Software Repositories, 2013, pp. 233–236.
+
+* B.Vasilescu, V. Filkov, and A. Serebrenik, [Stack Overflow and GitHub: Associations between software development and crowdsourced knowledge](http://bvasiles.github.io/papers/socialcom13.pdf).
 2013 ASE/IEEE International Conference on Social Computing, Social Computing, IEEE (2013), 188–195.
