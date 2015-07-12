@@ -1,7 +1,7 @@
 
-# Mining Apps for Normal Behavior
+# Mining Apps for Anomalies
 
-## The specification problem
+## Specifying is hard
 
 So you have some program.  It can be yours, it can come from a third party.  You want to use it.  But before you do so, you may ask: Does it do what it is supposed to do?  And will it continue to do so in the future?  
 
@@ -48,7 +48,7 @@ What do these rankings give you?  We identified "Travel" applications that happi
 The real power of such approaches, however, comes when they are applied to detect _malicious_ apps.  Applied on a set of 22,500 apps, CHABADA can detect 74% of novel malware as such, with a false positive rate below 10%.  Our recent MUDFLOW prototype, which learns normal _data flows_ from apps, can even detect more than 90% of novel malware leaking sensitive data.  Mind again that these recognition rates come from learning _from benign samples only_.  Thus, CHABADA and MUDFLOW can be applied to detect malware even if it is the very first of its kind - simply because it shows unusual behavior compared to the many benign apps found in app stores.
 
 
-## Outlook
+## Outlook: A treasure trove of data
 
 At this point, API usage and static data flows only scratch the surface of the many facets of behavior that can be extracted from apps.  Future techniques will tie program analysis to user interface analysis, for instance to detect whether the user agreed to specific terms and conditions.  Mining user interaction may reveal behavior patterns whose violation may imply usability issues.  Given good test generators, one can systematically explore the dynamic behavior, and gain information on concrete text and resources accessed.  There's a lot to be learned, and a plethora of ways that the resulting data can be leveraged to guide programmers and to protect users.  I hope I have whet your appetite!
  
@@ -57,9 +57,8 @@ At this point, API usage and static data flows only scratch the surface of the m
 
 ## References
 
-
 + Vitalii Avdiienko, Konstantin Kuznetsov, Alessandra Gorla, Andreas Zeller, Steven Arzt, Siegfried Rasthofer, and Eric Bodden: _Mining Apps for Abnormal Usage of Sensitive Data_.  Proceedings of the International Conference on Software Engineering, 2015.
 
 + Alessandra Gorla, Ilaria Tavecchia, Florian Gross, and Andreas Zeller: _Checking App Behavior Against App Descriptions_.  Proceedings of the International Conference on Software Engineering, 2014.
 
-+ 
++ Konstantin Kuznetsov, Alessandra Gorla, Ilaria Tavecchia, Florian Gross, and Andreas Zeller: Mining Android Apps for Anomalies.  In Christian Bird, Tim Menzies, and Thomas Zimmermann (Eds.), _Art and Science of Analyzing Software Data_, Springer, 2015.
