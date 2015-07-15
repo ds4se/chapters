@@ -8,10 +8,10 @@ Tom Ostrand
 
 A person walks down the street and sees a man on his hands and knees under a lamppost. 
 
-“What are you doing?”
-“I’m looking for my keys.” 
-“You dropped them here?” 
-“No, but the light is so much better here than where I dropped them, I thought I’d look here!”
+“What are you doing?”  
+“I’m looking for my keys.”   
+“You dropped them here?”  
+“No, but the light is so much better here than where I dropped them, I thought I’d look here!”  
 
 A silly old joke, but one that motivated the work that we did on software fault prediction for almost a decade while working at AT&T.  A common paradigm used at AT&T to develop large systems was to design and create an initial version, and then continue to maintain it with subsequent releases at roughly 3 month intervals. Each new release might contain added functionality, redesign of existing code, removal of parts no longer needed, and fixes for bugs that have been documented since the last release. 
 
@@ -33,7 +33,7 @@ Over the course of several years we studied a total of nine industrial projects 
 
 The Standard Model does not account for some variables that many people (including us!) felt might have an effect on the potential bugginess of code.  We experimented with augmented models that included counts of the number of different programmers who had changed the code [2], the complexity of the code's calling structure [3], and detailed counts of the number of lines added, changed or deleted in a file [4].  None of these additional characteristics significantly improved the Standard Model's predictions, and we even found that augmenting the model with additional variables sometimes made the predictions worse. 
 
-A variety of different approaches to software fault prediction have been investigated over the past 20 years, with mixed results. Much of the research has attempted to categorize parts of the software as either fault-prone or not fault-prone, and validation has typically been done using so-called hold out experiments where predictions were made by training the algorithms on a subset of the files to make predictions on the remaining files within the same release. In contrast, our algorithms perform the more ambitious task of ordering the files from most fault-prone to least fault-prone, using data extracted from earlier releases to make predictions for later releases, always using industrial software systems that are running in the field. Our consistent positive results on 170 releases demonstrate that at least for the types of systems and development processes we’ve studied, accurate prediction results are possible, and can provide useful information to testers, developers, and project managers. 
+A variety of different approaches to software fault prediction have been investigated over the past 20 years, with mixed results. Much of the research has attempted to categorize parts of the software as either fault-prone or not fault-prone, and validation has typically been done using so-called hold out experiments where predictions were made by training the algorithms on a subset of the files to make predictions on the remaining files _within the same release_. In contrast, our algorithms perform the more ambitious task of ordering the files from most fault-prone to least fault-prone, using data extracted from earlier releases to make predictions for later releases, always using industrial software systems that are running in the field. Our consistent positive results on 170 releases demonstrate that at least for the types of systems and development processes we’ve studied, accurate prediction results are possible, and can provide useful information to testers, developers, and project managers. 
 
 1. T.J. Ostrand, E.J. Weyuker, R.M. Bell, Predicting the location and number of faults in large software systems, *IEEE Trans. on Software Engineering*, Vol 31, Apr. 2005
 
