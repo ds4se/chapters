@@ -1,0 +1,19 @@
+#Gotcha's: Test Data
+
+Software testing is a key element of software development processes. In an evolving product, the purpose of testing is to ensure that code changes applied to software do not compromise its established and desired product quality. Often, testing is associated with checking for functional correctness. However, for large complex software systems, it is also important to verify system constraints such as backward compatibility, performance, security, usability and so on. Complex systems are often developed by thousands of engineers that simultaneously apply code changes, which may interfere with each other. In such environments, testing may be seen as an insurance process verifying that the software product complies with all necessary system constraints at all times (or at least at the time of release). By nature, system and compliance tests are complex and typically time-consuming even though they relatively rarely find a bug--and still, you want to run those tests as each of these rare failures can cause expensive defects when released to customers.
+
+##The rise of test data analytics
+Until recently, the number of empirical studies on test data was very limited and most of the anlyses concentrated on test selection and prioritization at unit level or on guiding test generation. 
+Nowadays, development teams are interested in making sigfnificant improvement on development speed that enables them to release software faster. Shorter release cycles may have many benefits but also force the verification process to be substantially different. The time spend on verification is a lower bound on how fast we can ship software. Thus, cutting down verification time implies faster development. At the same time, product quality must be maintained or increased. To achieve this, we often can't afford executing the full complement of tests. We need to think of testing as a risk management tool: select the right tests for the right changes and we need to ensure that the test we are executing are highly effective and highly reliable. The basic assumption behind most test optimization and test selection approaches is that for given scenarios, not all tests are equally well suited. Some tests might be more effective than others might. However, deciding the effectiveness of tests and when to execute them is not trivial.
+
+##Testing for different platforms
+One of the main reasons for cutting release cycles is the race to market: having more features than the competitor means maintaining or increasing market share. For the very same reason, software is getting more complex running on millions of configuration and different platforms, and this  number of configurations is still rising. Modern software systems are usually deployed as on premise products, for example: traditional Office installation on a PC, and as services: Office 365 in your browser. this implies the need to verify software for different machine architectures, languages, cultures, build types, and form factors. Emulating these configurations requires complex test infrastructures and procedures that are expensive to run in terms of cost and time.
+
+##Testing might be automated, failure inspections are not
+Like source code, test code has a history as it evolves over time. New tests get added, older test might get less important or even deprecated (but not removed as the test might be still useful). For products with some history, some of the older tests may not be "owned" by anybody anymore. These tests can impact development speed especially when they fail. Verification time also heavily depend on the number of test failures. Most test failures require human effort to inspect and to fix the underlying issue. 
+
+##Test Reliability and Effectiveness
+
+##The Art of Testing Less
+
+##In Summary
