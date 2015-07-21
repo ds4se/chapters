@@ -19,18 +19,18 @@ As an example, assuming that we have an Excel spreadsheet, which contains the Ap
 Year	Team	Category	 Country  Sales
 2010	TeamA	Game	     US      0.5M
 2010	TeamC	Game	     China   0.5M
-2010	TeamA	Education	US      0.1M
-2011	TeamC	Education	China   0.4M
+2010	TeamA	Education	  US      0.1M
+2011	TeamC	Education	  China   0.4M
 2011	TeamB	Game	     US	     0.3M
-2011	TeamB	Education	China	  0.2M
+2011	TeamB	Education	  China	  0.2M
 ```
 
-In MetroEyes, users can perform data exploration through direct manipulation of the visual objects. Say the users want to explore the sales of TeamA. As illustrated in Figure 1, users can directly select the TeamA bar from the bar chart representing contribution of each team to Sales, and drag and drop it into the canvas. The tool can then extract from the data source the App sales data contributed by TeamA, and display it in a new bar chart. This data operation selects a dimension value (Team = TeamA) and finds out its App sales, which is equivalent to the SQL query: SELECT Sales, Team FROM AppSales WHERE Team="TeamA". Note that each bar in the bar chart is a visual object, which can be touched and moved around. Furthermore, each bar represents the percentage of sales each team contributes (e.g., the TeamA bar indicates the percentage of the sales of the team A). The visual operations over the object have semantic meanings and correspond to certain data operations.
-
+In MetroEyes, users can perform data exploration through direct manipulation of the visual objects. Say the users want to explore the sales of TeamA. As illustrated in the figure below, users can directly select the TeamA bar from the bar chart representing contribution of each team to Sales, and drag and drop it into the canvas. The tool can then extract from the data source the App sales data contributed by TeamA, and display it in a new bar chart. This data operation selects a dimension value (Team = TeamA) and finds out its App sales, which is equivalent to the SQL query: SELECT Sales, Team FROM AppSales WHERE Team="TeamA". Note that each bar in the bar chart is a visual object, which can be touched and moved around. Furthermore, each bar represents the percentage of sales each team contributes (e.g., the TeamA bar indicates the percentage of the sales of the team A). The visual operations over the object have semantic meanings and correspond to certain data operations.
 ![Figure 1. Data exploration using MetroEyes](MetroEyes1.png "Figure 1. Data exploration using MetroEyes (a) ") 
+
+As another example, say users want to explore the sales data by Team and Category. As illustrated in the figure below, users can firstly select the Team dimension and drop it into the canvas. MetroEyes extracts the team data from the data source, and displays a chart that contains the App sales data broken down by Team. Users can then select the Category dimension and drop it to the chart. Finally, MetroEyes displays a chart that shows the Team’s sale data, broken down by category. This data operation explores data along multiple dimensions (in this case, the Team and Category dimensions), which is equivalent to the SQL query: SELECT Sales, Team, Category FROM AppSales. 
 ![Figure 2. Data exploration using MetroEyes](MetroEyes2.png "Figure 2. Data exploration using MetroEyes (b) ")
 
-As another example, say users want to explore the sales data by Team and Category. As illustrated in Figure 2, users can firstly select the Team dimension and drop it into the canvas. MetroEyes extracts the team data from the data source, and displays a chart that contains the App sales data broken down by Team. Users can then select the Category dimension and drop it to the chart. Finally, MetroEyes displays a chart that shows the Team’s sale data, broken down by category. This data operation explores data along multiple dimensions (in this case, the Team and Category dimensions), which is equivalent to the SQL query: SELECT Sales, Team, Category FROM AppSales. 
 MetroEyes also enables changes from one data visualization format to another, and supports different types of data exploration tasks such as filtering and sorting. For example, data can be sorted through the use of gestures, as illustrated in Figure 3.
 
 ![Figure 3. The gesture for sorting in MetroEyes](MetroEyes3.png "Figure 3. The gesture for sorting in MetroEyes")
