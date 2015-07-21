@@ -1,5 +1,6 @@
 #Democratizing Data Analysis in Software Engineering
 Zhitao Hou, Hongyu Zhang, Haidong Zhang, Dongmei Zhang
+
 Microsoft Research, Beijing, China
 {zhith, honzhang, haizhang, dongmeiz}@microsoft.com
  
@@ -11,8 +12,9 @@ Many methods can be designed to democratize data analysis in software engineerin
 
 The Software Analytics group at Microsoft Research Asia developed a visual analytics tool called MetroEyes. In MetroEyes, data is represented as visual objects such as a slice in a pie chart, a bar in a bar chart, or a series legend in a line chart, etc. MetroEyes provides interactive graphical interface that enables users to directly click/touch/move all these objects. The visual objects can also be composed to form a new chart. MetroEyes is able to interpret the intentions of the visual operations, extract corresponding data from data source, and create a new chart. 
 
-As an example, assuming that we have an Excel spreadsheet, which contains the App sales data of a multinational software corporation. The corporation has three product teams (code named TeamA, TeamB, and TeamC) developing Game and Education Apps. The data includes yearly App sales in different counties, along with the detailed sales of different teams and categories. There are five columns (°∞Year°±, °∞Team°±, °∞Category°±, °∞Country°±, °∞Sales°±) in the spreadsheet. Some sample records are shown in the table below. 
+As an example, assuming that we have an Excel spreadsheet, which contains the App sales data of a multinational software corporation. The corporation has three product teams (code named TeamA, TeamB, and TeamC) developing Game and Education Apps. The data includes yearly App sales in different counties, along with the detailed sales of different teams and categories. There are five columns (‚ÄúYear‚Äù, ‚ÄúTeam‚Äù, ‚ÄúCategory‚Äù, ‚ÄúCountry‚Äù, ‚ÄúSales‚Äù) in the spreadsheet. Some sample records are shown in the table below. 
 
+```
 Year	Team	Category	Country	Sales
 2010	TeamA	Game	US	0.5M
 2010	TeamC	Game	China	0.5M
@@ -20,11 +22,12 @@ Year	Team	Category	Country	Sales
 2011	TeamC	Education	China	0.4M
 2011	TeamB	Game	US	0.3M
 2011	TeamB	Education	China	0.2M
+```
 
 In MetroEyes, users can perform data exploration through direct manipulation of the visual objects. Say the users want to explore the sales of TeamA. As illustrated in Figure 1(a), users can directly select the TeamA bar from the bar chart representing contribution of each team to Sales, and drag and drop it into the canvas. The tool can then extract from the data source the App sales data contributed by TeamA, and display it in a new bar chart. This data operation selects a dimension value (Team = TeamA) and finds out its App sales, which is equivalent to the SQL query: SELECT Sales, Team FROM AppSales WHERE Team="TeamA". Note that each bar in the bar chart is a visual object, which can be touched and moved around. Furthermore, each bar represents the percentage of sales each team contributes (e.g., the TeamA bar indicates the percentage of the sales of the team A). The visual operations over the object have semantic meanings and correspond to certain data operations.
 
 
-As another example, say users want to explore the sales data by Team and Category. As illustrated in Figure 1(b), users can firstly select the Team dimension and drop it into the canvas. MetroEyes extracts the team data from the data source, and displays a chart that contains the App sales data broken down by Team. Users can then select the Category dimension and drop it to the chart. Finally, MetroEyes displays a chart that shows the Team°Øs sale data, broken down by category. This data operation explores data along multiple dimensions (in this case, the Team and Category dimensions), which is equivalent to the SQL query: SELECT Sales, Team, Category FROM AppSales. 
+As another example, say users want to explore the sales data by Team and Category. As illustrated in Figure 1(b), users can firstly select the Team dimension and drop it into the canvas. MetroEyes extracts the team data from the data source, and displays a chart that contains the App sales data broken down by Team. Users can then select the Category dimension and drop it to the chart. Finally, MetroEyes displays a chart that shows the Team‚Äôs sale data, broken down by category. This data operation explores data along multiple dimensions (in this case, the Team and Category dimensions), which is equivalent to the SQL query: SELECT Sales, Team, Category FROM AppSales. 
 MetroEyes also enables changes from one data visualization format to another, and supports different types of data exploration tasks such as filtering and sorting. For example, data can be sorted through the use of gestures, as illustrated in Figure 2.
 
 When using MetroEyes to explore SE data, users do not need to write SQL queries or programs by themselves, and they need little prior knowledge on data analysis. What they need to do is to decide what data they want, and simply conduct direct manipulation over visual objects to obtain the data. Although the visual operations are very simple to perform, they are able to express rich semantics for data operations. Furthermore, users are able to view the graphical representation of the data at all times throughout the entire exploration process, which provides a much more intuitive understanding of the underlying data. 
