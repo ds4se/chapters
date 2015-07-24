@@ -1,5 +1,5 @@
 #The need for data analysis patterns
-(in software engineering)
+##(in software engineering)
 
 ##The remedy metaphor
 When you call a doctor, you would expect she comes with a handful set of remedies for your disease.  You would not be pleased to see her digging into a huge amount of clinical data while she searches a solution for your problem neither you would expect her to propose a cure based on your case alone.  The remedies she proposes are solutions to recurring problems that medical researchers discover by analysing data of patients with similar anamneses. Remedies are coded in a language that a doctor understands (e.g., they tell when and how to treat a patient) and lead to meaningful conclusions for patients with the same disease (e.g., they tell the probability the disease will be defeated and eventually with which consequences).  Once found, such solutions can be applied over and over again. With the repeated use of a solution, medical researchers can indeed gain knowledge on successes and failures of a remedy and provide meaningful conclusions to future patients thereafter.   
@@ -48,8 +48,8 @@ and the  key steps for the construction of  data analysis patterns will include 
 Reflecting on the current situation, we also see the need to code anti-patterns, i.e. what not to do in data analysis. Given the amount of evidence, this might be a much easier task!
 
 ##References
-——————————
-Christian Bird, Tim Menzies, and Thomas Zimmermann:  1st international workshop on data analysis patterns in software engineering (DAPSE 2013). In Proceedings of the 2013 International Conference on Software Engineering (ICSE '13). IEEE Press, Piscataway, NJ, USA, 1517-1518, 2013 [DASE2013] (https://www.conference-publishing.com/list.phpEvent=ICSEWS13DAPSE)
+
+Christian Bird, Tim Menzies, and Thomas Zimmermann:  1st international workshop on data analysis patterns in software engineering (DAPSE 2013). In Proceedings of the 2013 International Conference on Software Engineering (ICSE '13). IEEE Press, Piscataway, NJ, USA, 1517-1518, 2013 [DAPSE2013] (https://www.conference-publishing.com/list.php?Event=ICSEWS13DAPSE)
 
 Lampson Butler: A Critique of An Exploratory Investigation of Programmer Performance Under On-Line and Off-Line Conditions, IEEE Trans. Human Factors in Electronics HFE-8, 1, pp 48-51, 1967 
 
