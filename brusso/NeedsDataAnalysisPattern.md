@@ -40,7 +40,7 @@ A  data analysis pattern shall be:
 - actionable
 - successful at a certain degree. 
 
-and the  key steps for the construction of  data analysis patterns will include but not restricted to:
+and the  key steps for the construction of  data analysis patterns will include but be not restricted to:
 - Mining literature to extract candidate solutions
 - Identifying a common language to express a solution in a form that software engineers can easily understand and re-use. For instance, we can think of annotated UML or algorithm notation expressing the logic of the analysis
 - Defining a measure of success for a solution 
