@@ -2,7 +2,7 @@
 # Working title: Visualizing data is important
 # Suggested title: Visualize often and double check
 
-Visualization is a powerful tool.  It can play a crucial role when it comes to generating hypotheses or presenting results. Visualization should become an integral part of your analysis process. You can use it to clean the data before the actual analysis. During the analysis it can help you to see the unexpected and to generate hypotheses for further analysis. Finally, you can present your results to others and combine different kinds of visualizations to tell a story about your data.
+Visualization is a powerful tool.  It can play a crucial role when it comes to generating hypotheses or presenting results. Visualization should become an integral part of your analysis process. You can use it to clean the data before the actual analysis. During the analysis it can help you to see the unexpected and to generate hypotheses for further analysis. Finally, you can combine different kinds of visualizations to tell a story about your data and present your findings to others.
 
 ## Some examples? 
 
