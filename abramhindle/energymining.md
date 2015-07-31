@@ -90,9 +90,13 @@ consider when measuring software energy consumption:
   or the cost of continuous execution (a service)?
 * Repeat -- 1 run is not enough, we need to run our tests multiple
   times to deal with background noise.
-* Granularity -- how often do we measure, and what level of measurement?
-* Instrumentation -- there's a balance between representative
+* Granularity -- how often do we measure, and what level of
+  measurement?
+  There's a balance between representative
   performance and invasive instrumentation.
+* Idle -- many applications and service have idle operation, this
+  operation is often ignored in tests, yet is valuable as it shows the
+  difference between idling and executing tasks.
 * Statistics -- if we repeat measures we need to compute
   statistics. How do we evaluate changes?
 * Exceptions -- errors happen, how do we deal with them or notice them?
@@ -125,7 +129,68 @@ versions of the software are measured.
 
 ### Energy or Power
 
-Does your task under
+Energy is the cost of work or the capacity to do work, energy is
+typically measured in joules (J). Power is the rate of energy
+consumption, measured in watts (W) where 1 W = 1 Js (1 watt is 1 joule
+second). Wattage also equals to voltage times amperage (W=VI).
+Energy is essentially power integrated. But when we measure
+energy consumption or power we have to decide which measure is more
+important.
+
+When you measure a task that a system executes, ask your system, does
+this task have a clear beginning or end? Does this task continuously
+run? If the task has a clear beginning and end then measuring the
+energy, the workload's cost, consumed during that task makes more
+sense than the power or average power of the test. Where as a
+continuous running task or service might be better measured as the
+power, the rate of work done. Mean-watts are also useful when speaking
+about tasks that are being compared that have the same runtime.
+
+### Repeat!
+
+While we already recommended measuring multiple versions of software,
+something even more important is to repeat your measurements. Modern
+computers are very noisey and active systems with lots of background
+processes and lots of state. They have many peripherals and
+services. It is hard to guarantee what tasks are executing on a modern
+system and what the current environment is like. If you're running a
+test using WIFI your own cellphone could affect the
+experiment. Furthermore we're measuring physical phenomena: energy
+consumption. Our measurement equipment, our testbeds, or energy
+measurement devices all have error in them, error is inherent in
+physical measurement thus we need to take multiple measurements so we
+can rely upon statistics to give us a more clear picture of what we
+measured.
+
+### Granularity
+
+When designing a energy consumption test one has to choose the level
+of granularity. Do you want to measure method calls, system calls, CPU
+use, memory use, processes, etc.? What frequency of measurement do you
+need and you can your measurement equipment report that. Many
+measurement devices and chips, such as the Watts Up? Pro device, are
+sampling at thousands of times per second, integrating the results and
+reporting back to you. But if you only have 1 second of granularity
+you won't be measuring the cost of a method call unless you repeatedly
+and expressly benchmark that method call, regardless of the realism of
+that scenario. Granularity is important because it might induce
+overhead. If you need method call level measurements, the
+instrumentation overhead will be high.
+
+Another issue with granularity is if you measure just a single process
+or component or whether you measure the whole system. An example
+scenario is if you asked the soundcard to play a sound for 1
+second. The request to play a sound might return in 1ms to the
+process, for the next second the OS, the sound card driver and sound
+card will be interacting, playing the requested 1 second of audio. If
+we measure at the process level we miss the induced cost on the system
+of the software, the software commanded work but we are not measuring
+that work. If we measure at the entire system level we will be
+including a lot of other processes and drivers that will be
+irrelevant.
+
+### Idle
+
 
 
 ## In Summary
@@ -139,51 +204,3 @@ Does your task under
 ## References
 
 
-
-<!--
-   
-   * G for granularity
-   * V for Versions  not all software reacts the same way
-   * E for Equality of testing  make an even playing field for tests.
-   * R for Repeat measurements
-   * E for Errors, they occur, watch out.
-   * O for 
-   * L for
-   
-   * I
-   * N
-   * D
-   * U
-   * C
-   * E
-   
-   * V for version
-   * O for oracle order 
-   * L for level playing field
-   * T for tests
-   * A for accuracy? or average
-   * G for granularity
-   * E for Exception
-   
-   * A Average/Accuracy
-   * M multiple times/versions
-   * P Prepare? 
-   * E equality
-   * R repeat
-   * E Exception
-   
-   * E exception
-   * N N-versions
-   * E Environment
-   * R repeat?
-   * G Granularity
-   * Y et again
-   
-   * G - granularity
-   * R - Repeat
-   * O - Oracle? Order?
-   * V - version
-   * E - Equality/Errors
-   * L - level playing field
-   
--->
