@@ -36,7 +36,7 @@ us to measure them.
 ## Example
 
 Shaiful Chowdhury came into the lab and proclaimed, "HTTP2.0 has
-signifcantly better energy performance than HTTP1.1!"  "That's
+significantly better energy performance than HTTP1.1!"  "That's
 excellent," I exclaimed. "Do you know why?" I asked.
 
 The next week Shaiful came back to the lab and said, "I think I was
