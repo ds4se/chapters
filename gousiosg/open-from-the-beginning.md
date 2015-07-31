@@ -102,7 +102,7 @@ of a subset of GHTorrent, so researchers could have just used this and
 ignored GHTorrent altogether.
 
 * _The not invented here syndrome_: Researchers (and, to a lesser extend,
-* practitioners) are very reluctant to use each other's code. This is not
+practitioners) are very reluctant to use each other's code. This is not
 entirely unfounded: code, especially research code, is very prone to have issues
 that may be hard to debug. Researchers also know that dealing with
 inconsistencies in data is even worse; still, they flocked on GHTorrent.
