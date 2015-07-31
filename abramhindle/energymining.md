@@ -2,12 +2,6 @@
 
 ## Story
 
-- Shaiful story
-- measure HTTP versus HTTP2
-- Significant difference between HTTP and HTTP2
-- But a counter example showed up
-- CPU State mattered
-
 There once was an analyst who enjoyed donuts. The analyst frequented a
 shop that sold fresh donuts, fried on demand.  The analyst looked at
 french creullers donuts and then at the french crueller donut holes
@@ -35,7 +29,7 @@ us to measure them.
 
 ## Example
 
-Shaiful Chowdhury came into the lab and proclaimed, "HTTP2.0 has
+Shaiful Chowdhury [#chowdhury2015] came into the lab and proclaimed, "HTTP2.0 has
 significantly better energy performance than HTTP1.1!"  "That's
 excellent," I exclaimed. "Do you know why?" I asked.
 
@@ -65,7 +59,7 @@ different state than the HTTP/2.0 tests.
 This is one of many perils one faces when engaged in Green Mining,
 energy-aware mining, and software energy consumption measurement.
 
-## What to watch for.
+## What to watch for
 
 The most difficult aspect of measuring and mining software energy
 consumption is to juggle all of the confounds and potential threats to
@@ -75,6 +69,8 @@ The first question any software energy miner should ask themselves is
 "What am I actually measuring?".  This directly relates to construct
 validity. Can we form a test or benchmark that will allow us to
 compare energy consumption of the attribute or issue in question?
+
+<!-- green mining methodology -->
 
 <!-- AH: Mention task under test -->
 
@@ -119,7 +115,7 @@ energy consumption to determine the impact of changing the code we
 should measure the system before the modification to allow for
 comparison.
 
-[Green Mining]{#greenmining} studies the evolution of an applications
+[Green Mining]{#hindle2012} studies the evolution of an applications
 energy profile, how much energy it consumes per task over different
 versions of the software. Our work in Green Mining has shown that
 software does indeed change in energy performance over time and
@@ -191,10 +187,44 @@ irrelevant.
 
 ### Idle
 
+Not all applications or tasks have idle behaviour. Many programs run
+until their task is complete and then exit, but many user facing
+applications and services run continuously or intermittently in the
+foreground or background. What programs do when they aren't in direct
+use is important because usually their idle operation is a waste of
+resources. Unless work is being executed during idle time, most
+applications that consume energy with no input as being wasteful. A
+good process can stay asleep until it receives input. The operating
+system's scheduler is very good at sleeping and waking processes.
 
+Furthermore it is important to understand what the baseline energy
+consumption for an application is. If executing tasks and idleness use
+the same amount of energy perhaps the idle components can be optimized
+to use less energy. From an analysts perspective have statistics on
+idle consumption is useful during analysis to determine what impact
+changes might have on implementation of non-functional requirements.
+
+### Exceptions
+
+To err is human and to throw uncaught exceptions is to execute
+code. Mobile devices and modern computers still suffer from crashing
+software and your tests can suffer from crashes as well. Exceptions
+happen, core dumps occur, sometimes apps decide to update, sometimes
+the network goes down. Sometimes a remote site goes down. Regardless
+exceptions occur and must be identified and dealt with. Sometimes the
+software is just inherently buggy and only 1/2 of the test runs will
+complete. When developing tests one should instrument the tests with
+screenshot capabilities such that you know what is actually running at
+the time. Furthermore all outliers should be investigated and
+potentially re-run. Weird things can happen and if your analysis is
+saying two sets of runs are different, hopefully it wasn't the errors!
 
 ## In Summary
- 
+
+In summary, there are many confound that one faces when measuring
+software energy consumption. Thus remember to ENERGISE your software
+energy consumption measurement and mining and exploit powerful
+statistics through repeated measurement.
  
 ## Footnotes
 
@@ -203,4 +233,11 @@ irrelevant.
 
 ## References
 
+[chowdhury2015]{#chowdhury2015} Shaiful Alam Chowdhury, Varun Sapra ,
+and Abram Hindle.  "Is HTTP/2 More Energy Efficient Than HTTP/1.1 for
+Mobile Users?" , PeerJ Preprints, 2015.
 
+[hindle2012]{#hindle2012} Hindle, Abram. "Green mining: A methodology
+of relating software change to power consumption." In Proceedings of
+the 9th IEEE Working Conference on Mining Software Repositories,
+pp. 78-87. IEEE Press, 2012.
