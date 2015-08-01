@@ -1,6 +1,6 @@
 # The Perils of Energy Mining: Measure a Bunch, Compare just Once
 
-## A Story
+## A Tale of TWO HTTPs
 
 Shaiful Chowdhury [[Chowdhury2015](#Chowdhury2015)] came into the lab
 and proclaimed, "HTTP/2.0 has significantly better energy performance
@@ -11,11 +11,11 @@ wrong, I don't think there's a difference." He went on to explain that
 he was happy with the results of the first experiment but something
 was bothering him.
 
-To test HTTP/1.1 in Firefox he had to disable HTTP/2.0 in settings,
+To test HTTP/1.1 in Firefox he had to disable HTTP/2.0 in Firefox's settings,
 thus his energy consumption test of Firefox for HTTP/1.1 had to do
 more work than his HTTP/2.0 tests.  He investigated the CPU state of
 the HTTP/2.0 and HTTP/1.1 tests and found that the rigorous button
-pushing to disable HTTP/2.0 in the settings put the CPU into a higher
+pushing to disable HTTP/2.0 put the CPU into a higher
 state: high frequency, and more voltage.  Thus the CPU state for the
 HTTP/1.1 started higher and was consuming more than the HTTP/2.0
 tests.
@@ -23,15 +23,15 @@ tests.
 Shaiful's solution was to inject some idle time into the HTTP/1.1
 test, allowing the CPU to lower its state.  He then ensured via manual
 inspection that the idle did drop down the CPU state.  Afterwards both
-tests produced results that were comparable, turns out on a fast
+tests produced results that were comparable; it turns out on a fast
 network there's not much difference between HTTP/1.1 and HTTP/2.0.
 
-We almost suffered from an attribution error, the change in energy
-consumption was not caused by HTTP/1.1 or HTTP/2.0 code in Firefox,
-but it was caused by our HTTP/1.1 test inducing the CPU to have a
-different state than the HTTP/2.0 tests.  This is just one of many
-perils one faces when engaged in Green Mining, energy-aware mining,
-and software energy consumption measurement.
+Construct validity almost suffered from an attribution error, the
+change in energy consumption was not caused by HTTP/1.1 or HTTP/2.0
+code in Firefox, but it was caused by our HTTP/1.1 test inducing the
+CPU to have a different state than the HTTP/2.0 tests. This is just
+one of many perils one faces when engaged in Green Mining,
+energy-aware mining, and software energy consumption measurement.
 
 ## What to watch for
 
