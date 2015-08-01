@@ -136,20 +136,18 @@ give us a more clear picture of what we measured.
 ### Granularity
 
 When designing a energy consumption test one has to choose the level
-of granularity.  Do you want to measure method calls, system calls, CPU
-use, memory use, processes, etc.? What frequency of measurement do you
-need and you can your measurement equipment report that.  Many
-measurement devices and chips, such as the Watts Up? Pro device, are
-sampling at thousands of times per second, integrating the results and
-reporting back to you.  But if you only have 1 second of granularity
-you won't be measuring the cost of a method call unless you repeatedly
-and expressly benchmark that method call, regardless of the realism of
-that scenario.  Granularity is important because it might induce
-overhead.  If you need method call level measurements, the
-instrumentation overhead will be high.
+of granularity. Do you want to measure method calls, system calls, CPU
+use, memory use, processes, etc. and at what frequency? Many
+measurement devices and ICs, such as the Watts Up? Pro device or the
+TI INA-219 IC, are sampling at thousands of times per second,
+integrating the results and reporting back to you at a fraction of
+that rate. If you only have 1 second of granularity from a Watts Up?
+Pro you won't be measuring the cost of a method call unless make a
+benchmark that repeatedly calls it. But if you need method call level
+measurements, the instrumentation overhead will be high.
 
-Another issue with granularity is if you measure just a single process
-or component or whether you measure the whole system.  An example
+Granularity is a concern if you measure just a single process
+or component or if you measure the whole system.  An example
 scenario is if you asked the soundcard to play a sound for 1
 second.  The request to play a sound might return in 1ms to the
 process, for the next second the OS, the sound card driver and sound
@@ -162,62 +160,57 @@ irrelevant.
 
 ### Idle Measurement
 
-Not all applications or tasks have idle behaviour.  Many programs run
-until their task is complete and then exit, but many user facing
-applications and services run continuously or intermittently in the
-foreground or background.  What programs do when they aren't in direct
-use is important because usually their idle operation is a waste of
-resources.  Unless work is being executed during idle time, most
-applications that consume energy with no input as being wasteful.  A
-good process can stay asleep until it receives input.  The operating
-system's scheduler is very good at sleeping and waking processes.
+Not all applications or tasks have idle behaviour, but many user
+facing applications and services run continuously or intermittently in
+the foreground or background. What programs do when they aren't in
+direct use is important because usually their idle operation is a
+often waste of resource, unless work is being executed during idle
+time. An efficient process can stay asleep until it receives input.
+The operating system's scheduler is very good at sleeping and waking
+processes.
 
-Furthermore it is important to understand what the baseline energy
-consumption for an application is.  If executing tasks and idleness use
-the same amount of energy perhaps the idle components can be optimized
-to use less energy.  From an analysts perspective have statistics on
-idle consumption is useful during analysis to determine what impact
+Idle use often characterizes baseline energy consumption for an
+application is. If executing tasks and idleness use the same amount of
+energy perhaps the idle components can be optimized to use less
+energy. Measuring idle consumption is useful to determine what impact
 changes might have on implementation of non-functional requirements.
 
 ### Statistical Analysis
 
-Repeat measurements cause 1 problem, there is no longer 1 measurement,
-there are many.  Thus summary statistics must be employed to describe
-the distribution of measurements.  There is one saving grace, energy
-measurements are of physical phenomena and the Normal (or Gaussian)
-distribution works quite well to model natural measurements and
-natural errors in measurement.  Thus the variance and mean are two
-reasonable descriptors of our multiple runs.  Furthermore the central
-limit theorm states that means of means tend to be a normal
-distribution.  Thus we can assume normal distributions while measuring
-energy for 1 system and we can use tests, such as Student's T-test to
-compare two distributions of measurements to see if they are
-statistically significantly different.  Without tools such as T-test we
-would not have much confidence to determine if distribution's were
-different or not based on random chance.
+Repeat measurements cause many problems: there is no longer 1
+measurement, there are many. Thus summary statistics can be employed
+to describe the distribution of measurements. There is one saving
+grace, energy measurements are of physical phenomena and the Normal
+(or Gaussian) distribution often model the errors within natural
+measurements well. Thus the variance and mean are two reasonable
+descriptors of our multiple runs. This means we can use parametric
+tests such as the Student's T-test to compare two distributions of
+measurements to see if they are statistically significantly different.
+Without statistical tools such as the T-test we would not have much
+confidence to determine if distribution's were different or not based
+on random chance.
 
 
 ### Exceptions
 
 To err is human and to throw uncaught exceptions is to execute code.
 Mobile devices and modern computers still suffer from crashing
-software and your tests can suffer from crashes as well.  Exceptions
-happen, core dumps occur, sometimes apps decide to update, sometimes
-the network goes down.  Sometimes a remote site goes down.  Regardless
-exceptions occur and must be identified and dealt with.  Sometimes the
-software is just inherently buggy and only 1/2 of the test runs will
-complete.  When developing tests one should instrument the tests with
-screenshot capabilities such that you know what is actually running at
-the time.  Furthermore all outliers should be investigated and
-potentially re-run.  Weird things can happen and if your analysis is
-saying two sets of runs are different, hopefully it wasn't the errors!
+software. Exceptions happen, core dumps occur, sometimes apps decide
+to update, sometimes the network goes down, sometimes a remote site
+goes down. Often the software under test is just inherently buggy and
+only 1/2 of the test runs will complete. When developing tests one
+should instrument the tests with auditing capabilities such as
+screenshots to enable postmortem investigations. Furthermore 
+outliers should be investigated and potentially re-run.
+You wouldn't want to attribute a difference in energy consumption to
+an erroneous test.
 
 ## Summary
 
 In summary, there are many confounds that one faces when measuring
-software energy consumption.  First and foremost, energy consumption is
+software energy consumption. First and foremost, energy consumption is
 a physical process and energy consumption measurement requires
-repeated measurement and statistical analysis.  Thus remember and use
+repeated measurement and statistical analysis. Thus remember and use
 [ENERGISE](#ENERGISE) mnemonic to help evaluate energy measurement
 scenarios: environment, N-versions, energy or power, repeated
 measurement, granularity, idle measurement, statistical analysis, and
