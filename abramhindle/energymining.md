@@ -1,60 +1,63 @@
-# The Perils of Energy Mining
+# Measure a bunch, Compare Once: Perils of Energy Mining
 
 ## Story
 
-There once was an analyst who enjoyed donuts. The analyst frequented a
-shop that sold fresh donuts, fried on demand.  The analyst looked at
-french creullers donuts and then at the french crueller donut holes
-(the middle part of the donut punched out).  THe analyst reasoned that
-donut holes would be faster to produce than full donuts, because they
-required less time to fry in the oil.  The analyst then concocted an
-experiment where they would order donut holes and time it, followed by
-ordering donuts and timing it.  The first week the analyst found that
-donut holes took 5 minutes but donuts took 1 minute. This puzzled the
-analyst who's theory seemingly was disproved.  The next week the
-analyst repeated this experiment in the opposite order, ordering
-donuts first and donut holes last. The donuts took 5 minutes and the
-donut holes took 1 minute.  This greatly confused the analyst who
-asked the donut maker why the times were different depending on the
-order. The donut maker said that when someone orders donuts, donut
-holes are made at the same time. And when donut holes are made, donuts
-are made at the same time. Donuts and donut holes took the same time,
-it was the customer request that changed.  Thus the analysts test
-relied on an assumption that making donut holes and donuts was
-independent, but it was his testing and observation that induced the
-creation of both.  When measuring the energy consumption of software
-we have to mind our assumptions and we should be very concerned about
-what happens when we ask the system to execute our tests in order for
-us to measure them.
+There once was a donut enthusiast who frequented a donut shop that
+fried their own donuts on demand. You could buy donuts and donut
+holes, smaller donuts shaped like the hole portion of torodiol donuts.
+The enthusiast reasoned that donut holes were faster to make because
+they were smaller and thus needed less heat to fry. The enthusiast
+designed an experiment to prove this notion: order donuts and time the
+order, then order donut holes and time the order. The enthusiast
+visited the donut shop and ordered french crueller donuts, which took
+5 minutes, and french crueller donut holes, which took 1 minute. The
+enthusiast was elated, but doubt set in. The enthusiast repeated the
+experiment a few times and the results were the same. The next week
+the enthusiast tried something else, the enthusiast visited the donut
+shop and ordered french crueller donut holes, which took 5 minutes,
+and then ordered french crueller donuts, which took 1 minute. The
+enthusiast was baffled and asked the donut maker why? The donut maker
+explained that donuts and donut holes were fried at the same time from
+the same dough, the minute delay between each order was to find the
+right sized box.
+
+The enthusiast assumed that creating donuts and donut holes was
+independent, but in fact these orders were not independent to the
+donut maker. When measuring software energy consumption one has to be
+careful to set up tests appropriately in order to measure the
+behaviour being tested.
 
 ## Example
 
-Shaiful Chowdhury [#chowdhury2015] came into the lab and proclaimed, "HTTP2.0 has
-significantly better energy performance than HTTP1.1!"  "That's
-excellent," I exclaimed. "Do you know why?" I asked.
+Shaiful Chowdhury [#chowdhury2015] came into the lab and proclaimed,
+"HTTP2.0 has significantly better energy performance than HTTP1.1!"
+"That's excellent," I exclaimed. "Do you know why?" I asked.
 
 The next week Shaiful came back to the lab and said, "I think I was
-wrong, I don't think there's a difference."  He went on to explain
-that he was happy with the results of the first experiment but
-something was bothering him.  To test HTTP/1.1 in Firefox he had to
-open an about:config in Firefox and disable it. His energy consumption
-test of firefox for HTTP/1.1 had to do more work than his HTTP/2.0
-tests. His HTTP/2.0 tests did not need to disable HTTP/2.0 features in
-Firefox while his HTTP/1.1 test did. He investigated the CPU state of
-the HTTP/2.0 and HTTP/1.1 tests and found tjhat the rigourous button
+wrong, I don't think there's a difference." He went on to explain that
+he was happy with the results of the first experiment but something
+was bothering him. To test HTTP/1.1 in Firefox he had to open an
+about:config in Firefox and disable it. His energy consumption test of
+firefox for HTTP/1.1 had to do more work than his HTTP/2.0 tests. His
+HTTP/2.0 tests did not need to disable HTTP/2.0 features in Firefox
+while his HTTP/1.1 test did. He investigated the CPU state of the
+HTTP/2.0 and HTTP/1.1 tests and found that the rigourous button
 pushing to change settings in the HTTP/1.1 test put the CPU into a
-higher state (high frequency, more voltage).  This in turn meant that
+higher state (high frequency, more voltage). This in turn meant that
 when the HTTP/1.1 requests were made the CPU was already consuming
-more energy than in teh HTTP/2.0 tests.  In fact the HTTP/2.0 were
+more energy than in teh HTTP/2.0 tests. In fact the HTTP/2.0 were
 unlikely to reach the higher CPU state because the inputs for both
 tests were quite sparse.
 
-<!-- describe solution -->
+The solution was to inject some idle time into the HTTP/1.1 to bring
+the CPU back down to the lower state. Then via manual ensure that this
+idle time did its job. Afterwards both tests produced results that
+were comparable.
 
 We almost suffered from an attribution error, the change in energy
-consumption was not cuased by HTTP/1.1 or HTTP/2.0 code in Firefox.
-It was caused by our HTTP/1.1 test inducing the CPU to have a
-different state than the HTTP/2.0 tests.
+consumption was not cuased by HTTP/1.1 or HTTP/2.0 code in Firefox. It
+was caused by our HTTP/1.1 test inducing the CPU to have a different
+state than the HTTP/2.0 tests.
 
 This is one of many perils one faces when engaged in Green Mining,
 energy-aware mining, and software energy consumption measurement.
@@ -185,7 +188,7 @@ that work. If we measure at the entire system level we will be
 including a lot of other processes and drivers that will be
 irrelevant.
 
-### Idle
+### Idle Measurement
 
 Not all applications or tasks have idle behaviour. Many programs run
 until their task is complete and then exit, but many user facing
@@ -204,6 +207,24 @@ to use less energy. From an analysts perspective have statistics on
 idle consumption is useful during analysis to determine what impact
 changes might have on implementation of non-functional requirements.
 
+### Statistical Analysis
+
+Repeat measurements cause 1 problem, there is no longer 1 measurement,
+there are many. Thus summary statistics must be employed to describe
+the distribution of measurements. There is one saving grace, energy
+measurements are of physical phenomena and the Normal (or Gaussian)
+distribution works quite well to model natural measurements and
+natural errors in measurement. Thus the variance and mean are two
+reasonable descriptors of our multiple runs. Furthermore the central
+limit theorm states that means of means tend to be a normal
+distribution. Thus we can assume normal distributions while measuring
+energy for 1 system and we can use tests, such as Student's T-test to
+compare two distributions of measurements to see if they are
+statistically significantly different. Without tools such as T-test we
+would not have much confidence to determine if distribution's were
+different or not based on random chance.
+
+
 ### Exceptions
 
 To err is human and to throw uncaught exceptions is to execute
@@ -219,12 +240,17 @@ the time. Furthermore all outliers should be investigated and
 potentially re-run. Weird things can happen and if your analysis is
 saying two sets of runs are different, hopefully it wasn't the errors!
 
-## In Summary
+## Summary
 
-In summary, there are many confound that one faces when measuring
-software energy consumption. Thus remember to ENERGISE your software
-energy consumption measurement and mining and exploit powerful
-statistics through repeated measurement.
+In summary, there are many confounds that one faces when measuring
+software energy consumption. First and foremost, energy consumption is
+a physical process and energy consumption measurement requires
+repeated measurement and statistical analysis. Thus remember and use
+ENERGISE mnemonic to help evaluate energy measurement scenarios:
+environment, N-versions, energy or power, repeated measurement,
+granularity, idle measurement, statistical analysis, and exceptions.
+
+
  
 ## Footnotes
 
