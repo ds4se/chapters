@@ -29,7 +29,7 @@ behaviour being tested.
 
 ## Example
 
-Shaiful Chowdhury [#chowdhury2015] came into the lab and proclaimed,
+Shaiful Chowdhury [[chowdhury2015](#chowdhury2015)] came into the lab and proclaimed,
 "HTTP2.0 has significantly better energy performance than HTTP1.1!"
 "That's excellent," I exclaimed. "Do you know why?" I asked.
 
@@ -66,52 +66,50 @@ energy-aware mining, and software energy consumption measurement.
 
 The most difficult aspect of measuring and mining software energy
 consumption is to juggle all of the confounds and potential threats to
-validity one faces.
-
-The first question any software energy miner should ask themselves is
-"What am I actually measuring?".  This directly relates to construct
-validity. Can we form a test or benchmark that will allow us to
-compare energy consumption of the attribute or issue in question?
+validity one faces.The first 2 questions any software energy miner
+should ask themselves are "What do I want to measure?" and "What am I
+actually measuring?". Can we form a test or benchmark that will allow
+us to compare energy consumption of the task or program question?
 
 The task under test is the purpose of the test, do we want to measure
 performance under high load? Do we want to see the difference between
 versions for a certain function? The task and product need to be
 carefully chosen. Then one can follow a
-methodology[hindle2012]{#hindle2012} such as:
+methodology [[hindle2012](#hindle2012)] such as:
 
-* Choose a product and task to test;
-* Decide on granularity and level of instrumentation;
-* Choose which versions of the software to test;
-* Develop a test case for the task to be tested;
-* Configure the testbed environment to reduce background noise;
-* For each combination of version, task and configuration repeat multiple times:
-   * Setup the testbed
-   * Run the test
-   * Compile and store the recorded data
-   * Cleanup the testbed
-* Analyze and evaluate
+1. Choose a product and task to test;
+2. Decide on granularity and level of instrumentation;
+3. Choose which versions of the software to test;
+4. Develop a test case for the task to be tested;
+5. Configure the testbed environment to reduce background noise;
+6. For each combination of version, task and configuration repeat multiple times:
+   1. Setup the testbed
+   2. Run the test
+   3. Compile and store the recorded data
+   4. Cleanup the testbed
+7. Analyze and evaluate
 
 <!-- AH: using internal links as footnotes -->
-[ENERGISE]{#british} is a simple mnemonic checklist of issues that one should
+ENERGISE [1](#british) is a simple mnemonic checklist of issues that one should
 consider when measuring software energy consumption:
 
-* Environment -- prepare a testbed to allow for measurement.
-* N-versions -- run a test across more than 1 version of the software.
-* Energy or power -- do we care about total energy consumed for a
++ **Environment** -- prepare a testbed to allow for measurement.
++ **N-versions** -- run a test across more than 1 version of the software.
++ **Energy or** power -- do we care about total energy consumed for a
   task, like a function
   or the cost of continuous execution (a service)?
-* Repeat -- 1 run is not enough, we need to run our tests multiple
++ **Repeat** -- 1 run is not enough, we need to run our tests multiple
   times to deal with background noise.
-* Granularity -- how often do we measure, and what level of
++ **Granularity** -- how often do we measure, and what level of
   measurement?
   There's a balance between representative
   performance and invasive instrumentation.
-* Idle -- many applications and service have idle operation, this
++ **Idle** -- many applications and service have idle operation, this
   operation is often ignored in tests, yet is valuable as it shows the
   difference between idling and executing tasks.
-* Statistics -- if we repeat measures we need to compute
++ **Statistics** -- if we repeat measures we need to compute
   statistics. How do we evaluate changes?
-* Exceptions -- errors happen, how do we deal with them or notice them?
++ **Exceptions** -- errors happen, how do we deal with them or notice them?
 
 ### Environment
 
@@ -267,16 +265,17 @@ granularity, idle measurement, statistical analysis, and exceptions.
  
 ## Footnotes
 
-[British or Canadian spelling]{#british}
+<a id="british"></a> British or Canadian spelling.
 
 
 ## References
 
-[chowdhury2015]{#chowdhury2015} Shaiful Alam Chowdhury, Varun Sapra ,
+
+[chowdhury2015](#chowdhury2015) <a id="chowdhury2015"></a>  Shaiful Alam Chowdhury, Varun Sapra ,
 and Abram Hindle.  "Is HTTP/2 More Energy Efficient Than HTTP/1.1 for
 Mobile Users?" , PeerJ Preprints, 2015.
 
-[hindle2012]{#hindle2012} Hindle, Abram. "Green mining: A methodology
+[hindle2012](#hindle2012) <a id="hindle2012"></a> Hindle, Abram. "Green mining: A methodology
 of relating software change to power consumption." In Proceedings of
 the 9th IEEE Working Conference on Mining Software Repositories,
 pp. 78-87. IEEE Press, 2012.
