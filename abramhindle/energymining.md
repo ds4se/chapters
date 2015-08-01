@@ -11,15 +11,14 @@ wrong, I don't think there's a difference." He went on to explain that
 he was happy with the results of the first experiment but something
 was bothering him.
 
-To test HTTP/1.1 in Firefox he had to disable HTTP/2.0 in settings, thus
-his energy consumption test of Firefox for HTTP/1.1
-had to do more work than his HTTP/2.0 tests.
-He investigated the CPU state of the HTTP/2.0 and HTTP/1.1
-tests and found that the rigorous button pushing to disable HTTP/2.0
-in the settings put the CPU into a higher state: high frequency,
-and more voltage.
-Thus the CPU state for the HTTP/1.1 started higher and was consuming
-more than the HTTP/2.0 tests.
+To test HTTP/1.1 in Firefox he had to disable HTTP/2.0 in settings,
+thus his energy consumption test of Firefox for HTTP/1.1 had to do
+more work than his HTTP/2.0 tests. He investigated the CPU state of
+the HTTP/2.0 and HTTP/1.1 tests and found that the rigorous button
+pushing to disable HTTP/2.0 in the settings put the CPU into a higher
+state: high frequency, and more voltage. Thus the CPU state for the
+HTTP/1.1 started higher and was consuming more than the HTTP/2.0
+tests.
 
 Shaiful's solution was to inject some idle time into the HTTP/1.1
 test, allowing the CPU to lower its state. He then ensured via manual
@@ -36,18 +35,20 @@ and software energy consumption measurement.
 
 ## What to watch for
 
-The most difficult aspect of measuring and mining software energy
-consumption is to juggle all of the confounds and potential threats to
-validity one faces.The first 2 questions any software energy miner
-should ask themselves are "What do I want to measure?" and "What am I
-actually measuring?". Can we form a test or benchmark that will allow
-us to compare energy consumption of the task or program question?
+We want to help prevent experimental accidents when measuring the
+energy consumption of software systems. The most difficult aspect of
+measuring and mining software energy consumption is to juggle all of
+the confounds and potential threats to validity one faces.The first 2
+questions any software energy miner should ask themselves are "What do
+I want to measure?" and "What am I actually measuring?". Can we form a
+test or benchmark that will allow us to compare energy consumption of
+the task or program question?
 
 The task under test is the purpose of the test, do we want to measure
 performance under high load? Do we want to see the difference between
 versions for a certain function? The task and product need to be
-carefully chosen. Then one can follow a
-methodology [[hindle2012](#hindle2012)] such as:
+carefully chosen. Then one can follow a methodology
+[[Hindle2012](#Hindle2012)] such as:
 
 1. Choose a product and task to test;
 2. Decide on granularity and level of instrumentation;
@@ -63,9 +64,11 @@ methodology [[hindle2012](#hindle2012)] such as:
 
 <!-- AH: using internal links as footnotes -->
 
-This methodology can be combined with <a id="ENERGISE"></a>**ENERGISE**  [1](#british), a simple mnemonic
-checklist of issues, cobbled together from experience[[Hindle2014](#Hindle2014)], that one should
-consider when measuring software energy consumption:
+This methodology can be combined with <a
+id="ENERGISE"></a>**ENERGISE** [1](#british), a simple mnemonic
+checklist of issues, cobbled together from
+experience[[Hindle2014](#Hindle2014)], that one should consider when
+measuring software energy consumption:
 
 + **Environment** -- prepare a testbed to allow for measurement.
 + **N-versions** -- run a test across more than 1 version of the software.
@@ -103,7 +106,7 @@ energy consumption to determine the impact of changing the code we
 should measure the system before the modification to allow for
 comparison.
 
-[Green Mining]{#hindle2012} studies the evolution of an applications
+Green Mining[[Hindle2012](#Hindle2012)] studies the evolution of an applications
 energy profile, how much energy it consumes per task over different
 versions of the software. Our work in Green Mining has shown that
 software does indeed change in energy performance over time and
@@ -115,11 +118,9 @@ versions of the software are measured.
 
 Energy is the cost of work or the capacity to do work, energy is
 typically measured in joules (J). Power is the rate of energy
-consumption, measured in watts (W) where 1 W = 1 Js (1 watt is 1 joule
-second). Wattage also equals to voltage times amperage (W=VI).
-Energy is essentially power integrated. But when we measure
-energy consumption or power we have to decide which measure is more
-important.
+consumption, measured in watts (W) where 1 watt is equal to 1 joule
+second. Wattage also equals to voltage times amperage (W=VI). Power is
+the derivative of energy consumption.
 
 When you measure a task that a system executes, ask your system, does
 this task have a clear beginning or end? Does this task continuously
@@ -135,16 +136,15 @@ about tasks that are being compared that have the same runtime.
 While we already recommended measuring multiple versions of software,
 something even more important is to repeat your measurements. Modern
 computers are very noisey and active systems with lots of background
-processes and lots of state. They have many peripherals and
-services. It is hard to guarantee what tasks are executing on a modern
-system and what the current environment is like. If you're running a
-test using WIFI your own cellphone could affect the
-experiment. Furthermore we're measuring physical phenomena: energy
-consumption. Our measurement equipment, our testbeds, or energy
-measurement devices all have error in them, error is inherent in
-physical measurement thus we need to take multiple measurements so we
-can rely upon statistics to give us a more clear picture of what we
-measured.
+processes and lots of state. They have many peripherals and services.
+It is hard to guarantee what tasks are executing on a modern system
+and what the current environment is like. If you're running a test
+using WIFI your own cellphone could affect the experiment. Furthermore
+we're measuring physical phenomena: energy consumption. Our
+measurement equipment, our testbeds, or energy measurement devices all
+have error in them, error is inherent in physical measurement thus we
+need to take multiple measurements so we can rely upon statistics to
+give us a more clear picture of what we measured.
 
 ### Granularity
 
@@ -212,8 +212,8 @@ different or not based on random chance.
 
 ### Exceptions
 
-To err is human and to throw uncaught exceptions is to execute
-code. Mobile devices and modern computers still suffer from crashing
+To err is human and to throw uncaught exceptions is to execute code.
+Mobile devices and modern computers still suffer from crashing
 software and your tests can suffer from crashes as well. Exceptions
 happen, core dumps occur, sometimes apps decide to update, sometimes
 the network goes down. Sometimes a remote site goes down. Regardless
@@ -231,9 +231,10 @@ In summary, there are many confounds that one faces when measuring
 software energy consumption. First and foremost, energy consumption is
 a physical process and energy consumption measurement requires
 repeated measurement and statistical analysis. Thus remember and use
-[ENERGISE](#ENERGISE) mnemonic to help evaluate energy measurement scenarios:
-environment, N-versions, energy or power, repeated measurement,
-granularity, idle measurement, statistical analysis, and exceptions.
+[ENERGISE](#ENERGISE) mnemonic to help evaluate energy measurement
+scenarios: environment, N-versions, energy or power, repeated
+measurement, granularity, idle measurement, statistical analysis, and
+exceptions.
  
 ## Footnotes
 
