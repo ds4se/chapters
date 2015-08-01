@@ -73,10 +73,23 @@ The first question any software energy miner should ask themselves is
 validity. Can we form a test or benchmark that will allow us to
 compare energy consumption of the attribute or issue in question?
 
-<!-- green mining methodology -->
+The task under test is the purpose of the test, do we want to measure
+performance under high load? Do we want to see the difference between
+versions for a certain function? The task and product need to be
+carefully chosen. Then one can follow a
+methodology[hindle2012]{#hindle2012} such as:
 
-<!-- AH: Mention task under test -->
-
+* Choose a product and task to test;
+* Decide on granularity and level of instrumentation;
+* Choose which versions of the software to test;
+* Develop a test case for the task to be tested;
+* Configure the testbed environment to reduce background noise;
+* For each combination of version, task and configuration repeat multiple times:
+   * Setup the testbed
+   * Run the test
+   * Compile and store the recorded data
+   * Cleanup the testbed
+* Analyze and evaluate
 
 <!-- AH: using internal links as footnotes -->
 [ENERGISE]{#british} is a simple mnemonic checklist of issues that one should
