@@ -33,22 +33,19 @@ CPU to have a different state than the HTTP/2.0 tests. This is just
 one of many perils one faces when engaged in Green Mining,
 energy-aware mining, and software energy consumption measurement.
 
-## What to watch for
+## Let's ENERGISE your Software Energy Experiments
 
 We want to help prevent experimental accidents when measuring the
-energy consumption of software systems.  The most difficult aspect of
+energy consumption of software systems. The most difficult aspect of
 measuring and mining software energy consumption is to juggle all of
-the confounds and potential threats to validity one faces.  The first 2
+the confounds and potential threats to validity one faces. The first 2
 questions any software energy miner should ask themselves are "What do
-I want to measure?" and "What am I actually measuring?".  Can we form a
-test or benchmark that will allow us to compare energy consumption of
-the task or program question?
+I want to measure?" and "What am I actually measuring?". The intent is
+to create test or benchmark that will allow us to compare energy
+consumption of the task or program in question.
 
-The task under test is the purpose of the test, do we want to measure
-performance under high load? Do we want to see the difference between
-versions for a certain function? The task and product need to be
-carefully chosen.  Then one can follow a methodology
-[[Hindle2012](#Hindle2012)] such as:
+In prior work [[Hindle2012](#Hindle2012)] we propose a methodology of
+repeated measurement and comparison of such a test:
 
 1. Choose a product and task to test;
 2. Decide on granularity and level of instrumentation;
@@ -56,7 +53,7 @@ carefully chosen.  Then one can follow a methodology
 4. Develop a test case for the task to be tested;
 5. Configure the testbed environment to reduce background noise;
 6. For each combination of version, task and configuration repeat multiple times:
-   1. Setup the testbed;
+   1. Setup the testbed to record energy consumption measurements;
    2. Run the test;
    3. Compile and store the recorded data;
    4. Cleanup the testbed.
@@ -64,72 +61,62 @@ carefully chosen.  Then one can follow a methodology
 
 <!-- AH: using internal links as footnotes -->
 
-This methodology can be combined with <a
-id="ENERGISE"></a>**ENERGISE** [1](#british), a simple mnemonic
-checklist of issues, cobbled together from
+This methodology can be combined with a simple mnemonic, <a
+id="ENERGISE"></a>**ENERGISE** [1](#british). ENERGISE is a
+checklist of issues, built from prior
 experience[[Hindle2014](#Hindle2014)], that one should consider when
 measuring software energy consumption:
 
-+ **Environment** -- prepare a testbed to allow for measurement.
++ **Environment** -- prepare a stable testbed for energy measurement.
 + **N-versions** -- run a test across more than 1 version of the software.
-+ **Energy or** power -- do we care about total energy consumed for a
-  task, like a function
-  or the cost of continuous execution (a service)?
++ **Energy or power** -- do we care about total energy consumed of a
+  task the per second cost of running a service?
 + **Repeat** -- 1 run is not enough, we need to run our tests multiple
-  times to deal with background noise.
-+ **Granularity** -- how often do we measure, and what level of
-  measurement?
-  There's a balance between representative
-  performance and invasive instrumentation.
-+ **Idle** -- many applications and service have idle operation, this
-  operation is often ignored in tests, yet is valuable as it shows the
-  difference between idling and executing tasks.
-+ **Statistics** -- if we repeat measures we need to compute
-  statistics.  How do we evaluate changes?
-+ **Exceptions** -- errors happen, how do we deal with them or notice them?
+  times to address with background noise.
++ **Granularity** -- What level of measurement, how often and what
+  level of invasiveness of instrumentation?
++ **Idle** -- how do applications and service react with no load: is
+  energy being wasted?
++ **Statistics** -- repeat measures call for summary statistics and
+  comparing distributions.
++ **Exceptions** -- errors happen, how do we address with them or notice them?
 
 ### Environment
 
 The environment is the testbed and the system that will run the
-software under test.  Environments should be representative of
-realistic scenarios be balanced against noise.  Noise is induced by 3rd
-party apps or traffic, unneeded applications, or intermittent use by
-other stakeholders.  Generally environments should be controlled and
-quiet, yet still be representative of the environment they will run
-it.
+software under test. Environments should be representative of
+realistic scenarios yet balanced against noise such as 3rd-party apps
+or traffic, unneeded applications, or other users. Generally
+environments should be as controlled as possible. Even temperature can
+affect energy measurements.
 
 ### N-Versions
 
 The first step to any successful attempt at optimization is to measure
-what the system before optimization.  If we are measuring software
+what the system before optimization. If we are measuring software
 energy consumption to determine the impact of changing the code we
 should measure the system before the modification to allow for
-comparison.
-
-Green Mining[[Hindle2012](#Hindle2012)] studies the evolution of an applications
-energy profile, how much energy it consumes per task over different
-versions of the software.  Our work in Green Mining has shown that
-software does indeed change in energy performance over time and
-measuring just 1 version of the software might not be representative
-of the versions before or after.  It is recommended that multiple
-versions of the software are measured.
+comparison. Our work in Green Mining has shown that software does
+indeed change in energy performance over time and measuring just 1
+version of the software might not be representative of the versions
+before or after. It is recommended that multiple versions of the
+software are measured.
 
 ### Energy or Power
 
 Energy is the cost of work or the capacity to do work, energy is
-typically measured in joules (J).  Power is the rate of energy
-consumption, measured in watts (W) where 1 watt is equal to 1 joule
-second.  Wattage also equals to voltage times amperage (W=VI).  Power is
-the derivative of energy consumption.
+typically measured in joules (J). Power is the rate of energy
+consumption, essentially the derivative of energy consumption,
+measured in watts (W) where 1 watt is equal to 1 joule second.
 
 When you measure a task that a system executes, ask your system, does
 this task have a clear beginning or end? Does this task continuously
-run? If the task has a clear beginning and end then measuring the
-energy, the workload's cost, consumed during that task makes more
-sense than the power or average power of the test.  Where as a
-continuous running task or service might be better measured as the
-power, the rate of work done.  Mean-watts are also useful when speaking
-about tasks that are being compared that have the same runtime.
+run? Tasks that do not to run continuously, such as sharpening an
+image or compressing a video file can be characterized by the energy
+consumed. Where as a task that runs continuously, such a sharpening
+video images of a surveillance web-camera or streaming video
+compression, is better characterized by its workload, it's power, the
+rate of energy consumption.
 
 ### Repeat!
 
