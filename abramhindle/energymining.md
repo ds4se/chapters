@@ -1,39 +1,38 @@
-# Measure a bunch, Compare Once: Perils of Energy Mining
+# The Perils of Energy Mining: Measure a Bunch, Compare just Once
 
 ## A Story
 
-Shaiful Chowdhury [[chowdhury2015](#chowdhury2015)] came into the lab and proclaimed,
-"HTTP2.0 has significantly better energy performance than HTTP1.1!"
-"That's excellent," I exclaimed, "Do you know why?"
+Shaiful Chowdhury [[Chowdhury2015](#Chowdhury2015)] came into the lab
+and proclaimed, "HTTP/2.0 has significantly better energy performance
+than HTTP/1.1!" "That's excellent," I exclaimed, "Do you know why?"
 
 The next week Shaiful came back to the lab and said, "I think I was
 wrong, I don't think there's a difference." He went on to explain that
 he was happy with the results of the first experiment but something
-was bothering him. To test HTTP/1.1 in Firefox he had to open an
-about:config in Firefox and disable it. His energy consumption test of
-firefox for HTTP/1.1 had to do more work than his HTTP/2.0 tests. His
-HTTP/2.0 tests did not need to disable HTTP/2.0 features in Firefox
-while his HTTP/1.1 test did. He investigated the CPU state of the
-HTTP/2.0 and HTTP/1.1 tests and found that the rigourous button
-pushing to change settings in the HTTP/1.1 test put the CPU into a
-higher state (high frequency, more voltage). This in turn meant that
-when the HTTP/1.1 requests were made the CPU was already consuming
-more energy than in teh HTTP/2.0 tests. In fact the HTTP/2.0 were
-unlikely to reach the higher CPU state because the inputs for both
-tests were quite sparse.
+was bothering him.
 
-The solution was to inject some idle time into the HTTP/1.1 to bring
-the CPU back down to the lower state. Then via manual ensure that this
-idle time did its job. Afterwards both tests produced results that
-were comparable.
+To test HTTP/1.1 in Firefox he had to disable HTTP/2.0 in settings, thus
+his energy consumption test of Firefox for HTTP/1.1
+had to do more work than his HTTP/2.0 tests.
+He investigated the CPU state of the HTTP/2.0 and HTTP/1.1
+tests and found that the rigorous button pushing to disable HTTP/2.0
+in the settings put the CPU into a higher state: high frequency,
+and more voltage.
+Thus the CPU state for the HTTP/1.1 started higher and was consuming
+more than the HTTP/2.0 tests.
+
+Shaiful's solution was to inject some idle time into the HTTP/1.1
+test, allowing the CPU to lower its state. He then ensured via manual
+inspection that the idle did drop down the CPU state. Afterwards both
+tests produced results that were comparable, turns out on a fast
+network there's not much difference between HTTP/1.1 and HTTP/2.0.
 
 We almost suffered from an attribution error, the change in energy
-consumption was not cuased by HTTP/1.1 or HTTP/2.0 code in Firefox. It
-was caused by our HTTP/1.1 test inducing the CPU to have a different
-state than the HTTP/2.0 tests.
-
-This is one of many perils one faces when engaged in Green Mining,
-energy-aware mining, and software energy consumption measurement.
+consumption was not caused by HTTP/1.1 or HTTP/2.0 code in Firefox,
+but it was caused by our HTTP/1.1 test inducing the CPU to have a
+different state than the HTTP/2.0 tests. This is just one of many
+perils one faces when engaged in Green Mining, energy-aware mining,
+and software energy consumption measurement.
 
 ## What to watch for
 
@@ -63,8 +62,9 @@ methodology [[hindle2012](#hindle2012)] such as:
 7. Analyze and evaluate.
 
 <!-- AH: using internal links as footnotes -->
-1
-**ENERGISE**  [1](#british) is a simple mnemonic checklist of issues that one should
+
+This methodology can be combined with <a id="ENERGISE"></a>**ENERGISE**  [1](#british), a simple mnemonic
+checklist of issues, cobbled together from experience[[Hindle2014](#Hindle2014)], that one should
 consider when measuring software energy consumption:
 
 + **Environment** -- prepare a testbed to allow for measurement.
@@ -231,25 +231,28 @@ In summary, there are many confounds that one faces when measuring
 software energy consumption. First and foremost, energy consumption is
 a physical process and energy consumption measurement requires
 repeated measurement and statistical analysis. Thus remember and use
-ENERGISE mnemonic to help evaluate energy measurement scenarios:
+[ENERGISE](#ENERGISE) mnemonic to help evaluate energy measurement scenarios:
 environment, N-versions, energy or power, repeated measurement,
 granularity, idle measurement, statistical analysis, and exceptions.
-
-
  
 ## Footnotes
 
 <a id="british"></a> British/Canadian spelling.
 
-
 ## References
 
+[[Chowdhury2015](#Chowdhury2015)] <a id="Chowdhury2015"></a> Shaiful
+Alam Chowdhury, Varun Sapra , and Abram Hindle. "Is HTTP/2 More Energy
+Efficient Than HTTP/1.1 for Mobile Users?" , PeerJ Preprints, 2015.
 
-[[chowdhury2015](#chowdhury2015)] <a id="chowdhury2015"></a>  Shaiful Alam Chowdhury, Varun Sapra ,
-and Abram Hindle.  "Is HTTP/2 More Energy Efficient Than HTTP/1.1 for
-Mobile Users?" , PeerJ Preprints, 2015.
+[[Hindle2012](#Hindle2012)] <a id="Hindle2012"></a> Hindle, Abram.
+"Green mining: A methodology of relating software change to power
+consumption." In Proceedings of the 9th IEEE Working Conference on
+Mining Software Repositories, pp. 78-87. IEEE Press, 2012.
 
-[[hindle2012](#hindle2012)] <a id="hindle2012"></a> Hindle, Abram. "Green mining: A methodology
-of relating software change to power consumption." In Proceedings of
-the 9th IEEE Working Conference on Mining Software Repositories,
-pp. 78-87. IEEE Press, 2012.
+[[Hindle2014](#Hindle2014)] <a id="Hindle2014"></a> Hindle, Abram,
+Alex Wilson, Kent Rasmussen, E. Jed Barlow, Joshua Charles Campbell,
+and Stephen Romansky. "Greenminer: A hardware based mining software
+repositories software energy consumption framework." In Proceedings of
+the 11th Working Conference on Mining Software Repositories, pp.
+12-21. ACM, 2014.
