@@ -31,7 +31,7 @@ behaviour being tested.
 
 Shaiful Chowdhury [[chowdhury2015](#chowdhury2015)] came into the lab and proclaimed,
 "HTTP2.0 has significantly better energy performance than HTTP1.1!"
-"That's excellent," I exclaimed. "Do you know why?" I asked.
+"That's excellent," I exclaimed, "Do you know why?"
 
 The next week Shaiful came back to the lab and said, "I think I was
 wrong, I don't think there's a difference." He went on to explain that
@@ -83,14 +83,15 @@ methodology [[hindle2012](#hindle2012)] such as:
 4. Develop a test case for the task to be tested;
 5. Configure the testbed environment to reduce background noise;
 6. For each combination of version, task and configuration repeat multiple times:
-   1. Setup the testbed
-   2. Run the test
-   3. Compile and store the recorded data
-   4. Cleanup the testbed
-7. Analyze and evaluate
+   1. Setup the testbed;
+   2. Run the test;
+   3. Compile and store the recorded data;
+   4. Cleanup the testbed.
+7. Analyze and evaluate.
 
 <!-- AH: using internal links as footnotes -->
-ENERGISE [1](#british) is a simple mnemonic checklist of issues that one should
+1
+**ENERGISE**  [1](#british) is a simple mnemonic checklist of issues that one should
 consider when measuring software energy consumption:
 
 + **Environment** -- prepare a testbed to allow for measurement.
@@ -265,17 +266,17 @@ granularity, idle measurement, statistical analysis, and exceptions.
  
 ## Footnotes
 
-<a id="british"></a> British or Canadian spelling.
+<a id="british"></a> British/Canadian spelling.
 
 
 ## References
 
 
-[chowdhury2015](#chowdhury2015) <a id="chowdhury2015"></a>  Shaiful Alam Chowdhury, Varun Sapra ,
+[[chowdhury2015](#chowdhury2015)] <a id="chowdhury2015"></a>  Shaiful Alam Chowdhury, Varun Sapra ,
 and Abram Hindle.  "Is HTTP/2 More Energy Efficient Than HTTP/1.1 for
 Mobile Users?" , PeerJ Preprints, 2015.
 
-[hindle2012](#hindle2012) <a id="hindle2012"></a> Hindle, Abram. "Green mining: A methodology
+[[hindle2012](#hindle2012)] <a id="hindle2012"></a> Hindle, Abram. "Green mining: A methodology
 of relating software change to power consumption." In Proceedings of
 the 9th IEEE Working Conference on Mining Software Repositories,
 pp. 78-87. IEEE Press, 2012.
