@@ -1,33 +1,6 @@
 # Measure a bunch, Compare Once: Perils of Energy Mining
 
-## Story
-
-There once was a donut enthusiast who frequented a donut shop that
-fried their own donuts on demand. You could buy donuts and donut
-holes, smaller donuts shaped like the hole portion of torodiol donuts.
-The enthusiast reasoned that donut holes were faster to make because
-they were smaller and thus needed less heat to fry. The enthusiast
-designed an experiment to prove this notion: order donuts and time the
-order, then order donut holes and time the order. The enthusiast
-visited the donut shop and ordered french crueller donuts, which took
-5 minutes, and french crueller donut holes, which took 1 minute. The
-enthusiast was elated, but doubt set in. The enthusiast repeated the
-experiment a few times and the results were the same. The next week
-the enthusiast tried something else, the enthusiast visited the donut
-shop and ordered french crueller donut holes, which took 5 minutes,
-and then ordered french crueller donuts, which took 1 minute. The
-enthusiast was baffled and asked the donut maker why? The donut maker
-explained that donuts and donut holes were fried at the same time from
-the same dough, the minute delay between each order was to find the
-right sized box.
-
-The enthusiast assumed that creating donuts and donut holes was
-independent, but in fact these orders were not independent to the
-donut maker. When measuring software energy consumption one has to be
-careful to set up tests appropriately in order to measure the
-behaviour being tested.
-
-## Example
+## A Story
 
 Shaiful Chowdhury [[chowdhury2015](#chowdhury2015)] came into the lab and proclaimed,
 "HTTP2.0 has significantly better energy performance than HTTP1.1!"
