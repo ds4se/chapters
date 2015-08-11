@@ -8,11 +8,11 @@ Data Science has become popular over the past few years as companies have recogn
 
 Software produces large quantities of data, such as user-oriented telemetry data, repository-based productivity and quality data, and business-oriented process data. Software development organizations are hiring data scientists to debug software, to estimate failure rates, to identify new features, and to assess software reliability.  
 
-Recently, Kim et al. [1] studied the emerging role of data scientists in software development teams by interviewing data scientists across several product groups at Microsoft.  Data scientists use various strategies to increase the impact and actionability of their work, i.e., to ensure that their results matters for the company. This book chapter summarizes the lessons learned from these interviews regarding how data scientists effectively impact organizations. 
+Kim et al. [1] conducted interviews with 16 data scientists across several product groups at Microsoft. This chapter describes some lessons that we learned from the data scientists regarding how they increase the impact and actionability of their work and the strategies that they use to ensure that their results matters for the company.
 
 "Actionability is actually a big thing. If it’s not actionable, the engineers then look at you, say, “I don’t know what to do with this, so don’t even bother me.”
 
-We discuss five strategies that data scientists shared to increase the actionability of their data scientist work and to effectively impact the organizations that they work for. 
+The strategies are based on the interviews with data scientists at Microsoft. The complete results are a technical report [1], which included other information not included in this chapter, such as why data scientists are needed in software development teams, the education and training background of data scientists and their skill sets, the problems that data scientists work on and their daily activities, the organization structure of data scientist teams and how they interact with others in the teams, etc. 
 
 ## Choose the Right Questions for the Right Team
 An important strategy for success is to choose the right questions for the right team. One data scientist described three conditions that must be met before his data science team engages in a project: priority, actionability, and commitment. 
