@@ -12,7 +12,7 @@ Kim et al. [1] conducted interviews with 16 data scientists across several produ
 
 "Actionability is actually a big thing. If it’s not actionable, the engineers then look at you, say, “I don’t know what to do with this, so don’t even bother me.”
 
-The strategies are based on the interviews with data scientists at Microsoft. The complete results are a technical report [1], which included other information not included in this chapter, such as why data scientists are needed in software development teams, the education and training background of data scientists and their skill sets, the problems that data scientists work on and their daily activities, the organization structure of data scientist teams and how they interact with others in the teams, etc. 
+The strategies discussed in this chapter are from the study of data scientists at Microsoft [1]. The complete details are in a technical report [1], which also include other information such as why data scientists are needed in software development teams, the education and training background of data scientists and their skillsets, the problems that data scientists work on and their daily activities, the organization structure of data scientist teams, how they interact with others in the teams, etc. 
 
 ## Choose the Right Questions for the Right Team
 An important strategy for success is to choose the right questions for the right team. One data scientist described three conditions that must be met before his data science team engages in a project: priority, actionability, and commitment. 
