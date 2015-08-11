@@ -52,7 +52,7 @@ Many stakeholders want to deploy predictive models as a part of the product, so 
 
 1. M. Kim, T. Zimmermann, R. DeLine, and A. Begel, "The Emerging Role of Data Scientists on Software Development Teams", "Technical Report MSR-TR-2015-30 
 
-2. T. H. Davenport and D. Patil, "Data Scientist: The Sexiest Job of the 21st Century," Harvard Business Review, pp. 70-76, OCtober 2012.
+2. T. H. Davenport and D. Patil, "Data Scientist: The Sexiest Job of the 21st Century," Harvard Business Review, pp. 70-76, October 2012.
 
 3. C. O'Neil and R. Schutt, Doing Data Science: Straight Talk from the Frontline, O'Reilly Media, 2013.
 
