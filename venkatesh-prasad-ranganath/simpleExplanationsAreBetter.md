@@ -1,4 +1,4 @@
-# Models are Good. Simple Explanations are Better.
+# While models are good, simple explanations are better
 
 My first foray into using "data-science" for software engineering was both twisted and interesting.  It was twisted as I approached the problem with program analysis and formal methods background and ended up using data science/mining to tackle the problem.  It was interesting as I uncovered numerous insights (not all novel) about data science for software engineering (and possibly other purposes).  Here is one such insight.
 
