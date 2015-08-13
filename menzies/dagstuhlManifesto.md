@@ -1,47 +1,94 @@
 # Perspectives on Data Science for Software Engineering
 
-- <em>Tim Menzies, Laurie Williams, Thomas Zimmermann</em>
+- <em>Tim Menzies,   
+Laurie Williams,  
+Thomas Zimmermann</em>
 
-"In our house, there are many rooms." --John 14:2-3
 
-This book is about _data science for software engineering_. Specifically, 
-it offers  a  long list of:
+## About this Book
 
-+ hints
-+ tips
-+ traps for the unawary,
-+ and the steps required to avoid those traps.
-
+The insights of this book are divided up into one per chapter.
 Each chapter is aimed at a generalized audience with some technical interest in software
-engineering. Hence, our chapters are very short and  to the point. Also, we have taken care
-to strip our chapters of excessive and
+engineering. Hence, the chapters are very short and  to the point. Also, the authors of these chapters have taken care
+to strip chapters of excessive and
 confusing techno-speak.
 
-The field of data science for software engineering is very active and constantly evolving.
-Accordingly, our chapters list multiple insights from multiple perspectives.
-This
-is quite deliberate- data science   is very varied field, so it very rare that "one size fits all".
-Rather,  successful data scientists know and apply  a large and diverse toolkit.
+As to insights themselves, they are in two categories:
+
+- _SE-specfic lessons:_ Some offer valuable comments on issues that are
+  specific to data science for software engineering
+  (for example, see Geunther Ruhe's excellent
+  chapter on decision support for software
+  engineering).
+- _General lessons about data analytucs:_ Others are more general. These
+  comment on issues relating to drawing conclusions
+  from real-world data. The case study material for these chapters come from the domain of software engineering problems.
+  That said, this material has much to offer data scientists working in many other domains.
+  
+Our insights take many forms:
+
++ hints; 
++ tips;
++ tools;
++ tricks;
++ techniques;
++ traps for the unawary, as well as  the steps required to avoid those traps.
+
+That said,  all our insights have one thing in common- _**we wished we known them years ago**_!!!!
+If we had,  then that
+would have
+saved us ,  and our clients, so much time and money.
+
+## Why This Book?
+
+In short, so little time, so much data. The analysis of real world data is an exploding field, to
+say this least, for various reasons:
+
+- _Many useful methods:_ Decades of research in artificial intelligence, social science methods, visualizations, statistics, etc
+has generated a large number of powerful  methods for learning from data.
+- _Much support for those methods:_ Many of those methods are explored in standard textbooks and education programs.
+Those methods are also supported in toolkits that are widely available (sometimes, even via free downloads). Further,
+given the "big data" revolution, it is now simple and inexpensive to acquire the hardware necessary, even for the longest runs
+of these tools.
+
+If general analytics is an active field, software analytics is doublely so.
+Consider what we know about software projects:
+
+- source code;
+- emails about that code;
+- check-ins;
+- work items; 
+- bug reports;
+- test suites;
+-  test executions;
+-  and even some background information
+of the developers. 
+
+All this information is  recorded in software repositories such as
+CVS, Subversion, GIT, GITHUB, and Bugzilla. Also found there are the telemetry data, run-time traces, and log files reflecting
+how customers experience software (that information  includes application and feature usage and records of
+performance and reliability).
+
+This means that never before in the history have
+we had so much information about the minute to minute actions
+(and the effects of those actions) on people colloberating to 
+
+- use someone else's products;
+- generate and distribute new products;
+- maintain and adapt existing products.
+
+(Here, by "products" we mean everything from the four lines of SQL
+that are triggered when someone surfs to a web page, to  scripts
+that might be only dozens to hundreds of lines of code, or to much
+larger open source and proprietary  systems. Also, our use of "products" includes
+greenfield as well as on-going maintenence work, as well as combinations of hardware and software system).
+
+
+## Some History
 
 <img src="dagstuhl.JPG" width=400 align=right>
 Historically, this book began as a week-long workshop in Dagstuhl, Germany [1].
-That workshop documented the range of work on software analytics. 
-For example, check-ins,
-work items, bug reports and test executions are recorded in software repositories such as
-CVS, Subversion, GIT, and Bugzilla. Telemetry data, run-time traces, and log files reflect
-how customers experience software, which includes application and feature usage and expodeoses
-performance and reliability. The sheer amount is truly impressive:
-
-- At the time of that Workshop,  Mozilla Firefox had 900,000 bug reports, and platforms such as Sourceforge.net
-and GitHub hosted millions of projects with millions of users.
-- Industrial projects had many sources of data at similar scale.
-
-Since then, this data has grown even larger and now it is routine for data scientists in industry
-and academia to routinely access terabytes to gigabytes of data,
-But how can this data be used to improve software? Software analytics takes this data
-and turns it into actionable insight to inform better decisions related to software. Analytics
-is commonly used in many businesses—notably in marketing, to better reach and understand
-customers. The application of analytics to software data is becoming more popular.
+That workshop documented the range of work on software analytics, with the following premise.
 
 To a large extent, software analytics is about what we can learn and share about software.
 The data include our own projects but also the software projects by others. Looking back
@@ -52,15 +99,46 @@ software analytics lets us share all of the following:
 Windows Vista it was possible to build high-quality software using distributed teams if the
 management is structured around code functionality (Christian Bird and his colleagues).
 - _Sharing models_. One of the early models was proposed by Fumio Akiyama and says that
-we should expect over a dozen bugs per 1,000 lines of code. In addition to defect models,
+we should expect over a dozen bugs per 1,000 lines of code [2]. In addition to defect models,
 plenty of other models (for example effort estimation, retention and engagement) can be
 built for software.
 - _Sharing methods_. Empirical findings such as insights and models are often contextspecific,
 e. g., depend on the project that was studied. However, the method (“recipe”)
 to create findings can often be applied across projects. We refer to “methods” as the
 techniques by which we can transform data into insight and models.
-_Sharing data_ By sharing data, we can use and evolve methods to create better insight
+- _Sharing data_ By sharing data, we can use and evolve methods to create better insight
 and models.
+
+While that was the premise, as the workshop developed, it became clear that the premise
+was not enough to cover the breadth of work being called data science for software engineering.
+At the workshop, we found:
+
+- Many initiatives devoted to _sharing data_;
+- Much recent work on _sharing models_;
+- There exists many texts and toolkits that let us _share methods_.
+
+What we did not see was any attempt to _share insights_. There are many excellent data mining
+textbooks that lead the reader through a detalied description of data mining algorithms. That said,
+those textbooks rarely step back to offer higher-level insights. Yet, at the Dagstuhl meeting, very little of our time was spend discussing algorithmic details. Instead, the participants there
+were focused on  defining and refining a set of insights that define modern data science for
+software analytics. Further, when we looked for any text that listed all those insights, we found 
+none.
+
+Accordingly,
+for your consideration, this book explore data science for software engineering to offer insights into that process. The chapters here were written by participants at the Dagstuhl conference, plus numerous
+other experts in the field on industrial and academic data mining. 
+
+## The Future
+
+While these chapters were written by experts, they are  hardly complete. Data science methods for SE are continually changing so we view this book as a "first edition" that will need significant and regular updates. To that end, we have create a news group for posting new insights. Feel free to make any comment at all there. But if you want to be considered for any future update of this book:
+
+- Make the subject line some eye-catching "mantra";  i.e. some slogan reflecting best practice for data science for SE.
+- The post  should be 
+  - Short, and to the point.
+  - Make little or no use of jargon, formula, diagrams, references.
+  - Be approachable by a broad audience and have a clear take away message.
+
+Share and enjoy!
 
 
 
@@ -69,270 +147,5 @@ and models.
 [1] Software Development Analytics (Dagstuhl Seminar 14261), Gall, Harald ; Menzies, Tim ; Williams, Laurie ; Zimmermann, Thomas 
 Dagstuhl Reports Journal, 4(6) 64--83, 2014, http://drops.dagstuhl.de/opus/volltexte/2014/4763/
 
-
-===
-
-Notes from a recent Dagstuhl seminar on Software Analytics
-tim.menzes@gmail.com
-WVU (ish)
-NcState
-July 20, 2014
-http://goo.gl/9MRM78
-
-Dagstuhl: castle in Sth. Germany
-Live in workshops. 
-No distracting nearby shops, towns.
-Seminars: 
-invited participants, senior organizers
-Locks on exterior doors
-none (optional) inside
-Booze, coffee, ice creams 24/7
-Let’s talk (5 day meetings)
-
-
-Organizers:    
-Tom Zimmermann, Microsoft
-Laurie Williams, NCstate
-Tim Menzies, WVU
-Harald Gall, Zurich 
-Software Development Analytics
-June 22nd – June 27th, 2014 
-Premise:
-Not  just data mining; not just quantitative model construction.
-Not just “big data” (whatever that is).
-But “sharing”:
-sharing data
-sharing models
-sharing methods (qual & quant)
-sharing insights (⇐ the real goal?)
-
-Outcomes	
-Many plans:
-A community portalhttp://goo.gl/3t4Vp1
-Community documents,
-Open letter to reviewers to  mature their view on how to assess this kindor work.
-A book (maybe, 2015):
-66 things every  data scientist  should know 
-This talk:
-Some of the “things”
-A repeated theme: “the streetlight effect”
-
-
-A repeatedly visited story.
-The Streetlight effect
-
-Street light effect
-“I’m looking for my keys.”
- 
-
-Street light effect
-Moral #1: 
-look at the real data, not just the conveniently available data
-“Before we collect the data, need to redefine the right data to collect.”
-“Garbage in, garbage out”
-“Before analyzing terabytes of data, reflect some on user goals.”  
-“I’m looking for my keys.”
- 
-
-Can we reason about data, without detailed background knowledge?
-Traditional view:
-GQM
-Traditional science:
-Define data to collected
-Collect
-Infer
-“Newer” view:
-Operational science (Mockus, keynote, MSR, 2014)
-Find data
-Reason about it
-Prone to “streetlight effect”
-
- 
-
-Empiricists : Rationalists
-Observation : use of background knowledge
-Mockus : Basili
-Norvig : Chomsky
-Locke : Leibniz
-Aristotle : Plato
-Newton : Descartes
-Newton said (and this has been translated two ways):
-“I make no hypotheses.”
-“I feign no hypotheses.”
-Now “feign” is an interesting word. 
-Suggests pretence or even deceit or subterfuge.
-
- 
-
-Working in the light
-Moral #2: 
-“before we rush to the new, lets reflect on what we can learn from what we can see right now. “
-“Too fast, too early  to expect actionable data for some specific area. “
-“Building  models on what we have before pushing ahead.”
-Yes, I know our users want to know about XYZ, but maybe we should work on ABC first
-“Need to invest more in data science infrastructure”
-
-
-“I’m exploring the data without preconceived biases.”
- 
-And with experience, we can push out from the light into more of the dark
-
-Full disclosure: Menzies is not rational (he’s an empiricist)
-Accidental
-discoveries
-America
-Penicillin
-Anesthesia
-Big bang radiation
-Internal pacemakers
-Microwave ovens
-X-rays
-Plastics (non-conductive heat resistant polymer)
-Vulcanised rubber
-Viagra 
-Wikipedia lists of human cognitive biases
-100+ entries
-The way we routinely get it wrong, every day.
- 
-
-Based on historical evidence:
-All (current) conclusions  are wrong
-Prone to revisions
-By subsequent analysis
-Any current models is
-Wrong, but useful
-Timm’s Law: 
-Less conclusions, More conversations
-To find better conclusions …
-Just keep looking
-For a community to find better conclusions
-Discuss more, share more
-
- 
-
-A little bit of this, a little bit of that
-Moral #3: 
-“My Father’s house has many rooms.”
-“False dichotomy between these two approaches. Really need to bridge these two modes.“
-“Not the scientific method but scientific methods (plural).”
-
-
-
-“Aha!  Bus tracks! I can follow these to the bus stop and not drive home drunk.”
- 
-
-“N” things every data scientist needs to know
-Note: short summaries of very complex positions. Some inaccuracies are possible.
-
-Thing #1: Rumsfeld’s rule
-Do analysis with the data you have, not the data you might wish to have 
-Never always have the right data
-Real-world data expensive to collect
-Do what you can with what you have.
-Always suspect your data (quality, sanity, variance checks)
-Donald Rumsfeld. Did not attend Dagstuhl
-
-Thing #2: Data mining is a shocking experience
-e.g. Tom Zimmermann
-Few hypotheses survive contact with the data 
-e.g. Bertrand Russell:
-Everything is vague to a degree you do not realize till you have tried to make it precise. 
-e.g. Prem Devanbu:
-All that stuff about strongly-typed languages being useful? 
-Year… Not so much [see his ICSE’14 paper]
-
-Devanbu et al. ICSE’14
-Static code defect predictors (data miners)
-vs static analysis tools (FindBugs, etc)
-
-No difference in cost effectiveness of the two approaches
-But defect prediction scales better, 
-Can be adapted to new languages instantly
-
-Some benefits in ranking results from static analysis tools using defect predictors.
-	
-Thing #2: Data mining is a shocking experience
-
-Devanbu et al. SIGSOFT FSE’14
-Given all the programs we can see at Github
-Lets check some of the orthodoxy
-It is true that
-strong typing > weak typing
-static typing > dynamic typing	
-functional > procedural  
-But: very very modest effects. 
-Process factors dominate
-e.g. the kind of the programmer attracted to the language
-	
-Thing #2: Data mining is a shocking experience (more)
-
-Thing #3: Whitehead’s rule:
-“Science: it matters”
-Pragmatic project results are fine
-But… 
-We say we are trying to support projects so we don’t do science;
-Yet most of our stuff is never used by projects;
-So we fail as engineers as well as scientist. 
-Moral: 
-While servicing our projects, 
-Don’t forget to be scientists, looking for generalities, 
-Jim Whitehead, UCSC
-
-E.g.. Generality between  Turkish Toasters  AND NASA Space Ships
- 
-Thing #3: “Science: it matters”
-Turhan, Menzies, Bener ESE journal 2009
-
-Raw dimensions less informative than underlying dimensions
- 
-Thing #3: “Science: it matters”
-
-e.g.: How to TRANSFER  Lessons Learned?
-Ignore most of the data
-relevancy filtering: Turhan ESEj’09; Peters TSE’13
-variance filtering:  Kocaguneli  TSE’12,TSE’13
-performance similarities:  He ESEM’13
-Contort the data
-spectral learning (working in PCA space or some other rotation) Menzies, TSE’13; Nam, ICSE’13
-Build a bickering committee
-Ensembles Minku, PROMISE’12       
- 
-Menzies,  et al.
-Minku,  et al.
-Thing #3: “Science: it matters”
-
-Many, many other things
-Thing #4:
-Go back and do it again
-One study is not enough.
-Repeat your experiments
-Share your data and scripts
-Thing #5:
-Don’t overwork the data repo
-Sad tales of well defined, but empty, repos.
-Contrast with hastily build repos, full of data
-Thing #6:
-People. They matter
-Thing #7: 
-Not just predictions:
-Takes of users ingoring models but going nuts over some social interaction diagram
-Thing #8: 
-Not just mere numbers 
-Power of visualizations
-Many stories
-Thing #9: 
-Not just qualitative models
-Power of qualitative methods
-etc etc.
-
-For more things
-See forthcoming book
-
-Conclusion
-Data science in SE.
-Ain’t going away.
-A disruptive technology 
-That will change much of what we think and do in SE
-Not just confirming old insights
-But offering new, challenging insights
+[2] F. Akiyama, “An Example of Software System Debugging,” Information Processing, vol. 71, 1971, pp. 353-359.
 
