@@ -4,7 +4,7 @@ Data analysis is a central task in the workflow of data scientists,
 researchers, software engineers, business analysts, and just about every
 professional who needs to work with data. The first mundane step in data
 analysis is *preparing raw data*, which originate from a diverse variety
-of sources, including:
+of sources such as:
 
 - logs from a Web server
 - outputs from a specialized scientific instrument
@@ -29,7 +29,7 @@ are more complex, then you'll need to write your own parser.
 
 This chapter presents some practical tips for writing reliable and
 effective data parsers. These tips can be implemented in any
-general-purpose programming language (e.g., Perl, Python, R).
+programming language (e.g., Perl, Python, R).
 
 
 ### Use assertions like there's no tomorrow
@@ -58,10 +58,10 @@ as possible, or else they aren't doing their job. The worst-case outcome
 is data sneaking through your parser in a format that you didn't expect.
 
 
-### Don't silently skip records
+### Print information about broken records
 
-Some records in the raw data will be incomplete or corrupted, so your
-program has no choice but to skip over them. A bad idea is to simply
+Some records in the raw data will be broken in unfixable ways, so your
+program has no choice but to skip over them when parsing. A bad idea is to simply
 skip them silently, since you won't know what data you're missing.
 Instead, always:
 
@@ -80,7 +80,7 @@ Instead, always:
 ### Use sets or counters to store occurrences of categorical variables
 
 Some of your fields will represent categorical variables. For instance,
-blood type can be either *A*, *B*, *AB*, or *O*. It's a good idea to
+in a medical data set, blood type can be either *A*, *B*, *AB*, or *O*. It's a good idea to
 assert that blood type must be one of those values, since there are only
 four of them. But what if a category contains many more possible values,
 especially those that you didn't know about beforehand? In that case,
@@ -95,8 +95,8 @@ By following this idiom, you can:
   come as a surprise
 
 - inspect the full set of values when your parser finishes to see if any
-  of them look weird. For instance, if someone typed in *C* for blood
-  type, that would immediately stand out as an error.
+  of them look weird. For instance, if someone entered *C* for a blood
+  type record, that would immediately stand out as an error.
 
 
 ### Restart parsing in the middle of the data set
@@ -163,7 +163,7 @@ certain analysis operations a bit slower, so use this technique only
 when you can spare the dip in efficiency.
 
 
-### Write a verifier program to check the integrity of your cleaned data
+### Finally, write a verifier program to check the integrity of your cleaned data
 
 Along with your parser, also write a verifier that walks over the
 cleaned data after parsing and checks that it conforms to the format
@@ -172,7 +172,7 @@ but you have all the control over the cleaned data, since you parsed it!
 So make sure that it does, in fact, conform to your schema and
 expectations.
 
-This final step is *really important* because after you finish parsing,
+This final step is *very important* because after you finish parsing,
 you'll be working solely with the cleaned data. Chances are, you won't
 even touch the raw data again unless something catastrophic happens.
 Thus, you want to make sure that your cleaned data is in top shape
@@ -181,5 +181,8 @@ results that are ultra-hard to diagnose since they originated from a
 long-ago parsing mistake, and your raw data is no longer in front of
 you.
 
-Happy parsing!
+These tips might seem like a lot of up-front work to implement, but the
+good news is that the time you invest in writing a robust parser will
+make your actual analysis workflow much more pleasant. I've learned this
+from years of hard-earned experience. Happy parsing!
 
