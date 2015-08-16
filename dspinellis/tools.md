@@ -1,3 +1,4 @@
+
 # Tools! Tools! We need tools!
 
 ## Tools in science
@@ -97,7 +98,7 @@ Given that computers are reflective machines the possibilities for
 data collection are endless.
 One example in this category is [GHTorrent](http://ghtorrent.org/),
 a system that collects data through GitHub's event API
-(whose raison d'etre is the automation of software development processes)
+(whose raison d'Ãªtre is the automation of software development processes)
 and makes them available as a database.
 Another is a [set of tools](https://github.com/dspinellis/unix-history-make)
 used to synthesize a
@@ -183,15 +184,15 @@ high-quality piece of software it deserves to be.
 
 
 ## References
-+ Diomidis Spinellis. Tool writing: A forgotten art? IEEE Software, 22(4):9–11, July/August 2005. (doi:10.1109/MS.2005.111). 
-+ Diomidis Spinellis. CScout: A refactoring browser for C. Science of Computer Programming, 75(4):216–231, April 2010. (doi:10.1016/j.scico.2009.09.003)
-+ Diomidis Spinellis. Global analysis and transformations in preprocessed languages. IEEE Transactions on Software Engineering, 29(11):1019–1030, November 2003
-+ Diomidis Spinellis. A tale of four kernels. In Wilhem Schafer, Matthew B. Dwyer, and Volker Gruhn, editors, ICSE '08: Proceedings of the 30th International Conference on Software Engineering, pages 381–390, New York, May 2008. Association for Computing Machinery. (doi:10.1145/1368088.1368140) 
-+ Diomidis Spinellis. Optimizing header file include directives. Journal of Software Maintenance and Evolution: Research and Practice, 21(4):233–251, July/August 2009. (doi:10.1002/smr.369)
++ Diomidis Spinellis. Tool writing: A forgotten art? IEEE Software, 22(4):9â€“11, July/August 2005. (doi:10.1109/MS.2005.111).
++ Diomidis Spinellis. CScout: A refactoring browser for C. Science of Computer Programming, 75(4):216â€“231, April 2010. (doi:10.1016/j.scico.2009.09.003)
++ Diomidis Spinellis. Global analysis and transformations in preprocessed languages. IEEE Transactions on Software Engineering, 29(11):1019â€“1030, November 2003
++ Diomidis Spinellis. A tale of four kernels. In Wilhem Schafer, Matthew B. Dwyer, and Volker Gruhn, editors, ICSE '08: Proceedings of the 30th International Conference on Software Engineering, pages 381â€“390, New York, May 2008. Association for Computing Machinery. (doi:10.1145/1368088.1368140).
++ Diomidis Spinellis. Optimizing header file include directives. Journal of Software Maintenance and Evolution: Research and Practice, 21(4):233â€“251, July/August 2009. (doi:10.1002/smr.369)
 + Diomidis Spinellis, Panagiotis Louridas, and Maria Kechagia. An exploratory study on the evolution of C programming in the Unix operating system. In ESEM '15: 9th International Symposium on Empirical Software Engineering and Measurement. IEEE, 2015.
-+ Georgios Gousios and Diomidis Spinellis. GHTorrent: Github's data from a firehose. In Michele Lanza, Massimiliano Di Penta, and Tao Xie, editors, 9th IEEE Working Conference on Mining Software Repositories (MSR), pages 12–21. IEEE, June 2012. (doi:10.1109/MSR.2012.6224294)
-+ Diomidis Spinellis. A repository with 44 years of Unix evolution. In MSR '15: Proceedings of the 12th Working Conference on Mining Software Repositories, pages 13–16. IEEE, 2015. (doi:10.1109/MSR.2015.6)
-+ Murphy, Gail C., Mik Kersten, and Leah Findlater. "How are Java software developers using the Elipse IDE?." Software, IEEE 23.4 (2006): 76-83.
-+ Georgios Gousios and Diomidis Spinellis. Conducting quantitative software engineering studies with Alitheia Core. Empirical Software Engineering, 19(4):885–925, August 2014. (doi:10.1007/s10664-013-9242-3)
-+ Gall, Harald C., Beat Fluri, and Martin Pinzger. "Change analysis with evolizer and changedistiller." IEEE Software 1 (2009): 26-33.
++ Georgios Gousios and Diomidis Spinellis. GHTorrent: Github's data from a firehose. In Michele Lanza, Massimiliano Di Penta, and Tao Xie, editors, 9th IEEE Working Conference on Mining Software Repositories (MSR), pages 12â€“21. IEEE, June 2012. (doi:10.1109/MSR.2012.6224294)
++ Diomidis Spinellis. A repository with 44 years of Unix evolution. In MSR '15: Proceedings of the 12th Working Conference on Mining Software Repositories, pages 13â€“16. IEEE, 2015. (doi:10.1109/MSR.2015.6)
++ Murphy, Gail C., Mik Kersten, and Leah Findlater. "How are Java software developers using the Elipse IDE?." Software, IEEE 23.4 (2006): 76â€“83.
++ Georgios Gousios and Diomidis Spinellis. Conducting quantitative software engineering studies with Alitheia Core. Empirical Software Engineering, 19(4):885â€“925, August 2014. (doi:10.1007/s10664-013-9242-3)
++ Gall, Harald C., Beat Fluri, and Martin Pinzger. "Change analysis with evolizer and changedistiller." IEEE Software 1 (2009): 26â€“33.
 + Sarma, Anita, et al. "Tesseract: Interactive visual exploration of socio-technical relationships in software development." Software Engineering, 2009. ICSE 2009. IEEE 31st International Conference on. IEEE, 2009.
