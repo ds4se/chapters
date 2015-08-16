@@ -42,11 +42,11 @@ Time and again, I have heard similar arguments in discussions about the sort of 
 For example, consider a linear regression model can explain both the polarity (i.e., positive or negative) and magnitude of influence of independent variables (factors) on the dependent variable (outcome).  All of the information in the model is not relevant to a user who is only interested to know if the effect of the factors on the outcome is linear.  Similarly, the magnitude of influence is irrelevant to a user who is only interested in identifying the factors that negatively affect the outcome.
 
 
-## Users prefer simple explanations over detailed models
+## Users prefer simple explanations
 
-So, one of the insights from this experience was that _when using data science for software engineering (and possibly other purposes), users are interested in simple explanations (of course, backed by robust and detailed models) of the observed phenomenon that can help them make quick decisions._
+To summarize, when using data science for software engineering (and possibly other purposes), keep in mind that _users are interested in simple explanations (of course, backed by robust and detailed models) of the observed phenomenon that can help them make good and quick decisions._  
 
-In my subsequent flings with data science, this insight proved to be rather effective.  Now, I hope you too will employ the insight in your next data science excursion and either be more effective or challenge this insight :)
+This insight has proved to be rather useful in my subsequent flings with data analyis.  Now, I hope you too will consider this insight in your next data science excursion and either be more effective or challenge the insight :)
 
 
 ## References
