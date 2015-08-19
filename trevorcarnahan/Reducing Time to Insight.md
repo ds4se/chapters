@@ -11,6 +11,7 @@ Let's look at a more concrete example.  As a purveyor and student of software en
 ## Time to Insight
 
 _"There is immeasurable distance between late and too late."_
+
 -- Og Mandino (American Essayist and Phsycologist)
 
 An insight's value can decay very rapidly, and can eventually expire all together as un-actionable. History is full of war stories where intelligence arrived in time to change the outcome.  Stock markets quickly sway and even crash based on insights.  But an alert that my service is down, an hour after receiving a phone call from my best customer's lawyer to handle damages from the outage is both too late, and un-insightful! A key point here is that speeding up data processing and information production creates new opportunities for insight that was previously blocked, by giving time to take action on the new understanding. This also adds a competitive edge, in almost any human endeavor.
@@ -30,7 +31,7 @@ Time to Insight is getting traction from the likes of Forbes[1][2], as the leadi
 
 For industry and academia alike, the capability to produce insights fast is often a differentiated, competitive advantage.  One pro tip is to think of Insight Production as a value chain[3][4].  Identify and evaluate the primary activities between a question asked, and an insightful response given.  These often include, but are not limited to: collect data, analyze, transform, store, query, visualize, and sometimes it even requires a person to help interpret the data for the customer for them to have the ideal actionable insight.
 
-![Chart of sample insight value chain](InsightValueChain.png "Chart sample insight value chain")
+![Chart of sample insight value chain](InsightValueChain.PNG "Chart sample insight value chain")
 
 Where is the time spent? Is data collection still manual?  Perhaps there are expensive computations and transformation that add hours of lag.  Evaluate each activity and identify the best systemic ways to reduce TTI. In other words, perform a Value Chain Analysis[5].
 
@@ -53,10 +54,17 @@ _todo_: note on qualitative insights.
 ## References
 
 [1] Bruce Upbin. 2012. [What's Your Time To Insight?](http://www.forbes.com/sites/ciocentral/2012/08/10/whats-your-time-to-insight/) Blog Article on Forbes.com.
+
 [2] Cindi Howson. 2012. [Visual Data Discovery: More than a Pretty Face?](http://insideanalysis.com/2012/08/visual-data-discovery/) Blog Article on InsideAnalysis.com.
+
 [3] Various. [Value Chain](https://en.wikipedia.org/wiki/Value_chain). Wikipedia.
+
 [4] Michael E. Porter. 1985. [Competitive Advantage: Creating and Sustaining Superior Performance](http://books.google.ca/books?hl=en&lr=&id=H9ReAijCK8cC&oi=fnd&pg=PR15&dq=competitive+Advantage:+Creating+and+Sustaining+Superior+Performance&ots=p78IUD5U3M&sig=EAV1QwH8f2wE82j8gTsobcfBjDM#v=onepage&q=competitive%20Advantage%3A%20Creating%20and%20Sustaining%20Superior%20Performance&f=false). New York: Simon and Schuster. Retrieved 2013.
+
 [5] Ovidijus Jurevicius. 2013. [Value Chain Analysis](http://www.strategicmanagementinsight.com/tools/value-chain-analysis.html). Blog Article on StrategicManagementInsight.com
+
 [6] Drew Rockwell. 2015. [Speeding Time to Insight: Why Self-Service Data Prep is the Future of Big Data](http://www.lavastorm.com/blog/post/speeding-time-to-insight-why-self-service-data-prep-is-the-future-of-big-data/). Blog Article on LavaStorm.com
+
 [7] Rob van der Meulen, Janessa Rivera. 2015. [Gartner Says Power Shift in Business Intelligence and Analytics Will Fuel Disruption](http://www.gartner.com/newsroom/id/2970917). Press Release on Gartner.com
+
 [8] Victor R. Basili. 1992. Software Modeling and Measurement: The Goal/Question/Metric Paradigm. Technical Report. University of Maryland at College Park, College Park, MD, USA.
