@@ -137,7 +137,6 @@ statistical _meta-analysis_ is the most powerful form, this can rarely be used i
 computing studies due to the heterogeneous nature of the primary studies typically
 found, so less powerful and more qualitative forms usually need to be employed.
 
-```
 ##SideBox 1
 
 ###Example of a Systematic Review
@@ -186,7 +185,9 @@ strings.
 
 Shahin, M., Liang, P. & Babar, M. A. (2014), ‘A systematic review of software
 architecture visualization techniques’, Journal of Systems & Software 94, 161–185.
-```
+
+(end Sidebox 1)
+
 
 ## How far can we use systematic review outcomes to make decisions?
 
