@@ -8,16 +8,14 @@ Since insight is the product, let us define it here in simple terms.  The classi
 
 Let's look at a more concrete example.  As a purveyor and student of software engineering insights, I know large software organizations value code velocity (speed), quality as a control, and engineer satisfaction if you're lucky.  So I am often trying to understand the existing behaviors and their contribution to those areas.  And I'm continuously hunting for new or different behaviors that can dramatically improve those results.
 
-## Time to Insight [1]
+## Time to Insight
 
 _"There is immeasurable distance between late and too late."_
 -- Og Mandino (American Essayist and Phsycologist)
 
 An insight's value can decay very rapidly, and can eventually expire all together as un-actionable. History is full of war stories where intelligence arrived in time to change the outcome.  Stock markets quickly sway and even crash based on insights.  But an alert that my service is down, an hour after receiving a phone call from my best customer's lawyer to handle damages from the outage is both too late, and un-insightful! A key point here is that speeding up data processing and information production creates new opportunities for insight that was previously blocked, by giving time to take action on the new understanding. This also adds a competitive edge, in almost any human endeavor.
 
-Let's start with my own simple definition of Time to Insight (TTI):
-
-_Elapsed calendar time between a question being asked, and the answer understood, well enough for action to be taken._
+Let's start with a simple definition of Time to Insight (TTI): _Elapsed calendar time between a question being asked, and the answer understood, well enough for action to be taken._
 
 This seems pretty straight forward until you start peeling it apart.  There are a couple big variables left:
 
@@ -32,7 +30,7 @@ Time to Insight is getting traction from the likes of Forbes[1][2], as the leadi
 
 For industry and academia alike, the capability to produce insights fast is often a differentiated, competitive advantage.  One pro tip is to think of Insight Production as a value chain[3][4].  Identify and evaluate the primary activities between a question asked, and an insightful response given.  These often include, but are not limited to: collect data, analyze, transform, store, query, visualize, and sometimes it even requires a person to help interpret the data for the customer for them to have the ideal actionable insight.
 
-picture
+![Chart of sample insight value chain](InsightValueChain.png "Chart sample insight value chain")
 
 Where is the time spent? Is data collection still manual?  Perhaps there are expensive computations and transformation that add hours of lag.  Evaluate each activity and identify the best systemic ways to reduce TTI. In other words, perform a Value Chain Analysis[5].
 
@@ -61,4 +59,4 @@ _todo_: note on qualitative insights.
 [5] Ovidijus Jurevicius. 2013. [Value Chain Analysis](http://www.strategicmanagementinsight.com/tools/value-chain-analysis.html). Blog Article on StrategicManagementInsight.com
 [6] Drew Rockwell. 2015. [Speeding Time to Insight: Why Self-Service Data Prep is the Future of Big Data](http://www.lavastorm.com/blog/post/speeding-time-to-insight-why-self-service-data-prep-is-the-future-of-big-data/). Blog Article on LavaStorm.com
 [7] Rob van der Meulen, Janessa Rivera. 2015. [Gartner Says Power Shift in Business Intelligence and Analytics Will Fuel Disruption](http://www.gartner.com/newsroom/id/2970917). Press Release on Gartner.com
-[8]Victor R. Basili. 1992. Software Modeling and Measurement: The Goal/Question/Metric Paradigm. Technical Report. University of Maryland at College Park, College Park, MD, USA. 
+[8] Victor R. Basili. 1992. Software Modeling and Measurement: The Goal/Question/Metric Paradigm. Technical Report. University of Maryland at College Park, College Park, MD, USA.
