@@ -14,15 +14,19 @@ As examples of the use of visualization in data science for software engineering
 The researchers defined several relevant metrics, beyond the basic average share of descoped features, like time to birth and time to removal of a feature. However, not until they presented the feature survival chart, visualizing features and their status change in an x-y-diagram, see figure X. The features are listed on the x axis – one row for each feature - and time and milestones are marked on the y axis. Feature status is color coded: red for outscoped and two nuances of green for inscoped features, depending on the source of the feature request.
 
 Through the visualization chart, managers got an overview of the scoping of features and were able to connect major decisions in the project to the scope, marked with numbers in Figure X, and further explained by Wnuk et al (2009). This analysis helped them rethink the scoping process to make it more efficient. 
- 
-Figure X. Product scoping chart, from Wnuk et al (2009).
+
+
+![FeatureVis.jpg](FeatureVis.jpg)
+
+Figure 1. Product scoping chart, from Wnuk et al (2009).
 
 **Regression test selection.** Selecting test cases for regression testing of a new software version is the second case study on visualization. In a product-line project, there are several dimensions that are relevant to analyze to support the choice of regression tests, for example (1) levels of abstraction (unit, integration, system etc.), (2) regression testing as the system evolves over time with new versions, and (3) testing over different product variants, sharing a common code base (Runeson and Engström, 2012). We collected data on number of test cases, test case execution, failed tests, etc. However, for test designers and managers, none of these metrics were sufficient to support their regression test selection. The many dimensions made it hard to understand which test cases were run at which level, version and variant.
 
 We prototyped a visualization tool that enabled the users to view multiple views of the data, and to combine several dimensions, see Figure Y for an example (Engström et al, 2014). Each dot represents one test coverage item, and the color coding signals the frequency of the metric under analysis, e.g. the number of executed test cases. We evaluated the tool in three industrial focus groups with experienced test managers and consultants.  The users were generally in favor of the visualization prototype, while they provided detailed feedback on which data to visualize, and how. They wanted the x-y position to be used to carry a meaning, and requested more dynamic interaction in the views, than our prototype could manage.
 
- 
-Figure Y. Test coverage item overviews for test levels and software versions, from Engström et al (2014).
+![TestVis.jpg](TestVis.jpg) 
+
+Figure 2. Test coverage item overviews for test levels and software versions, from Engström et al (2014).
 
 These case studies clearly show the power of visualization. Graphs may help stakeholders get an overview of data, which is tailored to support their decisions. In the feature scoping case, some managers interpreted all descoped features as waste, which might not be the case. The organization may have learned something during the work with the feature, although the visualization clearly signals it as waste. This message has to be brought together with the visualization, so the graphs are not over-interpreted. 
 
