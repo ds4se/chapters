@@ -11,7 +11,7 @@ An unarguable fact in teaching is that people do not all learn in the same way. 
 
 This is no different in machine learning for software data analytics. There is a plethora of machine learning algorithms that can be used for different purposes. Such algorithms can give us several insights into software processes and products, such as what software modules are most likely to contain bugs (Hall et al 2012), what amount of effort is likely to be required to develop a software project (Dejaeger et al 2012), what commits are most likely to induce crashes (An and Khomh 2015), how the productivity of a company changes over time or how to improve productivity (Minku and Yao 2014), etc.
 
-Different types of algorithm are most adequate depending on the type of data, the environment being modelled and problem in hands. In order to create good data models, it is thus important to investigate certain aspects of the problem, data and environment before choosing the type of algorithm to be used. Here are a few useful questions to ask for that.
+Different types of algorithm are most adequate depending on the type of data and the environment being modelled. In order to create good data models, it is thus important to investigate the problem in hands before choosing the type of algorithm to be used. Here are a few useful questions to ask for that.
 
 
 ## Do additional data arrive over time?
@@ -46,7 +46,7 @@ Certain data analyses may need to process large quantities of potentially comple
 When there is not so much data to learn from, learning algorithms tend to struggle to create accurate models. This is because the available data are not enough to represent a whole environment or population well. This is typically the case of software effort estimation data, but other software engineering problems may suffer similar issues. When there is not much data, simpler learning algorithms that do not have too many parameters to learn tend to perform better (Kocaguneli et al 2012).
 
 
-## In summary, examine your data first, then chose the type of algorithm to consider
+## In summary, examine your problem first, then chose the type of algorithm to consider
 It is important to understand the issues faced by data analysis in order to select learning algorithms. It is also advisable to run experiments to compare different algorithms and find out which of them is best suited for your data.
 
 
