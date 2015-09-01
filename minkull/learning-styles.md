@@ -1,6 +1,6 @@
 
 
-# This chapter is still unfinished!
+# This chapter is still unfinished! This is just the rough idea of the chapter.
 
 
 # How You Learn [Data Models] Does Matter and There Are Many Ways You Can Do This
