@@ -46,8 +46,9 @@ Certain data analyses may need to process large quantities of potentially comple
 When there is not so much data to learn from, learning algorithms tend to struggle to create accurate models. This is because the available data are not enough to represent a whole environment or population well. This is typically the case of software effort estimation data, but other software engineering problems may suffer similar issues. When there is not much data, simpler learning algorithms that do not have too many parameters to learn tend to perform better (Kocaguneli et al 2012).
 
 
-## In summary, examine your problem first, then chose the type of algorithm to consider
-It is important to understand the issues faced by data analysis in order to select learning algorithms. It is also advisable to run experiments to compare different algorithms and find out which of them is best suited for your data.
+## In summary...
+
+...examine your problem first, then chose the type of algorithm to consider! It is important to understand the issues faced by data analysis in order to select learning algorithms. It is also advisable to run experiments to compare different algorithms and find out which of them is best suited for your data.
 
 
 ## References
