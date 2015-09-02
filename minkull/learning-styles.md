@@ -55,7 +55,7 @@ When there is not so much data to learn from, learning algorithms tend to strugg
 
 + Tracy Hall, Sarah Beecham, David Bowes, David Gray and Steve Counsell. A Systematic Literature Review on Fault Prediction Performance in Software Engineering. <em>IEEE Transactions on Software Engineering</em>, vol. 38, no. 6, pp. 1276-1304, 2012.
 
-+ Ekrem Kocaguneli, Tim Menzies, Ayse Bener, Jacky Keung. Exploiting the Essential Assumptions of Analogy-Based Effort Estimation. <em>IEEE Transactions on Software Engineering<\em>, vol. 38, no. 2, pp. 425-438, 2012.
++ Ekrem Kocaguneli, Tim Menzies, Ayse Bener, Jacky Keung. Exploiting the Essential Assumptions of Analogy-Based Effort Estimation. <em>IEEE Transactions on Software Engineering</em>, vol. 38, no. 2, pp. 425-438, 2012.
 
 + Ekrem Kocaguneli, Bojan Cukic, Tim Menzies and Huihua Lu. Building a Second Opinion: Learning Cross-Company Data. <em>Proceedings of the 9th International Conference on Predictive Models in Software Engineering</em>, article no. 12, 2013a.
 
@@ -67,7 +67,7 @@ When there is not so much data to learn from, learning algorithms tend to strugg
 
 + Leandro Minku and Xin Yao. How to Make Best Use of Cross-company Data in Software Effort Estimation? <em>Proceedings of the 36th International Conference on Software Engineering</em>, pp. 446-456, 2014.
 
-+ Jaechang Nam, Sinno Pan and Sunghun Kim. Transfer Defect Learning. <em>Proceedings of the International Conference on Software Engineering<\em>, pp. 382-391, 2013.
++ Jaechang Nam, Sinno Pan and Sunghun Kim. Transfer Defect Learning. <em>Proceedings of the International Conference on Software Engineering</em>, pp. 382-391, 2013.
 
 + Burak Turhan, Tim Menzies, Ayse Bener and Justin Distefano. On the Relative Value of Cross-Company and Within-Company Data for Defect Prediction. <em>Empirical Software Engineering</em>, vol. 14, no. 5, pp. 540-578, 2009.
 
