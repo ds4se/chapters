@@ -5,8 +5,6 @@ Leandro L. Minku, Department of Computer Science, University of Leicester, UK
 
 The wisdom of the crowds phenomenon has long been observed in cognitive, social and political sciences. The idea is that the combination of the judgements given by a large group of people on a certain matter is often better than the judgement given by any individual within this group. 
 
-![Cow](cow.jpg)
-
 <div style="float: right;margin:10 10px 10px 10">
     ![Cow](cow.jpg)
 </div>
