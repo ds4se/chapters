@@ -29,7 +29,7 @@ Predictive accuracy tends to improve more if individual models are diverse, i.e.
 Sometimes there is not much data for building predictive models within a given environment, hindering the accuracy of predictive approaches. There may be more data available from other environments, but these data are not always directly relevant for predictions in the targeted environment. For example, the effort required to develop a certain software project within a given company may be different from the effort required in another company because they adopt different management strategies. So, a software effort estimation model created with data from one of these companies may not be directly applicable to the other. 
 
 <div style="float: left;margin:10 10px 10px 10">
-    ![Alt SnowBeach](snow-beach.jpg)
+    ![Alt SnowBeach](https://github.com/ds4se/chapters/blob/master/minkull/snow-beach.jpg)
 </div>
 
 Even though data from different environments are not always compatible, they may become more or less relevant over time. This is because environments may change over time, becoming more or less similar to other environments. For example, a software company may adopt a new software development process, resulting in its productivity becoming more similar to other companies that adopt this process. If we can identify <em>when</em> data from other environments become useful and <em>how much useful</em> they are, we can benefit from them to create better predictive models. 
