@@ -1,4 +1,4 @@
-# Why provenance matters
+# Why Provenance Matters
 
 ###Michael W. Godfrey, University of Waterloo, migod@uwaterloo.ca
 
@@ -22,21 +22,21 @@ What these scenarios have in common is that they depend on the *provenance* of s
 
 To do so, we need to able to identify which entities we are interested in, and how they relate to each other.  There are several kinds of entities that we might want to consider:
 
-1.  software artifacts that are managed by some tool as first-class entities, such as source code files, commits in a version control system (VCS), or bug reports in an issue tracking system;
+1. software artifacts that are managed by some tool as first-class entities, such as source code files, commits in a version control system (VCS), or bug reports in an issue tracking system;
 
-2.  attributes of these artifacts, such as bugfix comment histories and timestamps;
+2. attributes of these artifacts, such as bugfix comment histories and timestamps;
 
-3.  synthetic entities such as software features and maintenance tasks, which have strong meaning to developers but may not have crisp definitions or even independent existence; and
+3. synthetic entities such as software features and maintenance tasks, which have strong meaning to developers but may not have crisp definitions or even independent existence; and
 
-4.  relationships between any of the above, which may be explicit, implicit, inferred, or probabilistic.
+4. relationships between any of the above, which may be explicit, implicit, inferred, or even probabilistic.
 
-Depending on the task at hand, *defining and scoping the entities of interest* may be straightforward, or it may require tool support and/or manual intervention.  For example, in the first scenario, we first need to decide how to define and scope a feature.  Then, we need to be able to map these features to sets of code fragments for both our system and the open source system.  Finally, we need to examine the VCS commit history of the code that is related to these features within our system (and if the VCS history of the open source system is available to us, we can do the same for the open source system).  
+Depending on the task at hand, *defining and scoping the entities of interest* may be straightforward, or it may require tool support and/or manual intervention.  For example, in the first scenario, we need to decide how to define and scope a feature.  Then, we need to be able to map these features to sets of code fragments for both our system and the open source system.  Finally, we need to examine the VCS commit history of the code that is related to these features within our system (and if the VCS history of the open source system is available to us, we can do the same for the open source system).  
 
 At this point we have a set of features, decomposed into code fragments across two systems, and a set of related VCS commits that touch these code fragments.  *Establishing artifact linkage and ground truth* is the next problem we need to address.  When the open source project leader mentioned three high level features she thought had been copied, we performed the mapping of the features to source code on both systems.  Did we get it right?  On the other hand, if we trust our decomposition then the commit history gleaned from the VCS should be accurate, unless someone has rebased our git repository.
 
-Now we probably want to compare code fragments of the two systems on a feature-by-feature basis using a comparison tool such as `diff` which compares raw text or a code clone detector like CCFinder [CCFinder] or ConQAT [ConQAT], which has some understanding of the programming language. Because we've narrowed down our field of interest to a manageable set of code fragments, this step will probably be doable quickly.
+Now we probably want to compare code fragments of the two systems on a feature-by-feature basis using a comparison tool, such as `diff` which compares raw text, or a code clone detector like CCFinder [CCFinder] or ConQAT [ConQAT] which has some understanding of the programming language. Because we've narrowed down our field of interest to a manageable set of code fragments, this step will probably be doable quickly.
 
-But let's suppose that our company's lawyer now steps in with a bigger challenge: he wants us to make sure that nothing in our codebase closely matches any code in any of the five open source systems that are in our problem domain.  Lucky for us, code clone detectors tools are usually designed to be able to process large systems.  In provenance analysis in general, we often have to compare complex structures such as source code against large datasets; *scalable matching algorithms* are required to make this feasible.  This can be achieved via a two stage process:
+But let's suppose that our company's lawyer now steps in with a bigger challenge: he wants us to make sure that nothing in our codebase closely matches any code in any of the five open source systems that are in our problem domain.  Lucky for us, code clone detectors tools are usually designed to be able to process large systems.  In provenance analysis in general, we often have to compare complex structures such as source code against large datasets; *scalable matching algorithms* are required to make this feasible.  This can often be achieved via a two stage process:
 
 1. Preprocessing of the artifacts reduces the dimensionality of the data, say by hashing each line of code; the preprocessed data can then be compared relatively quickly as sets or sequences of hash values.
 2. When a quick comparison suggests a "hit", more complicated approaches can then be used on the original artifacts to prune away false positives.
