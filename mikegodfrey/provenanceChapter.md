@@ -2,13 +2,7 @@
 
 ###Michael W. Godfrey, University of Waterloo, migod@uwaterloo.ca
 
-Here's a problem:  You're a lead dev for a company that produces a web
-content management system, and you get email from an open source project
-leader who claims that your closed source project probably contains some of
-their open source code, in violation of their license.  He lists three
-features of your product that she suspects are built around code taken from
-his system, and she asks you to investigate and respond.  Can you determine
-if his claim has merit?  How do you investigate it?
+Here's a problem:  You're a lead dev for a company that produces a web content management system, and you get email from an open source project leader who claims that your closed source project probably contains some of their open source code, in violation of their license.  He lists three features of your product that she suspects are built around code taken from his system, and she asks you to investigate and respond.  Can you determine if his claim has merit?  How do you investigate it?
 
 Here's another problem:  Your company uses a commercial Java application
 that ships with embedded third-party libraries.  One of these libraries is
