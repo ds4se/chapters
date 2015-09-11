@@ -49,6 +49,7 @@ In the end, we found that privacy levels of the shared data by each data owner i
 		 	 	 		
 ## Summary
 The lessons we learned over the last six years have helped us to generate obfuscated data sets that demonstrate that "just right" balance between privacy and utility of data. These lessons can be used when developing more privacy algorithms for software data. 
+
 1. Most privacy algorithms tend to distort data to obfuscate it and to avoid correct associations with sensitive data. These however, tended to not care about lower utility. But, we found that a little change (distorting) can allow for high privacy level with comparable utility with the original data set.
 2. There is no need to share all your data. Sharing a small amount of data does not greatly degrade utility with the added bonus of increasing privacy. 			
 3. We already know that! Don’t share what others have already shared. This will allow data owners to share even less data and therefore increase privacy.
