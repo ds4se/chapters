@@ -2,7 +2,7 @@
 
 ![The Sirens: AP Press Image: $210](AP110929152491.jpg)
 
-In the legendary tale of Homer's Odyssey, the honored Odysseus and his crew must confront Persephone's [Sirens](http://www.greekmythology.com/Myths/Creatures/Sirens/sirens.html) --- dangerous yet alluring sea nymphs. As the story goes, these creatures possessed irresistible charm and fatal, lyrical voices which enchanted all who heard it. Spellbound, nearby crews would be lured to their gruesome deaths as they plunged themselves into the sea. Still, adventurers risked the journey for the promise of knowledge, for through the Sirens' song, "[o]ver all the generous earth [they] know everything that happens."
+In the legendary tale of Homer's Odyssey, the honored Odysseus and his crew must confront Persephone's [Sirens](http://www.greekmythology.com/Myths/Creatures/Sirens/sirens.html) --- dangerous yet alluring sea nymphs. As the story goes, these creatures possessed irresistible charm and fatal, lyrical voices which enchanted all who heard it. Spellbound, nearby crews would be lured to their gruesome deaths as they plunged themselves into the sea. Still, adventurers risked the journey for the promise of knowledge, for through the Sirens' song, "[o]ver all the generous earth [the adventurers] know everything that happens."
 
 Where all others had failed, Odysseus became the first mortal to live to gain this knowledge. How did he do it? Through guidance from Circe, the goddess of magic, Odysseus instructed his crew to plug their ears with molded wax to deafen them from the song. He then had his crew tie him to the mast and commanded them not to release him under any circumstances. And so Odysseus and fellow crew navigated past the Sirens. Odysseus, having heard the Sirens' songs, sailed away a wiser man.
 
@@ -26,7 +26,7 @@ This six-stage process we present here is tailored for software engineering rese
 
 It's tempting to jump right in and begin writing survey questions, and today's software packages almost entice you to do so. However, it's essential to first consider the questions you want to ask and how you intend to use the answers to the questions. This is not simply a matter of taking your research questions and translating them into survey question form. We've found, for example, that the phrasing of the question itself is highly contextually sensitive and that practitioners often do not have the same interpretation of a topic as the researcher.
 
-One way to mitigate this risk is to create a very short survey and cast a wide net to recruit experts on the topic. For example, one survey on data science practices randomly sampled employees at our organization and asked participants three simple questions: "Do you perform data science activities?"; b) "What's your biggest frustration when performing data science?; and c) "May we follow-up with you?"
+One way to mitigate this risk is to create a very short survey and cast a wide net to recruit experts on the topic. For example, one survey on data science practices randomly sampled employees and asked participants three simple questions: "Do you perform data science activities?"; b) "What's your biggest frustration when performing data science?; and c) "May we follow-up with you?"
 
 Next, follow-up with several of these participants and conduct interviews with them.
 
@@ -58,7 +58,7 @@ Here are some observations during piloting:
 
 * Length matters, and you should pay attention to how long it takes to complete the survey. We recommend that the survey not take more than 15 minutes.
 * Cut, cut, cut! This is a good opportunity to identify questions that are redundant, confusingly-worded, or overly difficult. 
-* Identify drop points where participants may give up and punt on the survey.
+* Identify drop points where participants may give up on the survey.
 * Pay attention to open response questions and don’t expect rich answers. In general, people don’t like typing stuff --- that’s what interviews are for.
 
 Finally, providing a strong _initial recruitment letter_ is perhaps just as important as the survey, but it is often overlooked or done as an afterthought. Be sure to motivate how the respondent benefits from the survey. Why should they take it? What do they get out of it? They always wants to know, “Why’d you pick me?” 
@@ -73,13 +73,13 @@ It's time to send out the survey! If you've done everything right so far, this i
 * Responses come in a bathtub model. You get a lot of responses early, then nothing or a trickle, followed by a final burst. Send a remainder to those that didn't respond the first time around, but you should consider preliminary analysis after the first set of responses so that you're not blocked on survey completion.
 * Be respectful and avoid oversampling the same participants or communities. Aim for diversity. Certain open source communities, such as Eclipse, Mozilla, and Apache, tend to be swamped with surveys from researchers all over the world.
 
-There's no hard and fast rule for the number of survey responses to target, but a sample size in the hundreds appears to appease even the most critical reviewers.
+There's no hard and fast rule for the number of survey responses to target, but for quantitative data, _power analysis_ is a useful technique for estimating the number of responses you'll need.
 
 ### Stage 6: Survey Analysis and Write-up
 
 Expect to do a certain amount of data cleaning, since you've generated the survey in a way that benefits the survey taker, not you. For example, Likert responses are easier to analyze when converted to an ordinal 1-5 scale. Other questions, such as "number of hours worked on a task", are easier to ask in terms of hour and minutes, but simpler to analyze as fractions of hours (1 hour 30 minutes to 1.5 hours).
 
-Even short surveys tend to generate large amounts of data for potential analysis, but not all of this information will be useful in your eventual write-up. That's okay.
+Even short surveys tend to generate large amounts of data for potential analysis, but not all of this information will be useful in your eventual write-up. That's okay, but consider it a learning experience -- was it worth participants' time in asking a question (or asking it in a paticular way) if you're not going to analyze the results?
 
 During this process, try to triangulate and form a coherent narrative about the work using the interviews and the survey responses. Do the survey responses match the experiences of the interviews? Are there cases where they don't? Connecting your survey results back to the interviews enables you to generalize your interview results. This approach, for example, allowed us to say with some statistical certainty that "Creativity is valued more in game development teams," a statement that we heard in our interviews on games development and software engineering. 
  
