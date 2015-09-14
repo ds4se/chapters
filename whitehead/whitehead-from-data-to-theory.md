@@ -192,7 +192,7 @@ Herzig et al.’s BUG category could potentially be found in four of the Keymind
 (Missing Incorrect..., Non-Compliance..., Security/Vulnerability, Unexpected Termination).  
 
 What all of these examples show are clear examples of different bug classification schemes, a 
-condition variously termed schema mismatch, or ontology mismatch [cite Visser paper]. The 
+condition variously termed schema mismatch, or ontology mismatch (Visser et al., 1997). The 
 implication of this is profound. Each of these projects has different models and assumptions 
 about what software is, how to model its behavior, and which behaviors are worthy of interest. 
 That is, there is instability in the definitions of most fundamental abstractions at play here, 
@@ -260,3 +260,7 @@ accessed at http://www.scrummanager.net/files/nato1968e.pdf
 Tan, Lin, Liu, Chen, Li, Zhenmin, Wang, Xuanhui, Zhou, Yuanyuan, and Zhai, Chengxiang, 
 "Bug Characteristics in Open Source Software." _Empirical Software Engineering_, Vol. 19, No. 6,
 Dec. 2014, pp. 1665-1705.
+
+Visser, Pepijn R. S., Jones, Dean M., Bench-Capon, T.J.M, Shave, M.J.R., "An Analysis
+of Ontology Mismatches; Heterogeneity versus Interoperability." In _Proc. AAAI Spring
+Symposium on Ontology Engineering, 1997_, _AAAI Technical Report SS-97-06_, 1997.
