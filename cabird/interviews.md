@@ -69,4 +69,4 @@ Card Sorting is the best we've found
 
  * Quotes can provide richness and insight and is engaging
  * don't cherry pick
- * no quantitative analysis… but can drive surveys or other quantitative methods.
+ * no quantitative analysis but can drive surveys or other quantitative methods.
