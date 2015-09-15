@@ -1,6 +1,6 @@
 #Combining Quantitative and Qualitative Methods (In Mining Software Repository Research)
 
-## We have solid empirical evidence!
+## Prologue: we have solid empirical evidence!
 In recent years, empirical research in software engineering has gained maturity a lot. This also thanks to the availability of a large amount of data from different kinds of software repositories, as well as of techniques to mine them, *e.g.,* for tracing data from heterogeneous sources, summarizing changes, or mining unstructured and semi-structured data sources.
 
 In summary, we have methods and data to clearly assess the performance of our new recommender system, and we can show for instance that:
@@ -75,7 +75,7 @@ The open coding process should involve multiple and independent coders to limit 
  * What are the typical problems developers encountered when using our new recommender system? What the main suggestions for improvement?
  
 
-## Conclusion: The truth is out there
+## Conclusion: the truth is out there!
 Studying a software process/product, or evaluating a novel approach/tool requires multiple, and different kinds of, evaluations. On the one hand, quantitative studies having different scale, different level of control and different risks, *e.g.,* surveys, case studies and controlled experiments, as well as their replication to increase statistical power and external validity of results.
 On the other hand, combining such quantitative studies with qualitative ones will help providing convincing arguments of *when* and *why* a prediction model or a recommending system works (or does not work).
 
