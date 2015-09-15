@@ -79,7 +79,7 @@ There's no hard and fast rule for the number of survey responses to target, but 
 
 Expect to do a certain amount of data cleaning, since you've generated the survey in a way that benefits the survey taker, not you. For example, Likert responses are easier to analyze when converted to an ordinal 1-5 scale. Other questions, such as "number of hours worked on a task", are easier to ask in terms of hour and minutes, but simpler to analyze as fractions of hours (1 hour 30 minutes to 1.5 hours).
 
-Even short surveys tend to generate large amounts of data for potential analysis, but not all of this information will be useful in your eventual write-up. That's okay, but consider it a learning experience -- was it worth participants' time in asking a question (or asking it in a paticular way) if you're not going to analyze the results?
+Even short surveys tend to generate large amounts of data for potential analysis, but not all of this information will be useful in your eventual write-up. That's okay, but consider it a learning experience -- was it worth participants' time in asking a question (or asking it in a particular way) if you're not going to analyze the results?
 
 During this process, try to triangulate and form a coherent narrative about the work using the interviews and the survey responses. Do the survey responses match the experiences of the interviews? Are there cases where they don't? Connecting your survey results back to the interviews enables you to generalize your interview results. This approach, for example, allowed us to say with some statistical certainty that "Creativity is valued more in game development teams," a statement that we heard in our interviews on games development and software engineering. 
  
