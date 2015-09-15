@@ -1,6 +1,6 @@
 #Software Analytics for Small Software Companies: More Questions than Answers
 
-Romain Robbes. DCC, University of Chile
+*Romain Robbes. DCC, University of Chile*
 
 Software analytics have been shown to be useful for many use cases. Examples are numerous, and many of these are mentioned in this book. Software analytics has also been succesfully applied in the industry. Again, the examples are numerous. But these examples share one characteristic: they come mostly from large software companies. For instance, Microsoft has a dedicated research group studying it’s software engineering practice [1], as does ABB [2], while Google employs at least one hundred full-time engineers working on improving their tools based on analytics [3], to name a few.
 
@@ -10,7 +10,7 @@ However, most software companies are small. Studies have shown that in several c
 
 These small companies face a different reality than large software companies. They do not have so many resources to allocate to long-term projects, being instead more focused on the short term. Should software analytics also attempt to address these cases? If the answer is far from clear, we bring some elements to the discussion, taking examples from the Chilean software industry as a basis.
 
-## The reality for small software companies.
+## The reality for small software companies
 
 Small software companies have different factors that must be taken into account in order to successfully apply software analytics. We identified the following two main factors:
 
@@ -27,7 +27,7 @@ The consequences of this is that shorter projects have necessarily much less dat
 
 While a few MSR approaches (such as the works of Zimmermann et al. [11], and Kim et al. [12]) did some evaluation of the technique’s performance over time as part of a comprehensive evaluation, it is very uncommon to see this. This leads us to formulate this requirement for the design and evaluation of software analytics approaches:
 
-Software Analytics approaches should consider the cases were little data is available, and be evaluated in these cases, so that practitioners in these situations have an idea of the performance they can expect.
+*Software Analytics approaches should consider the cases were little data is available, and be evaluated in these cases, so that practitioners in these situations have an idea of the performance they can expect.*
 
 Further, the approaches by Zimmermann and Kim ([11,12]) did show that a certain amount of time (either measured by amount of time or amount of commits) was necessary for the approaches to reach good performance. This tells us that performance with a low amount of data should not be taken as granted, and should definitely be evaluated explicitly.
 
@@ -40,7 +40,7 @@ Of course, we cannot answer for all companies based on one datapoint. However, w
 
 However, the CEO particularly appreciated that the approach that Amisoft implemented, based on following higher-level tasks described in the process that they were using, gave him and his project managers far better visibility in their progress. This helped them react much quicker to delays, and avoid the “heroic” rushes before deadlines that can lead to developer burnout. It also helped them negotiate much more comfortable schedules with their clients, “building in” the estimate the most likely delays, avoiding that the delay be shown to clients.
 
-As such: Software analytics for small companies may need to reassess what the most optimal data sources and insights needed are.
+As such: *Software analytics for small companies may need to reassess what the most optimal data sources and insights needed are.*
 
 Perhaps a systematic treatment of the issue is needed. The work on information needs of Buse and Zimmermann, and the recent work of Begel and Zimmermann [15] on what research questions researchers should tackle, made a long way towards documenting the needs and perceptions of actual software engineers at Microsoft. Replicating these studies in the context of small software companies could lead to very instructive results.
 
