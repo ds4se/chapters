@@ -182,8 +182,14 @@ puts pressure on you to develop it from the beginning,
 not as a quick and dirty throwaway hack, but as the
 high-quality piece of software it deserves to be.
 
+Historians have commented that when Rutherford's glassblower, Otto Baumbach,
+was interned during the First World War, experimental physics at the
+University of Manchester where he had set up shop were brought to a halt.
+Such is the power of tools to advance great science.
+
 
 ## References
++ Rutherford, E. and Royds, T. The Nature of the alpha particle from Radioactive Substances, Philosophical Magazine, 17(6):281-286, 1909.
 + Diomidis Spinellis. Tool writing: A forgotten art? IEEE Software, 22(4):9–11, July/August 2005. (doi:10.1109/MS.2005.111).
 + Diomidis Spinellis. CScout: A refactoring browser for C. Science of Computer Programming, 75(4):216–231, April 2010. (doi:10.1016/j.scico.2009.09.003)
 + Diomidis Spinellis. Global analysis and transformations in preprocessed languages. IEEE Transactions on Software Engineering, 29(11):1019–1030, November 2003
@@ -196,3 +202,4 @@ high-quality piece of software it deserves to be.
 + Georgios Gousios and Diomidis Spinellis. Conducting quantitative software engineering studies with Alitheia Core. Empirical Software Engineering, 19(4):885–925, August 2014. (doi:10.1007/s10664-013-9242-3)
 + Gall, Harald C., Beat Fluri, and Martin Pinzger. "Change analysis with evolizer and changedistiller." IEEE Software 1 (2009): 26–33.
 + Sarma, Anita, et al. "Tesseract: Interactive visual exploration of socio-technical relationships in software development." Software Engineering, 2009. ICSE 2009. IEEE 31st International Conference on. IEEE, 2009.
++ Gall, Alan. Otto Baumbach — Rutherford's Glassblower. Newsletter published by History of Physics Group of the Institute of Physics (UK & Ireland), (23):44–55, January 2008.
