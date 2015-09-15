@@ -10,7 +10,7 @@ Surveys, as with Persephone's Sirens, are an attractive instrument for empirical
 
 ## The Lure of the Sirens: The Attraction of Surveys
 
-Surveys are an attractive option for several reasons. The first lure is easy scalability. After an initial sunk cost to develop the survey, our perception is that can we simply scale up by sending the survey to more participants. The second lure is that surveys are easy to deploy. Today, the preferred format is predominately electronic survey distribution, not print, and many user-friendly, online services exist to help researchers design and deploy surveys. Finally, surveys give us a certain sense of quantitative comfort because the survey responses can be downloaded into a spreadsheet or other statistical analysis software. A popular form of question-style, _Likert_ statements (Strongly Disagree to Strongly Agree), can then be quantitatively analyzed through various descriptive and statistical techniques that are already familiar to us.
+Surveys are an attractive option for several reasons. The first reason is easy scalability. After an initial sunk cost to develop the survey, our perception is that can we simply scale up by sending the survey to more participants. The second reason is that surveys are easy to deploy. Today, the preferred format is predominately electronic survey distribution, not print, and many user-friendly, online services exist to help researchers design and deploy surveys. A final reason is that surveys give us a certain sense of quantitative comfort because the survey responses can be downloaded into a spreadsheet or other statistical analysis software. A popular form of question-style, _Likert_ statements (Strongly Disagree to Strongly Agree), can then be quantitatively analyzed through various descriptive and statistical techniques that are already familiar to us.
 
 But as with Odysseus, these lures are only surface benefits. Our experiences have taught us the harsh lesson that, without caution, lurking beneath the waters are several traps that lead to shipwreck. Let's figure out how to avoid that fate.
 
@@ -26,7 +26,7 @@ This six-stage process we present here is tailored for software engineering rese
 
 It's tempting to jump right in and begin writing survey questions, and today's software packages almost entice you to do so. However, it's essential to first consider the questions you want to ask and how you intend to use the answers to the questions. This is not simply a matter of taking your research questions and translating them into survey question form. We've found, for example, that the phrasing of the question itself is highly contextually sensitive and that practitioners often do not have the same interpretation of a topic as the researcher.
 
-One way to mitigate this risk is to create a very short survey and cast a wide net to recruit experts on the topic. For example, one survey on data science practices randomly sampled employees and asked participants three simple questions: "Do you perform data science activities?"; b) "What's your biggest frustration when performing data science?; and c) "May we follow-up with you?"
+One way to mitigate this risk is to create a very short survey and cast a wide net to recruit participants with familiarity on the topic. For example, one survey on data science practices randomly sampled employees and asked them three simple questions: "Do you perform data science activities?"; b) "What's your biggest frustration when performing data science?; and c) "May we follow-up with you?"
 
 Next, follow-up with several of these participants and conduct interviews with them.
 
@@ -38,7 +38,7 @@ These 30-45 minute interview sessions provide us with rich stories, but these is
 
 ### Stage 3: Survey Design
 
-It's now time to design the survey. When doing so, be careful about wording: instead of inventing terms, prefer to use language that you encountered in the interviews conducted earlier. Otherwise, your questions might not connect with the survey respondents.
+It's now time to design the survey. When doing so, be careful about wording: instead of inventing terms, prefer to use language that you encountered in the interviews conducted earlier. Otherwise, your questions might not connect with the survey participants.
 
 There are two broad categories of questions you can ask: closed and open response. Closed response, such as multiple choice or Likert scales, are easy to statistically analyze, but fix the set of possible responses. Open response, such as short answer text fields, can provide new and unexpected insights. However, it's laborious to analyze these unstructured, free-text responses. Our preference is to use open responses sparsely and instead rely on the interview content for these types of questions.
 
@@ -50,7 +50,7 @@ How did we know which statements to ask? Our statements came directly from the s
 
 Don't count on your initial survey design to be perfect. In an extreme case, a collaborator spent nearly a year in preparation while his team argued about question wording. By the time they "finished," the survey had become obsolete and ultimately proved to be useless.  
 
-Instead, consider a more agile approach by _piloting_ the survey: ask a few friends to take the survey  and then analyze the results the way you normally would. With as few as five respondents, you can often catch the   most egregious mistakes.
+Instead, consider a more agile approach by _piloting_ the survey: ask a few friends to take the survey  and then analyze the results the way you normally would. With as few as five participants, you can often catch the most egregious mistakes.
 
 During piloting, a useful perspective is to test your survey like you’d test software. Survey bugs can appear in the most unlikely of places. For example, one "bug" we found through this process was in our consent form. A participant could choose "I don’t consent to participate," but still fill out the survey! This would have been disastrous, because we wouldn't know who consented and who didn’t. We'd have to throw out all the data.
 
@@ -61,7 +61,7 @@ Here are some observations during piloting:
 * Identify drop points where participants may give up on the survey.
 * Pay attention to open response questions and don’t expect rich answers. In general, people don’t like typing stuff --- that’s what interviews are for.
 
-Finally, providing a strong _initial recruitment letter_ is perhaps just as important as the survey, but it is often overlooked or done as an afterthought. Be sure to motivate how the respondent benefits from the survey. Why should they take it? What do they get out of it? They always wants to know, “Why’d you pick me?” 
+Finally, providing a strong _initial recruitment letter_ is perhaps just as important as the survey, but it is often overlooked or done as an afterthought. Be sure to motivate how the participant benefits from the survey. Why should they take it? What do they get out of it? They always wants to know, “Why’d you pick me?” 
 
 Though Odysseus had only one chance to face the Sirens, piloting offers you multiple opportunities to quickly practice your survey before embarking on the real journey. 
 
@@ -87,7 +87,7 @@ During this process, try to triangulate and form a coherent narrative about the 
 
 Our take away is that the survey itself is only a small part of the picture. In large part, the upfront work you invest before the survey will determine the success of your results. In short:
 
-* Pay special attention to ensure that the recipients' time and effort is respected. 
+* Pay special attention to ensure that the participants' time and effort is respected. 
 * Piloting is a good way to identify breakages early in the design process.
 * What seems reasonable for a designer is not reasonable for the participant. Use language familiar to the participants.
 * Surveys shouldn't be a standalone instrument; use them as a triangulation method and combine them with other techniques, such as interviews. This gives you both the breadth and depth to report your research in a compelling way.
