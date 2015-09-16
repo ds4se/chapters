@@ -83,7 +83,7 @@ As an alternative to transcription, some of my interns have taken an approach th
 
 ## Analysis
 
-The must fruitful method we have found for analyzing interview responses is *card sorting*.  This entails literally printing off the individual answers to interview questions onto paper that we then cut into (often hundreds of) cards.  We then group these cards into themes which can be used to organize reporting, can inform additional research methods such as creating surveys for quantitative support, or can be analyzed individually.  Card sorts are beyond the scope of this chapter and can be used for almost any form of qualitative data such as open survey responses.  For details, we refer the reader to chapter *Card-sorting: From Text To Themes*.
+The must fruitful method we have found for analyzing interview responses is *card sorting*.  This entails literally printing off the individual answers to interview questions onto paper that we then cut into (often hundreds of) cards.  We then group these cards into themes which can be used to organize reporting, can inform additional research methods such as creating surveys for quantitative support, or can be analyzed individually.  Card sorts are beyond the scope of this chapter and can be used for almost any form of qualitative data such as open survey responses.  For details, please take a look at the chapter *Card-sorting: From Text To Themes*.
 
 ## Reporting
 
