@@ -24,7 +24,7 @@ This six-stage process we present here is tailored for software engineering rese
 
 ### Stage 1: Initial Recruitment
 
-It's tempting to jump right in and begin writing survey questions, and today's software packages almost entice you to do so. However, it's essential to first consider the questions you want to ask and how you intend to use the answers to the questions. This is not simply a matter of taking your research questions and translating them into survey question form. We've found, for example, that the phrasing of the question itself is highly contextually sensitive and that practitioners often do not have the same interpretation of a topic as the researcher.
+It's tempting to jump right in and begin writing survey questions, and today's software packages almost entice you to do so. But as we learned with the Sirens, adventurers who dashed off on their journey without appropriate preparation ultimately met with tragedy. Consequently, it's essential to first consider the questions you want to ask and how you intend to use the answers to the questions. This is not simply a matter of taking your research questions and translating them into survey question form. We've found, for example, that the phrasing of the question itself is highly contextually sensitive and that practitioners often do not have the same interpretation of a topic as the researcher.
 
 One way to mitigate this risk is to create a very short survey and cast a wide net to recruit participants with familiarity on the topic. For example, one survey on data science practices randomly sampled employees and asked them three simple questions: "Do you perform data science activities?"; b) "What's your biggest frustration when performing data science?; and c) "May we follow-up with you?"
 
@@ -34,15 +34,17 @@ Next, follow-up with several of these participants and conduct interviews with t
 
 The interview is one process through which the researcher gains information about their topic. We've found a successful approach is to ask participants to share specific stories that relate to a particular topic. Often, participants will tell these in the form of "war stories," which describe particularly challenging situations and how they overcame them.
 
-These 30-45 minute interview sessions provide us with rich stories, but these isolated anecdotes are difficult to generalized because they are highly contextualized. Also, because interviews are expensive and time-consuming to conduct, only a limited number of stories are practical to obtain. But by translating these stories into survey response questions, we can both generalize and scale these stories.
+Think of these interviews as incredible sources of knowledge. Like the songs of the Sirens, these 30-45 minute interview sessions provide us with rich stories, told directly through the voices of those who experienced them. 
+
+Nonetheless, these isolated anecdotes are difficult to generalize because they are highly contextualized. Also, because interviews are expensive and time-consuming to conduct, only a limited number of stories are practical to obtain. But by translating these stories into survey response questions, we can both generalize and scale these stories.
 
 ### Stage 3: Survey Design
 
-It's now time to design the survey. When doing so, be careful about wording: instead of inventing terms, prefer to use language that you encountered in the interviews conducted earlier. Otherwise, your questions might not connect with the survey participants.
+It's now time to design the survey. Just as Odysseus realized early on that he would not be able obtain the Sirens' knowledge through force, a similar principle holds for survey design. Since online surveys are self-administered,  be careful about wording. Instead of inventing terms, prefer to use language that you encountered in the interviews conducted earlier. Otherwise, your questions might not connect with the survey participants.
 
 There are two broad categories of questions you can ask: closed and open response. Closed response, such as multiple choice or Likert scales, are easy to statistically analyze, but fix the set of possible responses. Open response, such as short answer text fields, can provide new and unexpected insights. However, it's laborious to analyze these unstructured, free-text responses. Our preference is to use open responses sparsely and instead rely on the interview content for these types of questions.
 
-The key to successful survey design is to ensure that the majority of your questions are grounded in and derived from the experiences of the interviews. As an example, in our survey about game development and traditional software development, we asked a set of Likert statements on coding, process, and team. The statements were of the form "My software has high technical debt." (Coding), "My team uses a waterfall process, rather than an agile process." (Process), and "Creativity is highly valued on the team" (Team).
+The key to successful survey design, then, is to ensure that the majority of your questions are grounded in and derived from the experiences of the interviews. As an example, in our survey about game development and traditional software development, we asked a set of Likert statements on coding, process, and team. The statements were of the form "My software has high technical debt." (Coding), "My team uses a waterfall process, rather than an agile process." (Process), and "Creativity is highly valued on the team" (Team).
 
 How did we know which statements to ask? Our statements came directly from the stories told by participants during our semi-structured interviews. By doing so, we can triangulate stories we heard in the interviews and generalize those experiences quantitatively.
 
@@ -85,14 +87,12 @@ During this process, try to triangulate and form a coherent narrative about the 
  
 ## In Summary
 
-Our take away is that the survey itself is only a small part of the picture. In large part, the upfront work you invest before the survey will determine the success of your results. In short:
+Our take away is that the survey itself is only a small part of the picture. In large part, the upfront work you invest before the survey will go a long way towards deciding if you succeed or if you shipwreck. In short:
 
 * Pay special attention to ensure that the participants' time and effort is respected. 
 * Piloting is a good way to identify breakages early in the design process.
 * What seems reasonable for a designer is not reasonable for the participant. Use language familiar to the participants.
 * Surveys shouldn't be a standalone instrument; use them as a triangulation method and combine them with other techniques, such as interviews. This gives you both the breadth and depth to report your research in a compelling way.
-
-TODO(tbarik): Final tie-in to Odysseus to close the loop.
 
 ## References
 
