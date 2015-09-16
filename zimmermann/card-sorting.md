@@ -1,5 +1,5 @@
 #Card-sorting: From Text To Themes 
-_Thomas Zimmermamm, Microsoft Research_
+_Thomas Zimmermann, Microsoft Research_
 
 Suppose you just ran a survey with hundreds of responses to an open text question. You now want to make sense of the data. How can you do this in a systematic way?
 
