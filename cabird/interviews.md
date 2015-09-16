@@ -1,89 +1,109 @@
 #Interviews
 
 ##Why Interview?
-Used often as initial exploratory investigation.  Unlike quantitative methods, you can learn about things you had no prior ideas or hypotheses about.  Allows rich engagement, follow up questions, etc.  You can collect historical data that is not recorded anywhere, can elicit opinions and impressions in richer detail than written communication.  Can triangulate with other data collection techniques.  Can be used to clarify things that have already happened (especially following an observation).
 
-Generally, research involving interviews follows the steps in the workflow below, though some steps may be omitted based on the context, goals, and specifics of the study.  In this chapter, I'll provide a description and best practices for each phase based on experiences that we have had conducting interviews for software engineering at Microsoft.  
+Two years ago I was investigating code review latency at Microsoft.  In the process of analyzing data from code reviews, I found an odd anomaly in my data from a team in Bing.  They had a number of code reviews signed off only minutes (sometimes *under* a minute) after the code review was created by the code change author.  I meticulously looked at the data collection mechanism to see if there was an error.  I manually looked at the reviews in question to try to see how and why the reviews were signed off so fast.  I conducted a number of experiments on the data based on guesses that I had.  All to no avail.  As a last resort, I contacted one of the developers on the team and scheduled an interview with him about his team.  He explained that the reason for the lightning fast reviews was that they would conduct code reviews in person with two or three developers huddled around the code authors screen as he explained the change.  Once the reviewers were happy, the author would create the code review in the review system and the reviewers would immediately sign off on the review.  The code review as manifest in the system didn't actually reflect how code review was being done by the team.  It had never occurred to me that this might be the reason for my data anomaly and if I hadn't taken the time to actually ask the developer I still wouldn't know.  In just a few minutes, he had answered a question that I hadn't been able to answer after hours of testing hypotheses on data.  In my view, this is one of the primary benefits of doing interviews.   Unlike quantitative approaches where you must have some idea or hypothesis ahead of time (you can't compute a metric or run a t-test without first deciding what you want to measure or test), you can learn things in an interview that you would never have thought of yourself.
+
+We have found the interviews can be wonderful tools for exploratory investigation and they often can drive the formation of theories and hypotheses that we can then use complementary quantitative methods to further investigate and support.  Interviews allow rich engagement and follow up questions.  You can collect historical data that is not recorded anywhere and you can elicit opinions and impressions in richer detail than people would provide through written communication.  Information from interviews can be triangulated with other data sources.  In addition, interviews can be used to clarify things that have already happened (especially following an observation).
+
+Generally, when we include interviews in our research, we follow the steps in the workflow below, though some steps may be omitted based on the context, goals, and specifics of the study.  In this chapter, I'll provide a description and best practices for each phase based on experiences that we have had conducting interviews for software engineering research at Microsoft.  
 
 <div>
   <img src="interview-workflow.PNG" width="600px" />
 </div>
 
-##Types of interviews
-There are three high level types of interviews.  **Describe when it is best to use each one of these.**
+##The Interview Guide
 
-**Structured interviews** have an exact set of questions that are asked.  These interviews are often quantitative in nature and used a fairly rigid an interview script.  This can be thought of similar to an in-person administered survey.
- 
-**Semi-Structured** interviews consist of a series of high level questions used as jumping off points.  They are usually 
-qualitative in nature and an interview guide.
+We have found that creating an interview guide helps interview research in a number of ways.  An interview guide is contains a list of the high level topics that you plan on covering in the interview with the high level questions that you want to answer under each topic.  We usually limit the guide to one page so that it's easy to refer to and to make sure that we're not getting too low level.  The process of creating such a guide can help to focus your line of thinking and therefore questioning.
 
-**Unstructured Interviews** High level list of topics, exploratory in nature, often a conversation, used in ethnographies and case-studies.
- 
+When conducting the interview, we always take a copy of the guide so that we can easily cross off questions or topics as they are covered.   Often we find that some questions are answered during the course of our conversation with the interviewee and so we don't end up explicitly asking all of the questions. It is important to remember that the interview guide really is only a *guide*.  You don't have to follow the same ordering and there's nothing wrong with "going off script" at times if a particular line of questioning that you hadn't anticipated seems worthwhile.  However, the guide can help you with pacing during an interview.  If you're ten minutes into a thirty minute interview and you realize that you've only covered one topic out of the five on your guide, then you still have time to get back on track.
+
+
 ##Selecting Interviewees
 
-Random sampling is not the best approach since your sample will likely not be large and you won't be doing quantitative analysis anyways.  Select a sampling that gives you the most "coverage" and breadth.  Sometimes called stratified sampling.  One method is snowball sampling.  An orthogonal method to use is saturation.  Once you have covered your population and you have conducted a few interviews and learned nothing new, you have most likely saturated and further interviews are unlikely to provide much value.
+While random sampling of a population is a good route to go when doing quantitative analysis with a large sample, it is not the best approach when selecting interviewees.  Due to the time and effort required in conducting interviews, it is unlikely that you would be able to get a large enough sample, and the data gathered from interviews is usually not quantitative in nature.  Instead, I focus on capturing in my sample as much variation as possible along the dimensions that I believe may have an effect on the topic of my research.  
 
-##The Interview Guide
- * Contains an organized list of high level questions.
- * ONLY A GUIDE!
- * Questions can be skipped, asked out of order, followed up on, etc.
- * Helps with pacing and to make sure core areas are covered.
+As an example, I recently was trying to understand how people were using code review data.  If I had selected a random sample, my interviewees would mostly be male software developers between 20 and 30 years old at low levels of seniority that work in Redmond and work on shipping products and I wouldn't have learned all the ways that people use the data.  Instead, we interviewed contracted developers in Asia, a program manager responsible for the education of a dev team, an older female development lead from the Bay Area, a development lead in charge of internationalization in South America, two senior managers making plans for a cloud product, and a young developer trying to develop a set of best practices for his team in Office, among others.  By intentionally selecting a diverse set of interviewees with respect to seniority, age, role, and product, we were able to capture a large number ways that the data was used.  If we wanted further quantitative information about the different ways, we could use what we learned to create closed questions for a survey that we *could* deploy widely to a more representative, random sample.
+
+You may not always be fortunate enough to able to pick and choose your interviewees.  In that case, you can take a "saturation" based approach.  If you reach the point where you have not received any new answers to your questions after the last three to five interviews, then you have likely reached *saturation* and further interviews are unlikely to provide much value.  
 
 
 ##Recruitment
- * Introduce yourself.
- * Tell them what your goal is.
- * How can it benefit them?
- * How long will it take?
- * Do they need any preparation?
- * Why did you select them in particular?
 
+Once you have determined who you want to recruit for interviews, you need to contact them.  We've found that it can be helpful to do when contacting them, whether it be via email or some other means.
+
+ * Introduce yourself and explain your job or role.
+ * Tell them what the goal of your research is and how conducting an interview with them will help you accomplish that goal.
+ * Describe how what you are doing can benefit them.  In many cases, this may be long term, but it shows that you are thinking about them and what they face.
+ * Explain how long you estimate that the interview will take.
+ * Let them know if you'd like them to do anything to prepare for the interview.  As an example, I once asked developers to open up a recent code review they had taken part in and look over it before I arrived.
+ * Tell them how they were selected.  Did you select them because they fit some criteria or were they purely randomly selected?
+ * Share any information they need and ask for any information you need to be able to conduct the interview.  This could include things sharing your skype name, asking them where their office is, providing a link to a consent form they need to sign prior to the interview.
 
 ##Collecting Background Data
 
-Show interview-artifact 
+Depending on your goal, you may need to collect information specific to the interviewee prior to conducting the interview.  As an example, a few years ago we were investigating the value of categorizing source code commits (Hindle, 2012).  As part of this, once a developer had accepted an interview invitation, we categorized their commits and created graphs for each category over time so that we could ask them about the peaks and valleys of activity.  
 
 <div>
   <img src="interview-artifact.PNG" width="600px" />
 </div>
 
+While collecting individual specific data may not be a common activity, it still may be useful to try to learn a bit about the team, project, and processes that the interviewee is associated with so that you don't come into the interview completely cold.  It can also build some level of trust and understanding as it shows that you've "done your homework."
+
 
 ##Conducting the interview
-Two people is best
-	Tend to ask more questions == more info
-	Less “down time”
-	One writes, one talks
-	Discuss afterwards
-	Three or more can be threatening
-Ask to record.  Still take notes (What if it didn’t record!)
-You want to listen to them, don’t make them listen to you!
-Face to face is best, even if online.
-Be aware of time.
 
+The most important phase of interview research is actually conducting the interview.  Here are some suggestions.
 
+When possible, we have two people conduct the interview together.  With two people present, one can focus on taking notes while the other manages the conversation (looks at the interview guide, maintains eye contact, etc.).  Both people are listening, so they are more likely to notice comments or answers that require follow up questions.  The two will likely notice different things during the interview so they can discuss what they noticed immediately afterwards.  Having three or more interviewers can create a threatening or interrogation feeling and may also require finding a larger meeting space than a typical office.
 
-##After the Interview
-Write down post-interview notes.  Thoughts, impressions, discussion with co-interviewer, follow-ups.
-Do you need to continue interviewing? (saturation)
-Do you need to modify your guide?
-Do you need to transcribe?
+We usually bring a voice recorder to record the interview so that we can capture everything that is said verbatim.  Make sure to ask permission to record the interview before starting a recording and explain how the recording will be used.  We still make sure that one of us is copiously taking notes during the interview.  It's much easier to refer to notes than it is to find a particular place in a recording.  In addition, it is possible that batteries may die, storage may run out, or the recorder may not pick up voices, so you want to make sure that you have a written record just in case.
+
+When interviewing, remember that the purpose of the interview is to listen to the interviewee, not make them listen to you.  While this seems obvious, it's easy to fall into the trap of talking to much in your interview, especially if there are periods of silence.  Often questions will require the interviewee to think for a while or recall events.  Don't feel the need to fill that silence.  It means they're trying to provide accurate and valuable responses.
+
+Face to face interviews are ideal.  While I think it's best if you can meet in person, you can also have face to face interviews over the internet.  By being able to see the interviewee and let them see you, you can have a richer, more engaging conversation.  Video allows you to pick up on non-verbal cues.  If you notice that the interviewee appears bored, you can move to another topic on your guide.  If they show hesitation or excitement, you might dig deeper.  I find that by associating a face with answers, I can also recall interview snippets and match them to the corresponding interviewee easier.
+
+Be aware of time.  I find that time passes more quickly during interviews than I expect.  If I can tell that the interviewee is engaged and wants to share information I will let the interview run over time, but as a courtesy, I try to let them know at when the normal time slot has elapsed just in case they have other meetings or obligations.
+
+We usually bring a small token of appreciation and give it to the interviewee at the end of the interview.  Often this is something small like a $5 starbucks gift card.  While the value may be small, it shows that you appreciate them and leaves a positive impression.
+
+When leaving, let them know if and how they'll hear from you in the future.  I often let people know that I'll pass along the final report or paper.  I also often ask if I can email them if I need any clarification on anything.
+
+##Post-Interview Notes & Discussion
+
+There are a number of things that we try to do as soon as possible after the interview while the interview is fresh in our minds.
+
+Since I often interview with another person, we often talk about the things that we noticed in the interview as we leave the office of the interviewee.  This can include things that were surprising, things that we have heard before from other interviewees, and things that did or did not go well during the interview.  I am often surprised at the things that the other interviewer picks up on that I don't and vice versa.  We also talk about whether we've reached saturation, if and how our interview guide should be modified, and 
+
+Based on these conversations and my own thoughts and impressions from the interview, I try to write down post-interview notes.  I use the notes taken during the interview as part of the basis for this, but the post-interview are more coherent, organized, and thoughtful because they are not as constrained by time as in-interview notes.
 
 ##Transcription
-Verbatim == time consuming or expensive and error prone.  (but still may be worth it)
 
-Partial transcription: capture the main idea in 10-30 second chunks.
+The decision about whether and how to transcribe an interview can be a difficult one.  Transcribing by hand takes a large amount of time.  It's not uncommon to for each minute of interview time to take five minutes of transcription time!  There are services that transcribe interview recordings, but they can be expensive, often take a fair amount of time, and may not be familiar with technical jargon.  Still, depending on the context, a transcription may be worth the cost.  
+
+As an alternative to transcription, some of my interns have taken an approach that I call "chunked transcription".  They would listen to a ten to thirty second chunk of a recording, write down the main point or idea in the chunk, and then move to the next chunk.   This doesn't need to be as precise as verbatim transcription, but still is able to capture the majority of the valuable content.  These chunks end up being quite amenable to card sorting, the most common form of interview data analysis that we use.
 
 ##Analysis
-The must fruitful for of analyzing interview responses has been through conducting *card sorts*.  This entails grouping of answers in interviews to be grouped into themes which can then be used to organize reporting, to inform additional research methods such as creating surveys for quantitative support, or can be analyzed individually.  Card sorts are beyond the scope of this chapter and can be used for almost any form of qualitative data such as open survey responses.  For details, we refer the reader to chapter **What chapter is on card sorts?**.
+
+The must fruitful method we have found for analyzing interview responses is *card sorting*.  This entails literally printing off the individual answers to interview questions onto (often hundreds of) cards and then grouping the answers into themes which can be used to organize reporting, can inform additional research methods such as creating surveys for quantitative support, or can be analyzed individually.  Card sorts are beyond the scope of this chapter and can be used for almost any form of qualitative data such as open survey responses.  For details, we refer the reader to chapter **[Insert title and number of card sort chapter here]**.
 
 ##Reporting
- * Number of interviewees, how they were selected, how they were recruited
- * Duration and location of interviews, how they were conucted (skype?  In person?)
- * Any guides or artifacts used
 
- * Quotes can provide richness and insight and is engaging
- * don't cherry pick
- * no quantitative analysis but can drive surveys or other quantitative methods.
+There are a number of ways to report the results of interviews in papers and I think the best way to learn is by reading a number of interview-based research papers.
+
+Here are a few things that you should consider including in a report or publication:
+
+ * The number of interviewees, how they were selected, how they were recruited.
+ * The duration and location of interviews as well as how they were conducted (e.g., online or in person)
+ * A link to any interview guides or other artifacts used during the interviews.
+
+Be careful about providing quotes from interviews in a publication.  It can be tempting to cherry-pick a controversial quote or take a quote out of context.  I have heard more than a few quantitative leaning researchers make skeptical comments about quotes, so don't be guilty of their suspicions!   I *have* found that it can be useful to use a quote that accurately captures the sentiment of a group of interviewees and will often preface the quote by saying that.
+
+Finally, resist the temptation to apply quantitative methods to interview results.  It's fine to say that only one person mentioned some topic, or almost everyone answered a particular question in the same way, but calculating confidence intervals from interview data probably not a good idea.
+
+##Now Go Interview!
+
+Those who haven't conducted interviews before are often hesitant to try.  You may feel more comfortable looking at raw data in the comfort of your own lab.  Numbers can't put you on the spot or make you feel awkward.  All I can say is that I've learned more about how software engineering takes place through interviews than I have through all of the other research methods I've used combined and I started with *much* less information about how to do it than is in this chapter.  I hope this chapter has given you a few things to help you include interviews in your own research.
 
 ## References
-* Abram's Paper
+* A. Hindle, C. Bird, T. Zimmermann, and N. Nagappan, "Relating requirements to implementation via topic analysis: do topics extracted from requirements make sense to managers and developers?," in Proceedings of the 28th IEEE international conference on software maintenance, 2012. 
