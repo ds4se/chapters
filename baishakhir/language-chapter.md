@@ -1,6 +1,5 @@
 # A Large Ecosystem Study to Understand the Effect of Programming Languages on Code Quality
 _Baishakhi Ray, University of Virginia_
-
 _Daryl Posnett, University of California, Davis_
 
 Developers are often tasked with choosing a language for a project, but, are there consequences for this choice that can be traced directly to the programming language? Are some languages more defect prone than others? Although such choices are often based on prior experiences or legacy requirements, as reported by Meyerovich et al. [2], in fact, language choice depends on many things. For what purpose are you choosing the language, what are the underlying conditions, how big is your team, or who are the programmers. More than that, though, how can the language itself matter? It is the properties of languages that are important.
