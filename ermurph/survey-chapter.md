@@ -1,6 +1,8 @@
-# Avoiding Survey Design Traps: Sailing Past the Temptations of Persephone's Sirens
+# Avoiding Survey Design Traps: A Successful Process for Sailing Past the Temptations of Persephone's Sirens
 
 ![The Sirens: AP Press Image: $210](AP110929152491.jpg)
+
+Authors: Titus Barik and Emerson Murphy-Hill
 
 In the legendary tale of Homer's Odyssey, the honored Odysseus and his crew must confront Persephone's [Sirens](http://www.greekmythology.com/Myths/Creatures/Sirens/sirens.html) --- dangerous yet alluring sea nymphs. As the story goes, these creatures possessed irresistible charm and fatal, lyrical voices which enchanted all who heard it. Spellbound, nearby crews would be lured to their gruesome deaths as they plunged themselves into the sea. Still, adventurers risked the journey for the promise of knowledge, for through the Sirens' song, "[o]ver all the generous earth [the adventurers] know everything that happens."
 
