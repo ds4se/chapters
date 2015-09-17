@@ -5,20 +5,20 @@ The software industry has existed for over 60 years and is now a massive multina
 
 This section examines research limitations which may explain its apparent disconnect with the Software Engineering industry. A number of these issues are inter-related and are detailed below. 
 
-## Small Research Projects:
+## Small Research Projects
 As discussed above there are great variations in the type of software being developed and many factor that can influence the development. The accuracy of any study is dependent on the ability of the researchers to interpret any results and a major factor influencing this is how clean the data is, data cleaning can take significant domain knowledge, enabling researchers to interpret whether exceptions are valid or invalid. In small projects researchers only have time to focus on a small number of development attributes on a single or small number of products. The results of these studies are unique to the data set and product and are rarely reproducible on any other data set for any other product. Although, due to necessity, papers often make claims that results are generic, which often undermines the research in the eyes of practitioners. The factors driving these small research projects are described in the next few sections. 
 
-## The importance of being the first author on a publication:
+## The importance of being the first author on a publication
 A significant driver of researchers wishing to publish in conferences, is the need for publications requirements to allow students to graduate. For the students, it is very important that they are the first author of any paper so they can claim ownership of their work, another factor is the importance of conferences that publish their work. This inevitably results in two limiting factors
 * The research project are small as there is limited resources that can be applied to the projects as other students in the group would focus on their own projects than that of their colleagues.
 * It discourages collaboration between researchers from different disciplines as not only is there an issue of which of the researchers should be the first author there is the additional complexity of which conferences should be targeted. As the importance of conferences vary between the different research disciplines then each researcher would prefer to target the conference in their own discipline.  
 
-##Requirements for novel research techniques:
+##Requirements for novel research techniques
 One of the major criteria’s for paper publication in both journal and conferences is the novelty of the technique. As has been discussed above there is great variations in the type of software products, their attributes and the development methods applied. Additionally software development is a human activity and as such has great variations between different development teams even if they are applying the same development techniques. To fully understand the universality of a specific finding, the same research experiment should be applied to numerous products developed by different development groups. 
 
 Most other engineering disciplines welcome the publication of applying the same engineering techniques within different environments. For instance Medical journals encourage replicated trials, applied to different set of patients which often result in different results. The medical journals value the ability of the researchers to interpret the differences between the two trials, this enhances the general knowledge of the discipline. Replicated studies are discouraged in software engineering resulting is many unique research projects whose applicability to other products and other development techniques is unknown. This results in the proposed technique not being fully understood and more importantly its limitations will be unknown. As practitioners understand that most techniques have limitations then they will not apply any new techniques whose limitations are unknown.  
 
-##Data Quality of Open Source Repositories:
+##Data Quality of Open Source Repositories
 Over recent years there has been a significant increase in the amount of data available to System Engineering researchers due to the increase in developers using open repositories such as GitHub. This has opened up a vast resource of software development activity for research. But there are various data quality issues which hinders interpretation of its results, specifically;
 
 1. GIT provides tremendous flexibility in how code can be moved between branches, but that flexibility can result in a lot of data attributes, such as on which branch a change was made and the time order it occurred, being lost.
@@ -27,7 +27,7 @@ Over recent years there has been a significant increase in the amount of data av
 4. Source code from industry are often limited to post release information: A much richer data set would be the development period but that is rarely made available.
 5. Limited access to and identification of developers: A major issue with analysis of Software Engineering data is the management of exceptions. The simplest way of interpret data is to talk to the engineers responsible for the development, without access to the developers the researchers manage outliers using statistical techniques which may not necessarily be accurate. 
 
-##Research from Industry:
+##Research from Industry
 As previously noted industry involvement in Software engineering conferences is limit. A factor in this is the decrease in the number of research labs existing in industry, with companies closing down or limiting their research departments, and newer companies not creating new labs, although a number of these companies do employ researchers who do submit research material for publications. A major source of publications from industry are those written by interns, studying at universities but working in industry for a short period of times. 
 
 Industrial researchers have access to a much richer data set than academic researchers, using open source data. This is due to product teams often triaging bug data to identify replicated bugs and to discard bugs that are non-reproducible. Additionally industrial bug data will often contain a reference to any resulting code changes. Industrial researchers often have full access to developers and product information allowing them to better interpret their results. They also have the flexibility to apply the same techniques to different data sets for the same or equivalent product developed by different product groups within the same company, resulting in much larger experiments and a greater ability to identify limitations in any technique. 
