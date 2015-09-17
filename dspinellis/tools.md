@@ -7,7 +7,7 @@ In 1908 Ernest Rutherford won the Nobel Prize in Chemistry
 and the chemistry of radioactive substances".
 In support of his candidacy the Nobel Committee for Chemistry
 wrote about the elegant experiments he performed to show that alpha particles
-were doubly-charged helium atoms.
+were in fact doubly-charged helium atoms.
 Rutherford was able to show this through a simple but ingenious device.
 He had a glassblower create a tube with an extremely thin wall that allowed
 the alpha particles emanating from the radon gas it contained to escape.
@@ -35,15 +35,16 @@ is the availability of suitable tools.
 Such tools allow us to
 obtain data from novel sources,
 measure processes and products, and
-analyze all that date to derive insights that can advance science and practice.
-By definition scientific advancement happens through work
+analyze all that data to derive insights that can advance science and
+everyday practice.
+By definition, scientific advancement happens through work
 beyond the state of the art,
-so it should come as no surprise that a lot of work involves building and
-refining tools.
+so it should come as no surprise that a lot of effort in data science
+involves building and refining tools.
 In the following paragraphs I outline important types of tools and best
 practices for building them.
 In order to provide insights on the building of tools the description
-is mostly based on anecdotal personal experiences,
+is mostly based on anecdotal personal experience,
 ignoring considerably more important work in this area performed by
 colleagues around the world, a fact for which I apologize.
 
@@ -53,7 +54,7 @@ tools for collecting them reliably are often hard to come by.
 I've seen research work where the metric collection was treated
 as an afterthought, apparently delegated to inexperienced undergraduate
 students.
-This is often apparent from the quality of the corresponding tools,
+This is often evident from the quality of the corresponding tools,
 which may not scale, may produce erroneous results,
 or may be difficult to build upon.
 
@@ -64,13 +65,13 @@ Designing _ckjm_ to work as a Unix-style filter allowed it to
 analyze arbitrarily-large projects,
 an advantage appreciated by many of its users.
 
-Also from 2000-2010 I built
+Also during 2000-2010 I built
 [CScout](http://www.dmst.aueb.gr/dds/cscout/),
 which can accurately model large C projects as a whole.
 This required developing a theory behind the analysis
 of C code in the presence of the preprocessor, and the
 detailed handling of many compiler extensions and edge cases.
-I used that _CScout_ to compare four operating system kernels and later
+I used _CScout_ to compare four operating system kernels and later
 look at the optimization of header-file include directives.
 Both tasks required months of work in order to adjust _CScout_
 to the requirements of the analysis task.
@@ -79,8 +80,8 @@ less use than _ckjm_, probably because of the considerable work required
 to put it to work.
 
 More recently, in order to analyze the use and evolution of C language
-constructs and style I adopted a more simple approach, and built
-[qmcalc](https://github.com/dspinellis/cqmetrics) a tool
+constructs and style I adopted a simpler approach, and built
+[qmcalc](https://github.com/dspinellis/cqmetrics): a tool
 that will perform lexical analysis of C source code read
 from its standard input and calculate and print numerous metrics associated
 with it.
@@ -92,8 +93,8 @@ This made it easy to analyze millions of lines of diverse code.
 A second category of tools are those we use to **obtain or synthesize data**
 from processes and running products.
 Such tools bridge the gap between the utilitarian data formats used
-to support software developers and the needs of software engineering
-researchers.
+to support software developers and the needs of data science for
+software engineering.
 Given that computers are reflective machines the possibilities for
 data collection are endless.
 One example in this category is [GHTorrent](http://ghtorrent.org/),
@@ -107,14 +108,18 @@ containing 44 years of Unix evolution from software distribution
 snapshots and diverse configuration management repositories.
 The development of both tools demonstrated the difficulties associated with
 processing big, incomplete, and fickle data sets.
-The associate tools must be able to handle perverse cases,
+The associated tools must be able to handle perverse cases,
 such as dates lying several years into the future or
 several kilobytes long file names.
 Other interesting data generation tools are those that instrument IDEs
 to obtain usage details.
 These can give us valuable insights on how developers actually work,
 minimizing the risk of self-report bias.
-Stack and memory allocation (code quality)
+Instrumenting programs, libraries, and middleware can also provide valuable
+data.
+For example, by modifying memory allocation functions and a call graph
+profiler's function call processing code I obtained data to illustrate
+memory fragmentation and stack size variability.
 
 Finally, a third category of tools are those we use to **analyze data**.
 Thankfully in this segment there are many general purpose mature tools
@@ -141,9 +146,9 @@ research, the most important piece of advice is to
 **hone your tool-building skills**.
 I have written tools in Perl, the Unix shell, C++, and Java.
 C++ can be beneficial when extreme performance is required
-(in some cases I have performed processing that took many months to complete)
-and Java can be useful when interacting with other elements of its
-ecosystem.
+(in some cases I have run processing jobs that took many months to complete).
+Java can be useful when interacting with other elements in its
+ecosystem, for example the Eclipse platform.
 Perl has the advantage of a huge library of mature components that can
 cover even the most specialized needs, such as processing legacy
 _source code control system_ (SCCS) files,
@@ -182,17 +187,25 @@ puts pressure on you to develop it from the beginning,
 not as a quick and dirty throwaway hack, but as the
 high-quality piece of software it deserves to be.
 
+Historians have commented that when Rutherford's glassblower, Otto Baumbach,
+was interned during the First World War, experimental physics at the
+University of Manchester where he had set up shop were brought to a halt.
+Such is the power of tools to advance great science.
+
 
 ## References
-+ Diomidis Spinellis. Tool writing: A forgotten art? IEEE Software, 22(4):9–11, July/August 2005. (doi:10.1109/MS.2005.111).
-+ Diomidis Spinellis. CScout: A refactoring browser for C. Science of Computer Programming, 75(4):216–231, April 2010. (doi:10.1016/j.scico.2009.09.003)
-+ Diomidis Spinellis. Global analysis and transformations in preprocessed languages. IEEE Transactions on Software Engineering, 29(11):1019–1030, November 2003
-+ Diomidis Spinellis. A tale of four kernels. In Wilhem Schafer, Matthew B. Dwyer, and Volker Gruhn, editors, ICSE '08: Proceedings of the 30th International Conference on Software Engineering, pages 381–390, New York, May 2008. Association for Computing Machinery. (doi:10.1145/1368088.1368140).
-+ Diomidis Spinellis. Optimizing header file include directives. Journal of Software Maintenance and Evolution: Research and Practice, 21(4):233–251, July/August 2009. (doi:10.1002/smr.369)
-+ Diomidis Spinellis, Panagiotis Louridas, and Maria Kechagia. An exploratory study on the evolution of C programming in the Unix operating system. In ESEM '15: 9th International Symposium on Empirical Software Engineering and Measurement. IEEE, 2015.
-+ Georgios Gousios and Diomidis Spinellis. GHTorrent: Github's data from a firehose. In Michele Lanza, Massimiliano Di Penta, and Tao Xie, editors, 9th IEEE Working Conference on Mining Software Repositories (MSR), pages 12–21. IEEE, June 2012. (doi:10.1109/MSR.2012.6224294)
++ Rutherford, E. and Royds, T. The Nature of the alpha particle from Radioactive Substances, *Philosophical Magazine*, 17(6):281-286, 1909.
++ Diomidis Spinellis. Tool writing: A forgotten art? *IEEE Software*, 22(4):9–11, July/August 2005. (doi:10.1109/MS.2005.111).
++ Diomidis Spinellis. CScout: A refactoring browser for C. *Science of Computer Programming*, 75(4):216–231, April 2010. (doi:10.1016/j.scico.2009.09.003)
++ Diomidis Spinellis. Global analysis and transformations in preprocessed languages. *IEEE Transactions on Software Engineering*, 29(11):1019–1030, November 2003
++ Diomidis Spinellis. A tale of four kernels. In Wilhem Schafer, Matthew B. Dwyer, and Volker Gruhn, editors, *ICSE '08: Proceedings of the 30th International Conference on Software Engineering*, pages 381–390, New York, May 2008. Association for Computing Machinery. (doi:10.1145/1368088.1368140).
++ Diomidis Spinellis. Optimizing header file include directives. *Journal of Software Maintenance and Evolution: Research and Practice*, 21(4):233–251, July/August 2009. (doi:10.1002/smr.369)
++ Diomidis Spinellis, Panagiotis Louridas, and Maria Kechagia. An exploratory study on the evolution of C programming in the Unix operating system. In *ESEM '15: 9th International Symposium on Empirical Software Engineering and Measurement*. IEEE, 2015.
++ Georgios Gousios and Diomidis Spinellis. GHTorrent: Github's data from a firehose. In Michele Lanza, Massimiliano Di Penta, and Tao Xie, editors, *9th IEEE Working Conference on Mining Software Repositories (MSR)*, pages 12–21. IEEE, June 2012. (doi:10.1109/MSR.2012.6224294)
 + Diomidis Spinellis. A repository with 44 years of Unix evolution. In MSR '15: Proceedings of the 12th Working Conference on Mining Software Repositories, pages 13–16. IEEE, 2015. (doi:10.1109/MSR.2015.6)
-+ Murphy, Gail C., Mik Kersten, and Leah Findlater. "How are Java software developers using the Elipse IDE?." Software, IEEE 23.4 (2006): 76–83.
-+ Georgios Gousios and Diomidis Spinellis. Conducting quantitative software engineering studies with Alitheia Core. Empirical Software Engineering, 19(4):885–925, August 2014. (doi:10.1007/s10664-013-9242-3)
-+ Gall, Harald C., Beat Fluri, and Martin Pinzger. "Change analysis with evolizer and changedistiller." IEEE Software 1 (2009): 26–33.
-+ Sarma, Anita, et al. "Tesseract: Interactive visual exploration of socio-technical relationships in software development." Software Engineering, 2009. ICSE 2009. IEEE 31st International Conference on. IEEE, 2009.
++ Murphy, Gail C., Mik Kersten, and Leah Findlater. How are Java software developers using the Elipse IDE? *IEEE Software*, 23.4 (2006): 76–83.
++ Diomidis Spinellis. *Code Quality: The Open Source Perspective*. Addison-Wesley, Boston, MA, 2006.
++ Georgios Gousios and Diomidis Spinellis. Conducting quantitative software engineering studies with Alitheia Core. *Empirical Software Engineering*, 19(4):885–925, August 2014. (doi:10.1007/s10664-013-9242-3)
++ Gall, Harald C., Beat Fluri, and Martin Pinzger. Change analysis with evolizer and changedistiller. *IEEE Software* 26(1):26–33, January-February 2009.
++ Sarma, Anita, et al. Tesseract: Interactive visual exploration of socio-technical relationships in software development. *ICSE 2009: IEEE 31st International Conference on Software Engineering*. IEEE, 2009.
++ Gall, Alan. Otto Baumbach — Rutherford's Glassblower. *Newsletter published by History of Physics Group of the Institute of Physics (UK & Ireland)*, (23):44–55, January 2008.

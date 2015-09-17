@@ -2,7 +2,7 @@
  
 Today, we are living in a fast living, complex, highly connected society and world. And the very same observation is true for software development. The number of devices and configurations modern software systems are supposed to handle is massive, and the number is still rising every year. Additionally, modern software is supposed to be omnipresent, leading to systems that can be used as on premise products, for example: traditional Office installation on a PC, and as services: Office 365 in your browser. As consequence, today's software systems are complex as ever before. 
  
-At the very same time, we want to ship as fast as possible, without compromising established and desired product quality. Releasing once a week is not the exception anymore. However, achieving both, high complexity and short release cycles is a challenge, especially for test and verification processes. Emulating millions of configurations requires complex test infrastructures and procedures that are expensive to run in terms of cost and time. 
+At the very same time, we want to ship as fast as possible, without compromising established and desired product quality. Releasing once a week is not the exception anymore, at least not in the consumer market. However, achieving both, high complexity and short release cycles is a challenge, especially for test and verification processes. Emulating millions of configurations requires complex test infrastructures and procedures that are expensive to run in terms of cost and time. 
  
 ##The impact of short release cycles
 
@@ -33,7 +33,7 @@ Similar to test effectiveness, we can measure test reliability as a historic pro
  
 ##The art of testing less
  
-Combining both measurements for effectiveness and reliability (independent from their definition) allows a development team to assess the quality of individual tests and to act on it: either by statically fixing unreliable tests or by dynamically skipping tests that seem to not fit the current execution context. Test that show low effectiveness and/or low reliability should be executed only where necessary and as less as possible. For more details in how to use these probabilties to design a system that dynamically determines which test to execute and which not, we refer to Herzig et al. [1].
+Combining both measurements for effectiveness and reliability (independent from their definition) allows a development team to assess the quality of individual tests and to act on it: either by statically fixing unreliable tests or by dynamically skipping tests that seem to not fit the current execution context. Test that show low effectiveness and/or low reliability should be executed only where necessary and as less as possible. For more details in how to use these probabilities to design a system that dynamically determines which test to execute and which not, we refer to Herzig et al. [1].
  
 ##Without sacrificing code quality
  
@@ -46,6 +46,6 @@ Determining and monitoring new test cases being added or changes to existing tes
  
 ##In Summary
  
-Software testing is expensive, in terms of time and money. Emulating millions of configurations and devices requires complex test infrastructures and scenarios. This contradicts today’s trend to release complex software systems in ever shorter periods of time. As a result, software testing became bottlenecks in development processes: time spend in verification defines a lower bound on how fast they can ship software. Resolving test bottlenecks requires us to rethink development and testing processes to allow new room for newer and better tests and to regain confidence in testing. We need to accept that testing is an important part of our daily development process. The ultimate goal is to change the perception of failing tests. Instead of considering a failing tests as "a sign of more work ahead" engineers should shout: "Gotcha! Running this test saved our release.”
+Software testing is expensive, in terms of time and money. Emulating millions of configurations and devices requires complex test infrastructures and scenarios. This contradicts todays trend to release complex software systems in ever shorter periods of time. As a result, software testing became bottlenecks in development processes: time spend in verification defines a lower bound on how fast they can ship software. Resolving test bottlenecks requires us to rethink development and testing processes to allow new room for newer and better tests and to regain confidence in testing. We need to accept that testing is an important part of our daily development process. The ultimate goal is to change the perception of failing tests. Instead of considering a failing tests as "a sign of more work ahead" engineers should shout: "Gotcha! Running this test saved our release."
 
 [1] K. Herzig, M. Greiler, J. Czerwonka, and B. Murphy, “The Art of Testing Less without Sacrificing Quality,” in Proceedings of the 2015 International Conference on Software Engineering, 2015. 
