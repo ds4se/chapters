@@ -45,26 +45,26 @@ There is much consensus from commentators both within software engineering, e.g.
 
 ## References
 
-Basili, V. et al. (1999), "Building Knowledge through Families of Experiments”, *IEEE Transactions on Software Engineering* 25(4), pp456--473.
+Basili, V. et al. (1999), "Building Knowledge through Families of Experiments", *IEEE Transactions on Software Engineering* 25(4), pp456--473.
 
 de Magalhães, C. et al. (2015) "Investigations about replication of empirical studies in software engineering: A systematic mapping study", *Information and Software Technology*,  64, pp76--101.
 
-Eisenhardt, K. (1989) "Building Theories from Case Study Research”, *The Academy of Management Review*, 14(4), pp. 532--550.
+Eisenhardt, K. (1989) "Building Theories from Case Study Research", *The Academy of Management Review*, 14(4), pp. 532--550.
 
-Hannah, J. et al. (2009) “The Effectiveness of Pair Programming: A Meta-Analysis” *Information and Software Technology*,  51(7), pp1110--1122.
+Hannah, J. et al. (2009) "The Effectiveness of Pair Programming: A Meta-Analysis" *Information and Software Technology*,  51(7), pp1110--1122.
 
-Ioannidis, J. (2014) " How to Make More Published Research True”, *PLoS Medicine* 11(10)  e1001747.
+Ioannidis, J. (2014) "How to Make More Published Research True", *PLoS Medicine* 11(10)  e1001747.
 
-Jørgensen, M. et al. (2015)  "Incorrect results in software engineering experiments: How to improve research practices", *Journal of Systems and Software*, Available online http://dx.doi.org/10.1016/j.jss.2015.03.065.
+Jørgensen, M. et al. (2015) "Incorrect results in software engineering experiments: How to improve research practices", *Journal of Systems and Software*, Available online http://dx.doi.org/10.1016/j.jss.2015.03.065.
 
-Menzies, T. and Shepperd, M. (2012)   "Special issue on repeatable results in software engineering prediction". *Empirical Software Engineering*, 17(1-2), pp1--17. 
+Menzies, T. and Shepperd, M. (2012) "Special issue on repeatable results in software engineering prediction", *Empirical Software Engineering*, 17(1-2), pp1--17. 
 
-Miller, J. (2005) "Replicating software engineering experiments: a poisoned chalice or the Holy Grail?”, *Information and Software Technology*, 47(4), pp233--244.
+Miller, J. (2005) "Replicating software engineering experiments: a poisoned chalice or the Holy Grail?", *Information and Software Technology*, 47(4), pp233--244.
 
-Schmidt, S. (2009) "Shall we really do it again? The powerful concept of replication is neglected in the social sciences." *Review of General Psychology*, 13 (2), pp90--100.
+Schmidt, S. (2009) "Shall we really do it again? The powerful concept of replication is neglected in the social sciences", *Review of General Psychology*, 13 (2), pp90--100.
 
 Schooler, J. (2014) "Metascience could rescue the 'replication crisis'". *Nature* 515 (7525): 9.
 
 Shepperd, M. et al., (2014) "Researcher Bias: The Use of Machine Learning in Software Defect Prediction", *IEEE Transactions on Software Engineering* 40(6), pp603-616.
 
-Sigweni, B. and Shepperd, M. (2015) "Using blind analysis for software engineering experiments” Proc. of the *19th ACM International Conference on Evaluation and Assessment in Software Engineering (EASE ’15)*, http://doi.acm.org/10.1145/2745802.2745832 
+Sigweni, B. and Shepperd, M. (2015) "Using blind analysis for software engineering experiments", Proc. of the *19th ACM International Conference on Evaluation and Assessment in Software Engineering (EASE ’15)*, http://doi.acm.org/10.1145/2745802.2745832 
