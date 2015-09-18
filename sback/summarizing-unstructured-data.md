@@ -100,17 +100,19 @@ emails already give us information about how many people are involved in the
 discussion (the starting '>'s tell us about the indentation level). Then we can
 exploit a structure that is already there: Emails are divided by authors in
 lines; our previous research showed that this is a very good starting point in
-finding the structure of a message [2]. Considering these two aspects, we obtain
-the following version of the same email:
+finding the structure of a message [2]. Considering these two aspects, we
+obtain the following version of the same email, which visually already gives us
+much more information (this is what every good email client would do):
 
 <div>
   <img src="example_email.002.png" height="350px" />
 </div>
 
-The next step is realizing that, in most of the cases, the different languages
-used in emails are used in different lines. In this way, our problem now is
-finding ways to assign each line to the language it belongs to, as we manually
-did in the following email:
+Once we have this basic structure, the next step is realizing that, in most of
+the cases, the different languages used in emails are used in different lines.
+In this way, we simplified our problem into a *classification* problem: How can
+we assign each line to the language it belongs to? From our email, we would
+like to have a categorization that looks like the following:
 
 <div>
   <img src="example_email.003.png" height="350px" />
@@ -124,7 +126,8 @@ developed simple methods to recognize lines of code from other text [2] and
 more complex ones to recognize more complex languages, such as those used in
 signatures, from natural language content [3]. As an example, here we describe
 how the lines of Java source code can be recognized in the content of an email,
-with a very simple, yet effective approach.
+with a very simple, yet effective approach, and see what is its impact on a
+final tag cloud summary.
 
 If we consider lines 17--20 and 25--28, we note a peculiarity present in many
 programming languages (e.g., Java, C, C#, Perl): The developer must end each
@@ -141,9 +144,10 @@ further data analysis on emails [2].
 
 Now, if we take our initial email, we remove the signatures (by for example,
 eliminating everything at the end after the dashes) and apply the source code
-detection approach, we can generate a new tag cloud, in which we see that more
-important terms (such as 'Explorer' and 'NullPointerException') started to
-emerge, thus creating a summary that gives a better idea of the content.
+detection approach, we can generate a new tag cloud, as the one depicted below.
+Now we see that more important terms (such as 'Explorer' and
+'NullPointerException') started to emerge, thus creating a summary that gives a
+much better idea of the content.
 
 
 <div>
@@ -151,22 +155,37 @@ emerge, thus creating a summary that gives a better idea of the content.
 </div>
 
 
-With more sophisticated approaches [3], we can start *parsing* the different
-parts of the content of a development email and remove even more noise, thus
-making emerge the most important content and creating better summaries.
+With more sophisticated approaches [3], we can even *parse* the different parts
+of the content of a development email and remove more noise, thus making emerge
+the most important content and creating better summaries.
 
 ### Conclusion
 
-In this brief chapter, we presented how to start tackling the summarization of
-unstructured software data, such as development email. We have shown that,
-unfortunately, techniques that work off-the-shelf in other contexts cannot be
-directly applied to the software engineering context, because we have a very
-special language that we use. In particular, software engineers often mix up
-many languages in the same document: Natural language, source code, stack
-traces, etc. Before we can do any type of summarization, we need to first
-recognize these languages and give a better structure to our document. This
-allows, then, to use techniques from other fields and obtain interesting and
-valuable summaries for our software engineering data.
+In this brief chapter, we made everybody aware that developers do not only
+write source code, but many other artifacts, such as issue reports, design
+documents, emails, etc.
+
+We showed that the amount of these artifacts can be overwhelming (as in the
+case of development emails for the linux mailing list), so we need some way to
+summarize the information they contain for a faster, yet still useful
+consumption. We made the case that, unfortunately, the best candidate
+techniques from information retrieval do not work well in the case of software
+engineering documents, because unstructured software data has a very special
+language. In particular, software engineers often mix up many languages in the
+same document: Natural language, source code, stack traces, etc.
+
+For this, we presented the steps that one can take to transform the very
+unstructured content of an email, into something that can be analyzed to
+generate a valid summary. These steps involve the recognition of the latent
+structure of documents and the languages in which they are composed.
+Surprisingly, a simple approach is able to detect reasonably most of these
+languages and to remove them from text if necessary.
+
+As a result, we were able to obtain a much more informative tag cloud that
+summarizes the content of a threaded email, thus giving ideas on how an
+approach can be developed to analyze and summarize similar unstructured
+software documents.
+
 
 
 [1] Tag cloud. (2015, September 1). In Wikipedia, The Free Encyclopedia.
