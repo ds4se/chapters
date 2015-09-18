@@ -1,4 +1,5 @@
 # Open from the beginning
+_by Georgios Gousios, Radboud University Nijmegen, the Netherlands_
 
 In research, we are obsessed with open access. We take extra steps to make our
 papers available to the public, we spend extra time for producing pre-prints,
