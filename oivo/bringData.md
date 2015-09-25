@@ -1,4 +1,8 @@
-In god we trust, all others bring data – BIG DATA!
+# In god we trust, all others bring data – BIG DATA!
+
+Markku Oivo  
+Dept of Information Processing Science  
+University of Oulu, Finland
 
 The legendary statement of the quality guru W. Edwards Deming has been used and quoted countless times in motivating and justifying the role of data in software process assessment and improvement. It is now more relevant than ever, but perhaps with a twist towards data science. Deming was promoting statistical process control. His thinking in the famous PDCA (Plan-Do-Check-Act) is based on planning improvement actions, implementing them, measuring the effect and then acting accordingly. In PDCA we pre-define the actions and consequently pre-define what we want to measure. This pre-defined data is used to guide improvement actions. The fundamental change that data science can bring is that we are able to analyze large amounts of data and draw conclusions based on the data without having pre-planned the data collection specifically for pre-defined actions or items. 
 
