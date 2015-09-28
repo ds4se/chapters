@@ -14,245 +14,45 @@ This is a typical example of a situation in which (1) the presence of readily av
 
 ## Assessing the Usefulness of a Technique
 
-The best way to assess the practical usefulness of a technique is to put it in the hand of the developers. This is what we did for statistical fault localization, whose general process is illustrated in Figure 1. As the figure shows, given a faulty program, statistical fault localization whould produce a ranked list of  
+The best way to assess the practical usefulness of a technique is to put it in the hands of the developers. This is what we did for statistical fault localization [3], whose general process is illustrated in Figure 1. As the figure shows, given a faulty program and a set of test cases for the program, an automated debugging tool based on statistical fault localization whould produce a ranked list of potentially faulty statements. The developers would then inspect these statements one at a time until they find the bug. In this context, the fact of being able to look only at about 10% of the code in a majority of cases is typically considered a good result.
 
-![Statistical fault localization process](statisticaldebugging.png)
+![Statistical fault localization process](statisticaldebugging.png)<br>
 _Figure 1: An abstract view of statistical fault localization._
 
+We studied the performance of 34 developers with different levels of expertise as they performed two different debugging tasks and investigated a set of research questions related to the charasteristics of statistical fault localization and its assumptions. In particular, we investigated the following questions:
 
++ **RQ1**: Do developers who use automated debugging tools will locate bugs faster than programmers who debug without such tools?
++ **RQ2**: Is the performance of developers who use (rank-based) automated debugging tools affected by the rank of the faulty statement?
++ **RQ3**: Is examining a faulty statement in isolation enough for a developer to detect the corresponding bug?
++ **RQ4**: Do developers navigate a list of statements ranked by suspiciousness in order?
 
-debugging tools help developers.• An analysis of the study results and a discussion of the implications of such results for future research in the area of fault localization and debugging in general.
+Unfortunately, based on our results, the answer to all these questions is no: developers do not perform significantly better when using automated debugging tools that rely on statistical fault localization; the ranking of the faulty statement does not seem to have an effect on the performance of the developers; developers can take a long time to decide whether a statemnt reported as potentially faulty is actually faulty (i.e., looking at the statement is not enough); and developers do not navigate a ranked list of statements in order, going from the most to the least suspicious statement, but rather get annoyed by false positives and give up on the tool after only a few statements.
 
+## Some Reflections
 
+The results we discussed above provide evidence that statistical fault localization, a technique that appears to work well on paper, may not work as well and help developers in practice. The reason for this discrepancy is, in this case, that the technique is based on a set of unrealistic assumptions:
 
+_Assumption #1: Locating a bug in 10% of the code is a good result_. Although reducing the space where to locate a bug to a tenth of the program may sound much better than inspecting the whole program, in practice this may still mean going through a list of thousands of statements, even for a relatively small program.
 
+_Assumption #2: Programmers exhibit perfect bug understanding_. To make things worse, developers cannot see a fault in a line of code by simply looking at that line without any context. On the contrary, we observed that the amount of context necessary to decide whether a statement is faulty can be considerable.
 
+_Assumption #3: Programmers inspect a list linearly and exhaustively_. The assumption that developers would be willing to go through a list of potentially faulty statements one at a time, until they find the actual fault, is also unrealistic. Developers in general have a low tolerance for false positive.
 
+## Summary and Recommendations
 
-One problem with this general class of techniques is that they focus exclusively on trying to reduce the number of statements developers need to examine when investigating a failure, under the assumption that examining a faulty state- ment in isolation is enough for a developer to detect and fix the corresponding bug. Unfortunately, it is unclear whether developers can actually determine the faulty nature of a statement by simply looking at it, without any additional information (e.g., the state of the program when the state- ment was executed or the statements that were executed before or after that one). When using these techniques, this type of information can only be gathered by rerunning the program against the input that caused the failure being in- vestigated. In general, without a clear understanding of how developers would use these techniques in practice, the po- tential effectiveness of such techniques remains unknown.
+We want it to be clear that this chapter is not meant to be a blunt attack on statistical fault localization. As we mentioned above, statistical fault localization was initially a disruptive and promising research direction that only later resulted in much incremental research. Our goal is instead to use the example of statistical fault localization to point out some common pitfalls with research that can be performed by analyzing data sets and drawing conclusions based on this analysis.
 
-The case addressed in this paper is not so blatant, but it definitely bears similarities with this 
+We therefore conclude this chapter with a set of recommendations and lesson learned related to our study of the usefulness of statistical fault localization that we hope can be of general value for at least some parts of data analitics research.
 
-
-, stupid, or incompetent. When the Emperor parades before his subjects in his new clothes, no one dares to say that he doesn't see any suit of clothes until a child cries out, "But he isn't wearing anything at all!" The tale has been translated into over a hundred languages.[1]
-
-
-
-I do not really work on data analytics, but I am an informed outsider.
-So when I was preparing my talk I decided to make the presentation more fun and take a slightly polemic/controversial stand.
-So the title is not really “Data Analytics for Debugging”, but instead…
-
-
-## What not to do
-
-Legend has it that Archimedes once solved a problem sitting in
-his bathtub.
-Crying  _Eureka!_ ("I have it!"), legend says he leapt out
-of the bath and ran to tell the king about the solution.
-Legend does not say if he stopped to get dressed first.
-
-When we stumble onto some pattern in the data, it is
-so tempting to send a _Eureka!_ text to the business
-users.  This is a natural response that stems from
-the excitement of doing science and discovering an
-effect that no one has ever seen before.
-
-Here's my warning: don't do it. And least, don't do it straight away.
-
-I say this because I have often fallen into the trap
-of _correlation is not causation_. Which is to say,
-just because some  connection pattern has been observed between
-variables does  not necessarily imply that a  real-world causal mechanism
-has been discovered. In fact, that "pattern" may actually just
-be an accident- a mere quirk of cosmic randomness.  
-
-## Example
-
-For an example of nature tricking us and offering a "pattern"
-where, in fact, no such pattern exits, consider the following
-two squares (this example comes from  Peter Norvig).
-One of these was generated by people pretending
-to be a coin toss while the others were generated by actually
-tossing a coin, then writing vertical and horizontal marks
-for heads or tails.
-
-```
--||--|-|-||-|-||-||-|--|-|
---||---|--||--|-|--|-|-|--
----|-|-|--||-|-|||-|--|-||
---|-|-||--|--||-||-|-|-||-
--|-||--||-||-||-|-|--|-|||
-|-||||-||-|||-|-|||-||---|
-|-|-|-||--|--|---|-|--||-|
--|-|||--|-||-||-|-|-||---|
--|--||----|||-|-||-|-||-|-
-||-|||-|-|-||-|--|-|-||||-
----||-|-|||--|-|-|---|-|--
-|||--|--|-|-||-||-|-|-||-|
-           (A)
-		   
--|-|||-----|-------||--|-
--||--|||||--|--|-|||-||||
---||----||-||-|----|--|-|
-||-|-|-|||-||--|||-|-||||
-|-|||-|-|--||-|-|-||--|--
-||-|--|-----|----|---||--
-||---|---|-||||-|||||-|-|
-|---|---||-||||-|-|------
--|---|-|||-|---||-||-|---
-|||-||----||||||-|||||---
-|-|------||----||-||-----
--|||-|||-|--|--|-||------
-             (B)
-```
-Can you tell which one is really random? Clearly, not (B) since it has too
-many runs long runs of horizontal and vertical marks.
-But hang on-- is that true?
-If we toss a coin 300 times, then at probability 25%, 12%, 6%, 3% we will
-get a run of the same mark that is three, four,  five, or six ticks long.
-Now 0.03*300=9 so in (B), we might expect several  runs that are at least
-six ticks long. That is, these "patterns" of long ticks in (B) are actually
-just random noise.
-
-## Case Studies in SE
-
-Sadly, there are many examples in software
-engineering of data scientists uncovering "patterns"
-which, in retrospect, was more "jumping at shadows"
-than discovering some underlying causal
-mechanism.  For example,  Shull et al. reported
-one study at NASA's
-Software Engineering Laboratory that
-"discovered" a category of software that seemed
-inherently most bug prone.
-The problem with that
-conclusion was that, while certainly true, it missed
-an important factor. It turns out that that
-particular sub-system was the one deemed least
-critical by NASA. Hence, it was standard policy to let
-newcomers work on that sub-system in order to learn
-the domain.  Since such beginners make more
-mistakes, then it is hardly surprising that this
-particular sub-system saw most errors.
-
-For another example, 
-Kocaguneli et al. had to determine which code files were
-created by a distributed or centralized development
-process. This, in turn, meant mapping files to their
-authors, and then situating some author in a
-particular building in a particular city and
-country.  After  weeks of work  they "discovered" that a very small number
-of people seemed to produced most of the core
-changes to certain Microsoft products. Note that if
-this was the reality of work at Microsoft, it would
-mean that product quality would be most assured by
-focusing more on this small group. 
-
-However, that conclusion was completely wrong.
-Microsoft is a highly optimized organization that
-takes full advantage of the benefits of
-auto-generated code.  That generation occurs when
-software binaries are being built and, at Microsoft,
-that build process is controlled by a small number
-of skilled engineers. As a result, most of the files
-appeared to be "owned" by these build engineers even
-though these files are built from code provided by a
-very large number of programmers working across the
-Microsoft organization.  Hence, Kocaguneli had to
-look elsewhere for methods to improve productivity
-at Microsoft.
-
-## What to do
-
-Much has been written on how to avoid spurious and misleading
-correlations to lead to bogus "discoveries". Vic Basili
-and Steve Easterbrook and colleagues advocate a "top-down"
-approach to data analysis where the collection process
-is controlled by research questions, and where those
-questions are defined _before_ data collection. 
-
-The advantage of "top-down" is that you never ask data
-"what have you got?"-- a question that can lead to the
-"discovery" of bogus patterns. 
-Instead, you only ask "have you got X?"
-where "X" was defined before the data was collected.
-
-In practice, there are many issues with top-down, not the
-least of which is that in SE data analytics, we are often
-processing data that was collected for some other purpose
-than our current investigation. And when we cannot control
-data collection, we often have to ask the open-ended question"what is there?" rather
-than the top-down question of "is X there?".
-
-In practice, it may be best to mix up top-down with some "look around"
-inquires:
-
-+  Normally, before we look at the data, there
-are questions we think are important and issues we want to explore.
-+ After contact with the data, we might find that other issues
-are actually more important and that other questions might be
-more relevant and answerable.
-
-In defense of a little less top-down analysis,
-I note that many important  accidental discoveries
- might have been overlooked if researchers restricted themselves
-to just the questions defined before data collection. 
-Here is a list of discoveries, all
-made by researchers were pursuing other goals:
-
-+ North America (by Columbus)
-+ Penicillin
-+ Radiation from the big bang;
-+ Cardiac pacemakers (the first pacemaker was a badly built cardiac monitor);
-+ X-ray photography;
-+ Insulin;
-+ Microwave ovens;
-+ Velcro;
-+ Teflon;
-+ Vulcanized rubber; 
-+ Viagra.
-
-## In Summary: Wait and Reflect Before you Report
-
-My message is _not_ that data miners are useless algorithms
-that torture data till they surrender some spurious conclusion.
-By asking open-ended
-"what can you see?" questions, our
-data miners can find
-unexpected novel patterns that are actually true and
-useful-- even if those patterns fly in the face of
-accepted wisdom. For example, Schmidt and Lipson's  Eureqa machine can learn
-models that make no sense (with respect to current
-theories of biology) yet can make accurate
-predictions on complex phenomena (e.g.  
-ion exchanges between living cells).
-
-
-But, while
-data miners can actually produce useful models, sometimes
-they make mistakes. So, my advice is:
-
-+  Do not rush to report the conclusions that you just uncovered,
-just this   morning.  
-+ Most definitely, **do not** confuse business
-users with such recent raw results. 
-+ Always, always,
-always, wait a few
-days. 
-
-And while you wait,
-critically and carefully review how you
-reached that result.  See if you can reproduce it
-using other tools and techniques or, at the very
-least, implement your analysis a second time using
-the same tools (just to check if the first result
-came from some one letter typo in your scripts).
-
-
-
++ _Be careful with your assumptions_. Strong assumptions may be fine in the initial stages of research. Such assumptions should however be tested when the research becomes more mature.
++ _Look at the forest, not the trees / do not search under the lamp post_. It is tempting to "play" with the data, especially when there is a great deal of readily available data. One should however always keep in mind the big picture, which we believe is developing techniques that help developers. 
++ _Find causes instead correlations_. Finding correlations is often easy, but correlations can be misleading. Researchers should strive to go beyond correlations and look for causes instead.
++ _Look for actionable findings_. Although "interesting" findings may be a good stepping stone toward more relevant discoveries, this is not necessarily the case. Findings that can be shown to developers and change the way in which developers do things are considerably more valuable.
++ _Perform user studies!_ The best, and maybe only, way to understand whether an approach or a result are actually useful is to perform user studies in settings that are as realistic as possible. This is particularly true for mature approaches, for which analytical evaluations tend to fall short.
++ _Educate (junior) researchers_. Because more senior researchers set the example for junior researchers, it is especially important that they avoid the temptations that characterize the areas in which data abunds and analyzing them is easy.
  
- 
-
+## Acknowledgements
+This chapter is heavily based on work [3] that I performed jointly with Chris Parnin (now a faculty member at North Carolina State University).
 
 ## References
 
