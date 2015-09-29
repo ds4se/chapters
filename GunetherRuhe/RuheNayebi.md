@@ -40,15 +40,20 @@ While Steps 1 and 5 are not directly related to analytics, the other steps mostl
 There are very different types of decisions and different types of analytics. We propose the Analytics Design Sheet as a guide for designing the right analytics to be made to sup-port decision-making. The decision under consideration is described in terms of it’s What? Where? Who? Components. Similar to the abstraction sheet introduced for GQM measurement [1], the Analytics Design Sheet, shortly ADS, consists of four quadrants Q1 to Q4 devoted to 
 
   **• Variables:** Internal factors, external factors, dependent and independent factors, (Q1).
+  
   **• Conceptual model:** Relationship between selected variables (Q2). 
+  
   **• Data:** Quantity and quality (Q3).
+  
   **• Suggested analytics:** Content and type of analytics (Q4).
 
 The sheet summarizes key steps for selecting the right analytics and the decision to be made should act as the compass for that. In Q1 of the ADS, relevant variables are select-ed and separated from the variables being outside the scope. Q2 represented a conceptual model of the decision problem. Conceptual models provide an informal explanation of how things work. To facilitate brainstorming and discussion between different stake-holders (e.g., industry and academia), no specific syntax and semantic is prescribed at this stage. Established techniques such as causal or influence diagrams [2] can be used here. The resulting conceptual model serves as a skeleton to more formal modeling approach-es. Q3 evaluates data features and provides the status quo in terms of quantity and quality of the data for conducting analytics. Finally, Q4 provides (human expert based opinion on) alternatives for selecting the right analytics and to apply it in the right way.
 
 ## 4. An illustrative example
 We illustrate the idea of the ADS by an example taken from [4]. The decision under consideration is classified in the heading of the sheet.. A product manager needs to decide about moving from one product (to be designed in terms of features for upcoming re-leases) to more than one product variants. The internal and external variables relevant and taken into account are listed under Q1. We note that “Market trends” is relevant, but not part of the actual model, maybe because of the lack of data. Same is true for “Feature dependencies”. Q2 of Figure 1 shows the key attributes taken into account for this decision and how do they relate to each other. Traversing the sheet from Q1 --> Q2--> Q3, and taking into account actual data availability, the result of this process is to propose (in Q4):
+
     -  Clustering of stakeholders based on the commonality of their preferences against stated objectives, and 
+    
     -  Effort estimation (e.g., analogy based) for implementation of features based on experience with similar features implemented in the past.
  
 *Figure 1. Sample Analytics Design Sheet in support of the decision on creating new product variants.*
@@ -57,8 +62,13 @@ The ADS is a semi-formal approach, used by and in support of human experts. It i
 
 ## References
 [1] Basili, V. R., et al. (2001). The Goal Question Metric Approach. Encyclopedia of Software Engineering, Wiley.
-[2] Burgess, C. J., et al. (2001). "Using Influence Diagrams to Aid the Management of Software Change." Re-quirements Engineering 6(3): 173-182.
+
+[2] Burgess, C. J., et al. (2001). "Using Influence Diagrams to Aid the Management of Software Change." Requirements Engineering 6(3): 173-182.
+
 [3] Menzies, T. and Zimmermann (2013). "Software Analytics: So What?" IEEE Software 30(4): 31-37.
-[4] Nayebi, M. and Ruhe, G. "Analytical Product Release Planning ", in Analyzing Software Data, Menzies, T, Bird, C, Zimmerman, T. (eds.), Morgan Kauffman 2015, pp. 550 - 580.
+
+[4] Nayebi, M. and Ruhe, G. "Analytical Product Release Planning ", in Analyzing Software Data, Menzies, T, Bird, C, Zimmermann, T. (eds.), Morgan Kauffman 2015, pp. 550 - 580.
+
 [5] Nayebi, M. Ruhe, G. Mota, R. and Mufti, M. “Analytics for Software Project Management - Where Are We and Where Do We Go?”, Proceedings ACTION 2015, co-located to ASE 2015
+
 [6] Standish (2002). "What are your Requirements?" retrieved from http://www.standishgroup.com/.
