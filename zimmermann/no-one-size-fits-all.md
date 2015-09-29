@@ -1,4 +1,4 @@
-#No One Sizes Fits All
+#No "One Size Fits All"
 _Thomas Zimmermann, Microsoft Research_
 
 I've spent a large part of my career building defect prediction models. The goal of these models is to explain and in some cases even predict where defects will occur. Typically such models use a set of metrics, such as lines of codes, complexity, etc. and establish some relationship to the presence or the number of defects.
