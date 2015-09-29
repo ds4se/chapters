@@ -1,5 +1,7 @@
 # Becoming Goldilocks: Privacy and Data Sharing in “Just Right” Conditions
 
+*Fayola Peters, Lero - The Irish Software Research Centre, University of Limerick*
+
 If we forget that Goldilocks trespassed, ate food, and, used and broke furniture that did not belong to her - we can appreciate her sense of figuring out what was **just right** for her. Baby Bear's porridge was neither too hot nor too cold. Baby Bear's chair was not too big. Baby Bear's bed was neither too hard nor too soft. Finding that middle ground, that balance between two extremes or confliting goals such as privacy and utility is the basis of research in data privacy and data sharing. 
 
 ## The "Data Drought"
