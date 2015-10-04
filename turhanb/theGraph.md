@@ -1,4 +1,4 @@
-#Exploration trumps prediction
+#Insights trump predictions!
 *Burak Turhan, University of Oulu, Finland*
 
 *Sharing data, models, methods, insights
