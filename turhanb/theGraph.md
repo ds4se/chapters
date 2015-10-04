@@ -12,6 +12,14 @@ This paper discusses about an idea of a potentially useful dependency-tracing gr
 
 Consequently, we developed multiple ways of communicating our analysis to practitioners and error-handling graphs, which visualize the interactions among teams based on the errors introduced and fixed, turned out to be the most helpful representation as it helped pinpointing communication related issues within and across teams.
 
+
+Once the predictor was created and accuracy was tested, the results were presented to a team of practitioners. However, the feedback was that the graphs and performance measures were not that useful for them. Hence, we worked on finding different ways to help the development process by utilizing the results in practice.
+
+The accuracy of the predictor was perceived to be good, but coming up with an useful presentation of the predictions for practitioners was found to be a real challenge. Sometimes the predictor can only highlight facts that are already known. Then it becomes important for the predictor to suggest what should be done.
+Most promising part of the research in terms of its impact on practice is the part of the project communication. The error-developer graph seems to be a way to see into the development process and quickly find the difficulties of the project communication.
+
+The feedback for the graph has been positive by the piloting team. Many users that have been presented with this graph have said that the graph gives an interesting point of view in to the project. The error graph has been said to hold a lot of implicit information.
+
 ##Context of the Pilot Case
 The data used to construct the sample error-handling graph in this paper come from the software component of a mission-critical embedded system project developed by Elektrobit Wireless Segment in Finland. The software component is implemented in C++ language with over 100.000 lines of code. The development activities are carried out in two distinct geographical locations by multiple development and testing teams, adding up to about 60 developers in total. Data collected from the issue management tool reflects the development history of the project spanning a period of two-years. In the study, a development team volunteered to pilot the developed software analytics models and modes of information representation, providing feedback through personal communication with the R&D team during project meetings [6].
 
