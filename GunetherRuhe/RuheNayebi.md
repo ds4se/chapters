@@ -39,13 +39,10 @@ While Steps 1 and 5 are not directly related to analytics, the other steps mostl
 ## 3. The Analytics Design Sheet
 There are very different types of decisions and different types of analytics. We propose the Analytics Design Sheet as a guide for designing the right analytics to be made to sup-port decision-making. The decision under consideration is described in terms of it’s What? Where? Who? Components. Similar to the abstraction sheet introduced for GQM measurement [1], the Analytics Design Sheet, shortly ADS, consists of four quadrants Q1 to Q4 devoted to 
 
-  **• Variables:** Internal factors, external factors, dependent and independent factors, (Q1).
-  
-  **• Conceptual model:** Relationship between selected variables (Q2). 
-  
-  **• Data:** Quantity and quality (Q3).
-  
-  **• Suggested analytics:** Content and type of analytics (Q4).
+- **Variables:** Internal factors, external factors, dependent and independent factors, (Q1).
+- **Conceptual model:** Relationship between selected variables (Q2). 
+- **Data:** Quantity and quality (Q3).
+- **Suggested analytics:** Content and type of analytics (Q4).
 
 The sheet summarizes key steps for selecting the right analytics and the decision to be made should act as the compass for that. In Q1 of the ADS, relevant variables are select-ed and separated from the variables being outside the scope. Q2 represented a conceptual model of the decision problem. Conceptual models provide an informal explanation of how things work. To facilitate brainstorming and discussion between different stake-holders (e.g., industry and academia), no specific syntax and semantic is prescribed at this stage. Established techniques such as causal or influence diagrams [2] can be used here. The resulting conceptual model serves as a skeleton to more formal modeling approach-es. Q3 evaluates data features and provides the status quo in terms of quantity and quality of the data for conducting analytics. Finally, Q4 provides (human expert based opinion on) alternatives for selecting the right analytics and to apply it in the right way.
 
