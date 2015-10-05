@@ -8,10 +8,10 @@
 In this chapter we share our experiences in conducting a software analytics project on bug prediction. Though the project was a huge success in terms of _scholarly_ outcomes and performance measures, we had run into difficulties in communicating the results to the practitioners. It turned out that our predictions on the likelihood of edited files to contain bugs were perceived as stating the obvious – even through many different modes of communication/ representation; and the most useful and insightful representation turned out to be a visualization of the issue reports that involved no predictions at all. Hence, exploration or insights trumped prediction in our case!
 
 
-##Context of Software Analytics Project
+##Context of the Software Analytics Project
 The idea of bug prediction is to prioritize the test efforts to the parts of the system that are most probable to cause potential failures. This is expected to result in more cost effective testing, especially when the resources needed for testing the project are relatively expensive [1]. The data for the example case presented here come from the software component of a mission-critical embedded system project implemented in C++ language with over 100.000 lines of code. The development activities were carried out in two distinct geographical locations by multiple development and testing teams, adding up to about 60 developers in total. Data collected from the issue management tool reflects the development history of the project spanning a period of two-years. One development team volunteered to pilot the developed software analytics models and modes of information representation, providing feedback through personal communication with the R&D team during project meetings [1].
 
-##Providing predictions on buggy files
+##Providing Predictions on Buggy Changes
 
 ![alt text](./performance.png "This graph basically says that 90% of all bugs can be detected by going through the top 30% of the predictions.")
 
@@ -19,7 +19,7 @@ The predictor model was selected among a multitude of machine learning algorithm
 
 Hence, we started working on finding different ways to help the development teams utilizing the results in practice. Consequently, we developed multiple ways of communicating our analysis to practitioners. After several attempts with no acceptance [1] we have come up with an _error-handling graph_, which visualize the interactions among teams based on the errors introduced and fixed. To our surprise, this turned out to be the most helpful representation as it helped pinpointing communication related issues within and across software development teams.
 
-##How to read the Graph?
+##How to Read the Graph?
 
 ![alt text](./graph.png "Error-handling Graph: Visualization of latent communication across teams over reported issues.")
 
@@ -37,7 +37,7 @@ Analysis of the example figure in terms of (anti-) patterns reveals the followin
 
 - Anti-pattern: There exists a cluster of errors between the development teams ‘Terttu’ and ‘Kristiina’. This indicates that the development works of the teams are most likely to be dependent on each other and errors propagate out of either team’s internal quality assurance process, impacting the work of the other.
 
-## How to act on (Anti-)Patterns?
+## How to _Act_ on (Anti-)Patterns?
 
 Based on the initial findings listed above, the following actionable insights can be taken into account:
 
