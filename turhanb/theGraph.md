@@ -50,7 +50,7 @@ To elaborate more on the last item: there are two potential reasons for the conf
 ##Summary
  The goal of software analytics is to propose actionable changes to the way the projects are run [2]. Our experience also revealed that for practitioners to take actions, the way the results are communicated to them should take precedence over the accuracy of the results. Even though the accuracy of our predictor was perceived to be good, coming up with a useful presentation of the predictions for practitioners was the real challenge.
 
- _Sometimes predictions can only highlight facts that are already known by development teams. Then it becomes important for the predictor to suggest what should be done._
+ _Sometimes predictions can only highlight facts that are already known by development teams. Then it becomes important for the predictor to suggest what should be done; that is to provide insights._
 
 
 ##References
