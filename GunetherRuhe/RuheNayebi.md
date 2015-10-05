@@ -1,8 +1,6 @@
 #  What Counts is Decisions, Not Numbers – Towards an Analytics Design Sheet
 *Guenther Ruhe and Maleknaz Nayebi*
-
 *Laboratory for Software Engineering Decision Support*
-
 *University of Calgary, AB, Canada*
 
 ## 1. Decisions everywhere
