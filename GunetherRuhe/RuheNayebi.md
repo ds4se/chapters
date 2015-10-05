@@ -55,7 +55,7 @@ We illustrate the idea of the ADS by an example taken from [4]. The decision und
 -  Clustering of stakeholders based on the commonality of their preferences against stated objectives, and 
 - Effort estimation (e.g., analogy based) for implementation of features based on experience with similar features implemented in the past.
  
-![](ASD.jpg)<br>
+![](ADS.jpg)<br>
 *Figure 1. Sample Analytics Design Sheet in support of the decision on creating new product variants.*
 
 The ADS is a semi-formal approach, used by and in support of human experts. It is based on their existing knowledge and experience. The selection of specific analytical techniques is outside the scope of the sheet. With some initial evidence from applying AHS, a more comprehensive evaluation of its usefulness is outstanding. Overall, the proposed approach is intended facilitating the transition from numbers to decisions, thus making analytics more focused and oriented towards (software engineering) decision support.
