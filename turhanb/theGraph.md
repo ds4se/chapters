@@ -1,7 +1,6 @@
 #Insights Trump Predictions!
 *Burak Turhan, University of Oulu, Finland*
-
-*Sharing data, models, methods, insights
+*Kari Kuutti, University of Oulu, Finland*
 
 ##Introduction
 
@@ -27,7 +26,7 @@ Hence, we started working on finding different ways to help the development team
 
 An error-handling graph shows the interactions among software development teams in terms of errors that are reported and fixed. The errors are linked to the teams that have reported or fixed the error. There are two types of nodes in the error-handling graph. The nodes with text labels correspond to the teams involved in the project. Text labels start either with the prefix DevTeam or TestTeam, meaning that the corresponding team is a development or testing team, respectively. The nodes between the text labeled nodes represents bugs extracted from the issue management tool, and they are color coded by the level of testing at which they are detected. A green edge from a team node to an error node means that the corresponding team has fixed the reported error. On the other hand, a red edge means that the corresponding team has reported that error. Finally, blue lines represent the errors that are reported and fixed by the same team [1].
 
-##(Anti-)Patterns in the Error-handling Graph)
+##(Anti-)Patterns in the Error-handling Graph
 
 In an ideal scenario, one would expect to see patterns in an error-handling graph, where all errors are: (a) either reported by a testing team and fixed by the responsible development team; (b) or reported and fixed by the same development team. Moreover, an ideal scenario would assume that there would be no issues originating from the interactions among the teams, i.e. an anti-pattern. Such errors are likely to have been missed in team level testing, propagated to higher levels causing re-work, and should have been detected earlier within the team.
 
