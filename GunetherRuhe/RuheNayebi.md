@@ -52,10 +52,10 @@ The sheet summarizes key steps for selecting the right analytics and the decisio
 ## 4. An illustrative example
 We illustrate the idea of the ADS by an example taken from [4]. The decision under consideration is classified in the heading of the sheet.. A product manager needs to decide about moving from one product (to be designed in terms of features for upcoming re-leases) to more than one product variants. The internal and external variables relevant and taken into account are listed under Q1. We note that “Market trends” is relevant, but not part of the actual model, maybe because of the lack of data. Same is true for “Feature dependencies”. Q2 of Figure 1 shows the key attributes taken into account for this decision and how do they relate to each other. Traversing the sheet from Q1 --> Q2--> Q3, and taking into account actual data availability, the result of this process is to propose (in Q4):
 
-    -  Clustering of stakeholders based on the commonality of their preferences against stated objectives, and 
-    
-    -  Effort estimation (e.g., analogy based) for implementation of features based on experience with similar features implemented in the past.
+-  Clustering of stakeholders based on the commonality of their preferences against stated objectives, and 
+- Effort estimation (e.g., analogy based) for implementation of features based on experience with similar features implemented in the past.
  
+![](ASD.jpg)<br>
 *Figure 1. Sample Analytics Design Sheet in support of the decision on creating new product variants.*
 
 The ADS is a semi-formal approach, used by and in support of human experts. It is based on their existing knowledge and experience. The selection of specific analytical techniques is outside the scope of the sheet. With some initial evidence from applying AHS, a more comprehensive evaluation of its usefulness is outstanding. Overall, the proposed approach is intended facilitating the transition from numbers to decisions, thus making analytics more focused and oriented towards (software engineering) decision support.
