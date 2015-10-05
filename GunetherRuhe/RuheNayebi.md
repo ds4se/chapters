@@ -1,7 +1,5 @@
 #  What Counts is Decisions, Not Numbers – Towards an Analytics Design Sheet
-Guenther Ruhe and Maleknaz Nayebi
-Laboratory for Software Engineering Decision Support
-University of Calgary, AB, Canada
+*Guenther Ruhe and Maleknaz Nayebi, Laboratory for Software Engineering Decision Support, University of Calgary, AB, Canada*
 
 ## 1. Decisions everywhere
 Just about 20% of the features implemented in a software product are often or always used, while 64% of the features get rarely or never used [6]. This means that substantial development effort is wasted. But even worse: it means that maintenance cost of the product (constituting the majority of the total product effort) is higher than needed. This often implies delays in delivering products or lack of quality. While this deficit in qualified decision-making is of obvious impact on business success, this chapter looks into a systematic and template-based approach to guide selecting the right analytics for supporting key decisions to be made. 
