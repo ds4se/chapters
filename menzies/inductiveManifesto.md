@@ -1,7 +1,6 @@
 # Inductive Software Engineering: What we do **IS** Different
 
-- <em>Tim Menzies   
-Thomas Zimmermann</em>
+<em>Tim Menzies</em>
 
 
 ## Different and Important
