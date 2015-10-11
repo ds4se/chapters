@@ -1,13 +1,12 @@
 # Inductive Software Engineering: What we do **IS** Different
 
-- <em>Tim Menzies   
-Thomas Zimmermann</em>
+<em>Tim Menzies</em>
 
 
 ## Different and Important
 
-In 2011, while working with
-Christian Bird and Wolfram Schulte and Ekrem Kocaganeli, we took a break from our usual schedules
+In 2011, while working with 
+Christian Bird, Tom Zimmermann, Wolfram Schulte and Ekrem Kocaganeli, we took a break from our usual schedules
 to reflect some on how induction-for-SE is different to induction in other fields.
 This was an interesting meeting-- especially since, between the five of us, we had decades of
 experience in applying AI and data mining in different industrial context.
