@@ -6,7 +6,7 @@ Wu et al. [2] developed a tool called CrashLocator, which can help practitioners
 
 ## Another use of stack traces?
 
-Figure 1:  A tangled web of files
+![image](https://raw.githubusercontent.com/theisencr/chapters/master/williams/graph.jpg)
 
 The graph above represents a software system, with individual nodes representing code elements (such as binaries, files, or functions). This graph is pretty dense and difficult to parse, right? If you look at a software system with no prior knowledge and attempt to dive in to find vulnerabilities, you’ll feel a similar level of confusion. To combat that effect, security professionals have developed the concept of an attack surface.
 
