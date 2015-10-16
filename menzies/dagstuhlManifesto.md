@@ -1,5 +1,7 @@
 # Perspectives on Data Science for Software Engineering
 
+<em>NOTE TO REVIWERS: This is draft0 of the book intro.</em>
+
 - <em>Tim Menzies,   
 Laurie Williams,  
 Thomas Zimmermann</em>
