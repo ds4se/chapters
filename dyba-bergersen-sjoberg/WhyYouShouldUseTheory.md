@@ -98,7 +98,7 @@ theory is valid).
   development performance than T1 for high-skilled developers; see
   figure.
 
-![](explanation.png)
+![](theory.png)
 
 ### Explanation:
 
