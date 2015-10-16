@@ -96,7 +96,7 @@ theory is valid).
   and T2 with great difficulty: T1 gives higher development
   performance than T2 for low-skilled developers; T2 gives higher
   development performance than T1 for high-skilled developers; see
-  figure.
+  the following figure.
 
 ![](theory.png)
 
