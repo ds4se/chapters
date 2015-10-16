@@ -1,5 +1,6 @@
-A Success Story in Applying Data Science in Practice
-Ayse Basar Bener, Burak Turhan, Ayse Tosun, Bora Caglayan, Ekrem Kocaguneli
+# A Success Story in Applying Data Science in Practice
+
+_Ayse Basar Bener, Burak Turhan, Ayse Tosun, Bora Caglayan, Ekrem Kocaguneli_
 
 
 Data science and analysis has been a growing need in the software development industry as data becomes available. Data science involves analytics to use data to understand past and present, to analyze past performance and to use optimization and/ or prediction techniques [1].  
@@ -20,9 +21,13 @@ The Phase 3 of the project focused on building a reliability model as we called 
 
 The Phase 4 of the project is the current phase where we work on source code smells, and code dependencies to improve the maintenance cost. So far we have mined data and built models to gain insights and predict pre-release activities. This phase of the project aims to understand the reasons behind issues reported after the production and to propose a software analytics solution that would predict post-release defects before the release. In order achieve this goal we are building a software analytics framework that is fed by the source code as code dependencies and code changes; prior issues specifically post-release defects and their link to the changes; and testing processes as test cases and execution logs. 
 
-As we reported in our earlier publications successful deployments of data science and analytics in this particular project with our industry partner followed a process (Figure 1) and had the following characteristics:
+## Our Process
 
-Data collection: It requires identification and prioritization of data needs and available sources depending on the context. Qualitative and quantitative data collection methods are different depending on the problem. In some cases data acquisition requires a tool development first, followed by harmonizing, rescaling, cleaning and sharing data within the organization.
+As we reported in our earlier publications successful deployments of data science and analytics in this particular project with our industry partner followed a process (Figure 1) and had the following characteristics.
+
+### Data collection
+
+It requires identification and prioritization of data needs and available sources depending on the context. Qualitative and quantitative data collection methods are different depending on the problem. In some cases data acquisition requires a tool development first, followed by harmonizing, rescaling, cleaning and sharing data within the organization.
 
 
  
@@ -30,23 +35,50 @@ Data collection: It requires identification and prioritization of data needs and
 
 Figure 1.  The data science and analytics process [8]
 
-Exploratory Data Analysis: The simplest way to get insight from data is through descriptive statistics. Even a simple analysis or visualisation may reveal hidden facts in the data. Later, predictive models utilizing data mining techniques may be built to aid decision making process in an organization. 
-Model Selection: Selection of the suitable data mining techniques depending on the problem is critical while building the prediction model. Factors such as the definition of the problem, maturity of data collection process in a company, and expected benefits from the predictive model may also affect model construction. In addition, insights gained from descriptive statistics may be used in the construction of predictive models [1]. 
-Performance measures and beefit analysis: Predictive models need to be evaluated, which requires the definition of certain performance measures, appropriate statistical tests as well as the effect size analysis [1]. 
-Problem Selection: In problem selection we need to ask the right or important questions. It is important to involve the domain expert and/ or the practitioner at this stage. We need to make sure that the hypotheses are consistent with questions since these will be the basis of the ‘statement of problem’.  Failing to ask the right questions and inconsistencies in hypothesis formulation also would lead to methodological pitfalls such as hypothesis testing errors, issues of statistical power, issues in construction of dependent/ independent variables, reliability and validity issues.
-Managerial Support: As in any project data science projects need full support of management at all levels.
-Project Management: It is important to have a detailed project planned signed off by all parties. Once the project plan is in place it needs to be rigorously monitored in order to be able to take corrective action on a timely basis if there are challenges. 
-Tool support: Having an automated tool support such as Prest [5] made it easier and faster to access the data.
-Trusted Relationship: We have been collaborating with this company since 2007 and it is now a mature and trusted relationship. Such a relationship makes it easier to communicate easily at different levels and hence helps the researchers to better understand cause-effect relationships.
+### Exploratory Data Analysis
 
-To summarize in this project we have been focusing on better understanding of the data contrary to classical machine learning applications. Each phase of the project at the end led to a new project and a new collaboration. Although AI techniques may be complex for practitioners with a tool support and a proper measurement of tangible benefits the industry uses data science and analytics very effectively [3].  
+ The simplest way to get insight from data is through descriptive statistics. Even a simple analysis or visualisation may reveal hidden facts in the data. Later, predictive models utilizing data mining techniques may be built to aid decision making process in an organization. 
 
-References:
-[1] A. Bener, A.T. Misirli, B. Caglayan, E. Kocaguneli, G. Calikli, Lessons Learned from Software Analytics in Practice, in The Art and Science of Analyzing Software Data, Tim Menzies, Christian Bird, and Tom Zimmerman (eds.), Morgan Kaufmann 2015.
-[2] A. T. Misirli, B. Caglayan, A. Bener, and B. Turhan “A Retrospective Study of Software Analytics Projects: In-Depth Interviews with Practitioners”. IEEE Software, September/ October, 2013
-[3] A. Tosun, A. Bener, and R. Kale, “AI Based Software Defect Predictors: Applications and Benefits in a Case Study”, AI Magazine, 32, 2, pp. 57-68, (2011).
-[4] A.Tosun, B.Turhan, and A. Bener, “Practical Considerations of Deploying AI in Defect Prediction: A Case Study within the Turkish Telecommunication Industry”, Promise09, May 18-19, Vancouver, Canada
-[5] E. Kocagüneli, A. Tosun, A. Bener, B. Turhan, and B. Çağlayan, “Prest: An Intelligent Software Metrics Extraction, Analysis and Defect Prediction Tool”, in Proceedings of the 21st International Conference on Software Engineering and Knowledge Engineering (SEKE 2009), Boston, USA.
-[6] B.Turhan, G. Kocak and A. Bener, "Software Defect Prediction Using Call Graph Based Ranking (CGBR) Framework", in Proceedings of the 34th EUROMICRO Software Engineering and Advanced Applications (EUROMICRO-SEAA 2008), 2008.
-[7] Y. Kosker, A.Bener and B. Turhan, "Refactoring Prediction Using Class Complexity Metrics", in Proceedings of the 3rd International Conference on Software and Data Technologies (ICSOFT 2008), 2008, pp. 289-292.
-[8] Shut, R. (2013), “Next-Gen Data Scientists”, Strata Talk, Feb 2013
+### Model Selection 
+
+Selection of the suitable data mining techniques depending on the problem is critical while building the prediction model. Factors such as the definition of the problem, maturity of data collection process in a company, and expected benefits from the predictive model may also affect model construction. In addition, insights gained from descriptive statistics may be used in the construction of predictive models [1]. 
+
+### Performance measures and beefit analysis
+
+ Predictive models need to be evaluated, which requires the definition of certain performance measures, appropriate statistical tests as well as the effect size analysis [1]. 
+
+### Problem Selection
+
+ In problem selection we need to ask the right or important questions. It is important to involve the domain expert and/ or the practitioner at this stage. We need to make sure that the hypotheses are consistent with questions since these will be the basis of the ‘statement of problem’.  Failing to ask the right questions and inconsistencies in hypothesis formulation also would lead to methodological pitfalls such as hypothesis testing errors, issues of statistical power, issues in construction of dependent/ independent variables, reliability and validity issues.
+
+### Managerial Support
+
+ As in any project data science projects need full support of management at all levels.
+
+### Project Management
+
+ It is important to have a detailed project planned signed off by all parties. Once the project plan is in place it needs to be rigorously monitored in order to be able to take corrective action on a timely basis if there are challenges. 
+
+### Tool support
+
+ Having an automated tool support such as Prest [5] made it easier and faster to access the data.
+
+### Trusted Relationship
+
+ We have been collaborating with this company since 2007 and it is now a mature and trusted relationship. Such a relationship makes it easier to communicate easily at different levels and hence helps the researchers to better understand cause-effect relationships.
+
+## Summary
+
+The goal of the above is to focus  better on understanding of the data 
+(contrary to classical machine learning applications). Each phase of the project at the end led to a new project and a new collaboration. Although AI techniques may be complex for practitioners with a tool support and a proper measurement of tangible benefits the industry uses data science and analytics very effectively [3].  
+
+## References:
+
+1.  A. Bener, A.T. Misirli, B. Caglayan, E. Kocaguneli, G. Calikli, Lessons Learned from Software Analytics in Practice, in The Art and Science of Analyzing Software Data, Tim Menzies, Christian Bird, and Tom Zimmerman (eds.), Morgan Kaufmann 2015.
+2. T. Misirli, B. Caglayan, A. Bener, and B. Turhan “A Retrospective Study of Software Analytics Projects: In-Depth Interviews with Practitioners”. IEEE Software, September/ October, 2013
+3. A. Tosun, A. Bener, and R. Kale, “AI Based Software Defect Predictors: Applications and Benefits in a Case Study”, AI Magazine, 32, 2, pp. 57-68, (2011).
+4.  A.Tosun, B.Turhan, and A. Bener, “Practical Considerations of Deploying AI in Defect Prediction: A Case Study within the Turkish Telecommunication Industry”, Promise09, May 18-19, Vancouver, Canada
+5. E. Kocagüneli, A. Tosun, A. Bener, B. Turhan, and B. Çağlayan, “Prest: An Intelligent Software Metrics Extraction, Analysis and Defect Prediction Tool”, in Proceedings of the 21st International Conference on Software Engineering and Knowledge Engineering (SEKE 2009), Boston, USA.
+6. B.Turhan, G. Kocak and A. Bener, "Software Defect Prediction Using Call Graph Based Ranking (CGBR) Framework", in Proceedings of the 34th EUROMICRO Software Engineering and Advanced Applications (EUROMICRO-SEAA 2008), 2008.
+7.  Y. Kosker, A.Bener and B. Turhan, "Refactoring Prediction Using Class Complexity Metrics", in Proceedings of the 3rd International Conference on Software and Data Technologies (ICSOFT 2008), 2008, pp. 289-292.
+8.  Shut, R. (2013), “Next-Gen Data Scientists”, Strata Talk, Feb 2013
