@@ -37,7 +37,7 @@ As we reported in our earlier publications successful deployments of data scienc
 It requires identification and prioritization of data needs and available sources depending on the context. Qualitative and quantitative data collection methods are different depending on the problem. In some cases data acquisition requires a tool development first, followed by harmonizing, rescaling, cleaning and sharing data within the organization.
 
 
- 
+![](process.png) 
 
 
 Figure 1.  The data science and analytics process [8]
