@@ -189,11 +189,27 @@ constitute equally good explanations of that evidence (Kelly,
 
 ## References
 
-+ D. Atkins et al., “Grading quality of evidence and strength of recommendations,” BMJ, no. 1490, vol. 328, 2004.
-+ T. Dybå, “Contextualizing Empirical Evidence,” IEEE Software, 30(1): 81-83, 2013.
-+ T. Dybå, B.A. Kitchenham, and M. Jørgensen, “Evidence-based Software Engineering for Practitioners,” IEEE Software, 22(1): 58-65, 2005.
-+ T. Dybå and T. Dingsøyr, “Empirical Studies of Agile Software Development: A Systematic Review,” Information and Software Technology, 50(9-10): 833-859, 2008.
-+ M. Jørgensen, T. Dybå, and B.A. Kitchenham, “Teaching Evidence-Based Software Engineering to University Students,” Proc. 11th International Software Metrics Symposium (Metrics 2005), Como, Italy, 19-22 Sept. 2005.
-+ T. Kelly, “Evidence: Fundamental Concepts and the Phenomenal Conception,” Philosophy Compass, 3/5: 933-955, 2008.
-+ B.A. Kitchenham, T. Dybå, and M. Jørgensen, “Evidence-based Software Engineering,” Proc. 26th International Conference on Software Engineering (ICSE 2004), Edinburgh, Scotland, 23-28 May, pp. 273-281, 2004.
-+ D.I.K. Sjøberg, T. Dybå, and M. Jørgensen, “The Future of Empirical Methods in Software Engineering Research,” 29th International Conference on Software Engineering (ICSE'07), Minneapolis, Minnesota, USA, 20-26 May, Future of Software Engineering, L. Briand and A. Wolf (Eds.), IEEE Computer Society Press, pp. 358-378, 2007.
++ D. Atkins et al., “Grading quality of evidence and strength of
+  recommendations,” BMJ, no. 1490, vol. 328, 2004.
++ T. Dybå, “Contextualizing Empirical Evidence,” IEEE Software, 30(1):
+  81-83, 2013.
++ T. Dybå, B.A. Kitchenham, and M. Jørgensen, “Evidence-based Software
+  Engineering for Practitioners,” IEEE Software, 22(1): 58-65, 2005.
++ T. Dybå and T. Dingsøyr, “Empirical Studies of Agile Software
+  Development: A Systematic Review,” Information and Software
+  Technology, 50(9-10): 833-859, 2008.
++ M. Jørgensen, T. Dybå, and B.A. Kitchenham, “Teaching Evidence-Based
+  Software Engineering to University Students,” Proc. 11th
+  International Software Metrics Symposium (Metrics 2005), Como,
+  Italy, 19-22 Sept. 2005.
++ T. Kelly, “Evidence: Fundamental Concepts and the Phenomenal
+  Conception,” Philosophy Compass, 3/5: 933-955, 2008.
++ B.A. Kitchenham, T. Dybå, and M. Jørgensen, “Evidence-based Software
+  Engineering,” Proc. 26th International Conference on Software
+  Engineering (ICSE 2004), Edinburgh, Scotland, 23-28 May,
+  pp. 273-281, 2004.
++ D.I.K. Sjøberg, T. Dybå, and M. Jørgensen, “The Future of Empirical
+  Methods in Software Engineering Research,” 29th International
+  Conference on Software Engineering (ICSE'07), Minneapolis,
+  Minnesota, USA, 20-26 May, Future of Software Engineering, L. Briand
+  and A. Wolf (Eds.), IEEE Computer Society Press, pp. 358-378, 2007.
