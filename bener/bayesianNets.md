@@ -16,7 +16,7 @@ In our previous work we used the power of BNs to solve a specific problem of pre
 
 
 
-
+![bayes][bayes.png]
 
 Figure 1. Graphical representation of BN
 
