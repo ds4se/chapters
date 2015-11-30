@@ -1,10 +1,10 @@
-# Identifying and Assessing Bias
+# Don't embarrass yourself: Beware of bias in your data
 
 ## Dewey Defeats Truman
 
 The 1948 U.S. presidential election proved to be one of the greatest blunders in applied statistics history.
 
-As is often the case, many polls were conducted in the run up to the election and Gallup (still one of the most trusted polling organizations today) predicted that republican New York Governor Thomas Dewey would handily defeat the presidential incumbent democrat Harry Truman.  In fact, the press was so convinced by the "empirical evidence" that the Chicago Daily Tribune had already printed the first edition of the paper with the headline "Dewey Defeats Truman" before final election results were in.  Unfortunately for them, the election results the next morning were anything but expected, as Truman had won the electoral vote with 303 votes to Dewey's 189.  A landslide, but in the opposite direction.
+As is often the case, many polls were conducted in the run up to the election. Gallup, still one of the most trusted polling organizations today, predicted that republican Thomas Dewey would handily defeat democrat Harry Truman.  In fact, the press was so convinced by the "empirical evidence" that the Chicago Daily Tribune had already printed the first edition of the paper with the headline "Dewey Defeats Truman" before final election results were in.  Unfortunately for them, the election results the next morning were anything but expected, as Truman had won the electoral vote with 303 votes to Dewey's 189.  A landslide, but in the opposite direction.
 
 <div style="float: right">
   <img src="dewey-defeats-truman.jpg" height="250px" />
