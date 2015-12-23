@@ -5,10 +5,7 @@ Leandro L. Minku, Department of Computer Science, University of Leicester, UK
 
 The wisdom of the crowds phenomenon has long been observed in cognitive, social and political sciences. The idea is that the combination of the judgements given by a large group of people on a certain matter is often better than the judgement given by any individual within this group. 
 
-<div style="float: right;margin:10 10px 10px 10">
-    ![Cow](cow.jpg)
-</div>
-
+<img align=right src="cow.jpg">
 
 Classically, the wisdom of the crowds was studied in continuous estimation problems, even though it has also been studied in other types of problems. A landmark study was performed in 1906, when a contest was set up in a country fair in Plymouth (UK) to estimate the weight of a slaughtered and dressed ox. The person whose guess was the closest to the actual weight of 1198 pounds would win a prize. Around 800 people, including both experts and people with no expertise in judging weight of cattle, participated in the contest. The interesting thing was that, even though people gave several different and wrong estimations, statistician Francis Galton found that the average guess of all the participants was 1197 pounds. The collective "wisdom" of the Plymouth crowd was remarkably close to the actual weight of the ox, and better than the estimations given by any of the experts! 
 
@@ -28,9 +25,7 @@ Predictive accuracy tends to improve more if individual models are diverse, i.e.
 
 Sometimes there is not much data for building predictive models within a given environment, hindering the accuracy of predictive approaches. There may be more data available from other environments, but these data are not always directly relevant for predictions in the targeted environment. For example, the effort required to develop a certain software project within a given company may be different from the effort required to develop the same project in another company because these companies adopt different management strategies. So, a software effort estimation model created with data from one of these companies may not be directly applicable to the other. 
 
-<div style="float: left;margin:10 10px 10px 10">
-    ![SnowBeach](snow-beach.jpg)
-</div>
+<img align=right src="snow-beach.jpg">
 
 Even though data from different environments are not always compatible, they may become more or less relevant over time. This is because environments may change over time, becoming more or less similar to other environments. For example, a software company may adopt a new software development process, resulting in its productivity becoming more similar to the productivity of other companies that adopt this process. If we can identify <em>when</em> data from other environments become useful and <em>how much useful</em> they are, we can benefit from them to create better predictive models. 
 
