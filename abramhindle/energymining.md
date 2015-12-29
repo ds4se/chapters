@@ -26,12 +26,13 @@ inspection that the idle did drop down the CPU state.  Afterwards both
 tests produced results that were comparable; it turns out on a fast
 network there's not much difference between HTTP/1.1 and HTTP/2.0.
 
-Construct validity almost suffered from an attribution error, the
-change in energy consumption was not caused by HTTP/1.1 or HTTP/2.0
-code in Firefox, but it was caused by our HTTP/1.1 test inducing the
-CPU to have a different state than the HTTP/2.0 tests. This is just
-one of many perils one faces when engaged in Green Mining,
-energy-aware mining, and software energy consumption measurement.
+The entire experiment was threatened by attributing the change in
+energy consumption was not caused by HTTP/1.1 or HTTP/2.0 code in
+Firefox, but it was caused by our HTTP/1.1 test inducing the CPU to
+have a different state than the HTTP/2.0 tests. Misattribution of the
+root causes of energy consumption is just one of many perils one faces
+when engaged in Green Mining, energy-aware mining, and software energy
+consumption measurement.
 
 ## Let's ENERGISE your Software Energy Experiments
 
@@ -85,7 +86,7 @@ measuring software energy consumption:
 
 The environment is the testbed and the system that will run the
 software under test. Environments should be representative of
-realistic scenarios yet balanced against noise such as 3rd-party apps
+realistic scenarios yet balanced against noise such as third-party apps
 or traffic, unneeded applications, or other users. Generally
 environments should be as controlled as possible. Even temperature can
 affect energy measurements.
@@ -93,7 +94,7 @@ affect energy measurements.
 ### N-Versions
 
 The first step to any successful attempt at optimization is to measure
-what the system before optimization. If we are measuring software
+system performance before optimization. If we are measuring software
 energy consumption to determine the impact of changing the code we
 should measure the system before the modification to allow for
 comparison. Our work in Green Mining has shown that software does
@@ -115,14 +116,14 @@ run? Tasks that do not to run continuously, such as sharpening an
 image or compressing a video file can be characterized by the energy
 consumed. Where as a task that runs continuously, such a sharpening
 video images of a surveillance web-camera or streaming video
-compression, is better characterized by its workload, it's power, the
+compression, is better characterized by its workload, its power, the
 rate of energy consumption.
 
 ### Repeat!
 
 While we already recommended measuring multiple versions of software,
 something even more important is to repeat your measurements.  Modern
-computers are very noisey and active systems with lots of background
+computers are very noisy and active systems with lots of background
 processes and lots of state.  They have many peripherals and services.
 It is hard to guarantee what tasks are executing on a modern system
 and what the current environment is like.  If you're running a test
@@ -142,13 +143,13 @@ measurement devices and ICs, such as the Watts Up? Pro device or the
 TI INA-219 IC, are sampling at thousands of times per second,
 integrating the results and reporting back to you at a fraction of
 that rate. If you only have 1 second of granularity from a Watts Up?
-Pro you won't be measuring the cost of a method call unless make a
-benchmark that repeatedly calls it. But if you need method call level
+Pro you won't be measuring the cost of a method call unless you explicitly make a
+benchmark that repeatedly calls it. If you need method call level
 measurements, the instrumentation overhead will be high.
 
 Granularity is a concern if you measure just a single process
 or component or if you measure the whole system.  An example
-scenario is if you asked the soundcard to play a sound for 1
+scenario is if you asked the sound-card to play a sound for 1
 second.  The request to play a sound might return in 1ms to the
 process, for the next second the OS, the sound card driver and sound
 card will be interacting, playing the requested 1 second of audio.  If
@@ -198,7 +199,7 @@ Mobile devices and modern computers still suffer from crashing
 software. Exceptions happen, core dumps occur, sometimes apps decide
 to update, sometimes the network goes down, sometimes a remote site
 goes down. Often the software under test is just inherently buggy and
-only 1/2 of the test runs will complete. When developing tests one
+only half of the test runs will complete. When developing tests one
 should instrument the tests with auditing capabilities such as
 screenshots to enable postmortem investigations. Furthermore 
 outliers should be investigated and potentially re-run.
@@ -223,8 +224,9 @@ exceptions.
 ## References
 
 [[Chowdhury2015](#Chowdhury2015)] <a id="Chowdhury2015"></a> Shaiful
-Alam Chowdhury, Varun Sapra , and Abram Hindle.  "Is HTTP/2 More Energy
-Efficient Than HTTP/1.1 for Mobile Users?" , PeerJ Preprints, 2015.
+Alam Chowdhury, Varun Sapra , and Abram Hindle.  "Is HTTP/2 More
+Energy Efficient Than HTTP/1.1 for Mobile Users?" , PeerJ Preprints,
+https://peerj.com/preprints/1280/, 2015.
 
 [[Hindle2012](#Hindle2012)] <a id="Hindle2012"></a> Hindle, Abram.
 "Green mining: A methodology of relating software change to power
