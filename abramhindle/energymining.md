@@ -15,20 +15,20 @@ To test HTTP/1.1 in Firefox he had to disable HTTP/2.0 in Firefox's settings,
 thus his energy consumption test of Firefox for HTTP/1.1 had to do
 more work than his HTTP/2.0 tests.  He investigated the CPU state of
 the HTTP/2.0 and HTTP/1.1 tests and found that the rigorous button
-pushing to disable HTTP/2.0 put the CPU into a higher
+pushing used to disable HTTP/2.0 put the CPU into a higher
 state: high frequency, and more voltage.  Thus the CPU state for the
 HTTP/1.1 started higher and was consuming more than the HTTP/2.0
 tests.
 
 Shaiful's solution was to inject some idle time into the HTTP/1.1
 test, allowing the CPU to lower its state.  He then ensured via manual
-inspection that the idle did drop down the CPU state.  Afterwards both
-tests produced results that were comparable; it turns out on a fast
+inspection that the idling did drop down the CPU state.  Afterwards both
+tests produced results that were comparable; it turns out that on a fast
 network there's not much difference between HTTP/1.1 and HTTP/2.0.
 
 The entire experiment was threatened by attributing the change in
-energy consumption was not caused by HTTP/1.1 or HTTP/2.0 code in
-Firefox, but it was caused by our HTTP/1.1 test inducing the CPU to
+energy consumption to HTTP/1.1 and HTTP/2.0 code in
+Firefox, when in fact it was caused by our HTTP/1.1 test inducing the CPU to
 have a different state than the HTTP/2.0 tests. Misattribution of the
 root causes of energy consumption is just one of many perils one faces
 when engaged in Green Mining, energy-aware mining, and software energy
@@ -42,7 +42,7 @@ measuring and mining software energy consumption is to juggle all of
 the confounds and potential threats to validity one faces. The first 2
 questions any software energy miner should ask themselves are "What do
 I want to measure?" and "What am I actually measuring?". The intent is
-to create test or benchmark that will allow us to compare energy
+to create a test or benchmark that will allow us to compare energy
 consumption of the task or program in question.
 
 In prior work [[Hindle2012](#Hindle2012)] we propose a methodology of
@@ -71,10 +71,10 @@ measuring software energy consumption:
 + **Environment** -- prepare a stable testbed for energy measurement.
 + **N-versions** -- run a test across more than 1 version of the software.
 + **Energy or power** -- do we care about total energy consumed of a
-  task the per second cost of running a service?
+  task or the per second cost of running a service?
 + **Repeat** -- 1 run is not enough, we need to run our tests multiple
-  times to address with background noise.
-+ **Granularity** -- What level of measurement, how often and what
+  times to address background noise.
++ **Granularity** -- what level of measurement, how often, and what
   level of invasiveness of instrumentation?
 + **Idle** -- how do applications and service react with no load: is
   energy being wasted?
@@ -86,10 +86,10 @@ measuring software energy consumption:
 
 The environment is the testbed and the system that will run the
 software under test. Environments should be representative of
-realistic scenarios yet balanced against noise such as third-party apps
-or traffic, unneeded applications, or other users. Generally
-environments should be as controlled as possible. Even temperature can
-affect energy measurements.
+realistic platforms and scenarios, yet balanced against noise such as
+third-party apps or traffic, unneeded applications, or other
+users. Generally environments should be as controlled as
+possible. Even temperature can affect energy measurements.
 
 ### N-Versions
 
@@ -165,7 +165,7 @@ Not all applications or tasks have idle behaviour, but many user
 facing applications and services run continuously or intermittently in
 the foreground or background. What programs do when they aren't in
 direct use is important because usually their idle operation is a
-often waste of resource, unless work is being executed during idle
+often waste of resources, unless work is being executed during idle
 time. An efficient process can stay asleep until it receives input.
 The operating system's scheduler is very good at sleeping and waking
 processes.
@@ -174,7 +174,7 @@ Idle use often characterizes baseline energy consumption for an
 application is. If executing tasks and idleness use the same amount of
 energy perhaps the idle components can be optimized to use less
 energy. Measuring idle consumption is useful to determine what impact
-changes might have on implementation of non-functional requirements.
+changes might have on the implementation of non-functional requirements.
 
 ### Statistical Analysis
 
@@ -198,7 +198,7 @@ To err is human and to throw uncaught exceptions is to execute code.
 Mobile devices and modern computers still suffer from crashing
 software. Exceptions happen, core dumps occur, sometimes apps decide
 to update, sometimes the network goes down, sometimes a remote site
-goes down. Often the software under test is just inherently buggy and
+is unavailable. Often the software under test is just inherently buggy and
 only half of the test runs will complete. When developing tests one
 should instrument the tests with auditing capabilities such as
 screenshots to enable postmortem investigations. Furthermore 
@@ -211,7 +211,7 @@ an erroneous test.
 In summary, there are many confounds that one faces when measuring
 software energy consumption. First and foremost, energy consumption is
 a physical process and energy consumption measurement requires
-repeated measurement and statistical analysis. Thus remember and use
+repeated measurement and statistical analysis. Thus remember and use the
 [ENERGISE](#ENERGISE) mnemonic to help evaluate energy measurement
 scenarios: environment, N-versions, energy or power, repeated
 measurement, granularity, idle measurement, statistical analysis, and
@@ -226,7 +226,7 @@ exceptions.
 [[Chowdhury2015](#Chowdhury2015)] <a id="Chowdhury2015"></a> Shaiful
 Alam Chowdhury, Varun Sapra , and Abram Hindle.  "Is HTTP/2 More
 Energy Efficient Than HTTP/1.1 for Mobile Users?" , PeerJ Preprints,
-https://peerj.com/preprints/1280/, 2015.
+https://peerj.com/preprints/1280/ , 2015.
 
 [[Hindle2012](#Hindle2012)] <a id="Hindle2012"></a> Hindle, Abram.
 "Green mining: A methodology of relating software change to power
