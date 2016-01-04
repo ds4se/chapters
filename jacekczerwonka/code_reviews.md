@@ -1,4 +1,4 @@
-#Code reviews are not for finding defects
+#Code reviews are not for finding defects - even established tools need occasional evaluation
 
 Modern code reviewing traces back its roots to the process of inspection [1]. Inspections were originally conceived as formal meetings, to which participants would prepare ahead of time. Unlike inspections, code reviews do not require participants to be in the same place nor do they happen at a fixed, prearranged time. Aligning with a distributed nature of many projects, code reviews are asynchronous and frequently supporting geographically distributed reviewers. Code review tools are now built with these characteristics in mind and are well-integrated in the modern engineering workflows.
 
@@ -31,7 +31,11 @@ The median time from a review being requested to receiving all necessary sign-of
 
 The high cost of code reviews and reviewing having benefits that may not match the assumptions, often lead us to using them in our workflows in ways that are not efficient.
 
-For example, requiring two signoff for all code changes without discrimination will make costs exceed the benefits of code reviewing in at least some of the cases. Moreover, since code reviews find commit blocking defects relatively infrequently, it might be prudent to change the practices to better fit that finding. One of Microsoft's large teams recently instituted a policy in which a developer is allowed to proceed with a commit after the very first code review sign-off. If there are more comments coming after that, another commit can be made to adjust the change.   
+For example, requiring two signoff for all code changes without discrimination will make costs exceed the benefits of code reviewing in at least some of the cases. Moreover, since code reviews find commit blocking defects relatively infrequently, it might be prudent to change the practices to better fit that finding. One of Microsoft's large teams recently instituted a policy in which a developer is allowed to proceed with a commit after the very first code review sign-off. If there are more comments coming after that, another commit can be made to finalize the change.
+
+##Conclusions
+
+Code reviewing is an example of a software engineering process tool with established norms and expected outcomes. Its usage patterns and policies are often a result of combining the industry's collective learning and a specific team's culture. Past experiences of decision makers often dictate and reinforce policies. Even with such a well-established practice, it is useful to review its outcomes and verify if it applies to the specific context in which it is used, and if so, whether it still delivers the assumed results.
 
 ##References
 
