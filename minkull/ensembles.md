@@ -45,7 +45,7 @@ Ensembles have the potential to provide several insights into software engineeri
 
 ## Ensembles as versatile tools
 
-In summary, ensembles are versatile tools that can help us to deal with different issues in software engineering predictive modelling. They can help us to improve predictive accuracy (and stability) across data sets, to deal with changes and transfer knowledge, to handle different goals, and to gain insights into software processes. 
+In summary, ensembles are versatile tools that can help us to deal with different issues in predictive modelling for software engineering. They can help us to improve predictive accuracy (and stability) across data sets, to deal with changes and transfer knowledge, to handle different goals, and to gain insights into software processes. 
 
 Even though some types of ensembles have potential drawbacks, depending on the problem in hand, other types of ensembles can actually help to overcome such drawbacks. For example, a potential drawback of ensembles is the possible increase in the computational resources (e.g., running time and memory) required for creating ensembles in comparison to single models. Even though many ensemble approaches do not increase the time complexity of the underlying learning algorithms used by their individual models, their increase in computational resources may become a problem for very large data sets. That said, several ensemble approaches are actually specifically designed to reduce the computational resources that would be required by single models when data sets are very large. This can be achieved, for example, by creating individual models with disjoint subsets of the data, as done by chunk-based incremental learning ensembles (Street and Kim 2001). 
 
