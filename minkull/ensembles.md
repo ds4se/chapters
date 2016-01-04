@@ -51,7 +51,7 @@ Even though some ensemble approaches have potential drawbacks, depending on the 
 
 Another potential drawback of ensembles is lack of explanatory power. As the ensemble size increases, it becomes difficult to "read" ensembles in order to explain how exactly their predictions are made. This is not a problem if practitioners are more interested in how helpful the predictions themselves are, rather than in how the predictions are made. However, if practitioners wish to understand the models behind the predictions, lack of explanatory power can become a problem. Even though lack of explanatory power is a drawback of most ensembles, some ensemble approaches do not hinder explanatory power or can even help us to understand certain conditions. For example, ensembles where a single model is created for each different environment can be useful for understanding the relationship and the differences between environments (Minku and Yao 2014).
 
-To learn more about ensembles and their applications to software engineering, we recommend Polikar (2006)'s and Menzies et al (2014)'s manuscripts, respectively.
+To learn more about ensembles and their applications to software engineering, I recommend Polikar (2006)'s and Menzies et al (2014)'s manuscripts, respectively.
 
 
 
