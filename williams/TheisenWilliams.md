@@ -1,4 +1,4 @@
-# There’s Gold in Them Thar Stack Traces
+# Stack Traces Reveal Attack Surfaces
 
 _Christopher Theisen and Laurie Williams_  
 _North Carolina State University_
@@ -120,7 +120,7 @@ study on Windows 8, 48.4% of shipped binaries were
 identified as appearing in at least one stack trace,
 while 94.8% of vulnerabilities fixed over the same
 time period appeared in that same 48.4% of
-binaries. Busy security professionals, can uses this
+binaries. Busy security professionals can use this
 information to focus their security testing and
 hardening efforts on half of the codebase while
 getting 95% of the vulnerabilities. Attack surface
