@@ -28,14 +28,18 @@ system, the tool determines which functions are
 appearing most frequently in the set of crashes and
 provides this information to the user. The more
 often a function appears in crashes, the more likely
-a fault exists in that function.
+a fault exists in that function. Stack traces were also 
+used in the development of StackMine [3], a tool that uses stack traces
+to help software development teams discover software performance bugs
+in use at Microsoft.
+
 
 ## Another use of stack traces?
 
 
 ![](tangle.png)
 
-Figure 1:  A tangled web of files
+Figure 1:  A tangled web of files. Each node represents a file in a software system, while the edges represent relationships between files, such as function calls.
 
 Take a look at Figure 1. This graph represents a
 software system, with individual nodes representing
@@ -90,13 +94,13 @@ the system they’re attacking.
 
 ![](sense.png)
 
-Figure 2:  Making some sense of the tangled web, color files that appear in stack traces
+Figure 2:  Making some sense of the tangled web, color files that appear in stack traces.
 
 ## Attack Surface Approximation
 
 Researchers at North Carolina State University and
 Microsoft Research have developed a technique called
-_Attack Surface Approximation_ [3]. In this approach,
+_Attack Surface Approximation_ [4]. In this approach,
 the attack surface of a system is determined by
 looking at stack traces from crash dumps from the
 target system. The crash dump stack traces are
@@ -127,7 +131,7 @@ getting 95% of the vulnerabilities. Attack surface
 approximation has also been performed on Mozilla
 Firefox, with 8.4% of files appearing in at least
 one stack trace. 72.1% of vulnerabilities occurred
-in the files placed on the attack surface [4].
+in the files placed on the attack surface [5].
 
 One of the advantages of this approach is its
 simplicity. If your software system outputs any sort
@@ -139,7 +143,7 @@ build your list of code on the attack surface. For
 organizations without extensive resources, attack
 surface approximation is a useful first step for
 determining where to start security hardening
-efforts.
+efforts. Another advantage of the approach is its scalability. Attack Surface Approximation can be applied to any software system that generates stack traces, independent of the language used to develop the software. Stack traces are already collected by many software organizations, which means Attack Surface Approximation can make sure of existing data to draw new insights about software systems.
 
 ## References:
 
@@ -152,12 +156,13 @@ efforts.
    Crash Stacks," in Proceedings of the 2014
    International Symposium on Software Testing and
    Analysis, 2014.
-3. C. Theisen, K. Herzig, P. Morrison, B. Murphy,
+3. S. Han, Y. Dang, S. Ge, D. Zhang, and T. Xie "Performance debugging in the large via mining millions of stack traces." In Proceedings of the 34th International Conference on Software Engineering, pp. 145-155. 2012.
+4. C. Theisen, K. Herzig, P. Morrison, B. Murphy,
    and L. Williams, “Approximating Attack Surfaces
    with Stack Traces”, in Companion Proceedings of
    37th International Conference on Software
    Engineering, 2015.
-4. C. Theisen, R. Krishna, and L. Williams,
+5. C. Theisen, R. Krishna, and L. Williams,
    “Strengthening the Evidence that Attack Surfaces
    can be Approximated with Stack Traces”, NCSU
    Technical Report
