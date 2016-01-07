@@ -1,4 +1,4 @@
-.#Incident Management for Online Services
+#Incident Management for Online Services
 
 Qingwei Lin, Jian-Guang Lou, Hongyu Zhang, Dongmei Zhang
 
