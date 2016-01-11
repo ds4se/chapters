@@ -97,7 +97,7 @@ conditions. It is not unusual to see the same bug being fixed many
 times over many years until, if ever, the ultimate fix is
 implemented. 
 
-** Correcting data
+** Correct
 
 The first step is not to take any operational data record at face value. 
 It gets semantics from the exact understanding what the actor though (and did not think), 
@@ -130,7 +130,7 @@ are recorded the same way by operational support tools, but
 otherwise have no inherent relationship that is worth theorizing
 about. 
 
-** Contextualize data
+** Identify context
 
 A basic understanding on the types of activities (fixing, branching) and 
 roles (developer, tester, builder) in conjunction with how these 
