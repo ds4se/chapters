@@ -1,7 +1,7 @@
 # -*- mode:org; mode:reftex; indent-tabs-mode:nil; tab-width:2 -*-
 #+LATEX_CLASS: article
 #+AUTHOR: Audris Mockus
-#+TITLE: Missing, Incorrect, and Decontextualized
+#+TITLE: Operational Data are Missing, Incorrect, and Decontextualized
 #+OPTIONS: toc:nil 
 #+LATEX_HEADER: \usepackage{epsfig}
 #+LATEX_HEADER: \usepackage{url}
@@ -39,7 +39,9 @@ context.
 
 * Examples
 
-According to Wikipedia, during World War II, to minimize bomber
+** Missing data
+
+During World War II, to minimize bomber
 losses to enemy fire, researchers from the Center for Naval Analyses
 had conducted a study of the damage done to aircraft that had
 returned from missions, and had recommended that armor be added to
@@ -48,11 +50,25 @@ that only aircraft that had survived were observed and proposed to
 reinforce the areas with no damage, since planes hit in such areas
 would be lost. We will revisit this example later, but the key
 lesson is that many of the events observed in software development,
-such as defects, are contingent on a lot of factors, such as the extent
+such as defects, are contingent on numeous factors, such as the extent
 of software use and the ability of users to report issues, that are
 typically not observed. More defects reported by users,
 consequently, yet counter-intuitively, tend to indicate better quality
 software. 
+
+** Augment
+
+The simplest way to measure the defectiveness of software as perceived
+by end users is to normalize user reported defects by the extent of use as, 
+for example, described in\nbsp{}\cite{hmps15}. While the extent of use may be more easily and 
+readily available for common software delivered as a service, the 
+mere presence of an event in other contexts, such as a code commit, or
+a joining of a new participant, should be considered in context of 
+what is not observed, such as changes that could have been made but werent and 
+the pool of potentially interested and capable participants who chose
+not to join.
+
+** Incorrect data
 
 In a large telecommunication equipment company with a large customer
 support business, the reliability of systems is critical because
@@ -81,11 +97,22 @@ conditions. It is not unusual to see the same bug being fixed many
 times over many years until, if ever, the ultimate fix is
 implemented. 
 
+** Correcting data
+
+The first step is not to take any operational data record at face value. 
+It gets semantics from the exact understanding what the actor though (and did not think), 
+knew (and did not know), and did (and did not do) at the time the event was recorded. 
+Fortunately, the beahaviour of individuals and groups have regularities. Identifying such 
+regularities and using them to fix problematic data is one of the basic steps\nbsp{}\cite{zmz15}.
+
+
+** Decontextualized data
+
 Some interesting metabolic theories, for example, alometric
 scaling\nbsp{}\cite{metabolic},
 postulate a relationship between the body size and the heart
 rate. Measures of hart rate and sizes of animals are observed from
-tiny mice to huge elephants and a relationship is found to be 3/4
+tiny mice to huge elephants and a relationship is found to be \frac{3}{4}
 power law. Obviously, comparing animals of such diverse sizes is
 certainly an interesting intellectual activity and, in this
 particular case, it may reveal some fundamental aspects of animal
@@ -103,6 +130,15 @@ are recorded the same way by operational support tools, but
 otherwise have no inherent relationship that is worth theorizing
 about. 
 
+** Contextualize data
+
+A basic understanding on the types of activities (fixing, branching) and 
+roles (developer, tester, builder) in conjunction with how these 
+activities and roles may be reflected in the specific event patterns can 
+provide a simple way to contextualize events.
+
+* Summary
+
 The three examples point out key differences between operational
 data and experimental data. In order to apply the wealth of
 techniques developed for experimental data we first need to bring
@@ -117,8 +153,6 @@ apparatus works on traces left by operational support tools, and, as
 the activities involving these tools change and the tools evolve,
 the measurement apparatus will have to be updated or the measurements
 will loose accuracy.
-
-* What to do
 
 These examples provide concrete approaches to engage during "the
 98\% of the effort spent that goes into data preparation and data
