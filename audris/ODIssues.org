@@ -162,6 +162,13 @@ explorer of the operational data, there are a number of steps that
 can (and should) be taken to address some of the issues noted in
 various publications, for example,\nbsp{}\cite{Changes07}.
 
+Typicaly, the first step is to understand how the operational data get recorded. 
+The best approach is to observe actors doing their work and then compare that 
+observation to what has been recorded. If that is not possible, the actors 
+can be identified from the operational data and asked about the recorded events
+and our interpretations of what they mean. If neither of these options are available, 
+then such data is probably of little value.
+
 The next few paragraphs will draw attention to identifying missing
 data and adjusting the analysis accordingly, identifying inaccurate
 values and correcting them, and in segmenting the the events into
