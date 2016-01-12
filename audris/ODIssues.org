@@ -20,7 +20,7 @@ systems is proliferating.
 
 Data science is defined as generalizable extraction of knowledge
 from data\nbsp{}\cite{datascience}. While this definition sounds
-quite profound, how exactly data science differs from traditional
+quite profound, how exactly does data science differs from traditional
 science?  Traditional science extract knowledge\nbsp{}\footnote{By
 knowledge here we mean a useful model} from experimental data. Data
 science, on the other hand, claims to be able to extract knowledge
@@ -50,23 +50,24 @@ that only aircraft that had survived were observed and proposed to
 reinforce the areas with no damage, since planes hit in such areas
 would be lost. We will revisit this example later, but the key
 lesson is that many of the events observed in software development,
-such as defects, are contingent on numeous factors, such as the extent
+such as defects, are contingent on numerous factors, such as the extent
 of software use and the ability of users to report issues, that are
 typically not observed. More defects reported by users,
 consequently, yet counter-intuitively, tend to indicate better quality
 software. 
 
-** Augment
+** How to Augment?
 
 The simplest way to measure the defectiveness of software as perceived
-by end users is to normalize user reported defects by the extent of use as, 
-for example, described in\nbsp{}\cite{hmps15}. While the extent of use may be more easily and 
-readily available for common software delivered as a service, the 
-mere presence of an event in other contexts, such as a code commit, or
+by end users is to normalize the number of user reported defects by the extent of use as, 
+for example, described in\nbsp{}\cite{hmps15}. The extent of use may be more easily and 
+readily available for common software delivered as a service. 
+Other types of events may need similar normalization. For example, a code commit, or
 a joining of a new participant, should be considered in context of 
-what is not observed, such as changes that could have been made but werent and 
+what is not observed, such as commits that could have been made and 
 the pool of potentially interested and capable participants who chose
-not to join.
+not to join. A discussion below suggests techniques that could be
+used to augment the operational data with critical missing pieces.
 
 ** Incorrect data
 
@@ -97,13 +98,14 @@ conditions. It is not unusual to see the same bug being fixed many
 times over many years until, if ever, the ultimate fix is
 implemented. 
 
-** Correct
+** How to Correct?
 
-The first step is not to take any operational data record at face value. 
-It gets semantics from the exact understanding what the actor though (and did not think), 
+The operational data record can not be taken at face value. 
+It can only get meaning from the understanding of what the actor though (and did not think), 
 knew (and did not know), and did (and did not do) at the time the event was recorded. 
-Fortunately, the beahaviour of individuals and groups have regularities. Identifying such 
-regularities and using them to fix problematic data is one of the basic steps\nbsp{}\cite{zmz15}.
+Fortunately, the behavior of individuals and groups have regularities. Identifying such 
+regularities and using them to fix problematic data can be done as
+described in, for example,\nbsp{}\cite{zmz15}.
 
 
 ** Decontextualized data
@@ -112,7 +114,7 @@ Some interesting metabolic theories, for example, alometric
 scaling\nbsp{}\cite{metabolic},
 postulate a relationship between the body size and the heart
 rate. Measures of hart rate and sizes of animals are observed from
-tiny mice to huge elephants and a relationship is found to be \frac{3}{4}
+tiny mice to huge elephants and a relationship is found to be $\frac{3}{4}$
 power law. Obviously, comparing animals of such diverse sizes is
 certainly an interesting intellectual activity and, in this
 particular case, it may reveal some fundamental aspects of animal
@@ -130,50 +132,23 @@ are recorded the same way by operational support tools, but
 otherwise have no inherent relationship that is worth theorizing
 about. 
 
-** Identify context
+** How to Identify Context
 
 A basic understanding on the types of activities (fixing, branching) and 
 roles (developer, tester, builder) in conjunction with how these 
 activities and roles may be reflected in the specific event patterns can 
-provide a simple way to contextualize events.
+provide a way to contextualize events. More generally, the example
+illustrates that stratifying operational data into different groups
+is a problem-specific exercise. 
 
-* Summary
 
-The three examples point out key differences between operational
-data and experimental data. In order to apply the wealth of
-techniques developed for experimental data we first need to bring
-operational data to the quality standards associated with
-experimental data. It is helpful to think about OD as precise but
-tricky-to-use measurement apparatus. As with any precise instruments
-that need extensive tuning and calibration, opportunities for misuse
-abound. Having a clear understanding of how OD came to be and
-developing practices on how to use it effectively are
-essential. Unlike instruments measuring natural phenomena, this
-apparatus works on traces left by operational support tools, and, as
-the activities involving these tools change and the tools evolve,
-the measurement apparatus will have to be updated or the measurements
-will loose accuracy.
+* A Life of a Defect
 
-These examples provide concrete approaches to engage during "the
-98\% of the effort spent that goes into data preparation and data
-cleaning activities that precede data analysis." While it is
-impossible to describe all possible traps that await an eager
-explorer of the operational data, there are a number of steps that
-can (and should) be taken to address some of the issues noted in
-various publications, for example,\nbsp{}\cite{Changes07}.
-
-Typicaly, the first step is to understand how the operational data get recorded. 
-The best approach is to observe actors doing their work and then compare that 
-observation to what has been recorded. If that is not possible, the actors 
-can be identified from the operational data and asked about the recorded events
-and our interpretations of what they mean. If neither of these options are available, 
-then such data is probably of little value.
-
+Software defects are of concern to developers and users. 
 The next few paragraphs will draw attention to identifying missing
 data and adjusting the analysis accordingly, identifying inaccurate
 values and correcting them, and in segmenting the the events into
-"mice" and "Elephants". It is suggested to inspect background
-material in, for example,\nbsp{}\cite{M08,Changes07}.
+"mice" and "Elephants" in the context of software defects.
 
 If we observe a defect fixed in a file it is instructive to think
 what had to happen for this to occur. First, the event is predicated
@@ -224,7 +199,7 @@ claiming to have fixed the issues for the problem to reappear again.
 Basic techniques to use natural constraints to identify and correct
 some errors in issue data are described in\nbsp{}\cite{zmz15}. 
 
-As noted above, issue reported by one person may not be an issues
+As noted above, an issue reported by one person may not be an issues
 for another person. This maxim holds even stronger when comparing
 distinct projects. It is, therefore surprising to think that a
 defect discovered and fixed for, for example, flight control
@@ -237,13 +212,53 @@ cases the same or similar operational support tool (issue tracker)
 is used, but the fact that all trackable items in an issue tracker
 are "issues", does  not provide a mandate to put them into the same
 category and analyze deep relationships as in the case of the
-metabolic theory. In summary, the operational data needs to be
-segmented for most types of analysis and the segmentation process 
-tends to be highly nontrivial, for example, separating defects by
-priority inferred from the number of users affected\nbsp{}\cite{MFH02}. 
-Alternatively, the diversity could be accommodated by, for example,
-deferentially transforming the metrics based on context as done in,
-e.g.,\nbsp{ZMKZ14}.
+metabolic theory. 
+
+* What to do?
+
+The three examples point out key differences between operational
+data and experimental data. In order to apply the wealth of
+techniques developed for experimental data we first need to bring
+operational data to the quality standards associated with
+experimental data. It is helpful to think about OD as precise but
+tricky-to-use measurement apparatus. As with any precise instruments
+that need extensive tuning and calibration, opportunities for misuse
+abound. Having a clear understanding of how OD came to be and
+developing practices on how to use it effectively are
+essential. Unlike instruments measuring natural phenomena, this
+apparatus works on traces left by operational support tools, and, as
+the activities involving these tools change and the tools evolve,
+the measurement apparatus will have to be updated or the measurements
+will loose accuracy.
+
+The examples suggest approaches to spend "the
+98\% of the effort spent that goes into data preparation and data
+cleaning activities that precede data analysis." While it is
+impossible to describe all possible traps that await an eager
+explorer of the operational data, there are a number of steps that
+can (and should) be taken to address some of the issues noted in
+various publications, for example,\nbsp{}\cite{M08,Changes07}.
+
+Typically, the first step is to understand how the operational data
+get recorded.  The best approach is to select a sample of actors to
+observe them doing their work and then compare to what has been
+recorded. If it is not possible to observe the action directly, the
+actors can be identified from the operational data and asked about
+the recorded events and our interpretations of what they
+mean. Operational data that can not be subject to validation 
+can not be trusted for any downstream analysis. 
+
+Fortunately, narrowing the domain to software engineering in general
+and focusing on common developer actions such as code commits and
+issue handling can bring the necessary understanding on how to
+interpret the recorded events, how to model behavior in order to
+identify and correct inaccuracies, and how to separate events by
+context. Unfortunately, none of these tasks is trivial, for example,
+separating defects by priority inferred from the number of users
+affected\nbsp{}\cite{MFH02} or a data-driven way to add context as
+done in, for example,\nbsp{ZMKZ14}. This is what makes operational
+data such an interesting area to play with and make discoveries.
+
 
 * References
 
