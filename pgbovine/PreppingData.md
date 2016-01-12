@@ -17,7 +17,7 @@ You need to work with what you have been given, which is often:
 
 - incomplete (not all fields are present in all records),
 - inconsistent (field names and schemas change throughout the data set),
-- and corrupted (some records are malformed in weird ways).
+- and corrupted (some records are malformed in unusual ways).
 
 Thus, you must often write computer programs to parse the raw data and
 transform it into a form that is more friendly for analysis. This
@@ -33,9 +33,9 @@ effective data parsers. These tips can be implemented in any programming languag
 ### Use assertions everywhere
 
 Here is the most important tip: write lots of assertions in your parsing
-code. Write down every assumption you have about the data's format in
+code. Write down every assumption you have about your data's format in
 the form of assertions, and then revise those assertions as you find out
-which parts of the data inevitably violate them.
+which parts of the data violate them.
 
 For instance, should all records be in chronological order? If so,
 assert it. Should there be exactly seven fields per record? If so,
@@ -43,10 +43,10 @@ assert it. Should the first field always be an even integer between 0
 and 26? If so, assert it!
 
 In a perfect world, all records would be cleanly-formatted and abide by
-an elegant and fixed schema. Not so in the real world!
+an elegant and fixed schema. But the real world is far from perfect.
 
-If you write good assertions, your parsing code *will crash a lot*.
-That is great news, since every crash (due to assertion failure) means that
+If you write good assertions, then your parsing code *will crash a lot*.
+This is great news, since every crash (due to assertion failure) means that
 you have just discovered one more way in which the raw data violated your
 original assumptions. Keep refining your assertions until your code
 successfully parses the entire raw data set. But keep them as stringent
@@ -58,11 +58,11 @@ is data sneaking through your parser in a format that you did not originally exp
 
 Some records in the raw data will be broken in unfixable ways, so your
 program has no choice but to skip over them when parsing. A bad idea is to simply
-skip them silently, since you won't know what data you're missing.
+skip them silently, since you will not know what parts of the data set are corrupted.
 Instead, always:
 
 - print a warning to stderr (the error output stream) along with the raw record itself so that you
-  can inspect it later to find out what's wrong,
+  can inspect it later to find out what is wrong,
 
 - and keep a running count of how many records your program has skipped so
   far, along with how many records were successfully parsed. Doing so
@@ -84,7 +84,7 @@ you cannot write a meaningful assertion.
 
 Instead, use a set or counter
 data structure in your favorite programming language to keep track of
-which values appear in your data set as you're parsing.
+which values appear in your data set as it is being parsed.
 
 By following this idiom, you can:
 
@@ -116,13 +116,13 @@ tries to parse record 325,392. Instead:
 - and make it possible to pass a parameter to your program to specify a
   starting point, so that you can tell it to start at, say, record
   325,392. Your program will keep parsing along and probably crash again at a
-  later record. Then you can fix the code, resume processing at that record, and
-  repeat until it finishes parsing all 1 million records.
+  later record. Then you can fix the code, re-run starting at that record, and
+  keep fixing bugs until it successfully parses all 1 million records.
 
-After everything seems to work, re-run your code on all 1 million
-records  to double-check, since your edits might have broken parsing
-on earlier records. But in general, making your programs able to restart
-by parsing in the middle of your data set will save you lots of time when debugging.
+Making your programs able to restart by parsing in the middle of your data set will save you lots of time when debugging.
+Finally, after everything parses properly, re-run your code on all 1 million
+records to double-check, since your edits might have led to regression errors
+on earlier records.
 
 
 ### Test on a small subset of your data
@@ -132,20 +132,18 @@ stages of developing and debugging your program, start testing on a
 small random subset of the data. Then make that subset bigger as you
 gain more confidence. The main reason for using a subset is that your
 program will terminate much faster, preferably within a few seconds,
-which will tighten your iteration cycle.
+which will tighten your iteration cycle and help you debug faster.
 
 However, note that by testing on only a subset of your data, you are less
-likely to pick up on weird rare quirks in the data set since they are, by
+likely to pick up on rare quirks in the data set since they are, by
 definition, rare.
 
 
-### Pipe stdout and stderr to log files
+### Redirect stdout and stderr to log files
 
-When you're running your program, pipe stdout and stderr to log files so
-that you can inspect them using a text editor, `less`, or `tail -f` (for
-real-time streaming updates).
-
-On most Mac and Linux terminals, you can use the `>` operator to pipe stdout to a file, and `2>` to pipe stderr to a file.
+When running your program, redirect the stdout and stderr streams to log files so
+that you can inspect them later using a text editor, `less`, or `tail -f` (for
+real-time streaming updates). On most Mac and Linux terminals, you can use the `>` operator to redirect stdout to a file, and `2>` to redirect stderr to a file.
 
 
 ### Store raw data alongside cleaned data
@@ -154,21 +152,20 @@ This tip is most applicable when you have plenty of storage space.
 In that case, consider storing each record of raw data *inside
 of* the corresponding record in the cleaned data set. That way, if you
 find an abnormal record in your cleaned data set, you can
-immediately see what raw data it came from, which will make it easier
-for you to debug.
+immediately see what raw data it came from, which will make it easier to debug.
 
-However, doing so will double your storage requirements and might make
+However, doing so will double your storage requirements and make
 certain analysis operations a bit slower, so use this technique only
-when you can spare the dip in efficiency.
+when you can stand the loss in efficiency.
 
 
 ### Finally, write a verifier program to check the integrity of your cleaned data
 
-Along with your parser, also write a verifier that walks over the
-cleaned data after parsing and checks that it conforms to the format
-that you expect. You have no control over the niceness of the raw data,
-but you have all the control over the cleaned data, since you parsed it.
-Thus, make sure that it does, in fact, conform to your schema and
+Along with your parser, also write a verifier program that walks over the
+cleaned data and checks (asserts) that it conforms to the format
+that you expect. You have no control over the quality of the raw data,
+but you have *all the control* over the cleaned data, since your program parsed it.
+Thus, make sure that it does, in fact, conform to your own schema and
 expectations.
 
 This final step is *very important* because after you finish parsing,
@@ -180,7 +177,7 @@ results that are ultra-hard to diagnose since they originated from a
 long-ago parsing mistake, and your raw data is no longer in front of
 you.
 
-These tips might seem like a lot of up-front work to implement, but the
+In sum, these tips may seem like a lot of up-front work, but the
 good news is that the time you invest in writing a robust parser will
-make your actual analysis workflow much more pleasant. I've learned this
+make your actual analysis workflow much more pleasant. I have learned this
 from years of hard-earned experience. Happy parsing!
