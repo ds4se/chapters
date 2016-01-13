@@ -10,7 +10,9 @@ Hopefully, such findings can be useful to provide practitioners with convincing 
 ## Correlation is not causation and, even if we can claim causation...
 No matter how we carefully conduct our (quantitative) empirical study, it would not tell us the whole story. Although by doing a quantitative study we know that our tool is very precise and has a good recall, and although we were able to run a controlled expertiment showing  (i) that the precision and recall of our tool is significantly better than those of other tools, and (ii) that classes containing code smells identified by our tools are more fault-prone than others, this does not tell us ther whole story.
 
-Specifically, we still do not know *why* our recommender worked better (or worse) than the baseline, *how* developers have used it during their tasks, and *whether* there are clear directions for improvement. More than that, problems in claiming the causation of our findings. Imagine our tool is able to highlight potentially defect-prone classes based on the presence of some code smells, and it seems to exhibit a very good precision and recall. Is the presence of code smell really what causes defects? Or, maybe, defective code is subject to more patches and then becomes "smelly"? Or, perhaps a specific module of our projects is just too complicated to become smelly and defect-prone? 
+Specifically, we still do not know *why* our recommender worked better (or worse) than the baseline, *how* developers have used it during their tasks, and *whether* there are clear directions for improvement. More than that, problems in claiming the causation of our findings. Imagine our tool is able to highlight potentially defect-prone classes based on the presence of some code smells, and it seems to exhibit a very good precision and recall. Is the presence of code smell really what causes defects? Or, maybe, defective code is subject to more patches and then becomes "smelly"? Or, perhaps a specific module of our projects is just too complicated to become smelly and defect-prone?
+While in some cases a purely quantitavive analysis may result sufficient to determine the direction of a causality relation (*e.g.,* smells are always introduced in the code before defects occurs, therefore we could claim that smells may cause defects and not *vice versa*, *i.e.* defect fixes makes source code smelly), in some other cases this is not possible, either because it is not possible to determine a temporal precedence between two phenomena, or because causation depends of factors we are ignoring.
+
 
 Other than that, quantitative findings might tell us how good is our approach, but tells us little on how to improve it. Why is my smell detector producing so many false positives, especially when applied on certain (sub)systems? And, why does it fail to detect some true smells?
 
@@ -34,7 +36,7 @@ Assuming that software repositories will tell you everything about a software pr
 * **Software repositories contain noisy data:** this includes misclassification of artifacts, *e.g.,*  issue reports classified as bug fixes when they are related to new features, or tangled changes in versioning systems (*i.e.,* multiple changes having different purpose committed together).
 
 Last but not least, a manual analysis of developers' written discussions might be subject to a misleading interpretation when performed by outsiders. 
-This is why software repository data needs to be complemented with information obtained by interviewing developers.
+Therefore, every time one does not have sufficient elements to provide answers to research questions or explanation to given phenomena based solely on the manual or automated analysis of data from software repositories, the latter needs to be complemented with information obtained by interviewing/surveying developers.
 
 
 ### Source 2: Interviewing/surveying developers...
@@ -81,6 +83,8 @@ In summary, information is just there, but you need to look at it from different
 
 ## Suggested readings
 Seaman (1999) has discussed the application of qualitative methods in software engineering, and specifically about observing/interviewing developers, and complementing this with coding and theory building. Quinn Patton (2014) provides a thorough overview of qualitative methods-mainly in the context of social science application. Last, but not least, a "must read" is the seminal work on grounded theory research (Corbin and Strauss, 1990).
+
+Some chapters of this book specifically focuses on certain qualitative analysis techniques.  In their chapter *"Avoiding Survey Design Traps: A Successful Process for Sailing Past the Temptations of Persephone's Sirens"* Barik and  Murphy-Hill provide hints on how to conduct survey research. In his chapter *"Card-sorting: From Text To Themes"* Zimmermann illustrates the card-sorting method, that can be used to analyze open-text survey responses. Menzies' chapter *"Correlation is not Causation"* explains, through simple examples, the difference between claiming correlation and causation.
 
 
 ## References
