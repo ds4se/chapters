@@ -20,7 +20,7 @@ The Windows USB testing team described the above situation to my team and asked 
 
 As a solution, we proposed a technique based on interactions (i.e., service requests and responses) observed at runtime at the published interface of the USB driver when servicing devices.  After all, the goal was to test how the driver behaves under different inputs.  (The fact that we had recently used such interactions to test compatibility between USB drivers had no influence on this decision ;))
 
-So, we combined an existing logging filter driver with existing device testing setup to log interactions at the interface of USB driver when testing sample devices.  Then, we _mined structural and temporal patterns_ [4] from these runtime logs and used the _patterns as features_ [1] to cluster the devices using hierarchical clustering.  From this clustering, we randomly picked representative devices from each cluster and used only the representatives to test the USB driver.  The choice of the number of clusters was based on halving the number of sample devices (test suite).  To protect against omission errors within clusters, in each weekly test cycle, we picked different representatives from each cluster.  (Further, we planned to test all sample devices during each monthly test cycle.)  With this simple solution, the testing team was able to use only half the number of sample devices to achieve 75-80% of bug coverage.
+So, we combined an existing logging filter driver with existing device testing setup to log interactions at the interface of USB driver when testing sample devices.  Then, we _mined structural and temporal patterns_ [1] from these runtime logs and used the _patterns as features_ [4] to cluster the devices using hierarchical clustering.  From this clustering, we randomly picked representative devices from each cluster and used only the representatives to test the USB driver.  The choice of the number of clusters was based on halving the number of sample devices (test suite).  To protect against omission errors within clusters, in each weekly test cycle, we picked different representatives from each cluster.  (Further, we planned to test all sample devices during each monthly test cycle.)  With this simple solution, the testing team was able to use only half the number of sample devices to achieve 75-80% of bug coverage.
 
 ### Why did our solution work?
 
@@ -29,7 +29,7 @@ The solution worked as _interaction logs captured exactly what happened when dev
 
 ## Still not convinced?  Here's more
 
-In 2009, _DebugAdvisor_ [2] effort proposed a recommendation system to help with debugging.  The idea was, when bugs are assigned to a developer, provide the developer with pointers to institutional knowledge relevant to expedite bug fixing.  In DebugAdvisor, dynamic artifacts such as stack traces, core dumps, and debugging logs complemented static artifacts such as bug repository and code/fix ownership to help identify similar bugs reported in the past.  The system was successfully piloted within the Windows serviceability group with 75% of the recommendations proving to be useful.
+In 2009, _DebugAdvisor_ [1] effort proposed a recommendation system to help with debugging.  The idea was, when bugs are assigned to a developer, provide the developer with pointers to institutional knowledge relevant to expedite bug fixing.  In DebugAdvisor, dynamic artifacts such as stack traces, core dumps, and debugging logs complemented static artifacts such as bug repository and code/fix ownership to help identify similar bugs reported in the past.  The system was successfully piloted within the Windows serviceability group with 75% of the recommendations proving to be useful.
 
 In 2010, _StackMine_ [3] system mined execution traces from Microsoft Windows to aid with performance debugging.  The idea relied on "correlating" patterns observed in call stacks from execution traces to identify potential performance hotspots.  This system helped identify performance bugs in Windows Explorer UI that were hidden in Windows 7 and even in previous versions of Windows.
 
@@ -48,11 +48,11 @@ The USB test suite minimization effort was carried out at Microsoft by Naren Dat
 
 ## References
 
-1. Structural and Temporal Patterns-Based Features by Venkatesh-Prasad Ranganath and Jithin Thomas.  International Workshop on Data Analysis Patterns in Software Engineering (DAPSE) 2013. <http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6603808>
+1. DebugAdvisor: A Recommender System for Debugging by B. Ashok, Joseph Joy, Hongkang Liang, Sriram Rajamani, Gopal Srinivasa, and Vipindeep Vangala.  Foundations of Software Engineering (ESEC/FSE) 2009.  <http://research.microsoft.com/apps/pubs/default.aspx?id=101301>
 
-2. DebugAdvisor: A Recommender System for Debugging by B. Ashok, Joseph Joy, Hongkang Liang, Sriram Rajamani, Gopal Srinivasa, and Vipindeep Vangala.  Foundations of Software Engineering (ESEC/FSE) 2009.  <http://research.microsoft.com/apps/pubs/default.aspx?id=101301>
+2. Mining Quantified Temporal Rules: Formalism, Algorithms, and Evaluation by David Lo, G. Ramalingam, Venkatesh-Prasad Ranganath, and Kapil Vaswani.  Science of Computer Programming (SCP), Volume 77, Issue 6, 2012.  <http://www.sciencedirect.com/science/article/pii/S0167642310001875>
 
 3. Performance Debugging in the Large via Mining Millions of Stack Traces by Shi Han, Yingnong Dang, Song Ge, Dongmei Zhang, and Tao Xie.  International Conference on Software Engineering (ICSE) 2012.  <http://research.microsoft.com/en-us/groups/sa/stackmine_icse2012.pdf>
 
-4. Mining Quantified Temporal Rules: Formalism, Algorithms, and Evaluation by David Lo, G. Ramalingam, Venkatesh-Prasad Ranganath, and Kapil Vaswani.  Science of Computer Programming (SCP), Volume 77, Issue 6, 2012.  <http://www.sciencedirect.com/science/article/pii/S0167642310001875>
+4. Structural and Temporal Patterns-Based Features by Venkatesh-Prasad Ranganath and Jithin Thomas.  International Workshop on Data Analysis Patterns in Software Engineering (DAPSE) 2013. <http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6603808>
 
