@@ -33,17 +33,18 @@ Assuming that software repositories will tell you everything about a software pr
 * **Not everything is recorded in software repositories:** as developers still discuss via phone, unrecorded chats, or in face-to-face meetings (Ananda and Venolia, 2009). Not to mention the need to trace heterogeneous repositories when, more often than not, links are incomplete or missing.
 * **Software repositories contain noisy data:** this includes misclassification of artifacts, *e.g.,*  issue reports classified as bug fixes when they are related to new features, or tangled changes in versioning systems (*i.e.,* multiple changes having different purpose committed together).
 
-Last but not least, a manual analysis of developers' written discussions might be subject to a misleading interpretation when performed by outsiders. This is why software repository data needs to be complemented with information obtained by interviewing developers.
+Last but not least, a manual analysis of developers' written discussions might be subject to a misleading interpretation when performed by outsiders. 
+This is why software repository data needs to be complemented with information obtained by interviewing developers.
 
 
-### Source 2: Interview developers...
-Every time you obtain empirical results based on data from some software projects, you should try to assess your findings with the help of developers involved in these projects.
+### Source 2: Interviewing/surveying developers...
+Every time you obtain empirical results based on data from some software projects, you should try to assess your findings with the help of developers involved in these projects. One possibility is to perform live/phone interviews. Using interviews has noticeable advantages, among others the possibility of clarifying questions to participants, or to use a semi-structured or unstructured format, *i.e.,* adapting the questions to the context. A viable alternative is to conduct a survey (*e.g.,* through a Web-based platform) using a predefined questionnaire. This is useful when (i) it is impossible to reach people live or physically, or, in general (ii) participants prefer to answer the questionnaire at their own schedule. Moreover, by employing survey you could engage people in more complex tasks, that go beyond just answering a simple question. As an example, going back to our smell detector tool, we could imagine showing to participants some example of "smelly" code and asking them opinions or suggestions for refactoring. Truly, this can also be accomplished during a live interview, but as a matter of fact a Web-based survey gives you an appropriate (and probably more relaxed) setting for that.
 
 Interviewing developers in an industrial context is already challenging. When it comes to applying it to open source projects, things might become even more difficult, despite that one has many projects and potential respondents are available. A few suggestions:
 
 * **Carefully target potential respondents:** random sampling over project email addresses might not always be the best solution. Do you need answers from core developers? Do you need people knowledgeable about specific artifacts?
-* **Motivate respondents:** while you plan your interview/questionnaire with your own research goal in mind, developers would be more willing to help if you are already providing them with findings of their interest. 
-* **Plan for short and relatively simple tasks:** most the respondents are unlikely to spend more than 15-20 minutes on the task you are asking them to participate in. 
+* **Motivate respondents:** while you plan your interview/survey with your own research goal in mind, developers would be more willing to help if you are already providing them with findings of their interest. 
+* **Plan for relatively short questionnaires, with (if any) tasks that can be accomplished in a limited amount of time:** most the respondents are unlikely to spend more than 15-20 minutes on the task you are asking them to participate in. 
 * **Choose the most suitable interviewing protocol:** in most cases, the only way to gain information from software developers (especially in the open source) is to ask them to fill a questionnaire. When a live or phone interview is possible, you will have many more degrees of freedom in terms of the interview structure (fully-structured, semi-structured, or totally unstructured). Also, different protocols are possible, such as think-aloud, or (focused) group interviews.
 
 
