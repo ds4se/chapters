@@ -3,18 +3,14 @@
 ## Prologue: we have solid empirical evidence!
 In recent years, empirical research in software engineering has gained a lot of maturity. This is in part thanks to the availability of a large amount of data from different kinds of software repositories, as well as of techniques to mine them, *e.g.,* for tracing data from heterogeneous sources, summarizing changes, or mining unstructured and semi-structured data sources.
 
-In summary, we have methods and data to clearly assess the performance of our new recommender system, and we can show for instance that:
-
-* Our new code smell detector achieves 90% precision and 60% recall, and that classes affected by such smells tend to be significantly more defect-prone than others.
-* Developers are significantly more productive when using our code example recommender than when searching for suggestions on the Web.
-
-Hopefully, the above findings can be useful to provide practitioners with convincing arguments about the performance of our novel tool, or to let them understand the evolution of their software project. What are we missing?
+Suppose we are software engineering researchers and we have developed a new recommendation tool that identifies certain kinds code bad smells. We want to convince practitioners to adopt our tool. Also, suppose that, by using data from software repositories, and by using appropriate statistical methods, we are able to show that our new code smell detector achieves 90% precision and 60% recall, and that classes affected by such smells tend to be significantly more defect-prone than others.
+Hopefully, such findings can be useful to provide practitioners with convincing arguments about the performance of our novel tool and its potential usefulness. Is this sufficient to convince them adopting the tool? Does it show that detecting code bad smells is relevant and useful? What are we missing?
 
 
 ## Correlation is not causation and, even if we can claim causation...
-No matter how we carefully conduct our (quantitative) empirical study, it would not tell us the whole story. In the most optimistic scenario, *e.g.,* when we have collected findings from a controlled experiment, we may still do not know *why* our recommender worked better (or worse) than the baseline, *how* developers have used it during their tasks, and *whether* there are clear directions for improvement.
+No matter how we carefully conduct our (quantitative) empirical study, it would not tell us the whole story. Although by doing a quantitative study we know that our tool is very precise and has a good recall, and although we were able to run a controlled expertiment showing  (i) that the precision and recall of our tool is significantly better than those of other tools, and (ii) that classes containing code smells identified by our tools are more fault-prone than others, this does not tell us ther whole story.
 
-In empirical research where the level of control is more limited, the situation can be worse. For example, imagine we have built a defect predictor that recommends defect-prone classes based on the presence of some code smells, and it seems to exhibit a very good precision and recall. Is the presence of code smell really what causes defects? Or, maybe, defective code is subject to more patches and then becomes "smelly"? Or, perhaps a specific module of our projects is just too complicated to become smelly and defect-prone? 
+Specifically, we still do not know *why* our recommender worked better (or worse) than the baseline, *how* developers have used it during their tasks, and *whether* there are clear directions for improvement. More than that, problems in claiming the causation of our findings. Imagine our tool is able to highlight potentially defect-prone classes based on the presence of some code smells, and it seems to exhibit a very good precision and recall. Is the presence of code smell really what causes defects? Or, maybe, defective code is subject to more patches and then becomes "smelly"? Or, perhaps a specific module of our projects is just too complicated to become smelly and defect-prone? 
 
 Other than that, quantitative findings might tell us how good is our approach, but tells us little on how to improve it. Why is my smell detector producing so many false positives, especially when applied on certain (sub)systems? And, why does it fail to detect some true smells?
 
