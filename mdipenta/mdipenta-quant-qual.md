@@ -1,14 +1,16 @@
-#Combining Quantitative and Qualitative Methods (In Mining Software Repository Research)
+#Combining Quantitative and Qualitative Methods (When Mining Software Data)
 
 ## Prologue: we have solid empirical evidence!
-In recent years, empirical research in software engineering has gained a lot of maturity. This is in part thanks to the availability of a large amount of data from different kinds of software repositories, as well as of techniques to mine them, *e.g.,* for tracing data from heterogeneous sources, summarizing changes, or mining unstructured and semi-structured data sources.
+In recent years, empirical research in software engineering has gained a lot of maturity. This is in part thanks to the availability of a large amount of data from different kinds of software repositories, as well as of techniques to mine them, *e.g.,* for tracing data from heterogeneous sources, summarizing changes, or mining unstructured and semi-structured data sources. Noticeably, the analysis of data from software repositories has also gained a lot of attention in industry, where developers rely on software data to take important decisions. The roles, competencies, and working sytyles of of data scientists in software development has been recently investigated by Kim *et al.*, (2016).
 
 Suppose we are software engineering researchers and we have developed a new recommendation tool that identifies certain kinds code bad smells. We want to convince practitioners to adopt our tool. Also, suppose that, by using data from software repositories, and by using appropriate statistical methods, we are able to show that our new code smell detector achieves 90% precision and 60% recall, and that classes affected by such smells tend to be significantly more defect-prone than others.
 Hopefully, such findings can be useful to provide practitioners with convincing arguments about the performance of our novel tool and its potential usefulness. Is this sufficient to convince them adopting the tool? Does it show that detecting code bad smells is relevant and useful? What are we missing?
 
 
 ## Correlation is not causation and, even if we can claim causation...
-No matter how we carefully conduct our (quantitative) empirical study, it would not tell us the whole story. Although by doing a quantitative study we know that our tool is very precise and has a good recall, and although we were able to run a controlled expertiment showing  (i) that the precision and recall of our tool is significantly better than those of other tools, and (ii) that classes containing code smells identified by our tools are more fault-prone than others, this does not tell us ther whole story.
+No matter how we carefully conduct our (quantitative) empirical study, it would not tell us the whole story. Let us assume that, by doing a quantitative study, we know that our tool is very precise and has a good recall, better than an alternative tool.
+Let us also assume that we conduct a controlled experiment to study the relation between smells and code defect-proneness. In a controlled experiment, 
+we observe one or more dependent variables (in our case defect-proneness) while varying the level of some independent variables (*e.g.,* separating classes containing bad smells from others) and controlling others (*e.g.,* determining whether the class size could influence our results). Results of the experiments show that classes containing code smells identified by our tools are more fault-prone than others. However,  this does not tell us the whole story.
 
 Specifically, we still do not know *why* our recommender worked better (or worse) than the baseline, *how* developers have used it during their tasks, and *whether* there are clear directions for improvement. More than that, problems in claiming the causation of our findings. Imagine our tool is able to highlight potentially defect-prone classes based on the presence of some code smells, and it seems to exhibit a very good precision and recall. Is the presence of code smell really what causes defects? Or, maybe, defective code is subject to more patches and then becomes "smelly"? Or, perhaps a specific module of our projects is just too complicated to become smelly and defect-prone?
 While in some cases a purely quantitavive analysis may result sufficient to determine the direction of a causality relation (*e.g.,* smells are always introduced in the code before defects occurs, therefore we could claim that smells may cause defects and not *vice versa*, *i.e.* defect fixes makes source code smelly), in some other cases this is not possible, either because it is not possible to determine a temporal precedence between two phenomena, or because causation depends of factors we are ignoring.
@@ -17,7 +19,7 @@ While in some cases a purely quantitavive analysis may result sufficient to dete
 Other than that, quantitative findings might tell us how good is our approach, but tells us little on how to improve it. Why is my smell detector producing so many false positives, especially when applied on certain (sub)systems? And, why does it fail to detect some true smells?
 
 **What are the recipes to properly complement the gained quantitative evidence?** In short, you should try to complement quantitative findings with qualitative ones. 
-While quantitative studies will provide you with empirical evidence in terms of numerical relations between variables, qualitative studies will help you to interpret and explain a phenomenon by observing it in its context. This is often achieved through the analysis of people observations, interviews, and documents (Quinn Patton, 2001).
+While, as exemplified above, quantitative studies will provide you with empirical evidence in terms of numerical relations between variables, qualitative studies will help you to interpret and explain a phenomenon by observing it in its context. This is often achieved through the analysis of people observations, interviews, and documents (Quinn Patton, 2001).
 
 
 
@@ -39,7 +41,7 @@ Last but not least, a manual analysis of developers' written discussions might b
 Therefore, every time one does not have sufficient elements to provide answers to research questions or explanation to given phenomena based solely on the manual or automated analysis of data from software repositories, the latter needs to be complemented with information obtained by interviewing/surveying developers.
 
 
-### Source 2: Interviewing/surveying developers...
+### Source 2: Getting feedback from developers...
 Every time you obtain empirical results based on data from some software projects, you should try to assess your findings with the help of developers involved in these projects. One possibility is to perform live/phone interviews. Using interviews has noticeable advantages, among others the possibility of clarifying questions to participants, or to use a semi-structured or unstructured format, *i.e.,* adapting the questions to the context. A viable alternative is to conduct a survey (*e.g.,* through a Web-based platform) using a predefined questionnaire. This is useful when (i) it is impossible to reach people live or physically, or, in general (ii) participants prefer to answer the questionnaire at their own schedule. Moreover, by employing survey you could engage people in more complex tasks, that go beyond just answering a simple question. As an example, going back to our smell detector tool, we could imagine showing to participants some example of "smelly" code and asking them opinions or suggestions for refactoring. Truly, this can also be accomplished during a live interview, but as a matter of fact a Web-based survey gives you an appropriate (and probably more relaxed) setting for that.
 
 Interviewing developers in an industrial context is already challenging. When it comes to applying it to open source projects, things might become even more difficult, despite that one has many projects and potential respondents are available. A few suggestions:
@@ -91,6 +93,8 @@ Some chapters of this book specifically focuses on certain qualitative analysis 
 J. Aranda, G. Venolia: The secret life of bugs: Going past the errors and omissions in software repositories. *Proceedings of the 31st International Conference on Software Engineering, ICSE 2009, May 16-24, 2009, Vancouver, Canada*:. Pages 298-308, ACM
 
 J. Corbin and A. Strauss. Grounded theory research: Procedures, canons, and evaluative criteria. *Qualitative Sociology*, 13(1):3–21, 1990.
+
+M. Kim, T. Zimmermann, R. DeLine, and  A. Begel: The Emerging Role of Data Scientists on Software Development Teams, *Proceedings of the 38th International Conference on Software Engineering, ICSE 2016, May 14-22, 2016, Austin, TX, USA*:, ACM
 
 K. Krippendorff. *Content analysis: An introduction to its methodology, 3rd edition*. Sage Publications, Inc. 2013.
 
