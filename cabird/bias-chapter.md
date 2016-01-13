@@ -20,7 +20,7 @@ Unfortunately, bias exists in software engineering data as well.  If left unchec
 
 A few years ago (Bird, 2009), we examined defect data sets to determine if there was bias in the "links" between a defect in the defect database and the corresponding defect correcting change in the source code repository.  Knowing which code changes fix which defects can be quite valuable because this can provide much more context about a code change and also allows us to determine which prior code changes actually introduced a bug.  It also allows us to see who is introducing the defects, who is correcting the defects, and what types of defects are corrected in different parts of the code base.   Research has shown that this information can be used to learn characteristics of code changes that lead to defects CITE or teach machine learning methods to accurately predict where in the source code a defect is based only on the bug report CITE. Because of the value of these "links", a long line of research exists on techniques to infer these links.  See Sliwerski et al for one of the most well-known examples (Sliwerski, 2005).  In our study of these links in five software project, we found that there was bias in the severity level of defects that could be linked to defects in four of the projects.  That is, the lower the severity level for a fixed bug, the higher the likelihood that there was a link between the defect and the commit.  As an extreme example, out of all defects labeled "minor" in the Apache Webserver that were indicated in the defect database to have been fixed, we were able to identify the corresponding fixing commit for 65% of them.  In contrast, for those bugs in the category of "blocker" that were fixes, we were only able to find the fixing commit 15% of the time.
 
-The following graph shows the proportions for all projects; not that AspectJ is appears to suffer far less from bias in bug severity for links between defects and commits.
+The following graph shows the proportions for all projects.  Note that AspectJ is appears to suffer far less from bias in bug severity for links between defects and commits.
 
 <div>
   <img src="severity-bias.png" height="500px" />
@@ -42,7 +42,11 @@ Unfortunately, you may not always have in depth knowledge about how some charact
 
 If you lack any other distribution for comparison, the best approach is to calculate descriptive statistics from your sample, visualize the sample via histograms, pdfs, or boxplots, and make a judgement as to how well the distribution of a feature matches your expectations.  If they differ widely, then either the data or your expectations are incorrect.  In both cases, you should likely "dig in" and do some more manual investigation into where the data came from, how it was produced, and anything that may be out of the ordinary.
 
-As a concrete example, consider an investigation into the impact of experience on the time to complete tasks in two software projects.  One of the first steps would be to collect the years of experience for developers in the two projects.  
+As a concrete example, consider an investigation into the impact of years of experience on the time to complete tasks in a software company. As part of this study, one would need to select one or more projects to investigate.  Suppose that after selecting a project and gathering data such as the experience of developers and the time taken to complete various tasks, the investigator wants to determine if there is any bias (and if so how much) in his data.  One step would be to collect the years of experience from developers in the entire company (or from a purely random sample of developers).  Putting the data into R and drawing a simple box plot (shown below) will quickly show that the project selected is highly biased with respect to age of developers and thus the findings may not generalize to the entire company.  A Kolmogorov-Smirnov test in R also indicates that the sample is statistically different from the population of developers in the company.
+
+<div>
+  <img src="experience-plot.PNG" height="400px" />
+</div>
 
 ## Assessing Impact
 
