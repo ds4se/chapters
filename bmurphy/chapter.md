@@ -17,6 +17,7 @@ A significant driver of researchers wishing to publish in conferences, is the ne
 
 * The research project are small as there is limited resources that can be applied to the projects as other students in the group would focus on their own projects than that of their colleagues.
 *  Each student, and tenure seeking faculty member is supposed to carving their own unique research area which is shown through being the first author on the paper, but also detracts from the work of the collaborators on the paper.  
+
 Other research disciplines who try to promote larger research projects, will place authors in alphabetic order, and credit the work to all authors.
 
 ##Requirements for novel research techniques:
