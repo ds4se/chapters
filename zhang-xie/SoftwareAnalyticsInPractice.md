@@ -1,4 +1,4 @@
-# Software Analytics in Practice
+# Software Analytics and Its Application in Practice
 
 ## Dongmei Zhang and Tao Xie
 
