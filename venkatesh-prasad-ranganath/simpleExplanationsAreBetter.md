@@ -1,6 +1,6 @@
 # While models are good, simple explanations are better
 
-I am pretty sure you have heard the phrase _Keep It Simple, Stupid (KISS)_.  Even so, I am certain that you have been reminded about it time and again because simple varies with contexts.  Here is my encounter with an incarnation of KISS while using data mining for software engineering.
+I am pretty sure you have heard the phrase _Keep It Simple, Stupid (KISS)_.  Even so, I am certain that you have been reminded about it time and again because simple varies with contexts.  Here is my encounter with an incarnation of KISS while using data mining for software engineering -- _tell me what I need and not all that you know._
 
 
 ## How do we compare USB2 driver to USB3 driver?
@@ -26,7 +26,7 @@ To compare the patterns mined from a pair of traffic logs, we mulled over how to
 
 While _patterns-based comparison of logs [1]_ helped the USB team to identify instances of different traffic patterns exhibited by USB2 and USB3 drivers, the instances did not make immediate sense as _the reasons for reporting the instances were not apparent_ (due to the seemingly ad-hoc choice of various ranking orders and thresholds.)  Consequently, the developer could not easily identify the interesting instances that required further exploration; hence, the solution could not be used in its current state.
 
-The information was available but it was hard to grok.
+We had the required information but it wasn't easily accessible.
 
 
 ## "Just tell us what is different and nothing more"
@@ -56,7 +56,7 @@ For example, consider a linear regression model can explain both the polarity (i
 
 To summarize, when using data science for software engineering (and possibly other purposes), keep in mind that _users are interested in simple explanations (of course, backed by robust and detailed models) of the observed phenomenon that can help them make good and quick decisions._  
 
-This insight has proved to be rather useful in my subsequent flings with data analyis.  Now, I hope you too will consider this insight in your next data science excursion and either be more effective or challenge the insight :)
+This insight proved to be rather useful in my subsequent flings with data analyis.  Now, I hope you too will consider this insight in your next data science excursion and either be more effective or challenge the insight :)
 
 
 ## References
