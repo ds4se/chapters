@@ -79,7 +79,7 @@ The most fruitful method we have found for analyzing interview responses is *car
 
 ## Reporting
 
-There are a number of ways to report the results of interviews in papers and I think the best way to learn is by reading a number of interview-based research papers.  You can find examples of high quality research papers that report on interviews.  CITE SOME HERE
+There are a number of ways to report the results of interviews in papers and I think the best way to learn is by reading a number of interview-based research papers.  Work by Murphy-Hill et al (2014), Guzzi et al (2015), Singer et al (2014), and Li et al (2015) are good examples of such papers.
 
 Here are a few things that you should consider including in a report or publication:
 
@@ -97,3 +97,7 @@ Those who haven't conducted interviews before are often hesitant to try.  You ma
 
 ## References
 * A. Hindle, C. Bird, T. Zimmermann, and N. Nagappan, "Relating requirements to implementation via topic analysis: do topics extracted from requirements make sense to managers and developers?," in Proceedings of the 28th IEEE international conference on software maintenance, 2012. 
+* Emerson R. Murphy-Hill, Thomas Zimmermann, Nachiappan Nagappan, "Cowboys, ankle sprains, and keepers of quality: how is video game development different from software development?" ICSE 2014
+* Anja Guzzi, Alberto Bacchelli, Yann Riche, Arie van Deursen,"Supporting Developers' Coordination in The IDE" In Proceedings of CSCW 2015 (18th ACM conference on Computer-Supported Cooperative Work and Social Computing), pp. 518-532. 2015
+* Singer, Leif, Fernando Figueira Filho, and Margaret-Anne Storey. "Software engineering at the speed of light: how developers stay current using twitter." Proceedings of the 36th International Conference on Software Engineering. ACM, 2014.
+* Paul Luo Li, Andrew J. Ko, and Jiamin Zhu. "What makes a great software engineer?." Proceedings of the 37th International Conference on Software Engineering-Volume 1. IEEE Press, 2015.
