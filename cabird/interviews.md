@@ -6,6 +6,8 @@ Two years ago I was investigating code review latency at Microsoft.  In the proc
 
 We have found that interviews can be wonderful tools for exploratory investigation and they often can drive the formation of theories and hypotheses that we can then use complementary quantitative methods to further investigate and support.  Interviews allow rich engagement and follow up questions.  You can collect historical data that is not recorded anywhere as well as elicit opinions and impressions in richer detail than people would provide through written communication.  Information from interviews can be triangulated with other data sources.  In addition, interviews can be used to clarify things that have already happened (especially following an observation).  In short, the interview can be an important tool that you should have in your research toolbox.
 
+Interviews are not a panacea, however.  Drawbacks of using interviews for research include the usually small sample size, the time required for each individual interview, the challenge of finding appropriate interviewees and scheduling a time that works for all parties, potential bias introduced by the interviewer during the interviewer (word choice, tone of voice, or even body language can potentially affect responses), and the time required for transcription and subsequent analysis.  The pros and cons of the approach should always be weighed when making a decision about whether to interview.
+
 Generally, when we include interviews in our research, we follow the steps in the workflow below, though some steps may be omitted based on the context, goals, and specifics of the study.  In this chapter, I'll provide a description and best practices for each phase based on experiences that we have had conducting interviews for software engineering research at Microsoft.  
 
 <div>
@@ -21,15 +23,15 @@ When conducting the interview, we always bring a fresh copy of the guide so that
 
 ## Selecting Interviewees
 
-While random sampling of a population is a good choice when doing quantitative analysis with a large sample, it is not the best approach when selecting interviewees.  Due to the time and effort required in conducting interviews, it is unlikely that you would be able to get a large enough sample, and the data gathered from interviews is usually not quantitative in nature.  Instead, I focus on capturing in my sample as much variation as possible along the dimensions that I believe may have an effect on the topic of my research.  
+While random sampling of a population is a good choice when doing quantitative analysis with a large sample, it is not the best approach when selecting interviewees.  Due to the time and effort required in conducting interviews, it is unlikely that you would be able to get a large enough sample.  Instead, I focus on capturing in my sample as much variation as possible along the dimensions that I believe may have an effect on the topic of my research.  
 
-As an example, I recently was trying to understand how people were using code review data at Microsoft.  If I had selected a random sample, my interviewees would mostly be male software developers between in the mid-twenties at low levels of seniority working in Redmond on shipping products.  If I focused mostly on this demographic, I may have only gotten a narrow view of the ways that the data is used.  Instead, we interviewed contracted developers in Asia, a program manager responsible for the education of a dev team, an older female development lead from the Bay Area, a development manager in charge of internationalization in South America, two senior managers making plans for a cloud product, and a young developer trying to collect a set of best practices for his team in Office, among others.  By intentionally selecting a diverse set of interviewees with respect to seniority, age, role, geography, business responsibility, and product, we were able to capture a large number ways that the data was used.  The responses may not be completely representative, but if we wanted further quantitative information about the different ways, we could use what we learned to create closed multiple choice questions for a survey that we *could* deploy widely to a more representative, random sample.
+As an example, I recently was trying to understand how people were using code review data at Microsoft.  If I had selected a random sample, my interviewees would mostly be male software developers between in the mid-twenties at low levels of seniority working in Redmond on shipping products.  If I focused mostly on this demographic, I may have only gotten a narrow view of the ways that the data is used.  Instead, we interviewed contracted developers in Asia, a program manager responsible for the education of a dev team, an older female development lead from the Bay Area, and  two senior managers making plans for a cloud product.  By intentionally selecting a diverse set of interviewees with respect to seniority, age, role, geography, business responsibility, and product, we were able to capture a large number ways that the data was used.
 
-You may not always be fortunate enough to able to pick and choose your interviewees.  In that case, you can take a "saturation" based approach.  In this method, you interview everyone that is willing to let you interview them.  Once you reach the point where you have not received any new answers to your questions after the last three to five interviews, then you have likely reached *saturation* and further interviews are unlikely to provide much value.  
+You may not always be fortunate enough to able to pick and choose your interviewees.  In that case, you can take a *saturation* based approach.  Once you reach the point where you have not received any new answers to your questions after the last few interviews, you have likely reached *saturation* and further interviews are unlikely to provide much value.  
 
 ## Recruitment
 
-Once you have determined who you want to recruit for interviews, you need to contact them.  We've found that it can be helpful to do the following things when making contact, whether it be via email or some other means.
+Once you have determined who you want to recruit for interviews, you need to contact them.  We've found that it is helpful to do the following things when making contact, whether it be via email or some other means.
 
  * Introduce yourself and explain your job or role.
  * Tell them what the goal of your research is and how conducting an interview with them will help you accomplish that goal.
@@ -42,10 +44,6 @@ Once you have determined who you want to recruit for interviews, you need to con
 ## Collecting Background Data
 
 Depending on your goal, you may need to collect information specific to the interviewee prior to conducting the interview.  As an example, a few years ago we were investigating the value of categorizing source code commits (Hindle, 2012).  As part of this, once a developer had accepted an interview invitation, we categorized their commits and created graphs for each category over time so that we could ask them about the peaks and valleys of activity.  
-
-<div>
-  <img src="interview-artifact.PNG" width="600px" />
-</div>
 
 If you don't need to collect specific artifacts or conduct preliminary analysis prior to the interview, it still may be useful to try to learn a bit about the team, project, and processes that the interviewee is associated with so that you don't come into the interview completely cold.  It can also build some level of trust and understanding between you and your interviewee.
 
@@ -71,7 +69,7 @@ When leaving, let them know if and how they'll hear from you in the future.  I o
 
 There are a number of things that we try to do as soon as possible after the interview while the interview is fresh in our minds.
 
-Since I often interview with another person, we talk about the things that we noticed in the interview as we leave the office of the interviewee.  This can include things that were surprising, things that we have heard before from other interviewees, and things that did or did not go well during the interview.  I am frequently surprised at the things that the other interviewer picks up on that I don't and vice versa.  We also talk about whether we've reached saturation, if and how our interview guide should be modified, and 
+Since I often interview with another person, we talk about the things that we noticed in the interview as we leave the office of the interviewee.  This can include things that were surprising, things that we have heard before from other interviewees, and things that did or did not go well during the interview.  I am frequently surprised at the things that the other interviewer picks up on that I don't and vice versa.  We also talk about whether we've reached saturation and if our interview guide should be modified.
 
 Based on these conversations and my own thoughts and impressions from the interview, I try to write down post-interview notes.  I use the notes taken during the interview as part of the basis for this, but the post-interview are more coherent, organized, and thoughtful because they are not as constrained by time as in-interview notes.
 
@@ -97,7 +95,7 @@ Here are a few things that you should consider including in a report or publicat
 
 Providing quotes directly in the paper can help tell a story, provide concrete evidence to support a point, or add engaging detail.  However, be careful when providing quotes from interviews in a publication.  It can be tempting to cherry-pick a controversial quote or take a quote out of context.  I've heard more than a few quantitative leaning researchers make skeptical comments about quotes, so don't be guilty of their suspicions!   One best practice used in many research papers is to use a quote that accurately captures the sentiment of a group of interviewees.
 
-Finally, resist the temptation to apply quantitative methods to interview results.  It's fine to say that only one person mentioned some topic, or almost everyone answered a particular question in the same way, but calculating confidence intervals from interview data probably not a good idea.
+Finally, resist the temptation to apply quantitative methods to interview results.  It's fine to say that only one person mentioned some topic, or almost everyone answered a particular question in the same way, but calculating confidence intervals from interview data is probably not a good idea.
 
 ## Now Go Interview!
 
