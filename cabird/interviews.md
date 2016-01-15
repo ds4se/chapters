@@ -8,11 +8,7 @@ We have found that interviews can be wonderful tools for exploratory investigati
 
 Interviews are not a panacea, however.  Drawbacks of using interviews for research include the usually small sample size, the time required for each individual interview, the challenge of finding appropriate interviewees and scheduling a time that works for all parties, potential bias introduced by the interviewer during the interviewer (word choice, tone of voice, or even body language can potentially affect responses), and the time required for transcription and subsequent analysis.  The pros and cons of the approach should always be weighed when making a decision about whether to interview.
 
-Generally, when we include interviews in our research, we follow the steps in the workflow below, though some steps may be omitted based on the context, goals, and specifics of the study.  In this chapter, I'll provide a description and best practices for each phase based on experiences that we have had conducting interviews for software engineering research at Microsoft.  
-
-<div>
-  <img src="interview-workflow.PNG" width="600px" />
-</div>
+In this chapter, I'll provide a description and best practices for the different phases of interview research based on experiences that we have had conducting interviews for software engineering research at Microsoft.  
 
 ## The Interview Guide
 
