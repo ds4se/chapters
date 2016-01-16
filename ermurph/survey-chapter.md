@@ -1,6 +1,6 @@
 # Avoiding Survey Design Traps: A Successful Process for Sailing Past the Temptations of Persephone's Sirens
 
-![The Sirens: AP Press Image: $210](AP110929152491.jpg)
+![The Sirens: Wikimedia Public Domain Image: $210](https://upload.wikimedia.org/wikipedia/commons/7/72/Ulysses_and_the_Sirens_by_H.J._Draper.jpg)
 
 Authors: Titus Barik and Emerson Murphy-Hill
 
