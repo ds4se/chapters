@@ -1,4 +1,4 @@
-# Avoiding Survey Design Traps: A Successful Process for Sailing Past the Temptations of Persephone's Sirens
+# A Process for Surviving Survey Design and Sailing Through Survey Deployment
 
 ![The Sirens: AP Press Image: $210](AP110929152491.jpg)
 
