@@ -67,7 +67,7 @@ Here are some observations during piloting:
 * Identify drop points where participants may give up on the survey.
 * Pay attention to open response questions and don’t expect rich answers. In general, people don’t like typing stuff --- that’s what interviews are for.
 
-Finally, providing a strong _initial recruitment letter_ is perhaps just as important as the survey, but it is often overlooked or done as an afterthought. Be sure to motivate how the participant benefits from the survey. Why should they take it? What do they get out of it? They always wants to know, “Why’d you pick me?” 
+Finally, providing a strong _initial recruitment letter_ is perhaps just as important as the survey, but it is often overlooked or done as an afterthought. Be sure to motivate how the participant benefits from the survey. Why should they take it? What do they get out of it? They always want to know, “Why’d you pick me?” 
 
 Though Odysseus had only one chance to face the Sirens, piloting offers you multiple opportunities to quickly practice your survey before embarking on the real journey. 
 
