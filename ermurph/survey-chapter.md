@@ -54,7 +54,7 @@ How did we know which statements to ask? Our statements came directly from the s
 
 Don't count on your initial survey design to be perfect. In an extreme case, a collaborator spent nearly a year in preparation while his team argued about question wording. By the time they "finished," the survey had become obsolete and ultimately proved to be useless.  
 
-Instead, consider a more agile approach by _piloting_ the survey: ask a few friends to take the survey  and then analyze the results the way you normally would. With as few as five participants, you can often catch the most egregious mistakes.
+Instead, consider a more agile approach by _piloting_ the survey: ask a few friends to take the survey and then analyze the results the way you normally would. With as few as five participants, you can often catch the most egregious mistakes. Piloting with people who are representative of your target population will help you find more mistakes.
 
 During piloting, a useful perspective is to test your survey like you’d test software. Survey bugs can appear in the most unlikely of places. For example, one "bug" we found through this process was in our consent form. A participant could choose "I don’t consent to participate," but still fill out the survey! This would have been disastrous, because we wouldn't know who consented and who didn’t. We'd have to throw out all the data.
 
