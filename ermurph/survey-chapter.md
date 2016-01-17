@@ -50,6 +50,8 @@ The key to successful survey design, then, is to ensure that the majority of you
 
 How did we know which statements to ask? Our statements came directly from the stories told by participants during our semi-structured interviews. By doing so, we can triangulate stories we heard in the interviews and generalize those experiences quantitatively.
 
+At the same time, your interviewees told you a a lot of stories, so you'll have to be selective about what you ask survey participants about. Consider your goals carefully and only ask survey questions that help you reach those goals.
+
 ### Stage 4: Survey Piloting
 
 Don't count on your initial survey design to be perfect. In an extreme case, a collaborator spent nearly a year in preparation while his team argued about question wording. By the time they "finished," the survey had become obsolete and ultimately proved to be useless.  
