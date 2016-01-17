@@ -8,25 +8,25 @@ In the legendary tale of Homer's Odyssey, the honored Odysseus and his crew must
 
 Where all others had failed, Odysseus became the first mortal to live to gain this knowledge. How did he do it? Through guidance from Circe, the goddess of magic, Odysseus instructed his crew to plug their ears with molded wax to deafen them from the song. He then had his crew tie him to the mast and commanded them not to release him under any circumstances. And so Odysseus and fellow crew navigated past the Sirens. Odysseus, having heard the Sirens' songs, sailed away a wiser man.
 
-Surveys, as with Persephone's Sirens, are an attractive instrument for empirical research and offer a similar lure of knowledge. Like Circe, we offer guidance, grounded in our own experiences, on a successful process for conducting survey research in software engineering.
+Surveys, as with Persephone's Sirens, are an attractive instrument that offer a similar lure of knowledge. Like Circe, we offer guidance, grounded in our own experiences, on a successful process for understanding the practice of software engineering through surveys.
 
 ## The Lure of the Sirens: The Attraction of Surveys
 
-Surveys are an attractive option for several reasons. The first reason is easy scalability. After an initial sunk cost to develop the survey, our perception is that can we simply scale up by sending the survey to more participants. The second reason is that surveys are easy to deploy. Today, the preferred format is predominately electronic survey distribution, not print, and many user-friendly, online services exist to help researchers design and deploy surveys. A final reason is that surveys give us a certain sense of quantitative comfort because the survey responses can be downloaded into a spreadsheet or other statistical analysis software. A popular form of question-style, _Likert_ statements (Strongly Disagree to Strongly Agree), can then be quantitatively analyzed through various descriptive and statistical techniques that are already familiar to us.
+Surveys are an attractive option for several reasons. The first reason is easy scalability. After an initial sunk cost to develop the survey, our perception is that can we simply scale up by sending the survey to more participants. The second reason is that surveys are easy to deploy. Today, the preferred format is predominately electronic survey distribution, not print, and many user-friendly, online services exist to help practitioners and researchers design and deploy surveys. A final reason is that surveys give us a certain sense of quantitative comfort because the survey responses can be downloaded into a spreadsheet or other statistical analysis software. A popular form of question-style, _Likert_ statements (Strongly Disagree to Strongly Agree), can then be quantitatively analyzed through various descriptive and statistical techniques that are already familiar to us.
 
 But as with Odysseus, these lures are only surface benefits. Our experiences have taught us the harsh lesson that, without caution, lurking beneath the waters are several traps that lead to shipwreck. Let's figure out how to avoid that fate.
 
-## Navigating the Open Seas: A Successful Survey Process in Software Engineering Research
+## Navigating the Open Seas: A Successful Survey Process in Software Engineering
 
 Homer's cautionary story warns us of the perils of early exploration without sufficient preparation. Odysseus succeeded where others before him had failed because of his careful planning.
 
 In contrast with other disciplines that use surveys for _psychometric evaluation_, such as education, our observation is that surveys in software engineering are most frequently used as a way to obtain multiple viewpoints, or to _triangulate_. Surveys are also used to draw inferences about a larger population, or to _generalize_.
 
-This six-stage process we present here is tailored for software engineering researchers and addresses many of the concerns for a community that is predominantly quantitative. In developing this process, we have learned from our own mistakes, from the feedback of reviewers, and from interviews with other researchers who use surveys as an empirical method.  
+This six-stage process we present here is tailored for practitioners and researchers who want to better understand how software engineering is practiced in one organization or across many. In developing this process, we have learned from our own mistakes, from the feedback of peers, and from interviews with others who use surveys as an empirical method.  
 
 ### Stage 1: Initial Recruitment
 
-It's tempting to jump right in and begin writing survey questions, and today's software packages almost entice you to do so. But as we learned with the Sirens, adventurers who dashed off on their journey without appropriate preparation ultimately met with tragedy. Consequently, it's essential to first consider the questions you want to ask and how you intend to use the answers to the questions. This is not simply a matter of taking your research questions and translating them into survey question form. We've found, for example, that the phrasing of the question itself is highly contextually sensitive and that practitioners often do not have the same interpretation of a topic as the researcher.
+It's tempting to jump right in and begin writing survey questions, and today's software packages almost entice you to do so. But as we learned with the Sirens, adventurers who dashed off on their journey without appropriate preparation ultimately met with tragedy. Consequently, it's essential to first consider the questions you want to ask and how you intend to use the answers to the questions. This is not simply a matter of taking your intuitions and translating them into survey question form. We've found, for example, that the phrasing of the question itself is highly contextually sensitive and that the survey-takers often do not have the same interpretation of questions as the survey-makers.
 
 One way to mitigate this risk is to create a very short survey and cast a wide net to recruit participants with familiarity on the topic. For example, one survey on data science practices randomly sampled employees and asked them three simple questions: "Do you perform data science activities?"; b) "What's your biggest frustration when performing data science?; and c) "May we follow-up with you?"
 
@@ -34,7 +34,7 @@ Next, follow-up with several of these participants and conduct interviews with t
 
 ### Stage 2: Interviews
 
-The interview is one process through which the researcher gains information about their topic. We've found a successful approach is to ask participants to share specific stories that relate to a particular topic. Often, participants will tell these in the form of "war stories," which describe particularly challenging situations and how they overcame them.
+The interview is one process through which we can gain information about software engineering. We've found a successful approach is to ask participants to share specific stories that relate to a particular topic. Often, participants will tell these in the form of "war stories," which describe particularly challenging situations and how they overcame them.
 
 Think of these interviews as incredible sources of knowledge. Like the songs of the Sirens, these 30-45 minute interview sessions provide us with rich stories, told directly through the voices of those who experienced them. 
 
@@ -96,7 +96,7 @@ Our take away is that the survey itself is only a small part of the picture. In 
 * Pay special attention to ensure that the participants' time and effort is respected. 
 * Piloting is a good way to identify breakages early in the design process.
 * What seems reasonable for a designer is not reasonable for the participant. Use language familiar to the participants.
-* Surveys shouldn't be a standalone instrument; use them as a triangulation method and combine them with other techniques, such as interviews. This gives you both the breadth and depth to report your research in a compelling way.
+* Surveys shouldn't be a standalone instrument; use them as a triangulation method and combine them with other techniques, such as interviews. This gives you both the breadth and depth to report your findings in a compelling way.
 
 ## References
 
