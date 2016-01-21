@@ -54,14 +54,22 @@ In case this appears too high, a lighter-weight entry in analytics would be the 
 ## References
 
 [1] C. Bird, B. Murphy, N. Nagappan, and T. Zimmermann. Empirical software engineering at Microsoft Research. In Proceedings of CSCW 2010, pages 143–150, 2011.
+
 [2] I. Richardson and C. G. von Wangenheim. Guest editors’ introduction: Why are small software
 organizations different? IEEE Software, 24(1):18–22, 2007.
+
 [3] Romain Robbes, René Vidal, María Cecilia Bastarrica: Are Software Analytics Efforts Worthwhile for Small Companies? The Case of Amisoft. IEEE Software 30(5): 46-53 (2013)
+
 [4] Sexto Diagnóstico de la Industria Nacional de Software y Servicios, 2008. http://bligoo.com/media/users/0/32814/files/GECHS-6o_informe_diagnostico.pdf
+
 [5] Thomas Zimmermann, Peter Weißgerber, Stephan Diehl, Andreas Zeller: Mining Version Histories to Guide Software Changes. IEEE Trans. Software Eng. 31(6): 429-445 (2005)
+
 [6] R. P. L. Buse and T. Zimmermann. Information needs for software development analytics. In Proceedings of ICSE 2012, pages 987–996, 2012.
+
 [7] Romain Robbes, Damien Pollet, Michele Lanza: Logical Coupling Based on Fine-Grained Change Information. WCRE 2008: 42-46
+
 [8] Codealike. https://codealike.com
+
 [9] Feng Zhang, Audris Mockus, Iman Keivanloo, Ying Zou: Towards building a universal defect prediction model. MSR 2014: 182-191
 
 
