@@ -10,7 +10,7 @@ These small companies face a different reality than large software companies. Th
 
 Small software companies have different factors that must be taken into account in order to successfully apply software analytics. We identified the following main factors:
 
-* Projects taken by small software companies may be smaller and shorter than the ones taken by larger companies, limiting the amount of data available.
+* Software projects taken by small software companies may be smaller and shorter than the ones taken by larger companies, limiting the amount of data available.
 * The goals and needs of small software companies may be different than the ones in large software companies.
 * Resources in small companies are always very tight.
 
@@ -29,6 +29,8 @@ While a few MSR approaches (such as the work of Zimmermann et al. [5]) did some 
 ## Different goals and needs
 
 We know of one Chilean small company, Amisoft, that made use of software analytics [3]. Our interview with them was insightful on the differences in priorities between what a large company such as Microsoft needs, and what a small company such as Amisoft needed. We found the overlap between information needs at Amisoft, and the ones at Microsoft [6], to be narrow: of the 17 indicators found to be of interest at Microsoft by Buse and Zimmermann, only 3 were similar to indicators in use at Amisoft.
+
+Amisoft keeps track of a variety of indicators (for more detail, see [3]), most important of which are how closely the progress follows its expected schedule. Amisoft tracks metrics such as requirement volatility, adherence to its specified process, percentage of time spent on various types of tasks, functional tests and crashes, and client satisfaction. Of note, a significant portion of the data is collected manually (based on employee time sheets) and consolidated manually by project managers and a dedicated data analyst. Amisoft does not collect detailled metrics about the usage of the version control system and the bug tracker (although these tools are in use).
 
 Of course, we cannot answer for all companies based on one datapoint. However, we found that project-level indicators were much more interesting for the CEO than low-level indicators as could be found in the software repositories that are often mined. To paraphrase the CEO: “I don’t really have a need for an approach that tells me where the bugs are. I know that the database access component is the most risky already, hence I personally review changes to it already”. Needless to say, actually deploying a defect prediction approach may still have an impact, particularly to reveal other defect-prone modules that are not as prevalent.  
 
@@ -58,7 +60,7 @@ In case this appears too high, a lighter-weight entry in analytics would be the 
 [2] I. Richardson and C. G. von Wangenheim. Guest editors’ introduction: Why are small software
 organizations different? IEEE Software, 24(1):18–22, 2007.
 
-[3] Romain Robbes, René Vidal, María Cecilia Bastarrica: Are Software Analytics Efforts Worthwhile for Small Companies? The Case of Amisoft. IEEE Software 30(5): 46-53 (2013)
+[3] Romain Robbes, René Vidal, María Cecilia Bastarrica: Are Software Analytics Efforts Worthwhile for Small Companies? The Case of Amisoft. IEEE Software 30(5): 46-53 (2013). Also availble online: http://users.dcc.uchile.cl/~rrobbes/p/SOFTWARE-analytics.pdf
 
 [4] Sexto Diagnóstico de la Industria Nacional de Software y Servicios, 2008. http://bligoo.com/media/users/0/32814/files/GECHS-6o_informe_diagnostico.pdf
 
