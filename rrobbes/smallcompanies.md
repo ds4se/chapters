@@ -47,7 +47,9 @@ The other approach is to use data from other projects, instead of the current pr
 
 ## What to do on a tight budget?
 
-TBD
+We'll close this chapter by briefly considering the resources needed to use analytics. Again, as little is known so far, we'll focus on the example of Amisoft. Amisoft's CEO found that the cost of implementing the programme was worthwile in his experience. The upfront cost was relatively high, since a full-time employee (out of 43 at the time) was focused on the project for 3 months, with the CEO himself dedicating significant time (3.5% of the workfoce). Once the the program was set up, the impact on individual employees was estimated to be 1 hour a week of manual data gathering (which could be reduced with more automation), with the full-time employee staying on to consolidate and analyze the data. We also note that this was possible due to the previous effort in the company to formalize the development process: there would not have been anything to measure before that.
+
+In case this appears too high, a lighter-weight entry in analytics would be the individual feedback offered by tools such as Codealike: data collection is entirely automatic, the only thing needed is the discipline to regularly check the dashboards produced by the tool. The only uncertainty is whether insights provided by the tool would align with the insights needed in a small company (they certainly seem to be useful at the developer level).
 
 ## References
 
