@@ -1,4 +1,4 @@
-#Simpler Questions Can Lead To Better Insights for Practitioners
+#Simpler Questions Can Lead To Better Insights
 *Burak Turhan, University of Oulu, Finland*
 
 *Kari Kuutti, University of Oulu, Finland*
@@ -13,7 +13,7 @@ The idea of bug prediction is to prioritize the test efforts to the parts of the
 
 ##Providing Predictions on Buggy Changes
 
-![alt text](./performance.png "This graph basically says that 90% of all bugs can be detected by going through the top 30% of the predictions.")
+![alt text](./performance.png "This graph basically says that 90% of all bugs can be detected by going through top 30% of the predictions.")
 
 The predictor model was selected among a multitude of machine learning algorithms [1]. Once the final predictor was created and its accuracy was fine-tuned, the results were presented to a team of practitioners. The graph above basically says that 90% of all bugs can be detected by going through the top 30% of the predictions, which most scholars would think is a good result! However, the feedback from the practitioners was that the prediction performance graphs and measures were not that useful for them. They indicated that such performance figures do not provide insight to have an impact in their daily work, and pointing out error-prone sections within files was regarded as stating the obvious. Specifically, they mentioned that they had a pretty good idea of where the bugs will occur (confirming the accuracy of our predictions), but wanted to know how they can either avoid or fix them in a different and easier way than how they already do.
 
@@ -39,13 +39,14 @@ Analysis of the example figure in terms of (anti-) patterns reveals the followin
 
 ## How to _Act_ on (Anti-)Patterns?
 
-Based on the initial findings listed above, the following actionable insights can be taken into account:
+Based on the findings listed above, the following actionable insights can be considered:
 
-- Depending on the amount of errors detected by the testing teams in each testing level, an analysis on the nature of errors can be conducted to understand which level of testing needs to be improved (checking color codes in the graph) in order to identify the errors earlier in the process.
-- All development teams can be encouraged to report the errors found within their internal processes in the global issue repository in order to improve the transparency of the development process. This would enable the collaborating teams to share insights about the problems encountered in the shared part of the code.
-- Internal quality processes of the teams can be improved, especially when errors are propagating across development teams. This would save time and effort spent on re-work activities. In addition, the communication and coordination practices between such teams can be improved in order to reduce the number of errors reported across teams.
+- _Improve testing levels to identify errors earlier_: Depending on the amount of errors detected in each testing level (corresponding to color codes in the graph), an analysis on the nature of errors can be conducted to understand which level of testing needs to be improved .
+- _Improve transparency_: Development teams can be encouraged to report the errors found within their internal processes to the global issue repository in order to improve the transparency of the development process. This will enable collaborating teams to share insights about the problems encountered in the shared code.
+- _Improve inter/intra team communication_: Internal quality processes of the teams can be improved, especially when errors are propagating across development teams. This would save time and effort spent on re-work activities. In addition, the communication and coordination practices between the teams can be improved in order to reduce the number of errors reported across teams.
 
-To elaborate more on the last item: there are two potential reasons for the conflict between ‘Terttu’ and ‘Kristiina’ teams. One reason could be that the teams’ way of working may be lacking quality gates for checking how their changes affect the work of others. Alternatively, there are latent dependencies between the parts the teams are concurrently working on. Such dependencies may have not been noticed and flagged when the division of labor between the teams is planned. So, the error-handling graph can in principle indicate problems in two levels: programming and testing practices/tools inside the teams, and in planning and dependency identification practices/tools. Further, the nature of those latent dependencies may not necessarily be code-based. In other words, code-based dependencies may just be a symptom of dependencies not detected at higher levels of abstraction, e.g. conflicting requirements from different stakeholders that are missed, or changes in requirements that were not communicated to the both teams properly. In any case, the root cause is a communication/ coordination related issue that can be further worked on, yet can easily be identified by a visual inspection of the error-handling graph.
+To elaborate more on the last item: there are two potential reasons for the conflict between ‘Terttu’ and ‘Kristiina’ teams. One reason could be that the teams’ way of working may be lacking quality gates for checking how their changes affect the work of others. Alternatively, there might dependencies between the parts of the code that the teams are concurrently working on. Such dependencies may have not been noticed and flagged when the division of labor between the teams is planned. So, the error-handling graph can point to problems in two levels: programming and testing practices/tools inside the teams, and in planning and dependency identification practices. Indeed, the nature of dependencies may not necessarily be code-based, but rather conflicting requirements from different stakeholders or changes in requirements that were not communicated to the both teams.
+In other words, code-based dependencies may just be a symptom of dependencies not detected at higher levels of abstraction. In any case, the root cause is a communication/ coordination related issue that can be further investigated, yet can easily be identified by a visual inspection of the error-handling graph.
 
 ##Summary
  The goal of software analytics is to propose actionable changes to the way the projects are run [2]. Practitioners need to be convinced about the benefits before even considering taking actions. Our experience revealed that asking the right questions that are deemed relevant by practitioners is a key factor to provide useful insights for them. As in our case, this might require simplifying complex questions and analyses to simpler ones that are more relevant to practitioners in terms of providing actionable insight.
