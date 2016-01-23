@@ -1,4 +1,4 @@
-#Finding the Relevant Problems to Analyze is the Key to Provide Insight to Practitioners
+#Identifying Relevant Problems is the Key to Provide Insight to Practitioners
 *Burak Turhan, University of Oulu, Finland*
 
 *Kari Kuutti, University of Oulu, Finland*
@@ -48,9 +48,7 @@ Based on the initial findings listed above, the following actionable insights ca
 To elaborate more on the last item: there are two potential reasons for the conflict between ‘Terttu’ and ‘Kristiina’ teams. One reason could be that the teams’ way of working may be lacking quality gates for checking how their changes affect the work of others. Alternatively, there are latent dependencies between the parts the teams are concurrently working on. Such dependencies may have not been noticed and flagged when the division of labor between the teams is planned. So, the error-handling graph can in principle indicate problems in two levels: programming and testing practices/tools inside the teams, and in planning and dependency identification practices/tools. Further, the nature of those latent dependencies may not necessarily be code-based. In other words, code-based dependencies may just be a symptom of dependencies not detected at higher levels of abstraction, e.g. conflicting requirements from different stakeholders that are missed, or changes in requirements that were not communicated to the both teams properly. In any case, the root cause is a communication/ coordination related issue that can be further worked on, yet can easily be identified by a visual inspection of the error-handling graph.
 
 ##Summary
- The goal of software analytics is to propose actionable changes to the way the projects are run [2]. Practitioners need to be convinced about the benefits before even consdering taking actions. Our experience revealed that asking the right questions that are deemed relevant by practitioners is a key factor to provide useful insights for them. As in our case, this might require simplifying complex questions and analyses to simpler ones that are more relevant to practitioners.
-
- _Summary goes here_
+ The goal of software analytics is to propose actionable changes to the way the projects are run [2]. Practitioners need to be convinced about the benefits before even considering taking actions. Our experience revealed that asking the right questions that are deemed relevant by practitioners is a key factor to provide useful insights for them. As in our case, this might require simplifying complex questions and analyses to simpler ones that are more relevant to practitioners in terms of ptoviding actionable insight.
 
 
 ##References
