@@ -1,6 +1,9 @@
 # Open from the Beginning
 _by Georgios Gousios, Radboud University Nijmegen, the Netherlands_
 
+_The problem in this business isn't to keep people from stealing your ideas; it is
+making them steal your ideas_ --- [Howard H. Aiken](https://en.wikipedia.org/wiki/Howard_H._Aiken)
+
 In research, we are obsessed with open access. We take extra steps to make our
 papers available to the public, we spend extra time for producing pre-prints,
 technical reports and blog posts to make our research accessible and we lobby
