@@ -34,15 +34,20 @@ This incredible result urges the use of data analysis patterns to make a solutio
 
 ##Building remedies for data analysis in software engineering research
 As in any research field, needs trigger opportunities and challenge researchers.  Today, we are called to synthesise our methods of analysis  [Johnson et al. 2012]  and a couple of examples of design patterns are already available [Russo, 2013]. We need more though. The scikit-learn initiative [http://scikit-learn.org/stable/index.html] can help software engineers in the case they need to solve problems with data mining, i.e. computational process of discovering patterns in data sets. 
-The project provides on-line access to a wide range of state-of-the-art tools for data analysis as codified solutions. Each solution comes with a short rationale of use, a handful set of algorithms implementing it, and a set of application examples. 
+The project provides on-line access to a wide range of state-of-the-art tools for data analysis as codified solutions. Each solution comes with a short rationale of use, a handful set of algorithms implementing it, and a set of application examples. Fig. 1 illustrates   how we can find the right estimator for a machine learning problem. 
+
+
+![](ml_map.png)<br>
+*Figure 1. Flowchart displaying different estimators and analysis path for a machine learning problem, source: http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
+
 How can we import these or similar tools  in the software engineering context? We need first to identify the requirements for a data analysis pattern in software engineering.  
 
 In our opinion, a  data analysis pattern shall be: 
 - A solution to a recurrent a software engineering problem 
 - Re-usable in different software engineering contexts
 - Automatable (e.g., by coding algorithms of data analysis in some programming language ) 
-- Actionable (e.g., by providing it in some codified form)
-- Successful at a certain degree (e.g., by representing state-of-the-art) 
+- Actionable (e.g., the scikit-learn tools)
+- Successful at a certain degree (e.g., by representing state-of-the-art of data analysis in software engineering) 
 
 Then the key steps to construct such pattern will include but be not restricted to:
 - Mining literature to extract candidate solutions
