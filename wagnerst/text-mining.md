@@ -1,0 +1,43 @@
+# Natural language processing is no free lunch either
+# Stefan Wagner, University of Stuttgart
+
+The likes of JavaDoc and Doxygen allowed software developers to document source code in a structured and versatile way. It led to a considerable amount of documentation especially of interfaces in many programs today. It focuses, however, on the level of functions/methods and classes. A documentation on the component level is often missing.
+
+So why can’t we use the lower level documentation to generate the component documentation? One problem is that most of this documentation is in natural language (apart from some annotations for authors or return values). How can we decide what from the class and method comments is important to describe the component they are part of? 
+
+I decided to team up with a natural language processing expert and colleague, Sebastian Padó, and to explore this issue in a master thesis (Strobel 2015). While we could apply topic modelling to the comments on the class level and generate meaningful topics, the practical usefulness of the results is unclear. For example, for the Java package *java.io* it showed us the following topic to be most probable:
+„buffer, stream, byte, read, method, field, data, write, output, class, serial, input, written, …“
+It gives an idea what the package is about. Yet, it cannot replace a description created by a human.
+
+Let’s discuss what it takes to create such results and how we could improve them.
+
+## Natural language data in software projects
+Most data we deal with in software projects is somehow textual. The central artefact in a software project is the source code which is textual, in a formal language, and it is well studied how to analyse it. Beyond the source code, however, we find a lot of natural language data in today’s software projects. For example, we have textual documentations for the user or of the software architecture. We also find textual data in commit messages and issue descriptions. Even in the source code, as we saw before, we have natural language in the comments.  We need to make more use of this rich source of information to support developers and guide projects. Yet, how can we deal with data that is as fuzzy as natural language?
+
+## Natural language processing
+Natural language processing (NLP) has made huge progress over the last decades. They have developed a wide range of algorithms and tools to deal with large text corpora and give various insights into the meaning of the natural language texts. For example, *part-of-speech tagging* gives you the grammatical use of each word (verb, noun or determiner) and *topic modelling* extracts the most probable topics for documents in a text corpus. The access to the research results in NLP is easy as there are several great text books (e.g. Manning, Raghavan, Schütze, 2008) and open source libraries (e.g. from the Stanford NLP group: http://nlp.stanford.edu/software/) available. They provide us with the means to analyse the natural language data from our software projects.
+
+## How to apply NLP to software projects
+But how are we going to apply that in a software project? As the natural language data as well as the goals of its analysis are diverse and specific to your context, I will focus on four good practices to follow.
+
+### 1. Do stemming first
+The first step in any analysis is extracting and cleaning the data. This is also the case with natural language data. Often, we need to extract it from Word documents or PDFs. As soon as we have the plain text data, it is usually a good idea to use a stemmer. Stemming is the process to remove morphological and inflexional endings from words. This allows an easier analysis as all words from the same word stem can be treated equally. For example, in most cases I don’t care between the difference between „read“ and „reading“. In the topic modelling example, it should lead to the same topic. 
+
+### 2. Check the level of abstraction
+As natural language texts do not follow formal grammar and do not have formal semantics, the level of abstraction can be diverse in text documents even if we look at the same type of artefact. This became very apparent when we applied clone detection to natural language requirements specifications (Juergens et al., 2010). The intention was to find parts of the specifications that were created by copy&paste. We found that the level of cloning was extremely diverse from several specifications with almost none up to specifications with more than 50% clones. The main reason was the level of detail the specification described the system. The specifications with high cloning described very concrete details such as messages on a network. The specifications with low cloning described the functionally in an abstract way. It is probably not a good idea to further analyses these textual data in the same way. So be sure to know what you are looking for. It might be helpful to  cluster artefacts even if they are of the same type.
+
+### 3. Don’t expect magic. 
+Even though the methods, algorithms and tools in NLP are of impressive quality today, don’t expect that everything can be used out of the box and provides perfect results. It is still necessary to try alternative algorithms and tune them during the analysis. More importantly, however, the algorithms can only give you results as good as the text already contains them. We found in the master thesis (Strobel, 2015) that we can generate topics with useful terms but rely strongly on the quality of the JavaDoc comments. The analysis of the official Java library worked well as those classes are well documented. But the analysis of other open source code with less comments also showed less usable topics. Being able to provide such additional use of comments might encourage better commenting and create a self-enforcing loop. Yet, often we find missing, outdated or sparse documentation in practice. 
+
+### 4. Don’t discard manual analysis of textual data. 
+So what can we do if the automatic NLP analysis does not give us fully satisfactory results? I believe it is often helpful to keep the human in the loop. This could mean a fully qualitative analysis of the natural language data (Wagner, Mendéz Fernández 2015) to create a full human interpretation. Great insights can come from such an analysis. Humans can make connections based on their own knowledge and experience not available to computers. Furthermore, they are able to formulate the results in a way that is easily accessible to other humans. Yet such an analysis is very elaborate. A middle ground could be to use manual feedback early and often (Vetró et al. 2015). We applied topic modelling to user stories to classify them. Initially, our automatic analysis had a rather poor precision but two feedback rounds with practitioners increased it to 90%. Hence, I believe such a combination of automatic analysis with manual feedback could be beneficial in many contexts.
+
+## Summary
+Natural language data is omnipresent in software projects and contains rich information. NLP provides us with interesting tools to analyse this data fully automatically. Yet, as always, there is no free lunch. The textual data must be extracted and cleaned, potentially clustered according to the level of abstraction and the analysis often has to be complemented with human analysis and feedback to be practically useful. Nevertheless, I am certain we will see much more interesting research in this area in the future.
+
+## References
++ Antonio Vetrò, Samahil Ognawala, Daniel Méndez Fernández, Stefan Wagner. Fast feedback cycles in empirical software engineering research. In *Proc. 37th International Conference on Software Engineering (ICSE’15)*. IEEE, 2015.
++ Stefan Wagner, Daniel Méndez Fernández. Analysing Text in Software Projects. In In Christian Bird, Tim Menzies, and Thomas Zimmermann (Eds.), *Art and Science of Analysing Software Data*. Elsevier, 2015.
++ Patrick H. Strobel. *Automatische Zusammenfassung von Quellcode-Kommentaren*. MSc Thesis. University of Stuttgart, 2015.
++ Chris Manning, Prabhakar Raghavan, Hinrich Schütze. *Introduction to Information Retrieval*. Cambridge University Press, 2008.
++ Elmar Juergens, Florian Deissenboeck, Martin Feilkas, Benjamin Hummel, Bernhard Schätz, Stefan Wagner, Christoph Domann, Jonathan Streit. Can Clone Detection Support Quality Assessment of Requirements Specifications? In *Proc. 32nd International Conference on Software Engineering (ICSE’10)*. ACM, 2010.

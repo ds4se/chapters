@@ -2,6 +2,7 @@
 ##(in software engineering)
 
 ##The remedy metaphor
+
 When you call a doctor, you would expect she comes with a handful set of remedies for your disease.  You would not be pleased to see her digging into a huge amount of clinical data while she makes a diagnosis and searches a solution for your problem neither  would you expect her to propose a cure based on your case alone.  The remedies she proposes are solutions to recurring problems that medical researchers identify by analysing data of patients with similar symptoms and medical history. Remedies are coded in a language that a doctor understands (e.g., they tell when and how to treat a patient) and lead to meaningful conclusions for patients with the same disease (e.g., they tell the probability the disease will be defeated and eventually with which consequences).  Once found, such solutions can be applied over and over again. With the repeated use of a solution, medical researchers can indeed gain knowledge on successes and failures of a remedy and provide meaningful conclusions to future patients thereafter.   
 
 The remedy metaphor portrays what are data analysis patterns in empirical sciences.  First, a pattern is a coded solution of a recurring problem. When a problem occurs several times, we accumulate knowledge on the problem and its solutions. With this knowledge, we are able to code a solution in some sort of modelling language that increases its expressivity and capability of re-use.  Second, a pattern is equipped with a sort of measure of success of the solution it represents.  The solution and the measure result from the analysis of historical data and provide actionable insight for future cases. 
@@ -21,7 +22,8 @@ Thus, data types can be very different. Just to make few examples, data can be s
 ##Needs of data analysis patterns
 The needs for instruments like data analysis patterns become more apparent when we want to introduce novices to the research field. In these circumstances, we encounter the following issues. 
 
-*Studies do not report entirely or sufficiently about their data analysis protocols.* This implies that analyses are biased or not verifiable. Consequently, secondary studies like mapping studies and systematic literature reviews that are mandate to synthesise published research lose their power. Data analysis patterns provide software engineers with a verifiable protocol to compare, unify, and extract knowledge form existing studies.
+
+*Studies do not report entirely or sufficiently about their data analysis protocols.* This implies that analyses are biased or not verifiable. Consequently, secondary studies like mapping studies and systematic literature reviews that are mandated to synthesise published research lose their power. Data analysis patterns provide software engineers with a verifiable protocol to compare, unify, and extract knowledge form existing studies.
 
 *Methods and data are not commonly shared.* It is a general custom to develop ad-hoc scripts and keep them private or use tools as black-box statistical machines. In either case, we cannot access to the statistical algorithm, verify, and re-use it. Data analysis patterns are packaged to be easily inspected, automatised, and shared. 
 
@@ -31,7 +33,7 @@ The needs for instruments like data analysis patterns become more apparent when 
 This incredible result urges the use of data analysis patterns to make a solution independent from the researchers who conceived it. 
 
 ##Building remedies for data analysis in software engineering research
-As in any research field, needs trigger opportunities and challenge researchers.  Today, we are called to synthesise our methods of analysis  [Johnson et al. 2012]  and a couple of examples of design patterns are already available [Russo, 2013]. We need more though. The Scikit-learn initiative [http://scikit-learn.org/stable/index.html] can help software engineers in the case they need to solve problems with data mining, i.e. computational process of discovering patterns in data sets. 
+As in any research field, needs trigger opportunities and challenge researchers.  Today, we are called to synthesise our methods of analysis  [Johnson et al. 2012]  and a couple of examples of design patterns are already available [Russo, 2013]. We need more though. The scikit-learn initiative [http://scikit-learn.org/stable/index.html] can help software engineers in the case they need to solve problems with data mining, i.e. computational process of discovering patterns in data sets. 
 The project provides on-line access to a wide range of state-of-the-art tools for data analysis as codified solutions. Each solution comes with a short rationale of use, a handful set of algorithms implementing it, and a set of application examples. 
 How can we import these or similar tools  in the software engineering context? We need first to identify the requirements for a data analysis pattern in software engineering.  
 
