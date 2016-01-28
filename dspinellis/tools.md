@@ -1,4 +1,3 @@
-
 # Tools! Tools! We need tools!
 
 ## Tools in science
@@ -46,9 +45,9 @@ practices for building them.
 In order to provide insights on the building of tools,
 the description is mostly based on personal experience.
 
-First we need tools for **collecting metrics**.
+First we need tools for **obtaining metrics**.
 Although software metrics have been with us for decades,
-tools for collecting them reliably are often hard to come by.
+tools for obtaining them reliably are often hard to come by.
 I've seen research work where the metric collection was treated
 as an afterthought, apparently delegated to inexperienced undergraduate
 students.
@@ -123,14 +122,14 @@ including code with errors or obscure undocumented constructs.
 This made it easy to analyze millions of lines of diverse code [7].
 
 A second category of tools are those we use to **obtain or synthesize data**
-from processes and running products.
+from processes and running products, which can then be distilled into metrics.
 Such tools bridge the gap between the utilitarian data formats used
 to support software developers and the needs of data science for
 software engineering.
 Given that computers are reflective machines the possibilities for
 data collection are endless.
 One example in this category is [GHTorrent](http://ghtorrent.org/),
-a system that collects data through GitHub's event API
+a system that obtains data through GitHub's event API
 (whose raison d'être is the automation of software development processes)
 and makes them available as a database [8, 17].
 Another is a [set of tools](https://github.com/dspinellis/unix-history-make)
