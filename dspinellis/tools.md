@@ -61,14 +61,36 @@ or may be difficult to build upon.
 Partly as a result of such problems in 2005 I built,
 [ckjm](http://www.spinellis.gr/sw/ckjm/)
 a tool that derives Chidamber and Kemerer metrics from Java programs.
+These are
+the weighted methods per class,
+the depth of the inheritance tree,
+the number of children per class,
+the coupling between object classes,
+the response for a class, and
+the lack of cohesion in methods.
 Designing _ckjm_ to work as a Unix-style filter allowed it to
 analyze arbitrarily-large projects,
 an advantage appreciated by many of its users.
 
 Also during 2000-2010 I built
 [CScout](http://www.dmst.aueb.gr/dds/cscout/),
-which can accurately model large C projects as a whole.
-This required developing a theory behind the analysis
+a source code analyzer and refactoring browser for collections of C
+programs. It can process workspaces of multiple projects (a project
+is defined as a collection of C source files that are linked together)
+mapping the complexity introduced by the C preprocessor back into the
+original C source code files. _CScout_ takes advantage of modern hardware
+advances (fast processors and large memory capacities) to analyze C
+source code beyond the level of detail and accuracy provided by current
+compilers, linkers, and other source code analyzers. The analysis _CScout_
+performs takes into account the identifier scopes introduced by the C
+preprocessor and the C language proper scopes and namespaces. After the
+source code analysis _CScout_ can
+*   perform accurate cross project identifier renames,
+*   process sophisticated queries on identifiers, files, and functions,
+*   locate unused or wrongly-scoped identifiers,
+*   identify header files that don't need to be included, and
+*   create call graphs spanning both C functions and function-like macros.
+The implementation of _CScout_ required developing a theory behind the analysis
 of C code in the presence of the preprocessor, and the
 detailed handling of many compiler extensions and edge cases.
 I used _CScout_ to compare four operating system kernels and later
@@ -85,6 +107,17 @@ constructs and style I adopted a simpler approach, and built
 that will perform lexical analysis of C source code read
 from its standard input and calculate and print numerous metrics associated
 with it.
+The program reads a single C file from its standard input and
+outputs raw figures and diverse quality
+metrics associated with the code.
+These include the number of functions, lines, and statements;
+the number of occurrences of various keywords;
+the use of comments and preprocessing;
+the number and length of identifiers;
+the Halstead and cyclomatic compexity per function;
+the use of spacing for indentation;
+a measure of style inconsistency; and
+numbers associated with probable style infractions.
 What _qmcalc_ lacks in sophistication it offers in versatility,
 as it can process any code thrown at it,
 including code with errors or obscure undocumented constructs.
