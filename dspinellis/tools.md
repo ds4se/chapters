@@ -14,7 +14,9 @@ Surrounding that tube was another from which he had emptied the air.
 After some days he found that the material accumulated in the outer tube
 produced the spectrum of helium [1].
 
-Science has always progressed mightily through the use of tools.
+Science has always progressed mightily through the use of tools,
+which are increasingly designed by scientists but built by
+engineers and technicians.
 Telescopes allow us to see stars at the edge of our universe,
 imaging satellites uncover the workings of our Earth,
 genome sequencers and microscopes let us examine cells and molecules, and
@@ -22,7 +24,7 @@ particle accelerators peer into the nature of atoms.
 Currently the world's largest single machine is a tool explicitly
 built to advance our scientific understanding of matter:
 CERN's 27km-round Large Hadron Collider,
-which more than ten thousand scientists
+which more than ten thousand scientists and engineers
 from over a hundred countries built over a period of ten years.
 
 ## The tools we need
