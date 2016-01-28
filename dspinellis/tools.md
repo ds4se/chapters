@@ -158,10 +158,7 @@ memory fragmentation and stack size variability [11].
 Finally, a third category of tools are those we use to **analyze data**.
 Thankfully in this segment there are many general purpose mature tools
 and libraries that we can readily use.
-These include R
-(software engineering researchers have been disparagely
-[described](https://twitter.com/mendezfe/status/632203539746582528) as
-people who only code in R),
+These include R,
 [Python's data tools](http://pydata.org/downloads/), and
 relational database management systems often (mis)used to perform
 online analytical processing.
