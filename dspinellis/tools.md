@@ -170,7 +170,7 @@ the tool's capabilities.
 Otherwise, their complexity often makes tailoring them more expensive
 than developing bespoke tooling.
 
-## Best practices
+## Recommendations for tool building
 Given the importance of tools in conducting software engineering
 research, the most important piece of advice is to
 **hone your tool-building skills**.
