@@ -43,10 +43,8 @@ so it should come as no surprise that a lot of effort in data science
 involves building and refining tools.
 In the following paragraphs I outline important types of tools and best
 practices for building them.
-In order to provide insights on the building of tools the description
-is mostly based on anecdotal personal experience,
-ignoring considerably more important work in this area performed by
-colleagues around the world, a fact for which I apologize.
+In order to provide insights on the building of tools,
+the description is mostly based on personal experience.
 
 First we need tools for **collecting metrics**.
 Although software metrics have been with us for decades,
