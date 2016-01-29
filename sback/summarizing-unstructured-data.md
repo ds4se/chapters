@@ -1,16 +1,20 @@
-# Summarizing Unstructured Data
+# Structure Your Unstructured Data First!
+# The Case of Summarizing Unstructured Data with Tag Clouds
 Alberto Bacchelli, Delft University of Technology, The Netherlands
 
 ## Unstructured data in Software Engineering
-One person that never took part in a serious team development effort may easily
-think that what software engineers do all day is to stay behind a screen and
-read and write only one thing: Source code.
 
-Maybe that is the *dream* of every software engineer, but definitely not the
-reality.  Software engineers spend lots and lots of time writing all sorts of
-material that is unquestionably *not source code*. Even in open-source software
-projects, where there is not really a manager-mandated development process, we
-clearly see this happening.
+Anyone who has never worked on a real software project might mistakenly believe
+that software engineers spend all their time reading and writing source code.
+
+But software engineers do much more than just read and write code. Their
+day-to-day reality is that they spend much time writing a wide range material--
+little of which is source code (we see this happening even in open-source
+software projects, where there is not really a paper-driven or manager-mandated
+development process).  Accordingly, it is very important to discuss methods for
+handling data that is not source code, particularly unstructured software data:
+Data written mostly in natural language to exchange information with other
+people.
 
 Look for example at the figure below. It represents the volume of emails
 exchanged *monthly* in the Linux kernel mailing list, from June 1995 to March
@@ -166,7 +170,7 @@ write source code, but many other artifacts, such as issue reports, design
 documents, emails, etc.
 
 We showed that the amount of these artifacts can be overwhelming (as in the
-case of development emails for the linux mailing list), so we need some way to
+case of development emails for the Linux mailing list), so we need some way to
 summarize the information they contain for a faster, yet still useful
 consumption. We made the case that, unfortunately, the best candidate
 techniques from information retrieval do not work well in the case of software

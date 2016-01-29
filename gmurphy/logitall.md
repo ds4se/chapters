@@ -1,30 +1,30 @@
-# Log It All (or "Why a Little Data Can be Harmful")
+# Log It All? 
 
 Gail C. Murphy, University of British Columbia, Canada
 
 ## A Parable: The Blind Woman and an Elephant
 
-Imagine a group of blind woman are asked to describe what an elephant
+Imagine a group of blind women are asked to describe what an elephant
 looks like by touching different parts of the elephant [1]. One blind woman
 touches the trunk and says it is like a tree branch. Another blind woman
-touches the leg and says it is like a column. The third blind woman
-touches the trunk and says it is like a tree branch. The fourth and
-fifth blind women touch the ear and tail, saying the elephant is like a
+touches the leg and says it is like a column. 
+The third and fourth blind women touch the ear and tail, saying the elephant is like a
 fan and a rope respectively.
 
-Each of these woman belives she is right and she is from her own
-perspective. But, the data on which each decision is made is partial
+Each of these women belives she is right, and, from her own
+perspetive, each is right.
+But, each decision is being made on only partial data 
 and tells only part of the entire story. 
 
 ## Misinterpreting Pheonmenon in Software Engineering
 
 When we collect data to investigate a software engineering phenomenon,
-we have to take care not to fall into the trap of a taking single
+we have to take care not to fall into the trap of taking a single
 perpsective.  Let's consider that we want to know more about the
 phenomenon of how software developers learn commands available in an
 integrated development environment (IDE). Understanding what commands
-and used and how and when new commands are learned might help in
-developing tools to suggest useful commands developers are not already
+are being used, and how and when new commands are learned, might help to
+develop tools to suggest other useful commands developers are not already
 using as a means of improving the developer's productivity (e.g.,
 [2]).
 
@@ -32,42 +32,43 @@ To investigate this phenomenon, we decide to monitor each and every
 command the developer executes as she works. As part of the logged
 information, we capture the time at which the command was executed,
 the command itself, and how the command was invoked. We then deploy
-our monitoring tool and start gathering the information from as many
+a monitoring tool and start gathering the information from as many
 developers as we can convince to install the monitor.
 
-As we gather the logged command data from, hopefully thousands of
+As we gather the logged command data from (hopefully thousands of)
 developers and begin the analysis, we realize that there are many
-different subsequences of command usage we didn't initially
+different subsequences of command usage we did not initially
 anticipate.  For example, we may be surprised to see searches for
 references to uses of methods interspersed with debugging commands,
 such as step forward.
 
-It is only at this point in our analysis that we realize we are
-missing data about the context in which a command was executed, such
-as what were the windows active on the screen in the integrated
+It is only at this point in our analysis when we realize that we are
+missing data about the context in which commands are executed, such
+as which windows were visible on the screen in the integrated
 development environment when the command was executed. Had we captured
-this information, we would understand whether a command is likely
+this information, we could infer from the visible
+windows whether a command is likely
 being executed while debugging or while writing code.  Understanding
-more about this context would enable us to build better recommender
+more about this context could enable us to build better recommender
 tools.
 
-We had inadvertently falled into the trap of looking at the phenomenon
+We had inadvertently fallen into the trap of looking at the phenomenon
 from only one perspective.
 
 ## Using Data to Expand Perspectives
 
 As the example demonstrates, capturing more data and making it
-available for analysis can help us to expand our perspective on a
+available for analysis can help us expand our perspective on a
 software engineering phenomenon.
 
-Imagine if we were now able to not just capture the windows active
-when a command is executed, but we also knew what task the developer
-is working on, such as the particular feature being developed into the
-system. With this data, we might be able to start understanding which
-comamnds are most applicable for different kinds of tasks. And what if
-we could capture the developer's face as the tasks were performed;
-this data might help identify which commands require more
-concentration than others to execute, which might change the sequence
+Imagine if we were now able to not just capture the windows visible
+when a command is executed, but we also knew which task on which the developer
+was working, such as the particular feature being developed.
+With this data, we might be able to start understanding which
+commands are most applicable for different kinds of tasks. And what if
+we could capture the developer's face as the tasks were performed?
+This data might help identify which commands require more
+concentration than others to execute and might change the sequence
 or situations in which a tool recommends particular commands to learn.
 
 Although we might want to capture many kinds of data to understand a
@@ -94,6 +95,12 @@ be a meaningful transform. Researchers must carefully consider
 how to ensure the data meets any constraints of the environment
 in which it is collected.
 
+* can the data be captured at a cost proportional to its likely value?
+Not all data can be captured at a reasonable cost to either the
+developer or the user or both. The potential benefits of how the
+data might influence the study of the software engineering phenomenon
+must be weighed against its collection costs.
+
 ## Recommendations
 
 We have described that collecting more data can help lead to a more
@@ -108,7 +115,7 @@ some recommendations:
 of interest. Make sure you can collect at least this data.
 
 2. Consider what other data it is feasible to collect and try to
-collect any and all data that is practical to collect and that will
+collect any and all data that is practical and cost-effective to collect and that will
 not violate privacy or security concerns of those in the environment
 in which the data will be collected.
 

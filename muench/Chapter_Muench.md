@@ -1,4 +1,4 @@
-# Learning Lessons over Lessons Learnt: Liftoff with Continuous Experimentation Towards Rapid Value Delivery
+# Continuously Experiment to Assess Values Early On
 
 The troubles began when Tom, the business analyst, asked the customer what he wants. The customer came up with good ideas for software features. Tom created a brilliant roadmap and defined the requirements for a new software product. 
 
@@ -14,30 +14,30 @@ But there is a silver lining – an insight regarding successful features: Aroun
  
 Many software projects fail to deliver or only deliver little value due to the wrong assumptions made on requirements. A questionable assumption is, for instance, that customers or experts can come up with the right requirements. In consequence, projects usually have an upfront business analysis phase before the development starts.  There are of course projects such as large-scale contract software projects in well-understood domains where upfront analysis is feasible and successful. But we should consider that these projects represent a very small percentage of all software projects.
 
-Nowadays, nearly all software projects are conducted in complex environments where the relationship between cause and effect with respect to features and their success can only be understood in retrospect. Nobody “knows” upfront if and how features will create value for customers. Making decisions on what to develop based on opinions is highly risky in dynamic and non-predictable environments. Developing wrong features creates cost for development and maintenance as well as opportunity cost representing the missed opportunity to develop something of value instead.
-
 >_“If we’re not solving the right problem, the project fails.”_
 >_– Woody Williams_
+
+Nowadays, nearly all software projects are conducted in complex environments where the relationship between cause and effect with respect to features and their success can only be understood in retrospect. Nobody “knows” upfront if and how features will create value for customers. Making decisions on what to develop based on opinions is highly risky in dynamic and non-predictable environments. Developing wrong features creates cost for development and maintenance as well as opportunity cost representing the missed opportunity to develop something of value instead.
 
 A promising way to create software products in complex environments is to quickly and systematically iterate an initial product idea towards success before running out of time and other resources. Simply speaking, this means that you need to create a plan A that describes the scope of the software, identify the underlying assumptions of this plan, test the riskiest assumptions, and iterate until you have a plan B that works. The initial ideas we come up with are seldom successful. Identifying, testing and refining multiple options helps to discover better ways to provide value for users or customers. 
 
 ## Every Idea can be Tested with an Experiment
 
-A means for doing this is continuously conducting experiments to test assumptions and making being wrong cheaper. Insights from experiments directly influence frequent deliveries. This process of continuous experimentation consists of three meta-steps: 
+A means for doing this is continuously conducting experiments to test assumptions and making being wrong cheaper. Insights from experiments directly influence what is given to the users. This process of continuous experimentation consists of three meta-steps: 
 
-1.	Break down your product idea into a product roadmap that can be efficiently tested. Be aware that the roadmap changes over time and is basically a list of assumptions.
+1.	Break down your product idea into a product roadmap that can be efficiently tested. Be aware that the roadmap changes over time and is basically a list of assumptions. Constantly reprioritize the assumptions.
 
-2.	Run frequent and additive experiments to test assumptions. This includes systematically observing users’ behavioral responses to stimuli such as features. Constantly reprioritize the assumptions. If an experiment does not deliver the expected result, do not test another option at random. Carefully choose what to test next.
+2.	Run frequent and additive experiments to test assumptions. This includes systematically observing users’ behavioral responses to stimuli such as features. An example for a hypothesis is “The new posting feature will increase sign ups of new users by 5% in two weeks“. If an experiment does not deliver the expected result, do not test another option at random. Carefully choose what to test next.
 
 3.	Use results from experiments to iteratively modify your product roadmap. This might lead to an improvement of a product or a significant change of the strategy. It might also mean that you need to stop the project.
 
-Success cases from companies such as Etsy, Amazon, and Supercell show that such an experimental approach helps companies to gain competitive advantage by reducing uncertainties and rapidly finding product roadmaps that work. However, experimentation is hard.
+Success cases from companies such as Etsy, Amazon, and Supercell show that an hypothesis-driven development approach helps companies to gain competitive advantage by reducing uncertainties and rapidly finding product roadmaps that work. However, experimentation is hard.
 
 ## How do we Find Good Hypotheses and Conduct the Right Experiments?
 
 Customers and users are a questionable source for novel ideas. What they say often does not match what they will do. Consider the wish of users for privacy and the way they use Facebook. However, customers often have a good understanding of problems and asking the right questions can help reveal good hypotheses in the problem space. 
 
-Developers are usually good in coming up with solution proposals. They are familiar with technical options for solving a problem and can be a good source for revealing hypotheses in the solution space. Creating a “UserDevs” community by intensifying the communication between users and developers promises to be another good source for hypotheses. 
+Developers are usually good at coming up with solution proposals. They are familiar with technical options for solving a problem and can be a good source for revealing hypotheses in the solution space. Creating a “UserDevs” community by intensifying the communication between users and developers promises to be another good source for hypotheses. 
 
 A further source for identifying hypothesis is usage data. It can be used to gain insights and new ideas on what to develop if the right data is collected and appropriately analyzed. Further hypotheses to test, often hidden and not directly visible, can be found in the respective business models.
 
@@ -61,6 +61,8 @@ Overall, continuous experimentation requires a deep integration of testing criti
 *	Success in highly dynamic application domains traces back to disciplined experimentation.
 *	Defining and running the right experiments is hard.
 *	Experimentation must be deeply integrated in the design and product development process.
+* Platforms for experimentation can be seen as a core part of future development environments.
+* Data Scientists can play a critical role by supporting the planning and execution of experiments as well as by ensuring their quality.
  
 ## References
 
@@ -68,8 +70,10 @@ Eveliina Lindgren, Jürgen Münch. [Software Development as an Experiment System
 
 Fabian Fagerholm, Alejandro Sanchez Guinea, Hanna Mäenpää, Jürgen Münch. [Building Blocks for Continuous Experimentation](https://www.researchgate.net/publication/260323113_Building_Blocks_for_Continuous_Experimentation?ev=prf_pub). In Proceedings of the 1st International Workshop on Rapid Continuous Software Engineering (RCoSE 2014), Hyderabad, India, pages 26-35, June 2014.
 
-Holmström Olsson, H. and Bosch, J. [From Opinions to Data-Driven Software R&D: A Multi-case Study on How to Close the 'Open Loop' Problem](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6928783&url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel7%2F6921520%2F6928770%2F06928783.pdf%3Farnumber%3D6928783). 40th Euromicro Conference on Software Engineering and Advanced Applications, pp. 9-16, 2014.
+Ash Maurya. [Running Lean](http://www.amazon.com/Running-Lean-Iterate-Plan-Works/dp/1449305172/ref=sr_1_1?ie=UTF8&qid=1452807941&sr=8-1&keywords=running+lean). O'Reilly, 2012.
 
-Ries, Eric. [The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses.](http://theleanstartup.com) Crown Publishing, 2011
+Helena Holmström Olsson, Jan Bosch, [From Opinions to Data-Driven Software R&D: A Multi-case Study on How to Close the 'Open Loop' Problem](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6928783&url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel7%2F6921520%2F6928770%2F06928783.pdf%3Farnumber%3D6928783). 40th Euromicro Conference on Software Engineering and Advanced Applications, pp. 9-16, 2014.
 
-Kohavi, Ron, Crook, Thomas and Longbotham, Roger. [Online Experimentation at Microsoft](http://www.exp-platform.com/Pages/expMicrosoft.aspx). Third Workshop on Data Mining Case Studies and Practice Prize. 2009.
+Eric Ries. [The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses.](http://theleanstartup.com) Crown Publishing, 2011
+
+Scott Anthony, David Duncan, and Pontus M.A. Siren. [The 6 Most Common Innovation Mistakes Companies Make](https://hbr.org/2015/06/the-6-most-common-innovation-mistakes-companies-make). Harvard Business Review, June, 2015.

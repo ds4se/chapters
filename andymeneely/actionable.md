@@ -18,7 +18,7 @@ An actionable metric is one that inspires us to improve. Consider these metrics 
 
   * Hours spent in the gym
   * Speed of your car in relation to the speed limit
-  * Number of days since last accident
+  * Number of dollars spent on movies
 
 In each of those situations, a specific property is being measured - and that property is something that the person being measured has direct control over. What happens when "Number of hours spent in the gym" decreases? Improving upon that metric is easy: go to the gym!
 
@@ -31,7 +31,9 @@ Now consider these metrics:
 
 A general manager would be unfair to approach his players and say "hit more home runs", or a CIO telling her system administrators: "get hacked less". That's not useful. Everybody wants those metrics to improve, but *how* improvement is to be made is not a directly controllable action for the people involved. The above metrics, rather, are **emergent** properties: they are the result of many good forces cooperating at once.
 
-Consider body temperature as another example. In medicine, a high body temperature is a *symptom* of an illness, not the *cause*. Note that body temperature is still useful as a metric because it indicates problems, but it does not provide direction to doctors on how to treat a patient.
+Consider body temperature as another example. In medicine, a high body temperature is a *symptom* of an illness, not the *cause*. Note that body temperature is still useful as a metric because it indicates problems and can guide treatment, but it does not provide an obvious direction to doctors on how a cure.
+
+The distance between actionable metrics and emergent properties can be a wide chasm. Notice how "Hours spent in the gym" is not necessarily a direct measure of your overall physical fitness: perhaps you get exercise in other ways. Gym attendance metrics in general would be meaningless if you lacked a gym membership to begin with. Thus, actionable metrics are typically tied to a *process* in which they are intended to be used. In software development, a developer who is slow at responding to pull requests could be a large problem, or a small one depending on how pull requests are used. Bridging the gap between actionable metrics and emergent properties is regular part of good project management.
 
 # The Offenders
 
@@ -59,7 +61,7 @@ After seeing the worst, let's take a look at some metrics that are actionable in
 
 Source code management is not just a record of what code changed, it can also be a record of how developers are working together. When two developers make changes to the same source code file, they have a common cause. One useful metric that comes out of this is the "number of different developers who changed this file". The metric typically defined over a period of time, such as one year or the most recent release. Historically, this metric is correlated with later having bugs and vulnerabilities - the more developers who work on a file, the higher the probability of bugs later on.
 
-Number of Developers is actionable because it can indicate organizational problems in your team. If a file has 200 developers committing to a single source code file, then chances are they are not all coordinating with each other to make joint decisions. Unintended effects of many changes at once can plausibly introduce bugs. A high number of developers might also indicate design problems that forces developers to maintain a monolithic file. Build files, for example, might need to be touched by many developers if not properly broken down according to subsystem.
+Number of Developers is important because it can indicate organizational problems in your team. If a file has 200 developers committing to a single source code file, then chances are they are not all coordinating with each other to make joint decisions. Unintended effects of many changes at once can plausibly introduce bugs. A high number of developers might also indicate design problems that forces developers to maintain a monolithic file. Build files, for example, might need to be touched by many developers if not properly broken down according to subsystem.
 
 ## Number of Callees (Coupling) and Number of Parameters
 
@@ -67,10 +69,10 @@ When examining the source code itself, metrics such as "number of method callees
 
 # Cyclomatic Complexity: An Interesting Case
 
-Metrics can be actionable but not empirically useful at the same time. McCabe's cyclomatic complexity is one such metric. Broadly speaking, cyclomatic complexity is derived by counting the number of potential paths through the system (typically at the method level). Originally designed to estimate the number of unit tests a method needs, cyclomatic complexity is built into a lot of metric tools and static analysis tools. Developers can and often do use it to measure their notion of "cognitive" complexity, and use it to target their refactoring efforts. Lower the cyclomatic complexity, and improve the testability of your code. However, many empirical studies have shown that, historically, cyclomatic complexity is strongly correlated with the number of lines of code. In fact, cyclomatic complexity provides no new information in predicting bugs than the size of the method (or file or other unit of measure). Well-designed code will be both more concise and have fewer conditionals. Therefore, in comparison to the easier-to-collect "number of lines of code", cyclomatic complexity provides very little new information: it is actionable, but typically not useful.
+Metrics can be actionable but not empirically useful at the same time. McCabe's cyclomatic complexity is one such metric. Broadly speaking, cyclomatic complexity is derived by counting the number of potential paths through the system (typically at the method level). Originally designed to estimate the number of unit tests a method needs, cyclomatic complexity is built into a lot of metric tools and static analysis tools. Developers can and often do use it to measure their notion of "cognitive" complexity, and use it to target their refactoring efforts. Lower the cyclomatic complexity, and improve the testability of your code. However, many empirical studies have shown that, historically, cyclomatic complexity is strongly correlated with the number of lines of code (Yonghee Shin; Meneely, A.; Williams, L.; Osborne, J.A., "Evaluating Complexity, Code Churn, and Developer Activity Metrics as Indicators of Software Vulnerabilities," in Software Engineering, IEEE Transactions on , vol.37, no.6, pp.772-787, Nov.-Dec. 2011). In fact, cyclomatic complexity provides no new information in predicting bugs than the size of the method (or file or other unit of measure). Well-designed code will be both more concise and have fewer conditionals. Therefore, in comparison to the easier-to-collect "number of lines of code", cyclomatic complexity provides very little new information: it is actionable, but typically not useful.
 
 # Are Unactionble Metrics Useless?
 
 Of course not! Unactionable metrics (aka emergent metrics) can be quite useful in telling us about the symptoms of a problems. Like "number of bugs", we can get an overall assessment of how the product is doing. Emergent metrics are most useful when they are a surprise, for example, when a student's grade comes back lower than expected. We simply cannot rely upon emergent metrics to diagnose the problem for us.
 
-Thus, an **actionable** software development metric is one that measures a property directly under a developer's control. An **emergent** metric is one that aggregates a variety of potential problems into a single measurement without an obvious diagnosis. Actionable metrics tell us how to improve, whereas emergent metrics tell us where we are.
+Thus, an **actionable** software development metric is one that measures a property directly under a developer's control. An **emergent** metric is one that aggregates a variety of potential problems into a single measurement without an obvious diagnosis. Actionable metrics tell us how to improve, whereas emergent metrics tell us where we are. Both are useful in their own right, but our expectations and applications of these metrics must be consistent with the information they provide.

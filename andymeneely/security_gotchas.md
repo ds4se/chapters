@@ -4,19 +4,19 @@ Which of the following is more secure: Windows, Mac OS X, or the White House?
 
 All of them have been broken into. They all have security features. A lot of money has been spent on making them secure (some of that money better spent than others). They also serve different purposes and have different designs. So which is it? Which is more secure? Or is that a fair comparison at all?
 
-In software security assessment, we cannot make empirically-sound statements about the overall security of a product. We can understand various properties of the system that can influence security, but we cannot make absolute claims. In particular, when analyzing security data, we need to be aware of a lot of practical and conceptual concerns. Consider the following "Gotchas".
+In software security assessment, we cannot make empirically-sound statements about the overall security of a product. We can understand various properties of the system that can influence security, but we cannot make absolute claims. In particular, when analyzing security data, we need to be aware of a lot of practical and conceptual concerns. Consider the following inescapable truths ("Gotchas") that one must consider when assessing security empirically.
 
 # Gotcha #1: Security is Negatively Defined
 
 The security of a software system is typically defined as the combination of three properties: Confidentiality, Integrity, and Availability. Confidentiality is the ability for system to keep sensitive information from leaking out. Integrity is the ability of the system to prevent unauthorized tampering of data or functionality. Availability is the ability of the system to continually be accessible to the user.
 
-Each of those properties, however, are defined according to what people should *not* be able to do. An attacker should *not* be able to steal passwords. An attacker should *not* be able execute arbitrary code.
+Each of those properties, however, is defined according to what people should *not* be able to do. An attacker should *not* be able to steal passwords. An attacker should *not* be able execute arbitrary code.
 
 From a requirements engineering point of view, security is considered to be a **constraint** on the entire system that does not trace to any one feature. Instead, security applies to all features.
 
 Security is not alone in being negatively-defined, however. Other negatively-defined non-functional requirements include safety and resilience as they are properties that the system must demonstrate in extreme circumstances.
 
-Furthermore, security is an **emergent** property of software. An emergent property is one that builds upon many properties of the system and can be brought down by a single flaw. Consider pitching a tent in the rain. The "staying dry" property is not a single feature of the tent, it's a combination of many different factors: the tent must be leak-free, deployed properly, the flap closed, and not be placed in a lake. Security must be achieved through a wide variety of means and can be compromised by one problem.
+Furthermore, security is an **emergent** property of software. An emergent property is one that builds upon many cooperating factors and can be brought down by a single flaw. Consider pitching a tent in the rain. The "staying dry" property is not a single feature of the tent, it's a combination of many different factors: the tent must be leak-free, deployed properly, the flap closed, and not be placed in a lake. Security must be achieved through a wide variety of means and can be compromised by one problem.
 
 For all negatively-defined properties, developers cannot simply execute a checklist to maintain those properties. Improving security does not mean “do A, B, and C”, instead it means “nowhere should X, Y, Z or anything like them be allowed”.
 
@@ -24,7 +24,7 @@ For all negatively-defined properties, developers cannot simply execute a checkl
 
 You might be tempted to assume that admitting your precious software product has vulnerabilities is a liability to your everyday business. The company brand is at stake! Why let a few wrong lines of code make such a big deal?
 
-However, companies have matured beyond the non-admitting approach to practice Responsible Disclosure, that is, disclosing the details about a vulnerability after it is has been fixed. Responsible Disclosure has led to a variety of benefits, such as the current cultural shift to the assumption that having vulnerabilities is normal. In fact, the practice of Responsible Disclosure has been a significant driver in modern vulnerability research as developers can learn from each other's mistakes.
+However, companies have matured beyond the non-admitting approach to practice responsible disclosure, that is, disclosing the details about a vulnerability after it is has been fixed. Responsible disclosure has led to a variety of benefits, such as the current cultural shift to the assumption that having vulnerabilities is normal. In fact, the practice of responsible disclosure has been a significant driver in modern vulnerability research as developers can learn from each other's mistakes.
 
 Thus, many products may have only a recent track record of having vulnerabilities. Does that mean they were secure before? No. Nobody was keeping track, and the fact that vulnerabilities are now being cataloged is actually a sign of maturity.
 
@@ -50,6 +50,14 @@ Furthermore, vulnerability records are interesting data sets today for the follo
 
 Vulnerabilities come in all sizes. A small, code-level mistake such as a format string vulnerability can be easily remedied in a single, one-line fix, for example. Lacking the ability to provide audit logs to mitigate repudiation threats, however, is a much bigger problem. Historically, most vulnerabilities reported today tend to be code-level vulnerabilities. Design flaws, security-related or not, are rarely tracked in any consistent way. These design flaws are often disguised as "new releases", "new features", or "refactoring" and are never really factored into vulnerability assessment.
 
+Some code-level vulnerabilities are significantly mitigated in their severity by solid design. Distrustful decomposition is security-inspired design pattern that takes privileged actions and places them in small subsystems that map to small, privileged processes (i.e. executing programs) For example, Apache HTTPD uses distrustful decomposition to have two processes: one very simple process that listens to port 80 and then passes the data off to another, larger process that will do most of the work but with limited operating system privileges. This design decision is protective in nature: any vulnerabilities in the large, complex part of the system (e.g. processing HTTP requests) would not get far into the operating system. Distrustful decomposition requires constant attention to inter-process communication, reducing coupling between the processes, and keeping the privilieged processes simple enough that the lack of vulnerabilities remains obvious.
+
+While using distrustful decomposition gains enormous security benefits in certain situations, the "lack of distrustful decomposition" is not necessarily a design flaw. This issue makes quantifying architectural design decisions nearly impossible.
+
+Sadly, this problem is not unique to security. Most empirical software engineering research studies that quantify some form of "quality" will not delve into design problems because they are simply not tracked as part of software development practice. The definition of what a "single" design flaw actually looks like is much more abstract than what a single "bug" is anyway, so we're not likely to see improvement in this area any time soon.
+
+As a result, we cannot make comprehensive statements about the security of a system based on code-level vulnerabilities alone. Any empirical analysis about the security of a system must have both qualitative and quantitative components.
+
 # Gotcha #5: Hackers Are Innovative Too
 
 We could also state this as "there are always more gotchas". Hackers are very innovative, have tons of time of their hands, and only need to be lucky once. Every day, new types of attacks are being formed, new vulnerabilities are being discovered, and new information is being bought and sold on the dark web.
@@ -57,6 +65,8 @@ We could also state this as "there are always more gotchas". Hackers are very in
 Thus, any measurement or analysis of security that relies on a "bag of tricks" approach is doomed to fail. "Tried SQL injection? Tried cross-site scripting? Then you must be secure." This is a reactive approach that does not take into account future innovation. Hackers start with the well-known vulnerabilities, yes, but security is defined by its lack of failures - including those that have not even been conceived of.
 
 Too often, security assessment (even security research) focuses on preventing attacks that have already happened and focus less on preventing all attacks in the future. Most security measurement tools will fail when placed under microscope of security's most unforgiving question: "how will this protect us from attacks we don't even know of yet?"
+
+Instead, a more mature mindset is one that understand the trade-offs. "If we encrypt this traffic, it would prevent attackers from observing these events." This mentality requires an engineer to understand what security measure they're taking that go beyond the superstitious application of best practices.
 
 # An Unfair Question
 

@@ -1,6 +1,6 @@
 # Avoiding Survey Design Traps: A Successful Process for Sailing Past the Temptations of Persephone's Sirens
 
-![The Sirens: AP Press Image: $210](AP110929152491.jpg)
+![The Sirens: Wikimedia Public Domain Image: $210](https://upload.wikimedia.org/wikipedia/commons/7/72/Ulysses_and_the_Sirens_by_H.J._Draper.jpg)
 
 Authors: Titus Barik and Emerson Murphy-Hill
 
@@ -95,6 +95,11 @@ Our take away is that the survey itself is only a small part of the picture. In 
 * Piloting is a good way to identify breakages early in the design process.
 * What seems reasonable for a designer is not reasonable for the participant. Use language familiar to the participants.
 * Surveys shouldn't be a standalone instrument; use them as a triangulation method and combine them with other techniques, such as interviews. This gives you both the breadth and depth to report your research in a compelling way.
+
+## Acknowledgements
+
+This material is based in part upon work supported by the National Science Foundation under grant
+number 1217700.
 
 ## References
 
