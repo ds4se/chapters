@@ -13,7 +13,7 @@ UC Davis, Davis, CA, 95616
 
 ## Introduction
 
-Of all that we humans do, it is our use of language that most sets us apart.
+Of all that we humans do, it is our use of language that most sets us apart from animals.
 Honed by millions of years of cultural and biological evolution, language is
 a natural, ordinary, even instinctive part of everyday life
 (Pinker, 1994).  However much we authors may labour to
@@ -36,13 +36,13 @@ repetitive, and predictable?  Is code *natural*?
 Surely, not all code is. Turn to any sample code in Knuth's own *Art of
 Computer Programming*, and see just how simple and repetitive it is!  However,
 *that* code is carefully wrought by an expert hand to stand forth as an
-exemplar.  Assuredly, most workaday programmers do not have the time to craft
+exemplar of the programmer's art.  Assuredly, most workaday programmers do not have the time to craft
 such masterpieces. 
 
 So, then, how much software is *natural*, *viz.*, simple, repetitive and
 effortlessly written?  If a lot of "quotidian" code is, indeed, simple and
 repetitive, can we use  statistical methods from natural language processing to
-assist programmers? Can statistical methods help understand and characterize
+assist programmers to develop better code faster? Can statistical methods help understand and characterize
 programmer behaviour? Can these methods be used to build models to help
 beginners avoid and correct common mistakes? Can algorithms automatically
 translate between Java and C\#, as we do from English to French? 
@@ -50,8 +50,8 @@ translate between Java and C\#, as we do from English to French?
 These questions are representative of an entirely new direction of research in
 software engineering: the study and exploitation of the naturalness of
 software, using large, on-line corpora of open-source and other code.  To
-investigate this new area, we first used n-gram models.  These models assign a
-probability to the next token based on the previous $n-1$ tokens.  These models
+investigate this new area, we first used n-gram models (Jones, 1994).  These models assign a
+probability to the next token based on the previous n-1 tokens.  These models
 have a long history in natural language processing. Modern n-gram models have
 sophisticated ways of dealing with issues like data sparsity: *i.e.* some
 words never occur during model training, but are then encountered
@@ -63,12 +63,12 @@ the average negative log of the probability assigned by the model to each token
 in a test corpus. Intuitively, it measures the average *information
 content* of each token in bits. 
 
-Typically, English comes in between 7 and 8 bits using modern n-gram models
+Typically, the cross-entropy of English falls between 7 and 8 bits using modern n-gram models
 over words.  What about code?  Its syntax is simpler than natural
 language, but contains more neologisms and sometimes defines terms quite far
 from their uses.  To our surprise, we found that source code was not only
 repetitive and predictable, but much *more so* than natural language,
-coming in at around 3--4 bits. We remind the reader that this measure
+coming in around 3--4 bits. We remind the reader that this measure
 log-scaled, and thus, code is roughly 8--16 times *more predictable* than
 English! This encouraging finding led us to seek applications. 
 
@@ -120,7 +120,7 @@ moved beyond lexemes to learning phrase-based
 translation (Karaivanov, 2014). 
 
 
-### Studying the "Natural Linguistics" of Code
+### The "Natural Linguistics" of Code
 
 Linguistics has, *inter alia*, two notable aspects: 1) the study of
 language itself and 2) the study of related subjects (*e.g.* psychology,
@@ -154,7 +154,7 @@ over a corpus of code, well-annotated with static analysis facts; and
 then using this translation approach to provide maximum a-posteriori (MAP)
 probability guesses as to  likely semantic properties, given easily detected
 "surface" features.  A recent paper realized this approach,  using
-Conditional Random Fields, for the task of guessing reasonable names and
+Conditional Random Fields, for the task of suggesting reasonable names and
 likely type annotations in Javascript programs (Raychev, 2015).
 
 
@@ -191,15 +191,14 @@ language; it also offers the promise of using new scientific methodologies
 to investigate the human and social aspects of software, drawn from
 approaches in cognitive and social linguistics.  
 
-+ M. Allamanis, E. T. Barr, and C. Sutton. Learning natural coding conventions. arXiv preprint arXiv:1402.4182, 2014.
-+ A.Hindle, E.Barr, M.Gabel, Z.Su, and P.Devanbu. On the Naturalness of Software. In ICSE, pages 837–847. IEEE, 2012.
-+ A. Hindle, E. Barr, M. Gabel, Z. Su, and P. Devanbu. On the Naturalness of Software. [http://macbeth.cs.ucdavis.edu/nature.pdf](http://macbeth.cs.ucdavis.edu/nature.pdf), 2012. [Extended Version, Online; accessed 08-Feb-2015].
++ M. Allamanis, E. T. Barr, and C. Sutton. Learning natural coding conventions. In Proceedings of the Joint Meeting on Foundations of Software Engineering, 2014.
++ A. Hindle, E. Barr, M. Gabel, Z. Su, and P. Devanbu. On the Naturalness of Software. [http://macbeth.cs.ucdavis.edu/natural.pdf](http://macbeth.cs.ucdavis.edu/natural.pdf), 2012. [Extended Version of the work published at the Internation Conference on Software Engineering 2012, Online; accessed 08-Feb-2015].
++ K. Sparck Jones, Natural language processing: a historical review, Current Issues in Computational Linguistics: in Honour of Don Walker (Ed Zampolli, Calzolari and Palmer), Amsterdam: Kluwer, 1994
 + S. Karaivanov, V. Raychev, and M. Vechev. Phrase-based statistical translation of programming languages. In Proceedings of the 2014 ACM International Symposium on New Ideas, New Paradigms, and Reflections on Programming & Software, pages 173–184. ACM, 2014.
 + D. E. Knuth. Literate programming. The Computer Journal, 27(2):97– 111, 1984.
-+ A. T. Nguyen, H. A. Nguyen, T. T. Nguyen, and T. N. Nguyen. Statistical learning approach for mining api usage mappings for code migration. In Proceedings, ASE Conference, pages 457–468. ACM, 2014.
-+ A. T. Nguyen, T. T. Nguyen, and T. N. Nguyen. Lexical statistical machine translation for language migration. In Proceedings, SIGSOFT FSE, pages 651–654. ACM, 2013.
-+ A. T. Nguyen, T. T. Nguyen, and T. N. Nguyen. Migrating code with statistical machine translation. In Companion Proceedings of ICSE, pages 544–547. ACM, 2014.
++ A. T. Nguyen, H. A. Nguyen, T. T. Nguyen, and T. N. Nguyen. Statistical learning approach for mining api usage mappings for code migration. In Proceedings of the Conference on Automated Software Engineering, pages 457–468. ACM, 2014.
++ A. T. Nguyen, T. T. Nguyen, and T. N. Nguyen. Lexical statistical machine translation for language migration. In Proceedings of the Joint Meeting on Foundations of Software Engineering, pages 651–654. ACM, 2013.
 + S. Pinker. The Language Instinct: The New Science of Language and Mind, volume 7529. Penguin UK, 1994.
-+ V. Raychev, M. Vechev, and A. Krause. Predicting Program Properties from ”Big Code”. In POPL, 2015.
-+ Z. Tu, Z. Su, and P. Devanbu. On the localness of software. In Proceedings SIGSOFT FSE, pages 269–280. ACM, 2014.
-+ S. A. Wills and D. J. MacKay. Dasher-an efficient writing system for brain-computer interfaces? Neural Systems and Rehabilitation Engineering, IEEE Transactions on, 14(2):244–246, 2006.
++ V. Raychev, M. Vechev, and A. Krause. Predicting Program Properties from ”Big Code”. In Proceedings of the Symposium on the Principles of Programming Languages, 2015.
++ Z. Tu, Z. Su, and P. Devanbu. On the localness of software. In Proceedings of the Joint Meeting on Foundations of Software Engineering, pages 269–280. ACM, 2014.
++ S. A. Wills and D. J. MacKay. Dasher-an efficient writing system for brain-computer interfaces? IEEE Transactions on Neural Systems and Rehabilitation Engineering, 14(2):244–246, 2006.
