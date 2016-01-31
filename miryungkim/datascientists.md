@@ -1,4 +1,4 @@
-How Data Scientists can Effectively Impact Organizations
+How Data Scientists can Effectively Impact Organizations: Five Things You need to Know about Data Science in Software Organizations
 ==================================================================
 
 Miryung Kim
@@ -33,7 +33,7 @@ Another strategy that was mentioned in several interviews was to interact closel
 ## Validate and Calibrate Your Data
 The validation of quantitative data through qualitative channels was also mentioned as a criteria to ensure that measurements are meaningful and lead to correct actions. 
 
-"If you could survey everybody every ten minutes, you don’t need telemetry. The most accurate is to ask everybody all the time. The only reason we do telemetry is that (asking people all the time) is slow and by the time you got it, you’re too late. So you can consider telemetry and data an optimization. So what we do typically is 10% are surveyed and we get telemetry. And then we calibrate and infer what the other 90% have said."
+"If you could survey everybody every ten minutes, you don’t need telemetry. The most accurate way to derive insights is to ask everybody all the time. The only reason we do telemetry is that (asking people all the time) is slow and by the time you got it, you’re too late. So you can consider telemetry and data an optimization. So what we do typically is 10% are surveyed and we get telemetry. And then we calibrate and infer what the other 90% have said."
 
 It is important for data scientists to triangulate multiple data resources to increase the confidence in their analysis results. 
 
@@ -49,14 +49,14 @@ A strategy that we noticed in several interviews was the willingness to go the l
 "They accepted (the model) and they understood all the results and they were very excited about it. Then, there’s a phase that comes in where the actual model has to go into production. ... You really need to have somebody who is confident enough to take this from a dev side of things." 
 
 Many stakeholders want to deploy predictive models as a part of the product, so it is important to produce working software that leverages and integrates the predictive models. Producing accurate models that are not integrated or instantiated as new software features is not useful for the stakeholders. This implies that data scientists must be not only scientists who draw new findings but engineers who build systems based on their findings. 
-
-1. M. Kim, T. Zimmermann, R. DeLine, and A. Begel, "The Emerging Role of Data Scientists on Software Development Teams", "Technical Report MSR-TR-2015-30 
+## Referencese
+1. M. Kim, T. Zimmermann, R. DeLine, and A. Begel, "The Emerging Role of Data Scientists on Software Development Teams", Technical Report MSR-TR-2015-30. An extended version of this technical report is accepted to ICSE 2016. 
 
 2. T. H. Davenport and D. Patil, "Data Scientist: The Sexiest Job of the 21st Century," Harvard Business Review, pp. 70-76, October 2012.
 
-3. C. O'Neil and R. Schutt, Doing Data Science: Straight Talk from the Frontline, O'Reilly Media, 2013.
+3. C. O'Neil and R. Schutt, "Doing Data Science: Straight Talk from the Frontline," O'Reilly Media, 2013.
 
-4. J. W. Foreman, Data Smart: Using Data Science to Transform Information into Insight, Wiley, 2013.
+4. J. W. Foreman, "Data Smart: Using Data Science to Transform Information into Insight," Wiley, 2013.
 
-5.  T. May, The New Know: Innovation Powered by Analytics, Wiley, 2009.
+5. T. May, "The New Know: Innovation Powered by Analytics," Wiley, 2009.
 
