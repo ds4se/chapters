@@ -48,7 +48,7 @@ The key to successful survey design, then, is to ensure that the majority of you
 
 How did we know which statements to ask? Our statements came directly from the stories told by participants during our semi-structured interviews. By doing so, we can triangulate stories we heard in the interviews and generalize those experiences quantitatively.
 
-At the same time, your interviewees told you a lot of stories, so you'll have to be selective about what you ask survey participants about. Time permitting, you may also want to refine your interview statements through review of existing literature. If a topic is already well-understood, it's probably not worth wasting the participants' time asking about it. Consider your goals carefully and only ask survey questions that help you reach those goals.
+At the same time, your interviewees told you a lot of stories, so you'll have to be selective about what you ask survey participants about. Time permitting, you may also want to refine your interview statements through a review of existing literature. If a topic is already well-understood, it's probably not worth wasting the participants' time asking about it. Consider your goals carefully and only ask survey questions that help you reach those goals.
 
 ### Stage 4: Survey Piloting
 
