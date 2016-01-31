@@ -18,7 +18,7 @@ But as with Odysseus, these lures are only surface benefits. Our experiences hav
 
 Homer's cautionary story warns us of the perils of early exploration without sufficient preparation. Odysseus succeeded where others before him had failed because of his careful planning.
 
-In contrast with other disciplines that use surveys for _psychometric evaluation_, such as education, our observation is that surveys in software engineering are most frequently used as a way to obtain multiple viewpoints, or to _triangulate_. Surveys are also used to draw inferences about a larger population, or to _generalize_.
+Surveys in software engineering are frequently used as a way to obtain multiple viewpoints, or to _triangulate_. Surveys are also used to draw inferences about a larger population, or to _generalize_.
 
 This six-stage process we present here is tailored for practitioners and researchers who want to better understand how software engineering is practiced in one organization or across many. In developing this process, we have learned from our own mistakes, from the feedback of peers, and from interviews with others who use surveys as an empirical method.  
 
@@ -103,7 +103,6 @@ number 1217700.
 
 ## References
 
-* Barik, T., Everett, M., Cardona-Rivera, R. E., Roberts, D. L., & Gehringer, E. F. (2013, October). A community college blended learning classroom experience through Artificial Intelligence in Games. In Frontiers in Education Conference, 2013 IEEE (pp. 1525-1531). IEEE.
 * Litwin, Mark S. How to assess and interpret survey psychometrics. Vol. 8. Sage, 2003.
 * Murphy-Hill, Emerson, Thomas Zimmermann, and Nachiappan Nagappan. "Cowboys, ankle sprains, and keepers of quality: how is video game development different from software development?." Proceedings of the 36th International Conference on Software Engineering. ACM, 2014.
 * Lutters, W. G., & Seaman, C. B. (2007). Revealing actual documentation usage in software maintenance through war stories. Information and Software Technology, 49(6), 576–587.
