@@ -28,7 +28,7 @@ It's tempting to jump right in and begin writing survey questions, and today's s
 
 One way to mitigate this risk is to create a very short survey and cast a wide net to recruit participants with familiarity on the topic. For example, one survey on data science practices randomly sampled employees and asked them three simple questions: "Do you perform data science activities?"; b) "What's your biggest frustration when performing data science?; and c) "May we follow-up with you?"
 
-Next, follow-up with several of these participants and conduct interviews with them.
+Leave the survey open for at least a week to give participants adequate time to respond to the short survey. As responses come in, you'll want to recruit diverse participants to get a variety of stories from different backgrounds. For example, to learn how professionals in an organization use log and telemetry data, we recruited not only developers, but also project managers, operations engineers, data scientists, and even content developers. Next, follow-up with several of these participants and conduct interviews with them.
 
 ### Stage 2: Interviews
 
