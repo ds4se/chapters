@@ -103,6 +103,7 @@ number 1217700.
 
 ## References
 
+* Barik, T., DeLine, R., Drucker, S., Fisher, D. "The Bones of the System: A Study of Logging and Telemetry at Microsoft." Proceedings of the The 38th International Conference on Software Engineering. ACM, 2016.
 * Litwin, Mark S. How to assess and interpret survey psychometrics. Vol. 8. Sage, 2003.
 * Murphy-Hill, Emerson, Thomas Zimmermann, and Nachiappan Nagappan. "Cowboys, ankle sprains, and keepers of quality: how is video game development different from software development?." Proceedings of the 36th International Conference on Software Engineering. ACM, 2014.
 * Lutters, W. G., & Seaman, C. B. (2007). Revealing actual documentation usage in software maintenance through war stories. Information and Software Technology, 49(6), 576–587.
