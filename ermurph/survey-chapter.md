@@ -96,6 +96,8 @@ Our take away is that the survey itself is only a small part of the picture. In 
 * What seems reasonable for a designer is not reasonable for the participant. Use language familiar to the participants.
 * Surveys shouldn't be a standalone instrument; use them as a triangulation method and combine them with other techniques, such as interviews. This gives you both the breadth and depth to report your findings in a compelling way.
 
+Certainly, surveys aren't always easy to design or deploy. But like the journey of Odysseus and his crew, the voyage is filled with uncharted experiences and undiscovered insights that make the adventure worthwhile.
+
 ## Acknowledgments
 
 This material is based in part upon work supported by the National Science Foundation under grant
