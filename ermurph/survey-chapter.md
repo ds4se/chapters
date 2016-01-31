@@ -48,7 +48,7 @@ The key to successful survey design, then, is to ensure that the majority of you
 
 How did we know which statements to ask? Our statements came directly from the stories told by participants during our semi-structured interviews. By doing so, we can triangulate stories we heard in the interviews and generalize those experiences quantitatively.
 
-At the same time, your interviewees told you a lot of stories, so you'll have to be selective about what you ask survey participants about. Consider your goals carefully and only ask survey questions that help you reach those goals.
+At the same time, your interviewees told you a lot of stories, so you'll have to be selective about what you ask survey participants about. Time permitting, you may also want to refine your interview statements through review of existing literature. If a topic is already well-understood, it's probably not worth wasting the participants' time asking about it. Consider your goals carefully and only ask survey questions that help you reach those goals.
 
 ### Stage 4: Survey Piloting
 
@@ -60,12 +60,12 @@ During piloting, a useful perspective is to test your survey like you’d test s
 
 Here are some observations during piloting:
 
-* Length matters, and you should pay attention to how long it takes to complete the survey. We recommend that the survey not take more than 15 minutes.
+* Length matters, and you should pay attention to how long it takes to complete the survey. Based on our experiences as survey designers, we recommend that the survey not take more than 15 minutes.
 * Cut, cut, cut! This is a good opportunity to identify questions that are redundant, confusingly-worded, or overly difficult. 
 * Identify drop points where participants may give up on the survey.
 * Pay attention to open response questions and don’t expect rich answers. In general, people don’t like typing stuff --- that’s what interviews are for.
 
-Finally, providing a strong _initial recruitment letter_ is perhaps just as important as the survey, but it is often overlooked or done as an afterthought. Be sure to motivate how the participant benefits from the survey. Why should they take it? What do they get out of it? They always want to know, “Why’d you pick me?” 
+Finally, providing a strong _initial recruitment letter_ is perhaps just as important as the survey, but it is often overlooked or done as an afterthought. Participants are busy people, and it's easy for them to ignore your letter if they don't see why it's relevant to them. To improve participate rates, you should respect their time and explain how the participant benefits from the survey. Why should they take it? What do they get out of it? They always want to know, “Why’d you pick me?”
 
 Though Odysseus had only one chance to face the Sirens, piloting offers you multiple opportunities to quickly practice your survey before embarking on the real journey. 
 
@@ -107,4 +107,6 @@ number 1217700.
 * Litwin, Mark S. How to assess and interpret survey psychometrics. Vol. 8. Sage, 2003.
 * Murphy-Hill, Emerson, Thomas Zimmermann, and Nachiappan Nagappan. "Cowboys, ankle sprains, and keepers of quality: how is video game development different from software development?." Proceedings of the 36th International Conference on Software Engineering. ACM, 2014.
 * Lutters, W. G., & Seaman, C. B. (2007). Revealing actual documentation usage in software maintenance through war stories. Information and Software Technology, 49(6), 576–587.
+* Smith, E., Loftin, R., Murphy-Hill, E., Bird, C., & Zimmermann, T. (2013, May). Improving developer participation rates in surveys. In Cooperative and Human Aspects of Software Engineering (CHASE), 2013 6th International Workshop on (pp. 89-92). IEEE.
+* Strauss, Anselm, and Juliet Corbin. "Grounded theory methodology." Handbook of qualitative research (1994): 273-285.
 * Witschey, J., Zielinska, O., Welk, A., Murphy-Hill, E., Mayhorn, C., & Zimmermann, T. (2015, August). Quantifying Developers’ Adoption of Security Tools. In ESEC/FSE (Vol. 15).
