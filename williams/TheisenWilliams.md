@@ -3,9 +3,8 @@
 _Christopher Theisen and Laurie Williams_  
 _North Carolina State University_
 
-Researchers have begun mining data from stack traces
-of software crashes for a variety of fault
-localization purposes. Stack traces in the context
+Stack traces from software crashes have been used for 
+a variety of fault localization purposes. Stack traces in the context
 of software crashes are a record of the active stack
 frames, or code, active during the time period of
 the crash. Liblit and Aiken [1] use stack traces
@@ -31,7 +30,7 @@ often a function appears in crashes, the more likely
 a fault exists in that function. Stack traces were also 
 used in the development of StackMine [3], a tool that uses stack traces
 to help software development teams discover software performance bugs
-in use at Microsoft.
+in use at Microsoft. Industry professionals also recognize the importance of using stack traces; Windows Error Reporting (WER) has been in use at Microsoft for years [4], and uses the scale of Microsoft's crash reporting data to identify and fix bugs that would otherwise be missed.
 
 
 ## Another use of stack traces?
@@ -52,7 +51,7 @@ confusion. To combat that effect, security
 professionals have developed the concept of an
 attack surface.
 
-Ok, so what is the attack surface? OWASP defines it
+Ok, so what is the attack surface? The Open Web Security Project defines it
 as the paths in and out of a system, the data that
 travels those paths, and the code that protects
 both. In short; if a someone or something outside
@@ -100,7 +99,7 @@ Figure 2:  Making some sense of the tangled web, color files that appear in stac
 
 Researchers at North Carolina State University and
 Microsoft Research have developed a technique called
-_Attack Surface Approximation_ [4]. In this approach,
+_Attack Surface Approximation_ [5]. In this approach,
 the attack surface of a system is determined by
 looking at stack traces from crash dumps from the
 target system. The crash dump stack traces are
@@ -111,7 +110,7 @@ files or functions. Any code element that is seen on
 at least one stack trace is considered to be on the
 attack surface of the system, as determined by this
 approach. Put another way, we color nodes from our
-original graph red if they are seen in at least one
+original graph in Figure 2 red if they are seen in at least one
 stack trace, as seen in the figure
 above. Researchers also explored other metrics, such
 as the frequency of appearance of code elements, how
@@ -131,7 +130,7 @@ getting 95% of the vulnerabilities. Attack surface
 approximation has also been performed on Mozilla
 Firefox, with 8.4% of files appearing in at least
 one stack trace. 72.1% of vulnerabilities occurred
-in the files placed on the attack surface [5].
+in the files placed on the attack surface [6].
 
 One of the advantages of this approach is its
 simplicity. If your software system outputs any sort
@@ -157,12 +156,13 @@ efforts. Another advantage of the approach is its scalability. Attack Surface Ap
    International Symposium on Software Testing and
    Analysis, 2014.
 3. S. Han, Y. Dang, S. Ge, D. Zhang, and T. Xie "Performance debugging in the large via mining millions of stack traces." In Proceedings of the 34th International Conference on Software Engineering, pp. 145-155. 2012.
-4. C. Theisen, K. Herzig, P. Morrison, B. Murphy,
+4. K. Glerum, K. Kinshumann, S. Greenberg, G. Aul, V. Orgovan, G. Nichols, D. Grant, G. Loihle, and G. Hunt "Debugging in the (very) large: ten years of implementation and experience." In Proceedings of the ACM SIGOPS 22nd symposium on Operating systems principles pp. 103-116. 2009.
+5. C. Theisen, K. Herzig, P. Morrison, B. Murphy,
    and L. Williams, “Approximating Attack Surfaces
    with Stack Traces”, in Companion Proceedings of
    37th International Conference on Software
    Engineering, 2015.
-5. C. Theisen, R. Krishna, and L. Williams,
+6. C. Theisen, R. Krishna, and L. Williams,
    “Strengthening the Evidence that Attack Surfaces
    can be Approximated with Stack Traces”, NCSU
    Technical Report
