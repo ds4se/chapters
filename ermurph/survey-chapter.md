@@ -1,40 +1,38 @@
-# Avoiding Survey Design Traps: A Successful Process for Sailing Past the Temptations of Persephone's Sirens
+# A Process for Surviving Survey Design and Sailing Through Survey Deployment
 
 ![The Sirens: Wikimedia Public Domain Image: $210](https://upload.wikimedia.org/wikipedia/commons/7/72/Ulysses_and_the_Sirens_by_H.J._Draper.jpg)
 
 Authors: Titus Barik and Emerson Murphy-Hill
 
-In the legendary tale of Homer's Odyssey, the honored Odysseus and his crew must confront Persephone's [Sirens](http://www.greekmythology.com/Myths/Creatures/Sirens/sirens.html) --- dangerous yet alluring sea nymphs. As the story goes, these creatures possessed irresistible charm and fatal, lyrical voices which enchanted all who heard it. Spellbound, nearby crews would be lured to their gruesome deaths as they plunged themselves into the sea. Still, adventurers risked the journey for the promise of knowledge, for through the Sirens' song, "[o]ver all the generous earth [the adventurers] know everything that happens."
+In the Odyssey, Odysseus and his crew must confront Persephone's [Sirens](http://www.greekmythology.com/Myths/Creatures/Sirens/sirens.html), creatures that sang in irresistible voices and lured sailors to their deaths. Still, adventurers risked the journey for the promise of knowledge, for through the Sirens' song, "[o]ver all the generous earth [the adventurers] know everything that happens." With guidance from Circe, the goddess of magic, Odysseus instructed his crew to plug their ears to deafen them from the song. He then had his crew tie him to the mast and commanded them not to release him under any circumstances. And so Odysseus and his crew navigated safely past the Sirens. Odysseus, having heard the Sirens' song, sailed away a wiser man.
 
-Where all others had failed, Odysseus became the first mortal to live to gain this knowledge. How did he do it? Through guidance from Circe, the goddess of magic, Odysseus instructed his crew to plug their ears with molded wax to deafen them from the song. He then had his crew tie him to the mast and commanded them not to release him under any circumstances. And so Odysseus and fellow crew navigated past the Sirens. Odysseus, having heard the Sirens' songs, sailed away a wiser man.
-
-Surveys, as with Persephone's Sirens, are an attractive instrument for empirical research and offer a similar lure of knowledge. Like Circe, we offer guidance, grounded in our own experiences, on a successful process for conducting survey research in software engineering.
+Surveys, as with Persephone's Sirens, are an attractive instrument that offer a similar lure of knowledge. Like Circe, we offer guidance, grounded in our own experiences, on a successful process for understanding the practice of software engineering through surveys.
 
 ## The Lure of the Sirens: The Attraction of Surveys
 
-Surveys are an attractive option for several reasons. The first reason is easy scalability. After an initial sunk cost to develop the survey, our perception is that can we simply scale up by sending the survey to more participants. The second reason is that surveys are easy to deploy. Today, the preferred format is predominately electronic survey distribution, not print, and many user-friendly, online services exist to help researchers design and deploy surveys. A final reason is that surveys give us a certain sense of quantitative comfort because the survey responses can be downloaded into a spreadsheet or other statistical analysis software. A popular form of question-style, _Likert_ statements (Strongly Disagree to Strongly Agree), can then be quantitatively analyzed through various descriptive and statistical techniques that are already familiar to us.
+Surveys are an attractive option for several reasons. The first reason is easy scalability. After an initial sunk cost to develop the survey, our perception is that can we simply scale up by sending the survey to more participants. The second reason is that surveys are easy to deploy. Today, the preferred format is predominately electronic survey distribution, not print, and many user-friendly, online services exist to help practitioners and researchers design and deploy surveys. A final reason is that surveys give us a certain sense of quantitative comfort because the survey responses can be downloaded into a spreadsheet or other statistical analysis software. A popular form of question-style, _Likert_ statements (Strongly Disagree to Strongly Agree), can then be quantitatively analyzed through various descriptive and statistical techniques that are already familiar to us.
 
 But as with Odysseus, these lures are only surface benefits. Our experiences have taught us the harsh lesson that, without caution, lurking beneath the waters are several traps that lead to shipwreck. Let's figure out how to avoid that fate.
 
-## Navigating the Open Seas: A Successful Survey Process in Software Engineering Research
+## Navigating the Open Seas: A Successful Survey Process in Software Engineering
 
 Homer's cautionary story warns us of the perils of early exploration without sufficient preparation. Odysseus succeeded where others before him had failed because of his careful planning.
 
-In contrast with other disciplines that use surveys for _psychometric evaluation_, such as education, our observation is that surveys in software engineering are most frequently used as a way to obtain multiple viewpoints, or to _triangulate_. Surveys are also used to draw inferences about a larger population, or to _generalize_.
+Surveys in software engineering are frequently used as a way to obtain multiple viewpoints, or to _triangulate_. Surveys are also used to draw inferences about a larger population, or to _generalize_.
 
-This six-stage process we present here is tailored for software engineering researchers and addresses many of the concerns for a community that is predominantly quantitative. In developing this process, we have learned from our own mistakes, from the feedback of reviewers, and from interviews with other researchers who use surveys as an empirical method.  
+This six-stage process we present here is tailored for practitioners and researchers who want to better understand how software engineering is practiced in one organization or across many. In developing this process, we have learned from our own mistakes, from the feedback of peers, and from interviews with others who use surveys as an empirical method.  
 
 ### Stage 1: Initial Recruitment
 
-It's tempting to jump right in and begin writing survey questions, and today's software packages almost entice you to do so. But as we learned with the Sirens, adventurers who dashed off on their journey without appropriate preparation ultimately met a bitter end. To avoid this fate, it's essential to first consider the questions you want to ask and how you intend to use the answers to the questions. This is not simply a matter of taking your research questions and translating them into survey question form. We've found, for example, that the phrasing of the question itself is highly contextually sensitive and that practitioners often do not have the same interpretation of a topic as the researcher.
+It's tempting to jump right in and begin writing survey questions, and today's software packages almost entice you to do so. But as we learned with the Sirens, adventurers who dashed off on their journey without appropriate preparation ultimately met with tragedy. Consequently, it's essential to first consider the questions you want to ask and how you intend to use the answers to the questions. This is not simply a matter of taking your intuitions and translating them into survey question form. We've found, for example, that the phrasing of the question itself is highly contextually sensitive and that the survey-takers often do not have the same interpretation of questions as the survey-makers.
 
 One way to mitigate this risk is to create a very short survey and cast a wide net to recruit participants with familiarity on the topic. For example, one survey on data science practices randomly sampled employees and asked them three simple questions: "Do you perform data science activities?"; b) "What's your biggest frustration when performing data science?; and c) "May we follow-up with you?"
 
-Next, follow-up with several of these participants and conduct interviews with them.
+Leave the survey open for at least a week to give participants adequate time to respond to the short survey. As responses come in, you'll want to recruit diverse participants to get a variety of stories from different backgrounds. For example, to learn how professionals in an organization use log and telemetry data, we recruited not only developers, but also project managers, operations engineers, data scientists, and even content developers. Next, follow-up with several of these participants and conduct interviews with them.
 
 ### Stage 2: Interviews
 
-The interview is one process through which the researcher gains information about their topic. We've found a successful approach is to ask participants to share specific stories that relate to a particular topic. Often, participants will tell these in the form of "war stories," which describe challenging situations and how they overcame them.
+The interview is one process through which we can gain information about software engineering. We've found a successful approach is to ask participants to share specific stories that relate to a particular topic. Often, participants will tell these in the form of "war stories," which describe particularly challenging situations and how they overcame them.
 
 Think of these interviews as incredible sources of knowledge. Like the songs of the Sirens, these 30-45 minute interview sessions provide us with rich stories, told directly through the voices of those who experienced them. 
 
@@ -42,7 +40,7 @@ Nonetheless, these isolated anecdotes are difficult to generalize because they a
 
 ### Stage 3: Survey Design
 
-It's now time to design the survey. Just as Odysseus realized early on that he would not be able obtain the Sirens' knowledge through force, a similar principle holds for survey design. Since online surveys are self-administered, be careful about wording. Instead of inventing terms, prefer to use language that you encountered in the interviews conducted earlier. Otherwise, your questions might not connect with the survey participants.
+It's now time to design the survey. Just as Odysseus realized early on that he would not be able obtain the Sirens' knowledge through force, a similar principle holds for survey design. Since online surveys are self-administered,  be careful about wording. Instead of inventing terms, prefer to use language that you encountered in the interviews conducted earlier. Otherwise, your questions might not connect with the survey participants.
 
 There are two broad categories of questions you can ask: closed and open response. Closed response, such as multiple choice or Likert scales, are easy to statistically analyze, but fix the set of possible responses. Open response, such as short answer text fields, can provide new and unexpected insights. However, it's laborious to analyze these unstructured, free-text responses. Our preference is to use open responses sparsely and instead rely on the interview content for these types of questions.
 
@@ -50,22 +48,24 @@ The key to successful survey design, then, is to ensure that the majority of you
 
 How did we know which statements to ask? Our statements came directly from the stories told by participants during our semi-structured interviews. By doing so, we can triangulate stories we heard in the interviews and generalize those experiences quantitatively.
 
+At the same time, your interviewees told you a lot of stories, so you'll have to be selective about what you ask survey participants about. Time permitting, you may also want to refine your interview statements through a review of existing literature. If a topic is already well-understood, it's probably not worth wasting the participants' time asking about it. Consider your goals carefully and only ask survey questions that help you reach those goals.
+
 ### Stage 4: Survey Piloting
 
 Don't count on your initial survey design to be perfect. In an extreme case, a collaborator spent nearly a year in preparation while his team argued about question wording. By the time they "finished," the survey had become obsolete and ultimately proved to be useless.  
 
-Instead, consider a more agile approach by _piloting_ the survey: ask a few friends to take the survey  and then analyze the results the way you normally would. With as few as five participants, you can often catch the most egregious mistakes.
+Instead, consider a more agile approach by _piloting_ the survey: ask a few friends to take the survey and then analyze the results the way you normally would. With as few as five participants, you can often catch the most egregious mistakes. Piloting with people who are representative of your target population will help you find more mistakes.
 
 During piloting, a useful perspective is to test your survey like you’d test software. Survey bugs can appear in the most unlikely of places. For example, one "bug" we found through this process was in our consent form. A participant could choose "I don’t consent to participate," but still fill out the survey! This would have been disastrous, because we wouldn't know who consented and who didn’t. We'd have to throw out all the data.
 
 Here are some observations during piloting:
 
-* Length matters, and you should pay attention to how long it takes to complete the survey. We recommend that the survey not take more than 15 minutes.
+* Length matters, and you should pay attention to how long it takes to complete the survey. Based on our experiences as survey designers, we recommend that the survey not take more than 15 minutes.
 * Cut, cut, cut! This is a good opportunity to identify questions that are redundant, confusingly-worded, or overly difficult. 
 * Identify drop points where participants may give up on the survey.
 * Pay attention to open response questions and don’t expect rich answers. In general, people don’t like typing stuff --- that’s what interviews are for.
 
-Finally, providing a strong _initial recruitment letter_ is perhaps just as important as the survey, but it is often overlooked or done as an afterthought. Be sure to motivate how the participant benefits from the survey. Why should they take it? What do they get out of it? They always wants to know, “Why’d you pick me?” 
+Finally, providing a strong _initial recruitment letter_ is perhaps just as important as the survey, but it is often overlooked or done as an afterthought. Participants are busy people, and it's easy for them to ignore your letter if they don't see why it's relevant to them. To improve participate rates, you should respect their time and explain how the participant benefits from the survey. Why should they take it? What do they get out of it? They always want to know, “Why’d you pick me?”
 
 Though Odysseus had only one chance to face the Sirens, piloting offers you multiple opportunities to quickly practice your survey before embarking on the real journey. 
 
@@ -94,17 +94,21 @@ Our take away is that the survey itself is only a small part of the picture. In 
 * Pay special attention to ensure that the participants' time and effort is respected. 
 * Piloting is a good way to identify breakages early in the design process.
 * What seems reasonable for a designer is not reasonable for the participant. Use language familiar to the participants.
-* Surveys shouldn't be a standalone instrument; use them as a triangulation method and combine them with other techniques, such as interviews. This gives you both the breadth and depth to report your research in a compelling way.
+* Surveys shouldn't be a standalone instrument; use them as a triangulation method and combine them with other techniques, such as interviews. This gives you both the breadth and depth to report your findings in a compelling way.
 
-## Acknowledgements
+Certainly, surveys aren't always easy to design or deploy. But like the journey of Odysseus and his crew, the voyage is filled with uncharted experiences and undiscovered insights that make the adventure worthwhile.
+
+## Acknowledgments
 
 This material is based in part upon work supported by the National Science Foundation under grant
 number 1217700.
 
 ## References
 
-* Barik, T., Everett, M., Cardona-Rivera, R. E., Roberts, D. L., & Gehringer, E. F. (2013, October). A community college blended learning classroom experience through Artificial Intelligence in Games. In Frontiers in Education Conference, 2013 IEEE (pp. 1525-1531). IEEE.
+* Barik, T., DeLine, R., Drucker, S., Fisher, D. "The Bones of the System: A Study of Logging and Telemetry at Microsoft." Proceedings of the The 38th International Conference on Software Engineering. ACM, 2016.
 * Litwin, Mark S. How to assess and interpret survey psychometrics. Vol. 8. Sage, 2003.
 * Murphy-Hill, Emerson, Thomas Zimmermann, and Nachiappan Nagappan. "Cowboys, ankle sprains, and keepers of quality: how is video game development different from software development?." Proceedings of the 36th International Conference on Software Engineering. ACM, 2014.
 * Lutters, W. G., & Seaman, C. B. (2007). Revealing actual documentation usage in software maintenance through war stories. Information and Software Technology, 49(6), 576–587.
+* Smith, E., Loftin, R., Murphy-Hill, E., Bird, C., & Zimmermann, T. (2013, May). Improving developer participation rates in surveys. In Cooperative and Human Aspects of Software Engineering (CHASE), 2013 6th International Workshop on (pp. 89-92). IEEE.
+* Strauss, Anselm, and Juliet Corbin. "Grounded theory methodology." Handbook of qualitative research (1994): 273-285.
 * Witschey, J., Zielinska, O., Welk, A., Murphy-Hill, E., Mayhorn, C., & Zimmermann, T. (2015, August). Quantifying Developers’ Adoption of Security Tools. In ESEC/FSE (Vol. 15).
