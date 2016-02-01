@@ -68,16 +68,20 @@ The study examined how software architecture visualisation techniques were emplo
 
 
 **Research Questions:** There were five main questions. A good example is RQ5: “Which are the architecture visualisation techniques mostly used in industry?”. This  is a typical ‘mapping study’ question, giving limited scope for synthesis. 
+
 **Period Covered by searches:** February 1999—July 2011. 
+
 **Searching:** Manual + Electronic (see below).
+
 **Electronic Search String:** (architecture OR architectural OR architecting OR structure) AND (visual OR visualize OR visualization OR visualizing OR diagram OR picture OR graphic OR graphical).
+
 **Number of studies used for analysis:** 53 
 
 Manual searching involved looking through the index pages of over 30 journals and conferences, while the electronic search, using seven search engines, found a  further 2,887 publications. From the initial inclusion/exclusion step based on looking  at titles and keywords they retained 300 as ‘possibles’. Looking at the abstracts of  these reduced this number to 89, but checking the references used in this set (this is  termed ‘snowballing’) identified another 14 papers not found by the searches. After  reading the 103 papers in full, they selected the final set of 53 that were used for the  analysis. 
 
 This study used a particularly thorough approach to searching, and we should note that many studies employ electronic searching alone, or use just a modest amount of manual searching to check the reliability of the search strings. 
 
-###Reference 
+###Sidebar Reference 
 Shahin, M., Liang, P. & Babar, M. A. (2014), ‘A systematic review of software 
 architecture visualization techniques’, Journal of Systems & Software 94, 161–185. 
 
