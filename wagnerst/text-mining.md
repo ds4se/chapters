@@ -37,7 +37,7 @@ Natural language data is omnipresent in software projects and contains rich info
 
 ## References
 + Antonio Vetrò, Samahil Ognawala, Daniel Méndez Fernández, Stefan Wagner. Fast feedback cycles in empirical software engineering research. In *Proc. 37th International Conference on Software Engineering (ICSE’15)*. IEEE, 2015.
-+ Stefan Wagner, Daniel Méndez Fernández. Analysing Text in Software Projects. In In Christian Bird, Tim Menzies, and Thomas Zimmermann (Eds.), *Art and Science of Analysing Software Data*. Elsevier, 2015.
++ Stefan Wagner, Daniel Méndez Fernández. Analysing Text in Software Projects. In Christian Bird, Tim Menzies, and Thomas Zimmermann (Eds.), *Art and Science of Analysing Software Data*. Elsevier, 2015.
 + Patrick H. Strobel. *Automatische Zusammenfassung von Quellcode-Kommentaren*. MSc Thesis. University of Stuttgart, 2015.
 + Chris Manning, Prabhakar Raghavan, Hinrich Schütze. *Introduction to Information Retrieval*. Cambridge University Press, 2008.
 + Elmar Juergens, Florian Deissenboeck, Martin Feilkas, Benjamin Hummel, Bernhard Schätz, Stefan Wagner, Christoph Domann, Jonathan Streit. Can Clone Detection Support Quality Assessment of Requirements Specifications? In *Proc. 32nd International Conference on Software Engineering (ICSE’10)*. ACM, 2010.
