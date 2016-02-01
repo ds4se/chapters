@@ -5,16 +5,15 @@ Gail C. Murphy, University of British Columbia, Canada
 ## A Parable: The Blind Woman and an Elephant
 
 Imagine a group of blind women are asked to describe what an elephant
-looks like by touching different parts of the elephant [1]. One blind woman
-touches the trunk and says it is like a tree branch. Another blind woman
-touches the leg and says it is like a column. 
-The third and fourth blind women touch the ear and tail, saying the elephant is like a
-fan and a rope respectively.
+looks like by touching different parts of the elephant [1]. One blind
+woman touches the trunk and says it is like a tree branch. Another
+blind woman touches the leg and says it is like a column.  The third
+and fourth blind women touch the ear and tail, saying the elephant is
+like a fan and a rope respectively.
 
 Each of these women belives she is right, and, from her own
-perspetive, each is right.
-But, each decision is being made on only partial data 
-and tells only part of the entire story. 
+perspetive, each is right.  But, each decision is being made on only
+partial data and tells only part of the entire story.
 
 ## Misinterpreting Pheonmenon in Software Engineering
 
@@ -31,7 +30,10 @@ using as a means of improving the developer's productivity (e.g.,
 To investigate this phenomenon, we decide to monitor each and every
 command the developer executes as she works. As part of the logged
 information, we capture the time at which the command was executed,
-the command itself, and how the command was invoked. We then deploy
+the command itself, and how the command was invoked. 
+We try out the monitoring tool with those close to us and
+the data all seems to make sense.
+We then deploy
 a monitoring tool and start gathering the information from as many
 developers as we can convince to install the monitor.
 
