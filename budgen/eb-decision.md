@@ -15,7 +15,7 @@ Why is this so? Well, experimental studies (trials) in these subjects make exten
 
 This variation is often illustrated by the use of box plots for reporting the outcomes from a study that involves humans. A box plot ‘groups’ the results in quartiles, eachcontaining 25% of the values and then plots these to show how the data is distributed. The range covered by the middle 50% of values is shown as a ‘box’, and the outer ‘quartiles’ as long lines. Within the box, a line indicates the value of the  median (the middle value). Figure 1 shows a simple example, where the vertical axis measures the outcome variable (in this case time) and there are separate plots for the results obtained with and without the ‘intervention’ being studied. (The width of the boxes is arbitrary.) 
 
-![alt text](https://github.com/ds4se/chapters/blob/master/budgen/Fig1-Boxplot.pdf)
+![Figure 1](https://github.com/ds4se/chapters/blob/master/budgen/Fig1-Boxplot.pdf)
 
 As we can see, the participants allocated to the group who were using theintervention (a software tool) mostly took a shorter time to perform their task than those in the ‘control’ group, although a few did take longer. So the box plot showing  the time taken when using the tool has a wider spread of values, and is also rather skewed. 
 
