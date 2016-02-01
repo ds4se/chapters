@@ -1,16 +1,19 @@
-# Open from the beginning
+# Open from the Beginning
 _by Georgios Gousios, Radboud University Nijmegen, the Netherlands_
+
+_The problem in this business isn't to keep people from stealing your ideas; it is
+making them steal your ideas_ --- [Howard H. Aiken](https://en.wikipedia.org/wiki/Howard_H._Aiken)
 
 In research, we are obsessed with open access. We take extra steps to make our
 papers available to the public, we spend extra time for producing pre-prints,
 technical reports and blog posts to make our research accessible and we lobby
-non-collaborating publishers to play along. We do not show the same jealousy
+non-collaborating publishers to play along. We are not so zealous
 with the artifacts that comprise our research; source code, data and
 documentation are treated as second class citizens that nobody i) publishes ii)
 wants to have a look at.
 
-I believe this is a grave mistake and leads to missed opportunities of making
-our research even more widespread.
+I believe this is a grave mistake and leads to missed opportunities of
+increasing the impact of our research.
 
 But why is open access to all research artifacts important for software data
 scientists? Let me tell you two stories.
@@ -18,9 +21,9 @@ scientists? Let me tell you two stories.
 ### Alitheia Core
 
 My involvement with empirical software engineering started in 2005. My
-PhD supervisor, wanted to create a plot of the Maintainability Index metric for
-the whole lifetime of the FreeBSD project to include in his book.  The initial
-version was a hacky Shell and Perl script solution, similar to what most
+PhD supervisor wanted to create a plot of the Maintainability Index metric for
+the whole lifetime of the FreeBSD project to include in his book. The initial
+version was a hacky shell and Perl script solution, similar to what most
 repository miners come up with. After creating the plot, he though that it would
 be interesting if we had a tool to analyze the lifetime of projects based on
 repository mining and combine metrics at will. This gave birth to the Alitheia
@@ -28,15 +31,18 @@ Core project, where a joint group of about 15 engineers and researchers set
 to write a software analysis platform that would allow anyone to submit a
 project repository for analysis.
 
-What we came up with was a rather sophisticated repository mining tool that
-comprised of analysis plug-ins and offered a wealth of services, such as
-parsers, automatic parallelization and even cluster operation. It also
-featured no less than 2 web interfaces and an Eclipse plug-in. When it was
-announced, in mid-2008, it was probably the most technologically advanced
-repository mining tool. Along with Alitheia Core, we also delivered a curated
-dataset of about 750 OSS repositories, including some of the biggest available
-at the time. _After the end of the project_, we offered all source code and
-datasets to the software analytics community.
+What we came up with was a rather sophisticated repository mining tool,
+[Alitheia Core](http://github.com/istlab/Alitheia-Core), that comprised of
+analysis plug-ins and offered a wealth of services, such as parsers, automatic
+parallelization and even cluster operation.  Alitheia Core was built in Java,
+using the latest and greatest technologies of the time, e.g. Object-Relational
+Mapping (ORM) for database access and REST for its web APIs. It also featured no
+less than 2 web interfaces and an Eclipse plug-in. When it was announced, in
+mid-2008, it was probably the most technologically advanced repository mining
+tool. Along with Alitheia Core, we also delivered a curated dataset of about 750
+OSS repositories, including some of the biggest available at the time. _After
+the end of the project_, we offered all source code and datasets to the software
+analytics community.
 
 In numbers, the project looked like a resounding success; around 20 papers were
 published, 4 PhD students have written a dissertation based on it and more
@@ -54,40 +60,46 @@ made available version 2 of their API and I though that this was my chance to
 finally teach myself some Ruby and distributed systems programming. I went ahead
 to write scripts that monitored GitHub's event timeline and parsed them into two
 databases, MySQL and MongoDB. The whole process of monitoring the event timeline
-and parsing was decoupled through a queue server, and thus we could have multiple
-monitors and parsers working on a cluster. The scripts where released as OSS
-software on GitHub on Nov 2011, while data dumps of both databases where offered
-through BitTorrent. This marked the birth of the GHTorrent project.
+and parsing was decoupled through a queue server, and thus we could have
+multiple monitors and parsers working on a cluster. While all these might sound
+interesting from an architectural viewpoint, the initial implementation was
+rather uninteresting, technology wise; just a couple of scripts that in a loop
+would poll a queue and then update two databases by recursively retrieving
+information from the web. The scripts where released as OSS software on GitHub
+on Nov 2011, while data dumps of both databases where offered through
+BitTorrent. This marked the birth of the [GHTorrent](http://ghtorrent.org)
+project.
 
 A paper describing the approach and initial implementation was sent to the 2012
 Mining Software Repositories conference, but failed to impress the reviewers
 much: "The work is messy and often confuses the reader in terms of what have
-they done and how they have done." one reviewer wrote. "The experiment seems
-foley, results somewhat lacking" another reviewer added. The paper included some
-slightly embarrassing plots as well, e.g. featuring holes in the data collection
-process, due to "a bug in the event mirroring script, which manifested in both
-event retrieval nodes". Nevertheless, the paper was accepted.
+they done and how they have done [sic]" one reviewer wrote. "The experiment
+seems foley, results somewhat lacking [sic]" another reviewer added. The paper
+included some slightly embarrassing plots as well, e.g. featuring holes in the
+data collection process, due to "a bug in the event mirroring script, which
+manifested in both event retrieval nodes". Nevertheless, the paper was accepted.
 
 Shortly after the conference, something incredible happened; I witnessed a
 client connecting to our Bittorrent server. Not only did it connect, it also
 downloaded the full data dump of the MySQL dataset! This marked the first
 external user of GHTorrent, merely days after the end of the conference where we
 presented it. The paper that resulted from this download was published in early
-2013, before even my second GHTorrent paper. This motivated me to take GHTorrent more
-seriously; I worked together with initial users to fix any issues they had and I
-was prompt in answering their questions. On the technical side, we (students,
-the community and me) implemented services to access an almost live version of
-both databases, a dataset slicer and various interactive analyses and
+2013, before even my second GHTorrent paper. This motivated me to take GHTorrent
+more seriously; I worked together with initial users to fix any issues they had
+and I was prompt in answering their questions. On the technical side, we
+(students, the community and me) implemented services to access an almost live
+version of both databases, a dataset slicer and various interactive analyses and
 visualizations.
 
-Since its public availability, GHTorrent grew a lot: As of this writing (July
-2015), it hosts more than 9.5TB of data. Vasilescu's paper marked the beginning
-of high speed (by academic standards) uptake of GHTorrent: more that 50 papers
-where written using it, while at least 100 users have registered to the online
+Since its public availability, GHTorrent grew a lot: As of this writing (January
+2016), it hosts more than 9.5TB of data. Vasilescu's paper marked the beginning
+of high speed (by academic standards) uptake of GHTorrent: more that 60 papers
+where written using it, while at least 130 users have registered to the online
 query facilities. GitHub themselves proposed GHTorrent as a potential dataset
-for their annual data challenge.
+for their third annual data challenge, while Microsoft funded it to run on
+Azure.
 
-## Why the difference?
+## Why the Difference?
 
 The relative indifference that the research community reserved for Alitheia Core
 is in stark contrast with the fast uptake of GHTorrent. But why? Why did the
@@ -126,7 +138,7 @@ feature lists (except perhaps if you are Apple): users, especially tech savvy
 ones, put high value on construction transparency and compatibility to their
 work habits.
 
-## Be open or be irrelevant
+## Be Open or Be Irrelevant
 
 To me, the difference is a clear win of the open source process and its
 application on research. Open access to all research artifacts from the very

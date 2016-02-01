@@ -1,46 +1,36 @@
-# Inductive Software Engineering: What we do **IS** Different
+# Seven Principles of Inductive Software Engineering: What we do IS Different. 
 
 <em>Tim Menzies</em>
 
 
 ## Different and Important
 
-In 2011, while working with 
-Christian Bird, Tom Zimmermann, Wolfram Schulte and Ekrem Kocaganeli, we took a break from our usual schedules
-to reflect some on how induction-for-SE is different to induction in other fields.
-This was an interesting meeting-- especially since, between the five of us, we had decades of
-experience in applying AI and data mining in different industrial context.
-
-The results of that meeting was 
-_The inductive software engineering manifesto: principles for industrial data mining_ [1].
-In that paper,
-we said that _inductive software engineering_ is...
-
-+ ... that branch of software engineering focusing
+ _Inductive software engineering_ is that branch of software engineering focusing
 on the delivery of data mining based software
-applications to users.
-
-That is, our kind of inductive engineer
-spends much effort trying to understand user goals in order to
+applications to users. Within those data miners, the core
+problem is _inductin_ which is the extraction of small patterns from
+larger data sets.
+Inductive engineers
+spend much effort trying to understand user goals in order to
 inductively generate the models that most matter to those user.
-These kinds of 
-industrial practitioners are focused on _users_,
-whereas academic data mining research is focused on _algorithms_.
-
-That whole inductive manifesto is a little long, so here we offer a quick summary.
-
+ 
+Previously, with Christian Bird, Thomas Zimmermann, Wolfram Schulte, and Ekrem Kocaganeli, we wrote an _Inductive Engineering
+Mainfestor_ [1] that offered some details on this new kind of engineering.
+That whole   manifesto is a little long, so here I offer a quick summary. Listed below are seven key principles which, if ignored, can make it harder to deploya analytics
+in the real world. For more details (and more principles),
+ the reader should refer to the original document [1].
 
 ## Principle #1: Users Before Algorithms
 
-Mining algorithms are only good if users fund their use in real-world applications. This means
+Mining algorithms are only good if users find their use in real-world applications. This means
 that they need to
 
 - understand the results
 - understand that those results add value to their work.
 
-Accordingly, we strongly recommend that once the
+Accordingly, it is strongly recommend that once the
 algorithms generate some model, then the inductive
-engineering _talks to the users_ about those
+engineer _talks to the users_ about those
 results.
 
 In our experience, such discussions lead to
@@ -50,7 +40,7 @@ to your users, check the following:
 + Do users bring their senior management to the meetings? If yes, great!
 + Do users keep interrupting (you or each other) and debating your results? If yes, then shut the hell up
   (and take lots notes!)
-+ Do the users indicates they understand your explanation of the results? E.g. can they
++ Do the users indicate they understand your explanation of the results? E.g. can they
     correctly extend your results to list desirable, undesirable implications of your results?
 + Do your results are touching on issues that concern them? This is _easy_ to check.... just count
 	how many times they glance up from their notes, looking startled or alarmed.
@@ -70,20 +60,12 @@ Data mining methods are usually repeated multiple times in order to:
 
 So that means that, if it works, you will be asked
 to do it again (and again (and again (and again))).
-
-Now, the sad truth of the matter is that most of the time, data _mining_ is really
-data _pre-processing_ (e.g. writing data filters can
-be a tedious and  time consuming task).
-So, to ensure repeatability, automate as much of the pre-processing and subsequent analysis,
-as possible.
-
 To put that another way _thou shalt not click_. That
 is, if all your analysis requires lots of
 point-and-clock in a pretty GUI environment, then
 you are definitely **not** planning for scale.
 
-One other thing, before going on. When planning for
-scale, be aware that as you scale up, your methods will need to
+Another  issues is that  as you scale up, your methods will need to
 scale up as well.
 For example, in
 our  _Manifesto_ document, we discussed the CRANE project at
@@ -92,24 +74,22 @@ code base of Microsoft Windows. This was a _very
 large_ project so the way it started was _not_ the
 way it ended:
 
-+ In the initial _scouting_ stage, a single inductive engineering did some  rapid prototyping for
-a few week, applying many methods to data in order to
++ Initially, a single inductive engineer did some  rapid prototyping for
+a few week,  to
   explore a range of hypotheses and  gain user interest (and get user feedback on the early results);
-  + In the next _survey_ stage, the inductive engineering team conducted many
-  experiments to find stable models, while narrowing in on the most important user goals. Note
-  that, by this stage, the users would have gained much feedback on kinds of conclusion the data
-  can usefully generate (which means that that can mature the kinds of questions they want to ask).
-  + In the final _build_ stage, the inductive engineers
-  integrate the  models into a deployment framework – suitable for target user base
++ Next, the inductive engineering team spent a few months conducted many
+  experiments to find stable models (and to narrow in   on the most important user goals). 
++ In the final   stage, which took a year,  the inductive engineers
+  integrate the  models into a deployment framework that was suitable for target user base
 
 Note that the team size doubled at each stage-- so anyone funding this works needs to know
 that increasingly useful conclusions can be  increasingly  expensive.
 
 
 
-## Principle #3:  Early Feedback
+## Principle #3:  Get Early Feedback
 
-We mentioned this above, but it is worth repeating.
+This mentioned this above, but it is worth repeating.
 Before conducting very elaborate studies (that take a long time to reach a conclusion),
 try applying very simple tools to gain rapid early feedback
 
@@ -137,7 +117,7 @@ but doubtful to all user-suggested domain hypotheses. Certainly, explore
 + The most important initial results are the ones that radically and dramatically
 improve the goals of the project. So seek important results.
 
-## Principle #5: Smart Learning
+## Principle #5: Be Smart with your Learning
 
 Lets face it, any inductive agents (human or otherwise) has biases that can
 confuse the learning process. So 
@@ -168,14 +148,10 @@ the wriggle around the mean.
 
 ## Principle #6: Live with the data you have
 
-One way to do smart learning, that was not listed above, is to prevent spurious conclusions by carefully controlling data collection and
-focusing on a small space of hypotheses.
-That said, in our experience,
-we can only very rarely dictate how data is collected in  industrial contexts. Usually,
-we have to cope with whatever data is available (rather than demand more data collected
+In practice, it is a rare analaytics projec that can   dictate how data is collected in  industrial contexts. Usually,
+inductive engieners have to cope with whatever data is available (rather than demand more data collected
 under more ideal conditions). 
-
-The truth is that often you have to go mining with the data you have (and not the data you hope
+Ths means that  often you have to go mining with the data you have (and not the data you hope
 to have a some later date).  So its important to spend some time on data quality operators. For example:
 
 - Use _feature selection_ to remove spurious attributes. There are many ways to perform such
@@ -185,7 +161,7 @@ to have a some later date).  So its important to spend some time on data quality
   a discussion on row selection methods, see [4]
 
 One benefit of replaces rows with clusters is that any signal that is spread out amongst
-the rows can be "amplified" in the clusters. We've found that if we cluster, then learn
+the rows can be "amplified" in the clusters. Ifwe cluster, then learn
 one model per cluster, then the resulting predictions have better median values and smaller
 variance [5].
 
@@ -193,13 +169,13 @@ In any case, we've often found row and feature selection discards up to 80 to 90
 without damaging our ability to learn from the data. This means that ensuring quality of
 _all_ the data can sometimes be less important that being able to extract quality data from large examples.
 
-## Principle #7: Broad Skill Set, Big Toolkit.
+## Principle #7: Develop a Broad Skill Set that uses a Big Toolkit.
 
 The reason organizations need to hire inductive engineers is that they come
 equiped with a very broad range of tools. This is important since
 many problems need specialized methods to find good solutions.
 
-So, to become an inductive engineering, look for the "big ecology" toolkits
+So, to become an inductive engineer, look for the "big ecology" toolkits
 where lots of developers are constantly trying out new ideas. Languages like
 Python, Scala (and lately,  Julia) have extensive on-line forums were
 developers share their data mining tips. Toolkits like R, MATLAB, WEKA

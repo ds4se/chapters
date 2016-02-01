@@ -1,4 +1,4 @@
-# The White-Shirt Effect, or: Learning from Expectations that Failed
+# The White-Shirt Effect: Learning from Failed Expectations
 
 Lutz Prechelt
 
@@ -25,7 +25,7 @@ to make it easier to focus on the principles in the story
 rather than getting distracted by certain details.
 But back to our story:)
 
-Yet, having a PhD in empirical software engineering, you also
+Yet, you also
 know that sound management practices will require you to prove 
 your insight at least correlationally.
 You get to work immediately and will end up having invested
@@ -49,14 +49,15 @@ and version archives. Easy.
 You decide you will find the daily white-shirt bit for each software
 engineer via photos. Much tougher.
 You enlist one of your best toolmakers. A few days later,
-a prototype software works that can determine who is wearning a white shirt
+a prototype software works that can determine who is wearing a white shirt
 and who is not, based on reusable face recognition technology
 and a custom white-shirt-bit plugin.
 
-You manage to calm down the privacy concerns by demonstrating that
+Over several days, you carefully calm down the privacy concerns by 
+demonstrating that
 the single-purpose, in-house software solution will indeed only capture
-the white-shirt bit and nothing else. It takes a full two weeks, but
-then your organization allows you to install the 25 cameras required
+the white-shirt bit and nothing else.
+Your organization now allows you to install the 25 cameras required
 to capture nearly everybody often enough.
 
 You have an assistant fill the face recognition database with clean
@@ -86,7 +87,7 @@ It takes a stressful and dramatic plenary meeting, in which you
 remind them of the data-driven management principles of your
 organization and praise the wonderful consequences of the WSE,
 to get those people to agree, grumblingly.
-You estimate the white-shirt complicance rate will now be around 85%, 
+You estimate the white-shirt compliance rate will now be around 85%, 
 which ought to be enough.
 
 After this nice reminder that data science is by far not as 
@@ -118,15 +119,15 @@ There are two possible reactions at this point:
 2. Think "Hey, what's going on here?" and follow up to understand
    _why_ the WSE is not working as you expected.
 
-It should be obivious that only option 2 respects the spirit
+It should be obvious that only option 2 respects the spirit
 of data science.
 Besides, with option 1 you would have wasted a lot of effort
 and money.
 
-How would the follow-up work?
+How might the follow-up work?
 Well, hopefully you did not pursue a WSE revelation without
 having any idea of how and why such an effect would arise.
-(If you did, option 1 is preferable, really.)
+(If you did, option 1 may be preferable, really.)
 Rather, you will have some mental model of the causation
 mechanisms underlying the effect and can now investigate
 intermediate stages to understand
@@ -136,14 +137,14 @@ In the WSE case, the model might say
 
 1. white shirts radiate an air of purity
 2. therefore, engineers will be less likely to interrupt
-   a colleage wearing a white shirt,
+   a colleague wearing a white shirt,
 3. therefore, that colleague can work more undisturbedly,
 4. which is known to reduce the frequency of mistakes.
 5. To a lesser degree, the wearer of the shirt will also feel purer,
 6. therefore, s/he will be less inclined to write unclean,
    disorderly code, 
-7. which again is known to at least tend
-   to reduce the frequency of mistakes.
+7. and unclean code is known to at least tend
+   to increase the frequency of mistakes.
 
 You could now go and check each of these items for instance
 1, 2, 3, 4, 5, 6 by means of surveys and
@@ -154,9 +155,9 @@ organization.
 For instance, you might be able to use the "local history"
 functionality of your engineers' IDEs to detect interruptions
 and then check whether they correlate with wearing
-white shirts (using the white-shirt bit or a smaller-scale manual
-data collection) or correlate with
-the insertion of defects (using DCDIM).
+white shirts or not (using the white-shirt bit or a smaller-scale manual
+data collection) and correlate with
+the insertion of defects or not (using DCDIM).
 
 Following up in this manner has several positive effects:
 - your understanding of your organization will increase,
@@ -169,39 +170,51 @@ Following up in this manner has several positive effects:
 
 In the WSE case, learning to think more incrementally would
 probably be the most valuable outcome of following up:
-Invalidating the connection from wearing white shirts to
-fewer interruptions would invalidate the WSE expectation
+For instance, invalidating the connection from wearing white shirts to
+fewer interruptions would have invalidated the WSE expectation
 much more cheaply.
 
 
 ## Practical Advice
 
-Trying to generalize this, we come up with the following data science 
+Trying to generalize the above discussion, 
+we come up with the following data science 
 rules for the testing of expectations for which not all data is
 yet available.
 
 
-### Always think of a causational model
+### Always think of a causation model
 
-Without one, there is no chance to follow up.
-If your expectation turns out to be wrong, it will be depressing only.
+Learning from failed expectations is possible only when you can 
+dissect your observations and derive intermediate insights.
+A causation model provides intermediate points of reference
+at which you can get those insights.
+Without a causation model, there is no chance to follow up in this manner
+and failing expectations will waste a lot of resources.
 
 
-### Think of a causational model, _before_ you check the expectation
+### Think of a causation model, _before_ you check the expectation
 
-The causational model usually provides opportunities for _partial_ checks 
+The causation model usually provides opportunities for _partial_ checks 
 of your expectation that are so much cheaper 
-that you will often want to do them first.
+that you should usually do them first.
+
+
+### Be wary of failing expectations
+
+Being aware that hypotheses are often wrong provides the best
+motivation to come up with such partial checks.
+Try to do this, no matter how enthusiastic you may be about your
+hypothesis initially.
 
 
 ### Be ready to accept inferior types of evidence
 
-Having objective data showing just what your expectation
-predicts is a lot more convincing than weaker forms of evidence,
-let alone (shudder!) subjective ones.
-However, if your expectation turns out to be wrong, it may be
-wise to save the effort for getting that objective data and instead be content
-with weak evidence, such as negative survey data in the WSE case.
+Even the partial checks may be shockingly expensive if you
+insist on data that is highly reliable and objective.
+Cheaper data sources, such as the surveys in the WSE example,
+are often preferable for initial validation, even if they
+are noisy, biased, or even (shudder!) subjective.
 
 
 ### For researchers: Know the FNR

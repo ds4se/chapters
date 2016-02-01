@@ -55,7 +55,7 @@ Our next problem was how to achieve scalable matching of our candidate library a
 
 Once the master repository had been built, analyzing an application was very fast: we extracted the API from the candidate libraries, found the corresponding SHA1 hash value, and looked it up in the database to see if there was an authoritative version identifier.
 
-Of course, there are a couple of problems with this approach: the library or the particular version might not be in Maven at all.  Worse, if the API of a library remains stable across several versions, we may match multiple version identifiers, requiring manual intervention to disambiguate.  In practice, however, that these were rarely serious problems. New library histories could be added as needed to the master repository for next time, and manual intervention rarely required manually examining more than a small handful of possible matches.
+Of course, there are a couple of problems with this approach: the library or the particular version might not be in Maven at all.  Worse, if the API of a library remains stable across several versions, we may match multiple version identifiers, requiring manual intervention to disambiguate.  In practice, however, we found that these were rarely serious problems. New library histories could be added as needed to the master repository for next time, and manual intervention rarely required manually examining more than a small handful of possible matches.
 
 ## Looking ahead
 

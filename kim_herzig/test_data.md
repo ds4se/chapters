@@ -10,17 +10,17 @@ Focusing on testing processes, it is important to realize that verification time
 
 #### Testing is more than functional correctness (all the testing you want)
  
-Often, testing is associated with checking for functional correctness and unit testing. While these tests are often fast, passing or failing in seconds, large complex software systems require tests to verify system constraints such as backward compatibility, performance, security, usability and so on. These _system and integration tests_ are complex and typically time-consuming even though they relatively rarely find a bug. Nevertheless, these tests must be seen as an insurance process verifying that the software product complies with all necessary system constraints at all times (or at least at the time of release). Optimizing unit tests can be very helpful, but usually it is the system and integration testing part of verification processes than consumes most of the precious development time. 
+Often, testing is associated with checking for functional correctness and unit testing. While these tests are often fast, passing or failing in seconds, large complex software systems require tests to verify system constraints such as backward compatibility, performance, security, usability and so on. These _system and integration tests_ are complex and typically time-consuming even though they relatively rarely find a bug. Nevertheless, these tests must be seen as an insurance process verifying that the software product complies with all necessary system constraints at all times (or at least at the time of release). Optimizing unit tests can be very helpful, but usually it is the system and integration testing part of verification processes that consumes most of the precious development time. 
  
 ## Learn from your test execution history
  
-Knowing that we cannot afford to run all tests on all code changes anymore, we face a difficult task: find the best combination of tests to verify the current code change spending as little test execution time as possible. To achieve this goal, we need to think of testing as a risk management tool to minimize the risk of elapsing code defects to later stages of the development process or to even to customers. 
+Knowing that we cannot afford to run all tests on all code changes anymore, we face a difficult task: find the best combination of tests to verify the current code change spending as little test execution time as possible. To achieve this goal, we need to think of testing as a risk management tool to minimize the risk of elapsing code defects to later stages of the development process or even to customers. 
 
 The basic assumption behind most test optimization and test selection approaches is that for given scenarios or context _C_, not all tests are equally well suited. Some tests are more effective than others. For example, running a test for _Internet Explorer_ on the _Windows kernel_ code base is unlikely to find new code defects. 
 
 However, determining the effectiveness and reliability of tests and when to execute which subset is not trivial. One of the most popular metrics to determine test quality is _code coverage_. However, coverage is of very limited use in this case. First, coverage does not imply verification (especially not for system and integration tests). Second, it does not allow to assess the effectiveness and reliability of single test cases. Last but not least, collecting coverage significantly slows down test runtime which would require us to remove even more tests.
  
-Instead, we want to execute only those tests that for a given code change and a given execution context _C_, e.g. branch, architecture, language, device type, has high reliability and high effectiveness. Independent from the definition of reliability and effectiveness, all tests that are not high reliable and effective should be executed less frequent or not at all. 
+Instead, we want to execute only those tests that for a given code change and a given execution context _C_, e.g. branch, architecture, language, device type, has high reliability and high effectiveness. Independent from the definition of reliability and effectiveness, all tests that are not highly reliable and effective should be executed less frequent or not at all. 
  
 #### Test effectiveness
  
@@ -31,7 +31,7 @@ Please note that coverage information is partially included in this measurement.
  
 Tests are usually designed to either pass or fail and each failure should point to a code defect. In practice however, many tests tend to report so called false test alarms. These are test failures that are not due to code defects but due to test issues or infrastructure issues. Common examples are: wrong test assertions, non-deterministic (flaky)  tests, test depending on network resources that fail when network unavailable.
 
-Test that report false test alarms regularly must be considered a serious threat to the verification and development processes. As any other test failure, false alarms trigger manual investigations that must be regarded wasted engineering time. The result of the investigation will not increase product quality but rather slowed down code velocity of the current code change under test.
+Tests that report false test alarms regularly must be considered a serious threat to the verification and development processes. As any other test failure, false alarms trigger manual investigations that must be regarded wasted engineering time. The result of the investigation will not increase product quality but rather slow down code velocity of the current code change under test.
  
 Similar to test effectiveness, we can measure test reliability as a historic probability. Simplistically, we can count any test failure that did not lead to a code change (code defect) as false test alarm. Thus, a test _T_ that has been executed 100 times on a given execution context _C_ and that failed 10 times but did not trigger a product code change has a historic test unreliability probability of 0.1.
  
@@ -41,7 +41,7 @@ Combining both measurements for effectiveness and reliability (independent from 
  
 #### Without sacrificing code quality
  
-However, the problem is that some test might get disabled completely, either because they are too unreliable or because never found a code defect (in the last periods). To minimize the risk of elapsing severe bugs into the final product and in order to boost the confidence of development teams into the product under development, it is essential to prevent tests from being disabled completely. One possible solution is to force test executions of all or selected test based on time, e.g. once a week, or based on branches, e.g. executing all tests on the main or release branch. 
+However, the problem is that some test might get disabled completely, either because they are too unreliable or because never found a code defect (in the last periods). To minimize the risk of elapsing severe bugs into the final product and in order to boost the confidence of development teams into the product under development, it is essential to prevent tests from being disabled completely. One possible solution is to regularely force test executions, e.g. once a week. Similar, you can also use a version control branch based approach, e.g. executing all tests on the trunk or release branch but not on feature and integration branches.
  
 ## Tests evolve over time
  
