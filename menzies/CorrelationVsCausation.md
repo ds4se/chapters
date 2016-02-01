@@ -196,7 +196,7 @@ users with such recent raw results.
 
 In summary. do not rush to report the conclusions that you just uncovered,
 just this   morning.  For example, in the case of the Kocaguneli et al. study, if a little more time had been taken reading the raw data, then they would have found the files written by the core
-group all had funny auto-generated names (e.g. `S0001.h`).
+group all had funny auto-generated names (e.g. "S0001.h").
 This would have been a big clue that something
 funny was happenning here.
 
