@@ -1,4 +1,4 @@
-#Evidence-Based Decision Making
+#Aggregating Empirical Evidence for More Trustworthy Decisions
 
 ##What’s Evidence?
 We all make rational decisions that are based upon evidence don’t we? After all, the last time we ate a pepperoni pizza for supper we had bad dreams, so that’s clearly good evidence that in future we should avoid eating pepperoni after 6pm!  Except of course, that it obviously isn’t. What else did we eat that evening, and did the dreams occur because of something entirely different? Yet, in everyday lifemuch of our ‘evidence’ is rather like that, anecdotal in nature, far from objective, and likely to be rather selective. 
@@ -59,8 +59,8 @@ growing experience, it is likely that more and better systematic reviews will be
 
 So, evidence-informed decision making is now increasingly possible, and is likely to become used more more widely in the future. However (the inevitable caveat), toemploy it effectively, users of evidence also need to understand how to use it and adapt it to their context. Systematic reviews are no more of a silver bullet than any other software engineering practice, but their use forms an important step towards putting software engineering education and practice on to a much sounder basis, by providing more objective knowledge about our practices
 
-#Sidebox
-##Example of a Systematic Review: Visualising Software Architecture 
+##Sidebox
+###Example of a Systematic Review: Visualising Software Architecture 
 
 To illustrate what a systematic review in software engineering might involve, this  summarises a recently published review (Shahin et al., 2014). Systematic reviews are complex procedures, so we just provide a very simple outline of what is involved, to give some idea about the nature of the process. 
 
@@ -77,7 +77,7 @@ Manual searching involved looking through the index pages of over 30 journals an
 
 This study used a particularly thorough approach to searching, and we should note that many studies employ electronic searching alone, or use just a modest amount of manual searching to check the reliability of the search strings. 
 
-##Reference 
+###Reference 
 Shahin, M., Liang, P. & Babar, M. A. (2014), ‘A systematic review of software 
 architecture visualization techniques’, Journal of Systems & Software 94, 161–185. 
 
