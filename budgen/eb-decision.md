@@ -15,7 +15,7 @@ Why is this so? Well, experimental studies (trials) in these subjects make exten
 
 This variation is often illustrated by the use of box plots for reporting the outcomes from a study that involves humans. A box plot ‘groups’ the results in quartiles, eachcontaining 25% of the values and then plots these to show how the data is distributed. The range covered by the middle 50% of values is shown as a ‘box’, and the outer ‘quartiles’ as long lines. Within the box, a line indicates the value of the  median (the middle value). Figure 1 shows a simple example, where the vertical axis measures the outcome variable (in this case time) and there are separate plots for the results obtained with and without the ‘intervention’ being studied. (The width of the boxes is arbitrary.) 
 
-<insert Figure 1 here>
+![alt text](https://github.com/ds4se/chapters/blob/master/budgen/Fig1-Boxplot.pdf)
 
 As we can see, the participants allocated to the group who were using theintervention (a software tool) mostly took a shorter time to perform their task than those in the ‘control’ group, although a few did take longer. So the box plot showing  the time taken when using the tool has a wider spread of values, and is also rather skewed. 
 
@@ -59,8 +59,8 @@ growing experience, it is likely that more and better systematic reviews will be
 
 So, evidence-informed decision making is now increasingly possible, and is likely to become used more more widely in the future. However (the inevitable caveat), toemploy it effectively, users of evidence also need to understand how to use it and adapt it to their context. Systematic reviews are no more of a silver bullet than any other software engineering practice, but their use forms an important step towards putting software engineering education and practice on to a much sounder basis, by providing more objective knowledge about our practices
 
-##Sidebox
-#Example of a Systematic Review: Visualising Software Architecture 
+#Sidebox
+##Example of a Systematic Review: Visualising Software Architecture 
 
 To illustrate what a systematic review in software engineering might involve, this  summarises a recently published review (Shahin et al., 2014). Systematic reviews are complex procedures, so we just provide a very simple outline of what is involved, to give some idea about the nature of the process. 
 
@@ -77,8 +77,7 @@ Manual searching involved looking through the index pages of over 30 journals an
 
 This study used a particularly thorough approach to searching, and we should note that many studies employ electronic searching alone, or use just a modest amount of manual searching to check the reliability of the search strings. 
 
-#Reference 
-
+##Reference 
 Shahin, M., Liang, P. & Babar, M. A. (2014), ‘A systematic review of software 
 architecture visualization techniques’, Journal of Systems & Software 94, 161–185. 
 
