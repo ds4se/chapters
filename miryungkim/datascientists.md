@@ -1,8 +1,8 @@
-How Data Scientists can Effectively Impact Organizations: Five Things You need to Know about Data Science in Software Organizations
+How Data Scientists can Effectively Impact Organizations: Five Steps for Success: How to Deploy Data Science in Your Organizations
+
 ==================================================================
 
 Miryung Kim
-
 
 Data Science has become popular over the past few years as companies have recognized the value of data, either in data products, or to optimize operations and to support decision making. Not only did Davenport and Patil proclaim that data scientist would be “the sexiest job of the 21st century,” [2] many authors have published data science books based on their own experiences (see books by O’Neill and Schutt [3], Foreman [4], or May [5]). Patil summarized strategies to hire and build effective data science teams based on his experience in building the data science team at LinkedIn. 
 
@@ -12,9 +12,9 @@ Kim et al. [1] conducted interviews with 16 data scientists across several produ
 
 "Actionability is actually a big thing. If it’s not actionable, the engineers then look at you, say, “I don’t know what to do with this, so don’t even bother me.”
 
-The strategies discussed in this chapter are from the study of data scientists at Microsoft. The complete details are in a technical report [1], which also include other information such as why data scientists are needed in software development teams, the education and training background of data scientists and their skillsets, the problems that data scientists work on and their daily activities, the organization structure of data scientist teams, how they interact with others in the teams, etc. 
+The strategies discussed in this chapter are from the study of data scientists at Microsoft. The complete details are in a technical report [1], which also include other information such as why data scientists are needed in software development teams, the education and training background of data scientists and their skillsets, the problems that data scientists work on and their daily activities, the organization structure of data scientist teams, how they interact with others in the teams, etc.  The following paragraphs discuss the five steps for successfully employing data science in software development organizations. 
 
-## Choose the Right Questions for the Right Team
+## Step 1. Choose the Right Questions for the Right Team
 An important strategy for success is to choose the right questions for the right team. One data scientist described three conditions that must be met before his data science team engages in a project: priority, actionability, and commitment. 
 
 "(a) Is it a priority for the organization (b) is it actionable, if I get an answer to this, is this something someone can do some- thing with? and, (c), are you as the feature team — if you're coming to me or if I'm going to you, telling you this is a good opportunity — are you committing resources to deliver a change? If those things are not true, then it's not worth us talking anymore."
@@ -25,12 +25,12 @@ It is important to define actions in addition to generating insights from data.
 
 For data scientists, there are many more questions to pursue than they have time and resources for. So it is important for them to choose questions that enable their stakeholders to achieve their goals.
 
-## Work Closely with Your Consumers
+## Step 2. Work Closely with Your Consumers
 Another strategy that was mentioned in several interviews was to interact closely and engage with the stakeholders who plan to consume the results from the data analysis. Data scientists often set up channels such as weekly data meet-ups and brown bag lunches to regularly deliver project outcomes. It is important for stakeholders to define the questions and scenarios addressed by data analysis early and often. To make their data science work adopted by stakeholders, data scientists iterate with them to interpret the data and refine important questions and scenarios. 
 
 "You begin to find out, you begin to ask questions, you being to see things. And so you need that interaction with the people that own the code, if you will, or the feature, to be able to learn together as you go and refine your questions and refine your answers to get to the ultimate insights that you need."
 
-## Validate and Calibrate Your Data
+## Step 3. Validate and Calibrate Your Data
 The validation of quantitative data through qualitative channels was also mentioned as a criteria to ensure that measurements are meaningful and lead to correct actions. 
 
 "If you could survey everybody every ten minutes, you don’t need telemetry. The most accurate way to derive insights is to ask everybody all the time. The only reason we do telemetry is that (asking people all the time) is slow and by the time you got it, you’re too late. So you can consider telemetry and data an optimization. So what we do typically is 10% are surveyed and we get telemetry. And then we calibrate and infer what the other 90% have said."
@@ -38,12 +38,12 @@ The validation of quantitative data through qualitative channels was also mentio
 It is important for data scientists to triangulate multiple data resources to increase the confidence in their analysis results. 
 
 
-## Speak Plainly to Give Results Business Value
+## Step 4. Speak Plainly to Give Results Business Value
 Many data scientists emphasized the need to explain findings in simple terms to non-experts. Talking to non-experts also required the development of intuitive measurements. Data scientists need to “translate” findings into business values such as dollars saved, customer calls prevented, and number of days that a product can be shipped early. Reporting precision, recall, and ROC curves, while convenient for the data scientists, is of less importance when presenting findings to analytics consumers.
 
 Some data scientists argued that producing fancy results is bad, because fancy requires them to be there to explain in order for the person reading the results to figure out what’s going on. So, it is better to produce easy-to-understand results than statistically valid yet complex results. 
 
-## Go the Last Mile – Operationalizing Predictive Models
+## Step 5. Go the Last Mile – Operationalizing Predictive Models
 A strategy that we noticed in several interviews was the willingness to go the last mile to actively contribute to the operationalization of predictive models. 
 
 "They accepted (the model) and they understood all the results and they were very excited about it. Then, there’s a phase that comes in where the actual model has to go into production. ... You really need to have somebody who is confident enough to take this from a dev side of things." 
