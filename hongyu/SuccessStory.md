@@ -1,4 +1,4 @@
-#Incident Management for Online Services
+#How to Tame Your Online Services
 
 Qingwei Lin, Jian-Guang Lou, Hongyu Zhang, Dongmei Zhang
 
