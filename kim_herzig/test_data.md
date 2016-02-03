@@ -1,6 +1,6 @@
 # There's never enough time to do all the testing you want.
  
-Software is present in nearly every aspect of our daily lives and also dominates large parts of the high-tech consumer market. Consumers love new features and new features is what makes them buy software products, while features like reliability, security, and privacy are assumed. To respond to the consumer market demand, many software producers are following a trend to shorten software release cycles. As a consequence, software developers have to produce more features in less time while maintaining or even increasing product quality.
+Software is present in nearly every aspect of our daily lives and also dominates large parts of the high-tech consumer market. Consumers love new features and new features is what makes them buy software products, while features like reliability, security, and privacy are assumed. To respond to the consumer market demand, many software producers are following a trend to shorten software release cycles. As a consequence, software developers have to produce more features in less time while maintaining or even increasing product quality. Here at Microsoft (as well as other large software organizations [3]) we have learned that testing is not for free. Testing can slow down development processes and cost money in terms of infrastructure and human involvment. Thus, the effort associated with testing must be carefully monitored and managed.
  
 ## The impact of short release cycles (There's not enough time)
 
@@ -37,7 +37,7 @@ Similar to test effectiveness, we can measure test reliability as a historic pro
  
 ## The art of testing less
  
-Combining both measurements for effectiveness and reliability (independent from their definition) allows a development team to assess the quality of individual tests and to act on it. Teams may decide to statically fix unreliable tests or to dynamically skip tests. Test that show low effectiveness and/or low reliability should be executed only where necessary and as less as possible. For more details in how to use these probabilities to design a system that dynamically determines which test to execute and which not, we refer to Herzig et al. [1].
+Combining both measurements for effectiveness and reliability (independent from their definition) allows a development team to assess the quality of individual tests and to act on it. Teams may decide to statically fix unreliable tests or to dynamically skip tests. Test that show low effectiveness and/or low reliability should be executed only where necessary and as less as possible. For more details in how to use these probabilities to design a system that dynamically determines which test to execute and which not, we refer to Herzig et al. [1] and to Elbaum et al. [3]. 
  
 #### Without sacrificing code quality
  
@@ -52,6 +52,8 @@ Determining and monitoring new test cases being added or changes to existing tes
  
 Software testing is expensive, in terms of time and money. Emulating millions of configurations and devices requires complex test infrastructures and scenarios. This contradicts todays trend to release complex software systems in ever shorter periods of time. As a result, software testing became a bottleneck in development processes. The time spent in verification defines a lower bound on how fast they can ship software. Resolving test bottlenecks requires us to rethink development and testing processes to allow new room for newer and better tests and to regain confidence in testing. We need to accept that testing is an important part of our daily development process, but that "There's never enough time to do all the testing we want". 
 
-[1] K. Herzig, M. Greiler, J. Czerwonka, and B. Murphy, “The Art of Testing Less without Sacrificing Quality,” in Proceedings of the 2015 International Conference on Software Engineering, 2015. 
+[1] K. Herzig, M. Greiler, J. Czerwonka, and B. Murphy, “The Art of Testing Less without Sacrificing Quality” in Proceedings of the 2015 International Conference on Software Engineering, 2015. 
 
-[2] K. Herzig and N. Nagappan, “Empirically Detecting False Test Alarms Using Association Rules,” in Companion Proceedings of the 37th International Conference on Software Engineering, 2015. 
+[2] K. Herzig and N. Nagappan, “Empirically Detecting False Test Alarms Using Association Rules” in Companion Proceedings of the 37th International Conference on Software Engineering, 2015. 
+
+[3] S. Elbaum, G. Rothermel, and J. Penix, “Techniques for improving regression testing in continuous integration development environments” in Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering (FSE), 2014.
