@@ -16,7 +16,11 @@ The modeling work turned out to be quite successful:  An incoming variable and a
 
 The most highly predictive incoming bug variable is the cumulative count of incoming bugs discovered during the weeks of function and system testing.  It has been empirically determined that if  80% or more of the asymptote value of a Goel-Okumoto Shaped (GOS) cumulative incoming (S-shaped) growth curve is achieved during testing, the release is likely to be highly reliable in the field.  In other words, if, with fairly constant test effort week to week, fewer and fewer bugs are found, at a certain point (that is, 80% of the asymptote) in this weekly exponential decay, the release is likely to be in good shape.  Here is a visual representation of this metric:
 
+![](https://github.com/ds4se/chapters/blob/master/rotella/figure1.png)
+
 The highly predictive bug fix variable is the decline of the weekly bug fix rate – if this rate declines to about 50% of the maximum observed weekly rate, the release is likely to be even more reliable than if only the incoming growth curve objective is met.  This bug fix metric gauges late code churn, which many have found to be very damaging to code reliability.  Bugs fixed late in the testing period are often found to be inadequately tested, with a high percentage of the fixes causing collateral damage in the code.  This following visual shows a weekly bug fixing profile, from the maximum weekly level to the end of testing.  A reduction from the maximum of 50% or more is needed for high reliability:
+
+![](https://github.com/ds4se/chapters/blob/master/rotella/figure2.png)
 
 The modeled backlog metrics did not show strong predictive ability, largely because backlog reduction is already an important initiative, and under good control, for the company's major releases, and the releases of many other companies.
 
