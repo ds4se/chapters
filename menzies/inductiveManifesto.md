@@ -8,7 +8,7 @@
  _Inductive software engineering_ is that branch of software engineering focusing
 on the delivery of data mining based software
 applications to users. Within those data miners, the core
-problem is _inductin_ which is the extraction of small patterns from
+problem is _induction_ which is the extraction of small patterns from
 larger data sets.
 Inductive engineers
 spend much effort trying to understand user goals in order to
