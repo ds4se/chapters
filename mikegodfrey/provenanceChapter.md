@@ -39,8 +39,8 @@ Armed with a broad understanding of the kinds of entities in our project, we can
 
 Additionally, we often need techniques to be able to explore the entity space, such as:
 <ul>
-<li> devising scalable matching algorithms to query the large entity space, and
-<li> performing various kinds of historical analyses to answer questions about the evolution of the system.
+<li> scalable matching algorithms to query the large entity space, and
+<li> various kinds of historical analyses to answer questions about the evolution of the system.
 </ul>
 
 Depending on the task at hand, *defining and scoping the entities of interest* may be straightforward, or it may require tool support and/or manual intervention.  For example, in the first problem scenario, we need to decide how to define and scope a feature.  Then, we need to be able to map these features to sets of code fragments for both our system and the open source system.  Finally, we need to examine the VCS commit history of the code that is related to these features within our system (and if the VCS history of the open source system is available to us, we can do the same for the open source system). 
