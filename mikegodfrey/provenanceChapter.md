@@ -59,7 +59,7 @@ Of course, there are a couple of problems with this approach: the library or the
 
 ## Looking ahead
 
-As a profession, we are getting better at instrumenting our processes and tracking our steps.  As a profession, we are also increasingly concerned with questions of ownership, origin, evolution, and transparency of our various artifacts and processes.  As more and more of the artifacts that concern software development are managed by tools and annotated with meta-data, so will the job of provenance analysis become simpler.
+As a profession, we are getting better at instrumenting our processes and tracking our steps.  As a profession, we are also increasingly concerned with questions of ownership, origin, evolution, and transparency of the various artifacts we interact with on a daily basis.  As more and more of our artifacts and processes are managed by tools, automatically logged, and annotated with meta-data, so will the job of provenance analysis become simpler.
 
 ###References
 
