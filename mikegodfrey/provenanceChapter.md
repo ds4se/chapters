@@ -10,27 +10,24 @@ Here's one more:  You've recently agreed to take on the role of bug triage for a
 
 ## What's provenance?
 
-What these scenarios have in common is that they depend on the *provenance* of software entities [Godfrey-SCP-97-1]; that is, we need to be able to analyze various kinds of evidence that pertain to the origin, history, and ownership of software entities to answer questions such as: 
-
-- What is the history of this entity? How did it come to be where it is currently?  
-
-- What other entities is it related to, and how?
-
-- What is the evidence? How reliable is it?
+What these scenarios have in common is that they depend on the *provenance* of software entities [Godfrey-SCP-97-1]; that is, we need to be able to analyze various kinds of evidence that pertain to the origin, history, and ownership of software entities to answer questions such as:
+<ul>
+<li> What is the history of this entity? How did it come to be where it is currently?  
+<li> What other entities is it related to, and how?
+<li> What is the evidence? How reliable is it?
+</ul>
 
 Understanding the raw desisgn artifacts that comprise our system &mdash; such as the source code, documentation, build recipes, etc. &mdash; gives us only a small part of the larger story. We need also to be able to reason about the relatedness of the artifacts, the processes that produce and manage them, their history and evolution, and the people involved and their development roles.
 
 ## What are the key entities?
 
 To be able to address these issues, we need to able to identify which particular entities we are interested in, and how they relate to each other.  There are several kinds of entities that we might want to consider:
-
-1. software artifacts that are managed by some tool as first-class entities, such as source code files, commits in a version control system (VCS), or bug reports in an issue tracking system;
-
-2. attributes of these artifacts, such as bugfix comment histories and timestamps;
-
-3. synthetic entities such as software features and maintenance tasks, which have strong meaning to developers but may not have crisp definitions or even independent existence; and
-
-4. relationships between any of the above, which may be explicit, implicit, inferred, or even probabilistic.
+<ol>
+<li> software artifacts that are managed by some tool as first-class entities, such as source code files, commits in a version control system (VCS), or bug reports in an issue tracking system;
+<li> attributes of these artifacts, such as bugfix comment histories and timestamps;
+<li> synthetic entities such as software features and maintenance tasks, which have strong meaning to developers but may not have crisp definitions or even independent existence; and
+<li> relationships between any of the above, which may be explicit, implicit, inferred, or even probabilistic.
+</ol>
 
 ## What are the key tasks?
 
