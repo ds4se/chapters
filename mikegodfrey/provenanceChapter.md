@@ -42,9 +42,13 @@ Having identified the entities of interest, we can then consider how we might us
 
 3. devising scalable matching algorithms to query the artifact space, and
 
-4. perform various kinds of historical analyses to answer questions about the evolution of the system.
+4. performing various kinds of historical analyses to answer questions about the evolution of the system.
 
-Depending on the task at hand, *defining and scoping the entities of interest* may be straightforward, or it may require tool support and/or manual intervention.  For example, in the first scenario, we need to decide how to define and scope a feature.  Then, we need to be able to map these features to sets of code fragments for both our system and the open source system.  Finally, we need to examine the VCS commit history of the code that is related to these features within our system (and if the VCS history of the open source system is available to us, we can do the same for the open source system).  
+Depending on the task at hand, *defining and scoping the entities of interest* may be straightforward, or it may require tool support and/or manual intervention.  For example, in the first scenario, we need to decide how to define and scope a feature.  Then, we need to be able to map these features to sets of code fragments for both our system and the open source system.  Finally, we need to examine the VCS commit history of the code that is related to these features within our system (and if the VCS history of the open source system is available to us, we can do the same for the open source system). 
+<ol>
+<li> item #1
+<li> item #2
+</ol>
 
 At this point we have a set of features, decomposed into code fragments across two systems, and a set of related VCS commits that touch these code fragments.  *Establishing artifact linkage and ground truth* is the next problem we need to address.  When the open source project leader mentioned three high level features she thought had been copied, we performed the mapping of the features to source code on both systems.  Did we get it right?  On the other hand, if we trust our decomposition then the commit history gleaned from the VCS should be accurate, unless someone has rebased our git repository.
 
