@@ -52,7 +52,7 @@ But let's suppose that our company's lawyer now steps in with a bigger challenge
 
 Of course, in reducing the dimensionality of the data, we are losing information; for example, if I copy a method and then make a few changes, any line that is even slightly different from the original will result in a different hash value.  But if we move to the granularity of tokens or characters, then the comparisons become much more time consuming.  So we are always trading off accuracy against performance.
 
-Finally, if we decide that some of the code in the two systems appears to be unusually similar, we can *perform a historical analysis* on the commit trails, to see when and how any "borrowed" code fragments might have made it into our codebase, and which developers might have been responsible.
+Finally, if we decide that some of the code in the two systems appears to be unusually similar, we can *perform a historical analysis* on the commit trails, to see when and how any "borrowed" code fragments might have made it into our codebase, and which developers might have been responsible.  We may also wish for other historic trends, such as looking for unusually large commits by inexperienced developers, since that might also indicate the incorporation of third-party code into the system.
 
 ## Another example
 
