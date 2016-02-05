@@ -79,12 +79,12 @@ As a profession, we are getting better at instrumenting our processes and tracki
 
 [ConQAT] http://www.conqat.org/
 
-[Davies-EMSE-18-6]  "Software Bertillonage Determining the Provenance of Software Development Artifacts", Julius Davies, Daniel M. German, Michael W. Godfrey, and Abram Hindle, *Empirical Software Engineering*, 18(6), December 2013.
+[Davies-EMSE-18-6] "Software Bertillonage Determining the Provenance of Software Development Artifacts", Julius Davies, Daniel M. German, Michael W. Godfrey, and Abram Hindle, *Empirical Software Engineering*, 18(6), December 2013.
 
 [Godfrey-SCP-97-1] "Understanding Software Artifact Provenance", Michael W. Godfrey, *Science of Computer Programming*, 97(1), 1 January 2015.
 
 [Guo-PhD-blog] http://cacm.acm.org/blogs/blog-cacm/169199-data-science-workflow-overview-and-challenges/fulltext
 
-[Kalliamvakou-EMSE]	"An in-depth study of the promises and perils of mining GitHub Empirical Software Engineering", Eirini Kalliamvakou, Georgios Gousios, Kelly Blincoe, Leif Singer, Daniel German, and Daniela Damian, *Empirical Software Engineering*, accepted June 2015.
+[Kalliamvakou-EMSE] "An in-depth study of the promises and perils of mining GitHub", Eirini Kalliamvakou, Georgios Gousios, Kelly Blincoe, Leif Singer, Daniel German, and Daniela Damian, *Empirical Software Engineering*, accepted June 2015.
 	
 [Maven] http://maven.apache.org/
