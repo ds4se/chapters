@@ -31,7 +31,7 @@ To be able to address these issues, we need to able to identify which particular
 
 ## What are the key tasks?
 
-Having identified the entities of interest, we can then consider how we might use them to answer our questions.  There are several key tasks to perform, including:
+Having identified the entities of interest, we can then consider how we might use them to answer our questions.  There are several key tasks that we need to be able to perform here, including:
 <ol>
 <li> defining and scoping the entities that are of particular interest,
 <li> establishing artifact linkage and ground truth,
