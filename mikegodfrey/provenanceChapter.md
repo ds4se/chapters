@@ -45,7 +45,7 @@ Additionally, we often need techniques to be able to explore the entity space, s
 
 Depending on the task at hand, *defining and scoping the entities of interest* may be straightforward, or it may require tool support and/or manual intervention.  For example, in the first problem scenario, we need to decide how to define and scope a feature.  Then, we need to be able to map these features to sets of code fragments for both our system and the open source system.  Finally, we need to examine the VCS commit history of the code that is related to these features within our system (and if the VCS history of the open source system is available to us, we can do the same for the open source system). 
 
-At this point we have a set of features, decomposed into code fragments across two systems, and a set of related VCS commits that touch these code fragments.  *Establishing artifact linkage and ground truth* is the next problem we need to address.  When the open source project leader mentioned three high level features she thought had been copied, we performed the mapping of the features to source code on both systems.  Did we get it right?  On the other hand, if we trust our decomposition then the commit history gleaned from the VCS should be accurate, unless someone has rebased our git repository.
+At this point we have a set of features, decomposed into code fragments across two systems, and a set of related VCS commits that touch these code fragments.  *Establishing artifact linkage and ground truth* is the next problem we need to address.  When the open source project leader mentioned three high level features she thought had been copied, we performed the mapping of the features to source code on both systems.  Did we get it right?  On the other hand, if we trust our decomposition then the commit history gleaned from the VCS should be accurate, unless someone has rebased our git repository [Kalliamvakou-EMSE].
 
 Now we probably want to compare code fragments of the two systems on a feature-by-feature basis using a comparison tool, such as `diff` which compares raw text, or a code clone detector like CCFinder [CCFinder] or ConQAT [ConQAT] which has some understanding of the programming language. Because we've narrowed down our field of interest to a manageable set of code fragments, this step will probably be doable quickly.
 
@@ -85,4 +85,6 @@ As a profession, we are getting better at instrumenting our processes and tracki
 
 [Guo-PhD-blog] http://cacm.acm.org/blogs/blog-cacm/169199-data-science-workflow-overview-and-challenges/fulltext
 
+[Kalliamvakou-EMSE]	"An in-depth study of the promises and perils of mining GitHub Empirical Software Engineering", Eirini Kalliamvakou, Georgios Gousios, Kelly Blincoe, Leif Singer, Daniel German, and Daniela Damian, *Empirical Software Engineering*, accepted June 2015.
+	
 [Maven] http://maven.apache.org/
