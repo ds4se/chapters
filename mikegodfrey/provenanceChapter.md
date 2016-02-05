@@ -34,12 +34,12 @@ To be able to address these issues, we need to able to identify which particular
 Armed with a broad understanding of the kinds of entities in our project, we can then consider how we might use them to answer our questions.  The are two key tasks that we need to be able to perform here:
 <ol>
 <li> defining and scoping the entities that are of particular interest, and
-<li> establishing artifact linkage and ground truth,
+<li> establishing artifact linkage and ground truth.
 </ol>
 
-Additionally, we often need to be able to perform other kinds of analysis, such as:
+Additionally, we often need techniques to be able to explore the entity space, such as:
 <ol>
-<li> devising scalable matching algorithms to query the entity space, and
+<li> devising scalable matching algorithms to query the large entity space, and
 <li> performing various kinds of historical analyses to answer questions about the evolution of the system.
 </ol>
 
