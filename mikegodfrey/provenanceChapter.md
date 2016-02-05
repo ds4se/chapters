@@ -22,26 +22,26 @@ Understanding the raw design artifacts that comprise our system &mdash; such as 
 ## What are the key entities?
 
 To be able to address these issues, we need to able to identify which particular entities we are interested in, and how they relate to each other.  There are several kinds of entities that we might want to consider:
-<ol>
+<ul>
 <li> software artifacts that are managed by some tool as first-class entities, such as source code files, commits in a version control system (VCS), or bug reports in an issue tracking system;
 <li> attributes of these artifacts, such as version identifiers, current status, comment histories, and timestamps;
 <li> synthetic entities such as software features and maintenance tasks, which have strong meaning to developers but may not have crisp definitions or even independent existence; and
 <li> relationships between any of the above, which may be explicit, implicit, inferred, or even probabilistic.
-</ol>
+</ul>
 
 ## What are the key tasks?
 
 Armed with a broad understanding of the kinds of entities in our project, we can then consider how we might use them to answer our questions.  The are two key tasks that we need to be able to perform here:
-<ol>
+<ul>
 <li> defining and scoping the entities that are of particular interest, and
 <li> establishing artifact linkage and ground truth.
-</ol>
+</ul>
 
 Additionally, we often need techniques to be able to explore the entity space, such as:
-<ol>
+<ul>
 <li> devising scalable matching algorithms to query the large entity space, and
 <li> performing various kinds of historical analyses to answer questions about the evolution of the system.
-</ol>
+</ul>
 
 Depending on the task at hand, *defining and scoping the entities of interest* may be straightforward, or it may require tool support and/or manual intervention.  For example, in the first problem scenario, we need to decide how to define and scope a feature.  Then, we need to be able to map these features to sets of code fragments for both our system and the open source system.  Finally, we need to examine the VCS commit history of the code that is related to these features within our system (and if the VCS history of the open source system is available to us, we can do the same for the open source system). 
 
