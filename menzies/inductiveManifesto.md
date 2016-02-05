@@ -15,7 +15,7 @@ spend much effort trying to understand user goals in order to
 inductively generate the models that most matter to those user.
  
 Previously, with Christian Bird, Thomas Zimmermann, Wolfram Schulte, and Ekrem Kocaganeli, we wrote an _Inductive Engineering
-Mainfestor_ [1] that offered some details on this new kind of engineering.
+Manifesto_ [1] that offered some details on this new kind of engineering.
 That whole   manifesto is a little long, so here I offer a quick summary. Listed below are seven key principles which, if ignored, can make it harder to deploya analytics
 in the real world. For more details (and more principles),
  the reader should refer to the original document [1].
