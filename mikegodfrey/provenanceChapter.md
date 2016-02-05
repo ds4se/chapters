@@ -17,7 +17,7 @@ What these scenarios have in common is that they depend on the *provenance* of s
 <li> What is the evidence? How reliable is it?
 </ul>
 
-Understanding the raw desisgn artifacts that comprise our system &mdash; such as the source code, documentation, build recipes, etc. &mdash; gives us only a small part of the larger story. We need also to be able to reason about the relatedness of the artifacts, the processes that produce and manage them, their history and evolution, and the people involved and their development roles.
+Understanding the raw design artifacts that comprise our system &mdash; such as the source code, documentation, build recipes, etc. &mdash; gives us only a small part of the larger story. We need also to be able to reason about the relatedness of a wide variety of development artifacts, the processes that produce and manage them, their history and evolution, and the people involved and their roles.
 
 ## What are the key entities?
 
