@@ -71,7 +71,7 @@ Of course, there are a couple of problems with our approach: the library or the 
 
 ## Looking ahead
 
-As a profession, we are getting better at instrumenting our processes and tracking our steps.  As a profession, we are also increasingly concerned with questions of ownership, origin, evolution, and transparency of the various development artifacts we interact with on a daily basis.  As more and more of our artifacts and processes are managed by tools, automatically logged, and annotated with meta-data, so will the job of provenance analysis become simpler.
+As a profession, we are getting better at instrumenting our processes and tracking our steps.  As a profession, we are also increasingly concerned with questions of ownership, origin, evolution, and transparency of the various development artifacts we interact with on a daily basis.  As more and more of our artifacts and processes are managed by tools, automatically logged, and annotated with meta-data, so will the job of provenance analysis become simpler.  And, of course, while we have examined the space of software development artifacts here, the issues and techniques of provenance are no less important for the broader field of data science [Guo-PhD-blog].
 
 ###References
 
@@ -82,5 +82,7 @@ As a profession, we are getting better at instrumenting our processes and tracki
 [Davies-EMSE-18-6]  "Software Bertillonage Determining the Provenance of Software Development Artifacts", Julius Davies, Daniel M. German, Michael W. Godfrey, and Abram Hindle, *Empirical Software Engineering*, 18(6), December 2013.
 
 [Godfrey-SCP-97-1] "Understanding Software Artifact Provenance", Michael W. Godfrey, *Science of Computer Programming*, 97(1), 1 January 2015.
+
+[Guo-PhD-blog] http://cacm.acm.org/blogs/blog-cacm/169199-data-science-workflow-overview-and-challenges/fulltext
 
 [Maven] http://maven.apache.org/
