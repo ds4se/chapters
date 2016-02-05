@@ -24,7 +24,7 @@ Understanding the raw design artifacts that comprise our system &mdash; such as 
 To be able to address these issues, we need to able to identify which particular entities we are interested in, and how they relate to each other.  There are several kinds of entities that we might want to consider:
 <ol>
 <li> software artifacts that are managed by some tool as first-class entities, such as source code files, commits in a version control system (VCS), or bug reports in an issue tracking system;
-<li> attributes of these artifacts, such as bugfix comment histories and timestamps;
+<li> attributes of these artifacts, such as version identifiers, current status, comment histories, and timestamps;
 <li> synthetic entities such as software features and maintenance tasks, which have strong meaning to developers but may not have crisp definitions or even independent existence; and
 <li> relationships between any of the above, which may be explicit, implicit, inferred, or even probabilistic.
 </ol>
