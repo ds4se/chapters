@@ -18,9 +18,9 @@ What these scenarios have in common is that they depend on the *provenance* of s
 
 - What is the evidence? How reliable is it?
 
-## What are the key tasks?
+## What are the key entities?
 
-To do so, we need to able to identify which entities we are interested in, and how they relate to each other.  There are several kinds of entities that we might want to consider:
+To be able to address these issues, we need to able to identify which entities we are interested in, and how they relate to each other.  There are several kinds of entities that we might want to consider:
 
 1. software artifacts that are managed by some tool as first-class entities, such as source code files, commits in a version control system (VCS), or bug reports in an issue tracking system;
 
@@ -29,6 +29,10 @@ To do so, we need to able to identify which entities we are interested in, and h
 3. synthetic entities such as software features and maintenance tasks, which have strong meaning to developers but may not have crisp definitions or even independent existence; and
 
 4. relationships between any of the above, which may be explicit, implicit, inferred, or even probabilistic.
+
+Having identified the entities of interest, we can then consider how we might use them to answer our question.
+
+## What are the key tasks?
 
 Depending on the task at hand, *defining and scoping the entities of interest* may be straightforward, or it may require tool support and/or manual intervention.  For example, in the first scenario, we need to decide how to define and scope a feature.  Then, we need to be able to map these features to sets of code fragments for both our system and the open source system.  Finally, we need to examine the VCS commit history of the code that is related to these features within our system (and if the VCS history of the open source system is available to us, we can do the same for the open source system).  
 
