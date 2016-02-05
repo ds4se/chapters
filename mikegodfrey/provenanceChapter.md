@@ -10,7 +10,7 @@ Here's one more:  You've recently agreed to take on the role of bug triage for a
 
 ## What's provenance?
 
-What these scenarios have in common is that they depend on the *provenance* of software entities [Godfrey-SCP-97-1]; that is, we need to be able to analyze various kinds of evidence that pertain to the origin, history, and ownership of software entities to answer questions such as:
+What these problem scenarios have in common is that they depend on the *provenance* of software entities [Godfrey-SCP-97-1]; that is, we need to be able to analyze various kinds of evidence that pertain to the origin, history, and ownership of software entities to answer questions such as:
 <ul>
 <li> What is the history of this entity? How did it come to be where it is currently?  
 <li> What other entities is it related to, and how?
@@ -39,7 +39,7 @@ Armed with a broad understanding of the kinds of entities in our project, we can
 <li> performing various kinds of historical analyses to answer questions about the evolution of the system.
 </ol>
 
-Depending on the task at hand, *defining and scoping the entities of interest* may be straightforward, or it may require tool support and/or manual intervention.  For example, in the first scenario, we need to decide how to define and scope a feature.  Then, we need to be able to map these features to sets of code fragments for both our system and the open source system.  Finally, we need to examine the VCS commit history of the code that is related to these features within our system (and if the VCS history of the open source system is available to us, we can do the same for the open source system). 
+Depending on the task at hand, *defining and scoping the entities of interest* may be straightforward, or it may require tool support and/or manual intervention.  For example, in the first problem scenario, we need to decide how to define and scope a feature.  Then, we need to be able to map these features to sets of code fragments for both our system and the open source system.  Finally, we need to examine the VCS commit history of the code that is related to these features within our system (and if the VCS history of the open source system is available to us, we can do the same for the open source system). 
 
 At this point we have a set of features, decomposed into code fragments across two systems, and a set of related VCS commits that touch these code fragments.  *Establishing artifact linkage and ground truth* is the next problem we need to address.  When the open source project leader mentioned three high level features she thought had been copied, we performed the mapping of the features to source code on both systems.  Did we get it right?  On the other hand, if we trust our decomposition then the commit history gleaned from the VCS should be accurate, unless someone has rebased our git repository.
 
@@ -56,7 +56,7 @@ Finally, if we decide that some of the code in the two systems appears to be unu
 
 ## Another example
 
-Let's return to the second scenario now, since it's one we've explored in real life [Davies-EMSE-18-6].  A company approached us with the problem of how to authoritatively identify the version identifier of a third-party Java library binary that has been packaged within a commercial application. Sometimes, the version identifier forms part of the name of the included jar file; however, this is merely developer convention, it is not always observed and isn't enforceable technically.  Worse, we found instances of where the version identifier had been edited to remove the "release candidate" designation, implying that the library was the final version.
+Let's return to the second problem scenario now, since it's one we've explored in real life [Davies-EMSE-18-6].  A company approached us with the problem of how to authoritatively identify the version identifier of a third-party Java library binary that has been packaged within a commercial application. Sometimes, the version identifier forms part of the name of the included jar file; however, this is merely developer convention, it is not always observed and isn't enforceable technically.  Worse, we found instances of where the version identifier had been edited to remove the "release candidate" designation, implying that the library was the final version.
 
 The first step was to decide on our entities of interest: versions of Java libraries that are in common use.  Next, we needed to establish ground truth; that is, we decided to build a master database that effectively represented all recent versions of these libraries.  We decided to use the Maven2 [Maven] repository as our data source, since it is very large and we found it to contain instances of almost all recent versions of almost all common Java libraries.  
 
