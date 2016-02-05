@@ -30,7 +30,7 @@ To be able to address these issues, we need to able to identify which entities w
 
 4. relationships between any of the above, which may be explicit, implicit, inferred, or even probabilistic.
 
-Having identified the entities of interest, we can then consider how we might use them to answer our question.
+Having identified the entities of interest, we can then consider how we might use them to answer our questions.
 
 ## What are the key tasks?
 
