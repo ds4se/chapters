@@ -87,12 +87,12 @@ App mining is different.  There's exciting data available, but there also is dat
 In practice, overcoming these obstacles is not too hard: Get or create a set of scripts that download a representative set of apps and their metadata; use a suitable tool chain for analyzing app code; and talk to app vendors and developers to understand their practice and identify their needs.  Then get the data - and enjoy the ride!
 
 
-## Executive Summary 
+## Executive summary 
 
 App mining leverages common knowledge in thousands of apps to automatically learn what is "normal" behavior - and in contrast, automatically identify "abnormal" behavior.  This classification can guide programmers and users towards quality, productivity, and security.  As an emerging field of research, app mining opens lots of opportunities for research that serves users, developers, and vendors alike.  Enjoy app mining!
  
 
-## Read More
+## Read more
 
 + Alessandra Gorla, Ilaria Tavecchia, Florian Gross, and Andreas Zeller: [Checking App Behavior Against App Descriptions](http://www.st.cs.uni-saarland.de/appmining/chabada/).  Proceedings of the International Conference on Software Engineering, 2014.
 
