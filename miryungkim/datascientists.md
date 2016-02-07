@@ -1,8 +1,6 @@
-How Data Scientists can Effectively Impact Organizations: Five Steps for Success: How to Deploy Data Science in Your Organizations
-
-==================================================================
-
-Miryung Kim
+# How Data Scientists can Effectively Impact Organizations: Five Steps for Success: How to Deploy Data Science in Your Organizations
+ 
+_Miryung Kim_
 
 Data Science has become popular over the past few years as companies have recognized the value of data, either in data products, or to optimize operations and to support decision making. Not only did Davenport and Patil proclaim that data scientist would be “the sexiest job of the 21st century,” [2] many authors have published data science books based on their own experiences (see books by O’Neill and Schutt [3], Foreman [4], or May [5]). Patil summarized strategies to hire and build effective data science teams based on his experience in building the data science team at LinkedIn. 
 
