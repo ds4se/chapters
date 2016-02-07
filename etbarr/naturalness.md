@@ -1,5 +1,5 @@
-# The Naturalness of Software[\^1]
-[\^1]:This text is adapted from an earlier version that appeared in ICSE NIER 2015.
+# The Naturalness of Software
+
 
 Earl T. Barr
 Department of Computer Science
@@ -10,6 +10,8 @@ Premkumar Devanbu
 Department of Computer Science
 UC Davis, Davis, CA, 95616 
 <ptdevanbu@ucdavis.edu>
+
+_This text is adapted from an earlier version that appeared in ICSE NIER 2015 [^1]._
 
 ## Introduction
 
@@ -191,14 +193,15 @@ language; it also offers the promise of using new scientific methodologies
 to investigate the human and social aspects of software, drawn from
 approaches in cognitive and social linguistics.  
 
-+ M. Allamanis, E. T. Barr, and C. Sutton. Learning natural coding conventions. In Proceedings of the Joint Meeting on Foundations of Software Engineering, 2014.
-+ A. Hindle, E. Barr, M. Gabel, Z. Su, and P. Devanbu. On the Naturalness of Software. [http://macbeth.cs.ucdavis.edu/natural.pdf](http://macbeth.cs.ucdavis.edu/natural.pdf), 2012. [Extended Version of the work published at the Internation Conference on Software Engineering 2012, Online; accessed 08-Feb-2015].
-+ K. Sparck Jones, Natural language processing: a historical review, Current Issues in Computational Linguistics: in Honour of Don Walker (Ed Zampolli, Calzolari and Palmer), Amsterdam: Kluwer, 1994
-+ S. Karaivanov, V. Raychev, and M. Vechev. Phrase-based statistical translation of programming languages. In Proceedings of the 2014 ACM International Symposium on New Ideas, New Paradigms, and Reflections on Programming & Software, pages 173–184. ACM, 2014.
-+ D. E. Knuth. Literate programming. The Computer Journal, 27(2):97– 111, 1984.
-+ A. T. Nguyen, H. A. Nguyen, T. T. Nguyen, and T. N. Nguyen. Statistical learning approach for mining api usage mappings for code migration. In Proceedings of the Conference on Automated Software Engineering, pages 457–468. ACM, 2014.
-+ A. T. Nguyen, T. T. Nguyen, and T. N. Nguyen. Lexical statistical machine translation for language migration. In Proceedings of the Joint Meeting on Foundations of Software Engineering, pages 651–654. ACM, 2013.
-+ S. Pinker. The Language Instinct: The New Science of Language and Mind, volume 7529. Penguin UK, 1994.
-+ V. Raychev, M. Vechev, and A. Krause. Predicting Program Properties from ”Big Code”. In Proceedings of the Symposium on the Principles of Programming Languages, 2015.
-+ Z. Tu, Z. Su, and P. Devanbu. On the localness of software. In Proceedings of the Joint Meeting on Foundations of Software Engineering, pages 269–280. ACM, 2014.
-+ S. A. Wills and D. J. MacKay. Dasher-an efficient writing system for brain-computer interfaces? IEEE Transactions on Neural Systems and Rehabilitation Engineering, 14(2):244–246, 2006.
+1. P. Devanbu, THe Naturalness of Software, ICSE 2015 NIER Track 
+2. M. Allamanis, E. T. Barr, and C. Sutton. Learning natural coding conventions. In Proceedings of the Joint Meeting on Foundations of Software Engineering, 2014.
+3. A. Hindle, E. Barr, M. Gabel, Z. Su, and P. Devanbu. On the Naturalness of Software. [http://macbeth.cs.ucdavis.edu/natural.pdf](http://macbeth.cs.ucdavis.edu/natural.pdf), 2012. [Extended Version of the work published at the Internation Conference on Software Engineering 2012, Online; accessed 08-Feb-2015].
+4. K. Sparck Jones, Natural language processing: a historical review, Current Issues in Computational Linguistics: in Honour of Don Walker (Ed Zampolli, Calzolari and Palmer), Amsterdam: Kluwer, 1994
+5. S. Karaivanov, V. Raychev, and M. Vechev. Phrase-based statistical translation of programming languages. In Proceedings of the 2014 ACM International Symposium on New Ideas, New Paradigms, and Reflections on Programming & Software, pages 173–184. ACM, 2014.
+6. D. E. Knuth. Literate programming. The Computer Journal, 27(2):97– 111, 1984.
+7. A. T. Nguyen, H. A. Nguyen, T. T. Nguyen, and T. N. Nguyen. Statistical learning approach for mining api usage mappings for code migration. In Proceedings of the Conference on Automated Software Engineering, pages 457–468. ACM, 2014.
+8. A. T. Nguyen, T. T. Nguyen, and T. N. Nguyen. Lexical statistical machine translation for language migration. In Proceedings of the Joint Meeting on Foundations of Software Engineering, pages 651–654. ACM, 2013.
+9. S. Pinker. The Language Instinct: The New Science of Language and Mind, volume 7529. Penguin UK, 1994.
+10. V. Raychev, M. Vechev, and A. Krause. Predicting Program Properties from ”Big Code”. In Proceedings of the Symposium on the Principles of Programming Languages, 2015.
+11. Z. Tu, Z. Su, and P. Devanbu. On the localness of software. In Proceedings of the Joint Meeting on Foundations of Software Engineering, pages 269–280. ACM, 2014.
+12. S. A. Wills and D. J. MacKay. Dasher-an efficient writing system for brain-computer interfaces? IEEE Transactions on Neural Systems and Rehabilitation Engineering, 14(2):244–246, 2006.
