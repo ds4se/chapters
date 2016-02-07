@@ -36,8 +36,8 @@ Our experience in industry as well as the findings of our systematic review in [
 
 1. identification of structure learning techniques to model cause-effect relationships between variables, and the rationale of choosing the selected technique, and in 
 2. identification of parameter learning, with respect to 
-       a. how to set the prior distributions, and 
-       b. how to estimate the final parameters of the model (inference), and the rationale of choosing the selected technique. 
+       + how to set the prior distributions, and 
+       + how to estimate the final parameters of the model (inference), and the rationale of choosing the selected technique. 
 
 As always the tool support and tool selection is also an important consideration for adoption and sustainability of a given technique/ model in the industry.
 
