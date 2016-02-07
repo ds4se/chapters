@@ -1,4 +1,4 @@
-# How Data Scientists can Effectively Impact Organizations: Five Steps for Success: How to Deploy Data Science in Your Organizations
+#  Five Steps for Success: How to Deploy Data Science in Your Organizations
  
 _Miryung Kim_
 
