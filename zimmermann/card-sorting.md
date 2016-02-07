@@ -37,9 +37,9 @@ Card sorting in teams can help you derive better themes and sort a larger number
 
 Don't forget to take photos of your card sort. That will help you to later reconstruct the spatial layout of the cards. Photos are also great to impress friends or to explain the process in a presentation.
 
-TODO: Add Photo from a Card Sort.
-
 After you are done with the card sort, use the envelopes and rubber bands to store the cards. I put the sticky note to the side of the top card and then pile up the groups. Have the sticky note stick out a little from the top card. That helps you later to separate the pile of cards into the individual groups.
+
+![](CardSort.jpg)
 
 ##Analysis phase
 
