@@ -46,13 +46,13 @@ Similar to computational biology and healthcare, we need to make decisions under
 
 ## References
 
-[1] Misirli, A. T., and Bener, A., “Bayesian Networks For Evidence-Based Decision-Making in Software Engineering”. IEEE Transactions on Software Engineering, vol.40, no.6., June 2014.
-[2] Schutt, R. (2012). 10 Important Data Science Ideas. Available at http://columbiadatascience.com/2012/10/15/10-important-data-science-ideas/ .
-[3] A. Tosun, A. Bener, and S. Akbarisinaji, “A Systematic Literature Review on the Applications of Bayesian Networks to Predict Software Quality”. Software Quality Journal, in print.
-[4] Littlewood, B., & Verrall, J. (1973). A Bayesian reliability growth model for computer software. Applied statistics, 332-346.
-[5] Fenton, Neil, M., & Marquez, D. (2008). Using Bayesian networks to predict software defects and reliability. Proceedings of the Institution of Mechanical Engineers, Part O: Journal of Risk and Reliability, 222 (4), 701-712.
-[6] Fenton, N., Marsh, W., Neil, M., Cates, P., Forey, S., & Tailor, M. Making resource decisions for software projects. In Software Engineering, 2004. ICSE 2004. Proceedings. 26th International Conference on, 2004  (pp. 397-406): IEEE
-[7] Fineman, M., Fenton, N., & Radlinski, L. Modelling project trade-off using Bayesian networks. In Computational Intelligence and Software Engineering, 2009. CiSE 2009. International Conference on, 2009  (pp. 1-4): IEEE
-[8] Mendes, E. Predicting web development effort using a bayesian network. In Proceedings of EASE, 2007  (Vol. 7, pp. 83-93)
-[9] Mendes, E., & Mosley, N. (2008). Bayesian network models for web effort prediction: a comparative study. Software Engineering, IEEE Transactions on, 34 (6), 723-737.
+1. Misirli, A. T., and Bener, A., “Bayesian Networks For Evidence-Based Decision-Making in Software Engineering”. IEEE Transactions on Software Engineering, vol.40, no.6., June 2014.
+2. Schutt, R. (2012). 10 Important Data Science Ideas. Available at http://columbiadatascience.com/2012/10/15/10-important-data-science-ideas/ .
+3. A. Tosun, A. Bener, and S. Akbarisinaji, “A Systematic Literature Review on the Applications of Bayesian Networks to Predict Software Quality”. Software Quality Journal, in print.
+4. Littlewood, B., & Verrall, J. (1973). A Bayesian reliability growth model for computer software. Applied statistics, 332-346.
+5. Fenton, Neil, M., & Marquez, D. (2008). Using Bayesian networks to predict software defects and reliability. Proceedings of the Institution of Mechanical Engineers, Part O: Journal of Risk and Reliability, 222 (4), 701-712.
+6. Fenton, N., Marsh, W., Neil, M., Cates, P., Forey, S., & Tailor, M. Making resource decisions for software projects. In Software Engineering, 2004. ICSE 2004. Proceedings. 26th International Conference on, 2004  (pp. 397-406): IEEE
+7. Fineman, M., Fenton, N., & Radlinski, L. Modelling project trade-off using Bayesian networks. In Computational Intelligence and Software Engineering, 2009. CiSE 2009. International Conference on, 2009  (pp. 1-4): IEEE
+8. Mendes, E. Predicting web development effort using a bayesian network. In Proceedings of EASE, 2007  (Vol. 7, pp. 83-93)
+9. Mendes, E., & Mosley, N. (2008). Bayesian network models for web effort prediction: a comparative study. Software Engineering, IEEE Transactions on, 34 (6), 723-737.
 
