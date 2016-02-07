@@ -1,5 +1,7 @@
 # There's never enough time to do all the testing you want.
- 
+
+_Kim Herzig_
+
 Software is present in nearly every aspect of our daily lives and also dominates large parts of the high-tech consumer market. Consumers love new features and new features is what makes them buy software products, while features like reliability, security, and privacy are assumed. To respond to the consumer market demand, many software producers are following a trend to shorten software release cycles. As a consequence, software developers have to produce more features in less time while maintaining or even increasing product quality. Here at Microsoft (as well as other large software organizations [3]) we have learned that testing is not for free. Testing can slow down development processes and cost money in terms of infrastructure and human involvment. Thus, the effort associated with testing must be carefully monitored and managed.
  
 ## The impact of short release cycles (There's not enough time)
