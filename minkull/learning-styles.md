@@ -1,9 +1,5 @@
-# How You Learn [Data Models] Does Matter and There Are Many Ways You Can Do This
 
-or
-
-# The Learning Algorithm You Use for Data Analytics Affects the Results You Get
-
+# Which data mining method do you need?
 Leandro L. Minku, Department of Computer Science, University of Leicester, UK
 
 ## Learning Styles

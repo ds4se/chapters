@@ -90,7 +90,7 @@ confusing techno-speak.
 
 As to insights themselves, they are in two categories:
 
-- _SE-specific lessons:_ Some offer valuable comments on issues that are
+- _Lessons specific to software engineering:_ Some offer valuable comments on issues that are
   specific to data science for software engineering
   (for example, see Geunther Ruhe's excellent
   chapter on decision support for software
@@ -108,7 +108,7 @@ Our insights take many forms:
 + Words of Wisdom;
 + Tips for success, traps for the unwary, as well as the steps required to avoid those traps.
 
-That said,  all our insights have one thing in common- _**we wished we known them years ago**_!
+That said,  all our insights have one thing in common: _**we wished we known them years ago**_!
 If we had,  then that
 would have
 saved us ,  and our clients, so much time and money.
