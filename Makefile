@@ -18,12 +18,11 @@ status:
 
 root=menzies#
 files=$(shell find $(root) -type f -name '*.md' | grep -v \.git | grep -v '_')
-docs=$(files:.md=.docx)
+docs=$(files:.md=.html)
 
 
+%.html : %.md
+	pandoc -s  $< -o $@
 
-%.docx : %.md
-	pandoc -s -S $< -o $@
-
-docxs:  $(docs)
+htmls:  $(docs)
 

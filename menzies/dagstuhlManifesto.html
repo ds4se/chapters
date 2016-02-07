@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h1 id="perspectives-on-data-science-for-software-engineering">Perspectives on Data Science for Software Engineering</h1>
+<ul>
+<li><em>Tim Menzies,<br />Laurie Williams,<br />Thomas Zimmermann</em></li>
+</ul>
+<h2 id="why-this-book">Why This Book?</h2>
+<p><img src="dagstuhl.JPG" width=400 align=right> Historically, this book began as a week-long workshop in Dagstuhl, Germany [1]. The goal of that meeting was to document the wide range of work on software analytics.</p>
+<p>That meeting had the following premise:</p>
+<ul>
+<li><em>So little time, so much data.</em></li>
+</ul>
+<p>That is, given recent increases in how much data we can collect, and given a shortage in skilled analysts that can assess that data [2], there now exists more data than people to study it. Consequently, the analysis of real world data (using semi-automatic or fully automatic methods) is an exploding field, to say this least.</p>
+<p>This issue is made more pressing by two factors:</p>
+<ul>
+<li><em>Many useful methods:</em> Decades of research in artificial intelligence, social science methods, visualizations, statistics, etc. has generated a large number of powerful methods for learning from data.</li>
+<li><em>Much support for those methods:</em> Many of those methods are explored in standard textbooks and education programs. Those methods are also supported in toolkits that are widely available (sometimes, even via free downloads). Further, given the &quot;big data&quot; revolution, it is now possible and to acquire the hardware necessary, even for the longest runs of these tools. So now the issue becomes now &quot;how to <em>get</em> these tools&quot; but how to &quot;use'' these tools&quot;.</li>
+</ul>
+<p>If general analytics is an active field, software analytics is doublely so. Consider what we know about software projects:</p>
+<ul>
+<li>source code;</li>
+<li>emails about that code;</li>
+<li>check-ins;</li>
+<li>work items;</li>
+<li>bug reports;</li>
+<li>test suites;</li>
+<li>test executions;</li>
+<li>and even some background information of the developers.</li>
+</ul>
+<p>All that information is recorded in software repositories such as CVS, Subversion, GIT, GITHUB, and Bugzilla. Also found there are the telemetry data, run-time traces, and log files reflecting how customers experience software (that information includes application and feature usage and records of performance and reliability).</p>
+<p>This means that never before in the history have we had so much information about the details on how people collaborating to</p>
+<ul>
+<li>use someone else's insights and software tools;</li>
+<li>generate and distribute new insights and software tools;</li>
+<li>maintain and update existing insights and software tools.</li>
+</ul>
+<p>(Here, by &quot;tools&quot; we mean everything from the four lines of SQL that are triggered when someone surfs to a web page, to scripts that might be only dozens to hundreds of lines of code, or to much larger open source and proprietary systems. Also, our use of &quot;tools&quot; includes building new tools as well as on-going maintenance work, as well as combinations of hardware and software system).</p>
+<p>Accordingly, for your consideration, this book explores that process for software development applications. Our goal is to offer better insights into that process. The chapters here were written by participants at the Dagstuhl workshop, plus numerous other experts in the field on industrial and academic data mining.</p>
+<h2 id="about-this-book">About this Book</h2>
+<p>Each chapter is aimed at a generalized audience with some technical interest in software engineering. Hence, the chapters are very short and to the point. Also, the authors of these chapters have taken care to strip chapters of excessive and confusing techno-speak.</p>
+<p>As to insights themselves, they are in two categories:</p>
+<ul>
+<li><em>Lessons specific to software engineering:</em> Some offer valuable comments on issues that are specific to data science for software engineering (for example, see Geunther Ruhe's excellent chapter on decision support for software engineering).</li>
+<li><em>General lessons about data analytics:</em> Others are more general. These comment on issues relating to drawing conclusions from real-world data. The case study material for these chapters come from the domain of software engineering problems. That said, this material has much to offer data scientists working in many other domains.</li>
+</ul>
+<p>Our insights take many forms:</p>
+<ul>
+<li>Some introductory material (to set the scene);</li>
+<li>Success stories and application case studies;</li>
+<li>Techniques;</li>
+<li>Words of Wisdom;</li>
+<li>Tips for success, traps for the unwary, as well as the steps required to avoid those traps.</li>
+</ul>
+<p>That said, all our insights have one thing in common: <em><strong>we wished we known them years ago</strong></em>! If we had, then that would have saved us , and our clients, so much time and money.</p>
+<h2 id="the-future">The Future</h2>
+<p>While these chapters were written by experts, they are hardly complete. Data science methods for SE are continually changing so we view this book as a &quot;first edition&quot; that will need significant and regular updates. To that end, we have created a news group for posting new insights. Feel free to make any comment at all there.</p>
+<ul>
+<li>To browse the messages in that group, go to https://groups.google.com/forum/#!forum/perspectivesds4se</li>
+<li>To post to that group, send email to perspectivesds4se@googlegroups.com</li>
+<li>To unsubscribe from that group, send email to perspectivesds4se+unsubscribe@googlegroups.com</li>
+</ul>
+<p>Note that if you want to be considered for any future update of this book:</p>
+<ul>
+<li>Make the subject line some eye-catching &quot;mantra&quot;; i.e. some slogan reflecting best practice for data science for SE.</li>
+<li>The post should read something like the chapters of this book. That is, it should be:</li>
+<li>Short, and to the point.</li>
+<li>Make little or no use of jargon, formula, diagrams, references.</li>
+<li>Be approachable by a broad audience and have a clear take away message.</li>
+</ul>
+<p>Share and enjoy!</p>
+<h2 id="references">References</h2>
+<p>[1] Software Development Analytics (Dagstuhl Seminar 14261), Gall, Harald ; Menzies, Tim ; Williams, Laurie ; Zimmermann, Thomas Dagstuhl Reports Journal, 4(6) 64--83, 2014, http://drops.dagstuhl.de/opus/volltexte/2014/4763/</p>
+<p>[2] Big data: The next frontier for competition. McKinsey &amp; Company. http://www.mckinsey.com/features/big_data</p>
+</body>
+</html>
