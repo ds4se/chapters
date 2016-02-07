@@ -11,7 +11,7 @@ Department of Computer Science
 UC Davis, Davis, CA, 95616 
 <ptdevanbu@ucdavis.edu>
 
-_This text is adapted from an earlier version that appeared in ICSE NIER 2015 [^1]._
+_This text is adapted from an earlier version that appeared in ICSE NIER 2015 [1]._
 
 ## Introduction
 
