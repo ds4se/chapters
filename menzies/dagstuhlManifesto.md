@@ -13,7 +13,7 @@ Historically, this book began as a week-long workshop in Dagstuhl, Germany [1].
 The goal of that meeting was to
 document the wide range of work on software analytics.
 
-That meeting had the
+That meeting had 
 the following premise:
 
 + _So little time, so much data._
