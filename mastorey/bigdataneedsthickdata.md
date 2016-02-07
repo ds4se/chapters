@@ -12,7 +12,7 @@ In this short article, I ask you, the reader, to consider the risks from followi
 
 As humans we often have a tendency to "look for the car keys where the light shines" or to go after the "low hanging fruit". Indeed, technologists (I won't use the term geeks here) may be particularly attracted by the "shininess" of data that is both quantifiable and relatively easy to collect.   But important insights that our stakeholders may care about will often lie in qualitative data that is unstructured, messy and resistent to automatic collection and analysis methods. 
 
-Consider for example data from A/B testing, although it will help a designer understand which feature is preferred, it may be the blog posts and tweets that provide insights into why a particular feature is shunned by its users.
+Consider for example data from A/B testing, although it will help a designer understand which feature is preferred, it may be qualitative data from blog posts and tweets that provide insights into why a particular feature is shunned by its users.
 Qualitative data requires the application of sound and rigorous manual analysis methods to make sense of it 
 [Seaman1999].  But a warning, these manual qualitative methods are both time consuming and expensive, and such efforts to reveal rich and insightful stories are unfortunately often not valued by some stakeholders that have a tendency to only trust "numbers" and "statistics".  
 
