@@ -34,17 +34,18 @@ Software organizations need predictive models to make release decisions. Using e
 
 Our experience in industry as well as the findings of our systematic review in [3] showed that there is a need for a systematic approach in building BNs. The dataset characteristics, source of data and types of input and output variables would be important in:
 
-1.	identification of structure learning techniques to model cause-effect relationships between variables, and the rationale of choosing the selected technique, and in 
-2.	identification of parameter learning, with respect to 
-       a.	how to set the prior distributions, and 
-       b.	how to estimate the final parameters of the model (inference), and the rationale of choosing the selected technique. 
+1. identification of structure learning techniques to model cause-effect relationships between variables, and the rationale of choosing the selected technique, and in 
+2. identification of parameter learning, with respect to 
+       a. how to set the prior distributions, and 
+       b. how to estimate the final parameters of the model (inference), and the rationale of choosing the selected technique. 
 
 As always the tool support and tool selection is also an important consideration for adoption and sustainability of a given technique/ model in the industry.
 
 Similar to computational biology and healthcare, we need to make decisions under uncertainty using multiple data sources. As we understand the dynamics of BNs and the techniques used for model learning, and inference, these models would enable us to uncover hidden relationships between variables, which can not be easily identified by experts [1]. BNs will help us determine how scientific belief is modified by data. In the software engineering/ software analytics community (both academia and practice) we should embrace BNs as a method for evidence based statistics to be used in inference and decision making. 
 
 
-References
+## References
+
 [1] Misirli, A. T., and Bener, A., “Bayesian Networks For Evidence-Based Decision-Making in Software Engineering”. IEEE Transactions on Software Engineering, vol.40, no.6., June 2014.
 [2] Schutt, R. (2012). 10 Important Data Science Ideas. Available at http://columbiadatascience.com/2012/10/15/10-important-data-science-ideas/ .
 [3] A. Tosun, A. Bener, and S. Akbarisinaji, “A Systematic Literature Review on the Applications of Bayesian Networks to Predict Software Quality”. Software Quality Journal, in print.
