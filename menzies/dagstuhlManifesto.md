@@ -24,7 +24,7 @@ there now exists more data than people to study it.
 Consequently, the analysis of real world data (using semi-automatic or fully automatic methods) is an exploding field, to
 say this least.
 
-This issues is made more pressing by two factors:
+This issue is made more pressing by two factors:
 
 - _Many useful methods:_ Decades of research in artificial intelligence, social science methods, visualizations, statistics, etc.
 has generated a large number of powerful  methods for learning from data.
@@ -102,14 +102,13 @@ As to insights themselves, they are in two categories:
   
 Our insights take many forms:
 
-+ hints; 
-+ tips;
-+ tools;
-+ tricks;
-+ techniques;
-+ traps for the unwary, as well as  the steps required to avoid those traps.
++ Some introductory material (to set the scene);
++ Success stories and application case studies;
++ Techniques;
++ Words of Wisdom;
++ Tips for success, traps for the unwary, as well as the steps required to avoid those traps.
 
-That said,  all our insights have one thing in common- _**we wished we known them years ago**_!!!!
+That said,  all our insights have one thing in common- _**we wished we known them years ago**_!
 If we had,  then that
 would have
 saved us ,  and our clients, so much time and money.
@@ -123,11 +122,18 @@ continually changing so we view this book as a
 "first edition" that will need significant and
 regular updates. To that end, we have created a news
 group for posting new insights. Feel free to make
-any comment at all there. But if you want to be
+any comment at all there.
+
++ To browse the messages in that group, go to https://groups.google.com/forum/#!forum/perspectivesds4se
++ To post to that group, send email to perspectivesds4se@googlegroups.com
++ To unsubscribe from that group, send email to perspectivesds4se+unsubscribe@googlegroups.com
+
+
+Note that  if you want to be
 considered for any future update of this book:
 
 - Make the subject line some eye-catching "mantra";  i.e. some slogan reflecting best practice for data science for SE.
-- The post  should be 
+- The post  should read something like the chapters of this book. That is, it should be:
   - Short, and to the point.
   - Make little or no use of jargon, formula, diagrams, references.
   - Be approachable by a broad audience and have a clear take away message.
