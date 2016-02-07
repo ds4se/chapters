@@ -1,6 +1,5 @@
 # Perspectives on Data Science for Software Engineering
 
-<em>NOTE TO REVIEWERS: This is draft0 of the book intro.</em>
 
 - <em>Tim Menzies,   
 Laurie Williams,  
@@ -11,11 +10,15 @@ Thomas Zimmermann</em>
 
 <img src="dagstuhl.JPG" width=400 align=right>
 Historically, this book began as a week-long workshop in Dagstuhl, Germany [1].
-That workshop documented the range of work on software analytics, with the following premise:
+The goal of that meeting was to
+document the wide range of work on software analytics.
+
+That meeting had the
+the following premise:
 
 + _So little time, so much data._
 
-Given recent increases in how much data we can collect,
+That is, given recent increases in how much data we can collect,
 and given a shortage in skilled analysts that can assess that data [2],
 there now exists more data than people to study it.
 Consequently, the analysis of real world data (using semi-automatic or fully automatic methods) is an exploding field, to
