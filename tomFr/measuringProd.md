@@ -1,5 +1,7 @@
 # Measuring individual productivity
 
+_Thomas Fritz_
+
 In the last century, one company was said to have determined the price of a software product by the estimated number of lines of code necessary to be written. In turn the company also paid their software developers based on the number of lines of code produced per day. What happened next is that the company's developers started 'gaming the system'--they wrote all of a sudden a lot more code while at the same time the functionality captured in the code decreased. As one might imagine, adding more lines of code to a program without changing the behavior is easy. So  incentivizing employees on a single outcome metric, might just foster this. 
 
 Overall, this example shows that it is not easy to find a good measure for a developer's success or productivity. In some domains, such as car manufacturing, specific measures on the quantity of the outcome, such as the number of cars produced in a day, have worked well to incentivize employees and to measure their success. In the software development domain, however, where the outcome and the overall process of developing software is less clearly defined and more flexible, such outcome measures are difficult to define. In particular, trying to reduce the complex activity of developing software into a single measure of one particular outcome of the development process is probably impossible.
