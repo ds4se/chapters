@@ -193,6 +193,8 @@ language; it also offers the promise of using new scientific methodologies
 to investigate the human and social aspects of software, drawn from
 approaches in cognitive and social linguistics.  
 
+## References
+
 1. P. Devanbu, THe Naturalness of Software, ICSE 2015 NIER Track 
 2. M. Allamanis, E. T. Barr, and C. Sutton. Learning natural coding conventions. In Proceedings of the Joint Meeting on Foundations of Software Engineering, 2014.
 3. A. Hindle, E. Barr, M. Gabel, Z. Su, and P. Devanbu. On the Naturalness of Software. [http://macbeth.cs.ucdavis.edu/natural.pdf](http://macbeth.cs.ucdavis.edu/natural.pdf), 2012. [Extended Version of the work published at the Internation Conference on Software Engineering 2012, Online; accessed 08-Feb-2015].
