@@ -23,7 +23,7 @@ if the food you had to eat last night had gone off?
 What if you are seeing things, and there really is
 nothing out there? What would you do to make sure?
 
-+ **Tip:** _ Empirical studies results should not be blindly trusted. Empirical data can also lie. How to be sure that what you observe exist?_
++ **Tip:** _Empirical studies results should not be blindly trusted. Empirical data can also lie. How to be sure that what you observe exist?_
 
 For ruling out the possibility that you are seeing
 things you ask one of your travelling companions to
@@ -82,7 +82,7 @@ Noticed that leaving out steps might lead to uncertain situations. If you move d
 
 Just because once happened that you observed something emerging from a set of data (being them either produced by your study or borrowed from a repository) _don’t_ trust it. Replication is the tool science has of being sure that something observed really exists. Do it again!
 
-
+## References
 
 To know more: 
 
