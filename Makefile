@@ -16,3 +16,13 @@ status:
 	- git status
 
 
+root=menzies#
+files=$(shell find $(root) -type f -name '*.md' | grep -v \.git | grep -v '_')
+docs=$(files:.md=.html)
+
+
+%.html : %.md
+	pandoc -s  $< -o $@
+
+htmls:  $(docs)
+
