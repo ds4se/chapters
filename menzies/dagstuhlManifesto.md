@@ -35,7 +35,7 @@ supported in toolkits that are widely available
 (sometimes, even via free downloads). Further, given
 the "big data" revolution, it is now possible and
 to acquire the hardware necessary, even
-for the longest runs of these tools. So now the issue becomes now "how to _get_ these tools" but how to "use'' these tools".
+for the longest runs of these tools. So now the issue becomes not "how to _get_ these tools" but, instead, how to "use'' these tools".
 
 If general analytics is an active field, software analytics is doublely so.
 Consider what we know about software projects:
