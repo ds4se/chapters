@@ -1,4 +1,4 @@
-# Visualize often and double check
+# Make visualization part of your analysis process
 
 Stephan Diehl, University of Trier, diehl@uni-trier.de
 
