@@ -50,7 +50,7 @@ Consider what we know about software projects:
 -  and even some background information
 of the developers. 
 
-All that information is recorded in software repositories, such as CVS, Subversion, GIT, GITHUB, and Bugzilla. Found in these repositories are telemetry data, run-time traces, and log files reflecting how customers experience software, application and feature usage, and records of performance and reliability.
+All that information is recorded in software repositories, such as CVS, Subversion, GIT, GITHUB, and Bugzilla. Found in these repositories are telemetry data, run-time traces, and log files reflecting how customers experience software, application and feature usage, records of performance and reliability, and more.
 
 Never before have we had so much information about the details on how people collaborating to 
 
