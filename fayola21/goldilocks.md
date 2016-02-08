@@ -29,7 +29,7 @@ When we first started research into data privacy for software engineering, we fo
 
 With these issues in mind, our first effort at generating "just right" data was MORPH, an instance mutator for obfuscating numerical data (Peters et al. 2012). The intuition behind MORPH is to change the data enough to avoid privacy breaches but not enough to degrade utility. To generate MORPHed instances we first find for each original instance, its *nearest unlike neighbour*, that is, if an instance is defective then its nearest unlike neighbour is non-defective. We then apply the following equation: 
 
-![img](http://www.sciweavers.org/tex2img.php?eq=%24%24y_i%20%3D%20x_i%20%5Cpm%20%28x_i%20-%20z_i%29%20%2A%20r%24%24%0A%0A%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0[/img]),
+![goldilockseqn](https://cloud.githubusercontent.com/assets/5220943/12889513/293d6016-ce77-11e5-80f2-b65cf5e84469.png),
 
 where *y* is the MORPHed instance generated when we find the difference between the values of the original instance (*x*) and it's nearest unlike neighbor (*z*). The random value (*r*) can be set to between *0* and *1* and represents the boundary between the original instance and its nearest unlike neighbor which the MORPHed instance must not cross. A small *r* value means the boundary is closer to the original instance, while a large *r* value means the boundary is farther away from the original instance.
 
