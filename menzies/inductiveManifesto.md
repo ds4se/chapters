@@ -7,12 +7,12 @@
 
  _Inductive software engineering_ is that branch of software engineering focusing
 on the delivery of data mining based software
-applications to users. Within those data miners, the core
+applications. Within those data miners, the core
 problem is _induction_ which is the extraction of small patterns from
 larger data sets.
 Inductive engineers
-spend much effort trying to understand user goals in order to
-inductively generate the models that most matter to those user.
+spend much effort trying to understand bsuiness goals in order to
+inductively generate the models that   matter the most.
  
 Previously, with Christian Bird, Thomas Zimmermann, Wolfram Schulte, and Ekrem Kocaganeli, we wrote an _Inductive Engineering
 Manifesto_ [1] that offered some details on this new kind of engineering.
@@ -20,41 +20,41 @@ That whole   manifesto is a little long, so here I offer a quick summary. Listed
 in the real world. For more details (and more principles),
  the reader should refer to the original document [1].
 
-## Principle #1: Users Before Algorithms
+## Principle #1: Humans Before Algorithms
 
-Mining algorithms are only good if users find their use in real-world applications. This means
-that they need to
+Mining algorithms are only good if humans find their use in real-world applications. This means
+that humans  need to
 
 - understand the results
 - understand that those results add value to their work.
 
 Accordingly, it is strongly recommend that once the
 algorithms generate some model, then the inductive
-engineer _talks to the users_ about those
-results.
+engineer _talks to humans_ about those
+results. In the case of software analytics, these humans are the subject matter experts or business problem owners
+that are asking you to improve the ways they are generating software.
 
 In our experience, such discussions lead to
 a second, third, fourth, etc round of learning. To assess if you are talking in "the right way"
-to your users, check the following:
+to your humans, check the following:
 
-+ Do users bring their senior management to the meetings? If yes, great!
-+ Do users keep interrupting (you or each other) and debating your results? If yes, then shut the hell up
++ Do they bring their senior management to the meetings? If yes, great!
++ Do they keep interrupting (you or each other) and debating your results? If yes, then shut the hell up
   (and take lots notes!)
-+ Do the users indicate they understand your explanation of the results? E.g. can they
++ Do they indicate they understand your explanation of the results? E.g. can they
     correctly extend your results to list desirable, undesirable implications of your results?
 + Do your results are touching on issues that concern them? This is _easy_ to check.... just count
 	how many times they glance up from their notes, looking startled or alarmed.
-+ Do your user offer more data sources for analysis? If yes, they like what you are doing and want you to do it more.
-+ Do users invite you to their workspace and ask you to teach them how to do XYZ?
-  If yes, this is a real win. Ideally, inductive software engineers build a team
-  of engineers and users, each of which can contribute significantly to the process.
++ Do they offer more data sources for analysis? If yes, they like what you are doing and want you to do it more.
++ Do they invite you to their workspace and ask you to teach them how to do XYZ?
+  If yes, this is a real win.  
 
 ## Principle #2: Plan for Scale
 
 
 Data mining methods are usually repeated multiple times in order to:
 
-+ Answer new user questions, inspired by the current  results;
++ Answer new  questions, inspired by the current  results;
 + Enhance data mining method or fix some bugs;
 + Deploy the results, or the analysis methods,  to different user groups
 
@@ -76,9 +76,9 @@ way it ended:
 
 + Initially, a single inductive engineer did some  rapid prototyping for
 a few week,  to
-  explore a range of hypotheses and  gain user interest (and get user feedback on the early results);
+  explore a range of hypotheses and  gain business interest (and get  human feedback on the early results);
 + Next, the inductive engineering team spent a few months conducted many
-  experiments to find stable models (and to narrow in   on the most important user goals). 
+  experiments to find stable models (and to narrow in   on the most important business goals). 
 + In the final   stage, which took a year,  the inductive engineers
   integrate the  models into a deployment framework that was suitable for target user base
 
@@ -111,7 +111,7 @@ you really wasted a lot of time and effort.
 Hence, some mantras to chant while data mining are:
 
 + Avoid a fixed hypothesis. Be respectful
-but doubtful to all user-suggested domain hypotheses. Certainly, explore
+but doubtful to all human-suggested domain hypotheses. Certainly, explore
  the issues that they raise but also take the time to look further afield.
 + Avoid a fixed approach for data mining (e.g. just using decision trees all the time), particularly for data not been mined before
 + The most important initial results are the ones that radically and dramatically
