@@ -76,34 +76,30 @@ on industrial and academic data mining.
 
 
 Each chapter is aimed at a generalized audience with some technical interest in software
-engineering. Hence, the chapters are very short and  to the point. Also, the authors of these chapters have taken care
-to strip chapters of excessive and
-confusing techno-speak.
+engineering. Hence, the chapters are very short and  to the point. Also,the chapter authors have taken care
+to avoid excessive and confusing techno-speak.
 
 As to insights themselves, they are in two categories:
 
-- _Lessons specific to software engineering:_ Some offer valuable comments on issues that are
-  specific to data science for software engineering
-  (for example, see Geunther Ruhe's excellent
-  chapter on decision support for software
-  engineering).
-- _General lessons about data analytics:_ Others are more general. These
-  comment on issues relating to drawing conclusions
-  from real-world data. The case study material for these chapters come from the domain of software engineering problems.
+- _Lessons specific to software engineering:_ Some chapters offer valuable comments on issues that are
+  specific to data science for software engineering.  For example, see Geunther Ruhe's excellent
+  chapter on decision support for software engineering.
+- _General lessons about data analytics:_ Others chapters are more general. These
+  comment on issues relating to drawing conclusions from real-world data. The case study material for these chapters come from the domain of software engineering problems.
   That said, this material has much to offer data scientists working in many other domains.
   
 Our insights take many forms:
 
-+ Some introductory material (to set the scene);
++ Some introductory material to set the scene;
 + Success stories and application case studies;
 + Techniques;
 + Words of Wisdom;
 + Tips for success, traps for the unwary, as well as the steps required to avoid those traps.
 
 That said,  all our insights have one thing in common: _**we wished we known them years ago**_!
-If we had,  then that
+If we had, then that
 would have
-saved us ,  and our clients, so much time and money.
+saved us and our clients so much time and money.
 
 
 ## The Future
@@ -125,7 +121,7 @@ Note that  if you want to be
 considered for any future update of this book:
 
 - Make the subject line some eye-catching "mantra";  i.e. some slogan reflecting best practice for data science for SE.
-- The post  should read something like the chapters of this book. That is, it should be:
+- The post should read something like the chapters of this book. That is, it should be:
   - Short, and to the point.
   - Make little or no use of jargon, formula, diagrams, references.
   - Be approachable by a broad audience and have a clear take away message.
