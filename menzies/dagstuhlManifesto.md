@@ -50,29 +50,21 @@ Consider what we know about software projects:
 -  and even some background information
 of the developers. 
 
-All that information is  recorded in software repositories such as
-CVS, Subversion, GIT, GITHUB, and Bugzilla. Also found there are the telemetry data, run-time traces, and log files reflecting
-how customers experience software (that information  includes application and feature usage and records of
-performance and reliability).
+All that information is recorded in software repositories, such as CVS, Subversion, GIT, GITHUB, and Bugzilla. Found in these repositories are telemetry data, run-time traces, and log files reflecting how customers experience software, application and feature usage, and records of performance and reliability.
 
-This means that never before in the history have
-we had so much information about the details on how people collaborating to 
+Never before have we had so much information about the details on how people collaborating to 
 
 - use someone else's insights and software tools;
 - generate and distribute new insights and software tools;
 - maintain and update existing insights and software tools.
 
-(Here, by "tools" we mean everything from the four
-lines of SQL that are triggered when someone surfs
-to a web page, to scripts that might be only dozens
-to hundreds of lines of code, or to much larger open
-source and proprietary systems. Also, our use of
-"tools" includes building new tools as well as on-going
-maintenance work, as well as combinations of
-hardware and software system).
+Here, by "tools" we mean everything from the four lines of SQL that are triggered when someone surfs
+to a web page, to scripts that might be only dozens to hundreds of lines of code, or to much larger open
+source and proprietary systems. Also, our use of "tools" includes building new tools as well as on-going
+maintenance work, as well as combinations of hardware and software system. 
 
 Accordingly, for your consideration, this book
-explores that process  for software development applications.
+explores that process for software development applications.
 Our goal is to
 offer better insights into that process. The chapters here
 were written by participants at the Dagstuhl
