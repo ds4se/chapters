@@ -63,13 +63,16 @@ to a web page, to scripts that might be only dozens to hundreds of lines of code
 source and proprietary systems. Also, our use of "tools" includes building new tools as well as on-going
 maintenance work, as well as combinations of hardware and software system. 
 
-Accordingly, for your consideration, this book
-explores that process for software development applications.
-Our goal is to
-offer better insights into that process. The chapters here
+Accordingly, for your consideration, this book explores the process
+for analyzing data from software development applications to generate
+insights.
+The chapters here
 were written by participants at the Dagstuhl
 workshop, plus numerous other experts in the field
 on industrial and academic data mining.
+Our goal is to summarize and distribute their
+experience and combined wisdom and understanding about that data analysis
+process.
 
 
 ## About this Book
