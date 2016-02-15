@@ -1,4 +1,5 @@
-# Summarizing Dynamic Data
+# Look for State Transitions in Temporal Data
+
 Reid Holmes, University of British Columbia, Canada
 
 ## Bikeshedding in Software Engineering
@@ -15,7 +16,7 @@ To create a state-transition diagram, first identify the 'states' that are possi
 
 While any expected edge confirms your understanding of the data, unexpected edges provide insight into how your model of the data could be incorrect. These unexpected transitions are therefore a great place to start a qualitative investigation of the individual data points they represent and provide a concrete way to move from a summarization to a in depth examination of specific rows in your data.
 
-A concrete example is shown in the figure below. In this work we compared code review practices between Webkit and Firefox. The possible states a code review can be in are in are shown in the rectangles. The shaded rectangles represent terminal states for a code review. The distinction between states that are terminal and those that are transitory is not required for these analyses. We next examined how the code reviews move between the states; the annotations on the edges describe these. A request review is annotated with an r?, while a positive review is r+ and a negative review is r-. The Firefox project also uses a super-reviews for some patches which accounts for the sr+ and sr- edges.
+A concrete example is shown in the figures below. In this work we compared code review practices between Webkit and Firefox. The possible states a code review can be in are in are shown in the rectangles. The shaded rectangles represent terminal states for a code review. The only distinction between states that are terminal and those that are transitory is that reviews do not transition out of terminal states; a patch that is updated and resubmitted for a new review is considered as if it were new. We next examined how the code reviews move between the states; the annotations on the edges describe these. A request review is annotated with an r?, while a positive review is r+ and a negative review is r-. The Firefox project also uses a super-reviews for some patches which accounts for the sr+ and sr- edges. The percentage labels correspond to number of patches flowing across each state transition divided by the total number of total starting edges (review requests in this case). For example, 7.9% of the 34,749 patches in Webkit (or 2,745) were resubmitted for additional review, even though they had been accepted.
 
 By examining the summarization of the tens of thousands of data points provided by the state-transition diagram, we can see some huge differences between the two projects. The most notable of these is the edge between submitted and resubmitted for Webkit; while a first we thought this was an error in our data, it gave us a concrete question to approach the Webkit developers about and greatly contributed to our understanding of the Webkit code review process (it turns out Webkit runs automated analyses on patches; if an analysis turns up a problem, the developer will 'obsolete' their own patch and resubmit a new one).
 
