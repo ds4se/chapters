@@ -64,7 +64,7 @@ software systems, such as file size (Herraiz et al., 2011), change sizes (Gorshe
 and number of subclasses (Turnu et al., 2011). Recent work by Zhongpeng Lin provides one
 explanation for why power laws are so prevelant (Lin and Whitehead, 2015) via the simulated evolution
 of a large software system. Two generative mechanisms are used. _Preferential attachment_ results in simulated
-software changes being made to larger files more commonly than smaller ones, in the software version
+software changes being made to larger files more commonly than smaller ones --- the software version
 of the rich getting richer. A _self-organized criticality_ process determines the size of software commits.
 Outside of software, self-organized criticality can be seen in growing sand piles, which have avalanches
 of varying sizes as sand trickles down. This generative simulation is able to render power
