@@ -11,7 +11,7 @@ applications. Within those data miners, the core
 problem is _induction_ which is the extraction of small patterns from
 larger data sets.
 Inductive engineers
-spend much effort trying to understand bsuiness goals in order to
+spend much effort trying to understand business goals in order to
 inductively generate the models that   matter the most.
  
 Previously, with Christian Bird, Thomas Zimmermann, Wolfram Schulte, and Ekrem Kocaganeli, we wrote an _Inductive Engineering
