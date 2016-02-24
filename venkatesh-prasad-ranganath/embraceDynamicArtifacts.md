@@ -43,7 +43,7 @@ So, don't shy away from or throw away dynamic artifacts.  Learn to embrace them!
 
 ## Acknowledgements
 
-The USB test suite minimization effort was carried out at Microsoft by Naren Datha, Robbie Harris, Aravind Navasivayam, Venkatesh-Prasad Ranganath, and Pradip Vallathol.
+The USB test suite minimization effort was carried out at Microsoft by Naren Datha, Robbie Harris, Aravind Namasivayam, Venkatesh-Prasad Ranganath, and Pradip Vallathol.
 
 
 ## References
