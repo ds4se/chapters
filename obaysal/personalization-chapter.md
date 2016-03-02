@@ -1,4 +1,4 @@
-# Developer Dashboards as a Tailored Suit: The Big Opportunity in Personalizing Issue Tracking
+# A Tailored Suit: The Big Opportunity in Personalizing Issue Tracking
  _Olga Baysal, Carleton University, Canada_
 
 ## Many Choices, Nothing Great
