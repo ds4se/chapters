@@ -59,6 +59,11 @@ To summarize, when using data science for software engineering (and possibly oth
 This insight proved to be rather useful in my subsequent flings with data analyis.  Now, I hope you too will consider this insight in your next data science excursion and either be more effective or challenge the insight :)
 
 
+## Acknowledgements
+
+The USB compatibility testing effort was carried out at Microsoft by Pankaj Gupta, Venkatesh-Prasad Ranganath, and Pradip Vallathol with advice from Randy Aull, Robbie Harris, Jane Lawrence, and Eliyas Yakub.
+
+
 ## References
 
 1. Compatibility Testing via Patterns-based Trace Comparison by Venkatesh-Prasad Ranganath, Pradip Vallathol, and Pankaj Gupta.  International Conference on Automated Software Engineering (ASE) 2014. <http://dl.acm.org/citation.cfm?id=2642942&CFID=527822378&CFTOKEN=34072062>
