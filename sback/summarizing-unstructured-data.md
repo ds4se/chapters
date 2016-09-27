@@ -124,7 +124,7 @@ like to have a categorization that looks like the following:
 
 Is it possible to automatically tag each line with the language it is written
 in? Yes! Researchers developed a number of methods to classify text in
-different categories. A classical example is the case of classifying a whole
+different categories. A classic example is the case of classifying a whole
 email into "spam" or legitimate. In the case of development emails, we
 developed simple methods to recognize lines of code from other text [2] and
 more complex ones to recognize more complex languages, such as those used in
@@ -201,9 +201,3 @@ Extracting Source Code from E-Mails. ICPC 2010: 24-33
 
 [3] Alberto Bacchelli, Tommaso Dal Sasso, Marco D'Ambros, Michele Lanza:
 Content classification of development emails. ICSE 2012: 375-385
-
-
-
-
-
-
