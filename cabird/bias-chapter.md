@@ -6,9 +6,7 @@ The 1948 U.S. presidential election proved to be one of the greatest blunders in
 
 As is often the case, many polls were conducted in the run up to the election. Gallup, still one of the most trusted polling organizations today, predicted that republican Thomas Dewey would handily defeat democrat Harry Truman.  In fact, the press was so convinced by the "empirical evidence" that the Chicago Daily Tribune had already printed the first edition of the paper with the headline "Dewey Defeats Truman" before final election results were in.  Unfortunately for them, the election results the next morning were anything but expected, as Truman had won the electoral vote with 303 votes to Dewey's 189.  A landslide, but in the opposite direction.
 
-<div style="float: right">
-  <img src="dewey-defeats-truman.jpg" height="250px" />
-</div>
+![](dewey-defeats-truman.jpg)
 
 In the modern era of data collection and statistics, how could such a thing have happened?  The answer lies not in the analysis of the data, but in the hidden biases it contained.  Consider just one of many errors in the polling methodology.  Like today, polling was conducted by selecting people randomly and contacting people via telephone.  However, in 1948 telephones were mostly owned by individuals who were more financially well-off. At that time those with higher income levels tended to lean republican.  While the polling was indeed random, the population sampled (people that had telephones) was biased with respect to the entire voting population.  Thus any results drawn from the polling data were similarly biased.  The problem has not completely been solved even today as certain demographics may be more likely to answer the phone or less likely to vote.
 
@@ -24,9 +22,8 @@ A few years ago (Bird, 2009), we examined defect data sets to determine if there
 
 The following graph shows the proportions for all projects.  Note that AspectJ is appears to suffer far less from bias in bug severity for links between defects and commits.
 
-<div>
-  <img src="severity-bias.png" height="500px" />
-</div>
+
+![](severity-bias.png)
 
 While we identified bias in the data, what's worse is that this bias appeared to affect the results of research that used the data.  We used the linked defects and fixing commits to train a defect prediction model (a statistical model that would predict what parts of the code was most likely to contain defects).  When we evaluated our prediction model, it was much better at predicting those defects that had lower severity than those that had higher severity.  In practice, one would likely prefer a machine learning method that points to likely defective areas in the code to either be agnostic of the severity of the defects or favor indicating locations with higher severity defects.  We were getting the opposite due to bias in the data.  Inadvertently using biased data can impact the quality of tools or models and the validity of empirical findings.
 
@@ -46,9 +43,7 @@ If you lack any other distribution for comparison, the best approach is to calcu
 
 As a concrete example, consider an investigation into the impact of years of experience on the time to complete tasks in a software company. As part of this study, one would need to select one or more projects to investigate.  Suppose that after selecting a project and gathering data such as the experience of developers and the time taken to complete various tasks, the investigator wants to determine if there is any bias (and if so how much) in his data.  One step would be to collect the years of experience from developers in the entire company (or from a purely random sample of developers).  Putting the data into R and drawing a simple box plot (shown below) will quickly show that the project selected is highly biased with respect to age of developers and thus the findings may not generalize to the entire company.  A Kolmogorov-Smirnov test in R also indicates that the sample is statistically different from the population of developers in the company.
 
-<div>
-  <img src="experience-plot.PNG" height="400px" />
-</div>
+![](experience-plot.PNG)
 
 ## Assessing Impact
 
