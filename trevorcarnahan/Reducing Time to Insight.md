@@ -4,7 +4,7 @@
 
 Insight Production, preferably with data (I jest), is a big part of my role at Microsoft.  And if you're reading this chapter, I'll assert you are also an Insight Producer, or well on your way to becoming one.
 
-Since insight is the product, let's start with a simple definition.  The classical definition of insight is new understanding or human comprehension.  That works well for the result of a science experiment and answering a research question.  Industry, with its primordial goal of growing results, focuses my definition to new _actionable_ comprehension for _improved results_. This constrains the questions of ~~research~~ insight search to subjects and behaviors known to contribute business value.
+Since insight is the product, let's start with a simple definition.  The classic definition of insight is new understanding or human comprehension.  That works well for the result of a science experiment and answering a research question.  Industry, with its primordial goal of growing results, focuses my definition to new _actionable_ comprehension for _improved results_. This constrains the questions of ~~research~~ insight search to subjects and behaviors known to contribute business value.
 
 Let's look at a more concrete example.  As a purveyor and student of software engineering insights, I know large software organizations value code velocity, sometimes called speed or productivity and quality as a control. Organizations also value engineer satisfaction if you're lucky.  So I seek to understand existing behaviors and their contribution to those areas.  I am continuously hunting for new or different behaviors that can dramatically improve those results.
 

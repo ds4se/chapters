@@ -112,9 +112,9 @@ measured in watts (W) where 1 watt is equal to 1 joule second.
 
 When you measure a task that a system executes, ask your system, does
 this task have a clear beginning or end? Does this task continuously
-run? Tasks that do not to run continuously, such as sharpening an
+run? Tasks that do not run continuously, such as sharpening an
 image or compressing a video file can be characterized by the energy
-consumed. Where as a task that runs continuously, such a sharpening
+consumed. Where as a task that runs continuously, such as sharpening
 video images of a surveillance web-camera or streaming video
 compression, is better characterized by its workload, its power, the
 rate of energy consumption.
@@ -132,7 +132,7 @@ we're measuring physical phenomena: energy consumption.  Our
 measurement equipment, our testbeds, or energy measurement devices all
 have error in them, error is inherent in physical measurement thus we
 need to take multiple measurements so we can rely upon statistics to
-give us a more clear picture of what we measured.
+give us a clearer picture of what we measured.
 
 ### Granularity
 
@@ -201,7 +201,7 @@ to update, sometimes the network goes down, sometimes a remote site
 is unavailable. Often the software under test is just inherently buggy and
 only half of the test runs will complete. When developing tests one
 should instrument the tests with auditing capabilities such as
-screenshots to enable postmortem investigations. Furthermore 
+screenshots to enable postmortem investigations. Furthermore
 outliers should be investigated and potentially re-run.
 You wouldn't want to attribute a difference in energy consumption to
 an erroneous test.
@@ -216,7 +216,7 @@ repeated measurement and statistical analysis. Thus remember and use the
 scenarios: environment, N-versions, energy or power, repeated
 measurement, granularity, idle measurement, statistical analysis, and
 exceptions.
- 
+
 ## Footnotes
 
 <a id="british"></a> British/Canadian spelling.

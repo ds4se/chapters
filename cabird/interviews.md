@@ -30,7 +30,7 @@ Once you have determined who you want to recruit for interviews, you need to con
 
  * Introduce yourself and explain your job or role.
  * Tell them what the goal of your research is and how conducting an interview with them will help you accomplish that goal.
- * Describe how what you are doing can potentially benefit them.
+ * Describe how they can potentially benefit from what you are doing.
  * Explain how long you estimate that the interview will take.
  * Let them know if you'd like them to do anything to prepare for the interview.  As an example, I once asked developers to open up a recent code review they had taken part in and look over it before I arrived.
  * Tell them how they were selected.  Did you select them because they fit some criteria or were they selected at random?
@@ -96,7 +96,7 @@ Finally, resist the temptation to apply quantitative methods to interview result
 Those who haven't conducted interviews before are often hesitant to try.  You may feel more comfortable looking at raw data in the comfort of your own lab.  Numbers can't put you on the spot or make you feel awkward.  I can honestly say that I've learned more about how software engineering takes place by conducting interviews than I have through all of the other research methods I've used combined and I started with *much* less information about how to do it than is in this chapter.  I hope this chapter has provided a few things to help you include interviews in your own research.
 
 ## References
-* A. Hindle, C. Bird, T. Zimmermann, and N. Nagappan, "Relating requirements to implementation via topic analysis: do topics extracted from requirements make sense to managers and developers?," in Proceedings of the 28th IEEE international conference on software maintenance, 2012. 
+* A. Hindle, C. Bird, T. Zimmermann, and N. Nagappan, "Relating requirements to implementation via topic analysis: do topics extracted from requirements make sense to managers and developers?," in Proceedings of the 28th IEEE international conference on software maintenance, 2012.
 * Emerson R. Murphy-Hill, Thomas Zimmermann, Nachiappan Nagappan, "Cowboys, ankle sprains, and keepers of quality: how is video game development different from software development?" ICSE 2014
 * Anja Guzzi, Alberto Bacchelli, Yann Riche, Arie van Deursen,"Supporting Developers' Coordination in The IDE" In Proceedings of CSCW 2015 (18th ACM conference on Computer-Supported Cooperative Work and Social Computing), pp. 518-532. 2015
 * Singer, Leif, Fernando Figueira Filho, and Margaret-Anne Storey. "Software engineering at the speed of light: how developers stay current using twitter." Proceedings of the 36th International Conference on Software Engineering. ACM, 2014.
