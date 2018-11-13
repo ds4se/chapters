@@ -1,4 +1,4 @@
-#Card-sorting: From Text To Themes 
+# Card-sorting: From Text To Themes 
 _Thomas Zimmermann, Microsoft Research_
 
 Suppose you just ran a survey with the question "What problems are stopping us from meeting our deadlines?". Since you didn't know the problems in advance, you asked participants to simply write the problems into a textbox. This type of question is called an open-ended question; in contrast to closed-ended questions, which limit participants to a list of predefined answer choices. Your survey was very successful and you received hundreds of responses. Now want to make sense of the data. How can you do this in a systematic way?
@@ -15,7 +15,7 @@ There are two basic types of card sorts. _Open_ card sorts have no predefined gr
 
 Cart sorting has three phases: in the _preparation phase_, we create cards for each response; in the _execution phase_, cards are sorted into meaningful groups with a descriptive title; finally, in the _analysis phase_, abstract hierarchies are formed in order to deduce general categories and themes.
 
-##Preparation phase
+## Preparation phase
 
 To create the cards I use the Mail Merge feature of Microsoft Word. The input is simply an Excel spreadsheet with one row per card and all the relevant information separated into columns (with column headers). Word allows you to customize the layout of the cards by using the Mail Merge fields.
 
@@ -25,7 +25,7 @@ On each card, I print a demographics if available and always a card identifier t
 
 I usually prints cards 4-up on a letter page. Print the text in large font (at least 20 point); the larger the better and easier to read. After the mail merge, you can manually reduce the font size for any cards that don't fit. A trick I recently discovered is to sort the Excel sheet by response length (put longer responses in the first rows to prevent Excel from cutting off text). That way you have to go only through some cards to reduce the font size or you could split the responses into two or more sets (e.g., one set for short responses in large font, one set for long responses in smaller font).
 
-##Execution phase
+## Execution phase
 
 Get a large room for your card sort. Besides the cards bring pens, sticky notes, markers, envelopes, and rubber bands. Use the pens and sticky notes to create descriptive titles once you have several cards in a group. Use the markers to highlight important text, for example when the text is very long. Plan about 2 hours for a card sorting session, not more than 3 hours. longer sessions give you brain freeze. If you have a large number of cards you will need multiple sessions. Don't forget to take breaks.
 
@@ -41,7 +41,7 @@ After you are done with the card sort, use the envelopes and rubber bands to sto
 
 ![](CardSort.jpg)
 
-##Analysis phase
+## Analysis phase
 
 After you are done with the card sort, it's a good idea to go through the cards one more time to check for consistency within the groups. It's still ok to move cards around, though at some point you want to freeze the groups.
 
