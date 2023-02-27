@@ -1,4 +1,4 @@
-#Simpler Questions Can Lead To Better Insights
+# Simpler Questions Can Lead To Better Insights
 *Burak Turhan, University of Oulu, Finland*
 
 *Kari Kuutti, University of Oulu, Finland*
